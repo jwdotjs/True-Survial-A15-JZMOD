@@ -14449,7 +14449,7 @@ which does not exist, yet. -->
 			<property name="QuestGiven" value="challenge_Arlene" />
 		</property>
 	</item>
-	<item id="1795" name="v">
+	<item id="1795" name="qc_Darlene">
 		<property name="Extends" value="challengeQuestMaster" />
 		<property name="DescriptionKey" value="qc_ZombieDesc" />
 		<property class="Action1">
