@@ -541,14 +541,13 @@
 			
 			<rect depth="1" pos="153,-115" name="ingredients" width="447" height="352"><!-- height="264"-->
 				
-				<grid rows="7" width="447" height="354" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical"><!-- height="266" -->
+				<grid rows="6" width="447" height="354" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical"><!-- height="266" -->
 					<ingredient_header/>
 					<ingredient_row name="0"/>
 					<ingredient_row name="1"/>
 					<ingredient_row name="2"/>
 					<ingredient_row name="3"/>
 					<ingredient_row name="4"/>
-                    <ingredient_row name="5"/>
                 </grid>
 			</rect>
 		
@@ -1829,12 +1828,12 @@
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_pen"/>
 			<label style="header.name" text="{tiptitle}" width="550" />
 		</panel>
-		<rect name="content" pos="0,-46" height="319" depth="1" pivot="center">
+		<rect name="content" pos="0,-46" height="450" depth="1" pivot="center"><!--height="319"-->
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" color="[black]" type="sliced" fillcenter="false" />	
 			<sprite color="[darkGrey]" type="sliced" />
 			<label depth="3" name="descriptionText" pos="8,-8" text="{tiptext}" width="590" font_size="30" overflow="resizeheight" />
 			
-			<rect name="btnContinue" depth="3" pos="0, -277" height="42" >
+			<rect name="btnContinue" depth="3" pos="0, -408" height="42" ><!--pos="0, -277"-->
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
 				<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="224" height="32" color="[darkGrey]" type="sliced" />
 				<rect depth="3" pos="0,0" height="42">

@@ -2260,7 +2260,7 @@ painKillersDesc,items,Medical,EnChanged KgNone,Painkillers help you shrug off st
 splint,items,Medical,KgNone,Splint,Attelle,Schiene,,Tablilla
 splintDesc,items,Medical,KgNone,Use splints to mend sprained or broken limbs. Splints do not protect against further injury.,Utilisez les attelles pour soigner les membres blessés ou cassés. Les attelles ne vous protègent pas contre de nouvelles blessures.,"Benutze Schienen, um verstauchte und gebrochene Gliedmaßen zu heilen. Schienen schützen nicht vor weiteren Verletzungen.",,Usa tablillas para curar esguinces o extremidades fracturadas. Las tablillas no evitan otras lesiones.
 vitamins,items,Medical,KgNone,Vitamins,Vitamines,Vitamine,,Vitaminas
-vitaminsDesc,items,Medical,KgNone,Vitamins improve your wellness and can cure early stages of dysentery.,Les vitamines améliorent votre bien-être et peuvent traiter les premiers stades de la dysenterie.,Vitamine verbessern dein Wohlbefinden und können die frühen Stadien von Dysenterie heilen.,,Las vitaminas mejoran tu bienestar y pueden curar las primeras etapas de disentería.
+vitaminsDesc,items,Medical,KgNone,Vitamins improve your wellness over time.,Les vitamines améliorent votre bien-être et peuvent traiter les premiers stades de la dysenterie.,Vitamine verbessern dein Wohlbefinden und können die frühen Stadien von Dysenterie heilen.,,Las vitaminas mejoran tu bienestar y pueden curar las primeras etapas de disentería.
 sunblocker,items,Medical,KeyTrunk FrNone GrNone KgNone SpNone,Sunblocker,,,,
 sunblockerDesc,items,Medical,KeyTrunk FrNone GrNone KgNone SpNone,It rubs the lotion on it's skin. It does this whenerver it's told.,,,,
 boneShiv,items,Melee,KgNone,Bone Shiv,Surin en os,Knochenklinge,,Pincho de hueso
@@ -4680,3 +4680,28 @@ BladderFlask1,items,Clothes,KgNone,Bladder Flask,Cigare,Zigarre,,Puro
 BladderFlaskEmpty,items,Clothes,KgNone,Empty Bladder Flask,Cigare,Zigarre,,Puro
 FlaskDesc,items,Item,,"Take a huge drink or pour this on your head to remove zombie vomit, douse fires and cool yourself off a little",,
 EmptyFlaskDesc,items,Item,,"You can fill this with 30 bottles of water. Saving room and gaining more stamina taking larger drinks",,
+qc_Scientist,items,Item,,"Scientist Quest",,
+qc_Doctor,items,Item,,"Doctor Quest",,
+qc_Engineer,items,Item,,"Scientist Quest",,
+qc_Cop,items,Item,,"Enginee Quest",,
+qc_Soldier,items,Item,,"Soldier Quest",,
+qc_Farmer,items,Item,,"Farmer Quest",,
+qc_Hen,items,Item,,"Hen Quest",,
+qc_Bath,items,Item,,"Clean up your act",,
+qc_Vorpal,items,Item,,"Vorpal Quest",,
+qc_AntiVenom,items,Item,,"AntiVenom Quest",,
+qc_PlantSeeds,items,Item,,"Seed Planting Quest",,
+qc_Boe,items,Item,,"Kill The Boes",,
+qc_Joe,items,Item,,"Kill the joes",,
+qc_Arlene,items,Item,,"kill the arlenes",,
+qc_Darlene,items,Item,,"kill the darlenes",,
+qc_Marlene,items,Item,,"kill the marlene",,
+qc_Yo,items,Item,,"kill the yos",,
+qc_spider,items,Item,,"kill the spiders",,
+qc_burnt,items,Item,,"Kill the burnt zombies",,
+qc_Nurse,items,Item,,"kill the nurses",,
+qc_Steve,items,Item,,"kill the steves",,
+qc_Moe,items,Item,,"kill the moes",,
+qc_King,items,Item,,"Can you be king?",,
+FruitSaladDesc,items,Item,,"A fresh combination of healthy fruit",,
+VeggieSaladDesc,items,Item,,"A fresh combination of healthy vegetables",,

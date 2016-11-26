@@ -2204,7 +2204,7 @@
 	<entity_class name="Boe7" extends="zombieBoe">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.43" />
+		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2212,7 +2212,7 @@
 	<entity_class name="Joe7" extends="zombieJoe">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.47" />
+		<property name="ApproachSpeed" value="0.38" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2228,7 +2228,7 @@
 	<entity_class name="Steve7" extends="zombieSteve">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.45" />
+		<property name="ApproachSpeed" value="0.31" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2236,7 +2236,7 @@
 	<entity_class name="Arlene7" extends="zombieArlene">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.40" />
+		<property name="ApproachSpeed" value="0.38" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2244,7 +2244,7 @@
 	<entity_class name="Darlene7" extends="zombieDarlene">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.48" />
+		<property name="ApproachSpeed" value="0.39" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.2" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2252,7 +2252,7 @@
 	<entity_class name="Marlene7" extends="zombieMarlene">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.42" />
+		<property name="ApproachSpeed" value="0.32" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.19" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2269,7 +2269,7 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.49" />
+		<property name="ApproachSpeed" value="0.37" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
