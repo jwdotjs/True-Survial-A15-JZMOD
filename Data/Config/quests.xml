@@ -361,7 +361,7 @@ Alternative settings for custom quest creation:
 	</quest> -->
 	<!--JZMOD PROFESSION QUEST CHAINS-->
 	<!--Doctor-->
-	<quest id="challenge_Doctor" name_key="challenge_Doctor" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
 		<objective type="FetchKeep" id="hangingMoss" value="1" />
 		<objective type="FetchKeep" id="potassiumNitratePowder" value="1" />
 		<objective type="FetchKeep" id="mushrooms" value="1" />
@@ -373,7 +373,7 @@ Alternative settings for custom quest creation:
         <reward type="Quest" id="challenge_Doctor4" />
         <reward type="Quest" id="challenge_Doctor5" />
 	</quest>
-	<quest id="challenge_Doctor2" name_key="challenge_Doctor" subtitle_key="challenge_Doctor2_subtitle" description_key="challenge_Doctor2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor2_offer" difficulty="easy">
+	<quest id="challenge_Doctor2" name_key="challenge_Profession" subtitle_key="challenge_Doctor2_subtitle" description_key="challenge_Doctor2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor2_offer" difficulty="easy">
 		<objective type="FetchKeep" id="feather" value="3" />
 		<objective type="FetchKeep" id="scrapIron" value="3" />
 		<objective type="FetchKeep" id="stick" value="3" />
@@ -381,14 +381,14 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="PainKillerShot" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Doctor3" name_key="challenge_Doctor" subtitle_key="challenge_Doctor3_subtitle" description_key="challenge_Doctor3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor3_offer" difficulty="easy">
+	<quest id="challenge_Doctor3" name_key="challenge_Profession" subtitle_key="challenge_Doctor3_subtitle" description_key="challenge_Doctor3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor3_offer" difficulty="easy">
 		<objective type="FetchKeep" id="moldyBread" value="1" />
 		<objective type="FetchKeep" id="MixedChemicals" value="1" />
 		<objective type="FetchKeep" id="potassiumNitratePowder" value="5" />
 		<objective type="FetchKeep" id="antibiotics" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Doctor4" name_key="challenge_Doctor" subtitle_key="challenge_Doctor4_subtitle" description_key="challenge_Doctor4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor4_offer" difficulty="easy">
+	<quest id="challenge_Doctor4" name_key="challenge_Profession" subtitle_key="challenge_Doctor4_subtitle" description_key="challenge_Doctor4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor4_offer" difficulty="easy">
 		<objective type="FetchKeep" id="hangingMoss" value="1" />
 		<objective type="FetchKeep" id="MixedChemicals" value="1" />
 		<objective type="FetchKeep" id="antibiotics" value="1" />
@@ -396,7 +396,7 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="SuperPill" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Doctor5" name_key="challenge_Doctor" subtitle_key="challenge_Doctor5_subtitle" description_key="challenge_Doctor5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor5_offer" difficulty="easy">
+	<quest id="challenge_Doctor5" name_key="challenge_Profession" subtitle_key="challenge_Doctor5_subtitle" description_key="challenge_Doctor5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor5_offer" difficulty="easy">
 		<objective type="FetchKeep" id="antibiotics" value="1" />
 		<objective type="Craft" id="BlankSkillBook" value="1" />
 		<objective type="FetchKeep" id="DoctorBook" value="1" />
@@ -502,12 +502,12 @@ Alternative settings for custom quest creation:
 	<quest id="challenge_Cop3" name_key="challenge_Profession" subtitle_key="challenge_Cop3_subtitle" description_key="challenge_Cop3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop3_offer" difficulty="easy">
 		<objective type="FetchKeep" id="9mmBullet" value="5" />
 		<objective type="FetchKeep" id="CircuitBoard" value="1" />
-		<objective type="Craft" id="9mmShock" value="3" />
+		<objective type="Craft" id="9mmShock" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Cop4" name_key="challenge_Profession" subtitle_key="challenge_Cop4_subtitle" description_key="challenge_Cop4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop4_offer" difficulty="easy">
 		<objective type="FetchKeep" id="9mmShock" value="1" />
-		<objective type="Craft" id="BlankSkillBook" value="1" />
+		<objective type="FetchKeep" id="BlankSkillBook" value="1" />
 		<objective type="FetchKeep" id="CopBook" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -532,31 +532,33 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="scrapIron" value="10" />
 		<objective type="FetchKeep" id="stick" value="5" />
 		<objective type="FetchKeep" id="spring" value="2" />
+        <objective type="FetchKeep" id="ductTape" value="1" />
 		<objective type="Craft" id="blunderbuss" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier3_subtitle" description_key="challenge_Soldier3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier3_offer" difficulty="easy">
 		<objective type="FetchKeep" id="FiberRope" value="1" />
-		<objective type="FetchKeep" id="gunPowder" value="10" />
+		<objective type="FetchKeep" id="Nitroglycerin" value="1" />
 		<objective type="FetchKeep" id="shortMetalPipe" value="1" />
 		<objective type="Craft" id="pipeBomb" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Soldier4" name_key="challenge_Profession" subtitle_key="challenge_Soldier4_subtitle" description_key="challenge_Soldier4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier4_offer" difficulty="easy">
-		<objective type="FetchKeep" id="gunPowder" value="6" />
-		<objective type="FetchKeep" id="scrapIron" value="6" />
+		<objective type="FetchKeep" id="gunPowder" value="10" />
+		<objective type="FetchKeep" id="scrapIron" value="40" />
+        <objective type="FetchKeep" id="ductTape" value="1" />
 		<objective type="Craft" id="rScrapIronPlateMine" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Soldier5" name_key="challenge_Profession" subtitle_key="challenge_Soldier5_subtitle" description_key="challenge_Soldier5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier5_offer" difficulty="easy">
-		<objective type="FetchKeep" id="rScrapIronPlateMine" value="1" />
-		<objective type="Craft" id="BlankSkillBook" value="1" />
+		<objective type="Craft" id="rScrapIronPlateMine" value="1" />
+		<objective type="FetchKeep" id="BlankSkillBook" value="1" />
 		<objective type="FetchKeep" id="SoldierBook" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Scientist-->
 	<quest id="challenge_Scientist" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
-		<objective type="FetchKeep" id="ZincPowder" value="1" />
+		<objective type="FetchKeep" id="ZincPowder" value="2" />
 		<objective type="FetchKeep" id="coal" value="1" />
 		<objective type="FetchKeep" id="cloth" value="1" />
 		<objective type="Craft" id="PurificationTablets" value="1" />
@@ -571,6 +573,7 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="bottledWater" value="1" />
 		<objective type="FetchKeep" id="plantedGoldenrod3Harvest" value="1" />
 		<objective type="FetchKeep" id="plantedChrysanthemum3Harvest" value="1" />
+        <objective type="FetchKeep" id="plantedAloe3Harvest" value="1" />
 		<objective type="FetchKeep" id="PurificationTablets" value="1" />
 		<objective type="Craft" id="RedBull" value="1" />
 		<reward type="SkillPoints" value="1" />
@@ -579,7 +582,6 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="grainAlcohol" value="1" />
 		<objective type="FetchKeep" id="VenomSack" value="1" />
 		<objective type="FetchKeep" id="femur" value="1" />
-		<objective type="FetchKeep" id="bioFuel" value="1" />
 		<objective type="FetchKeep" id="ZincPowder" value="1" />
 		<objective type="Craft" id="MixedChemicals" value="1" />
 		<reward type="SkillPoints" value="1" />
@@ -596,7 +598,7 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="10mmFireBullet" value="1" />
 		<objective type="FetchKeep" id="shotgunFireShell" value="1" />
 		<objective type="FetchKeep" id="IncendiaryPowder" value="1" />
-		<objective type="Craft" id="BlankSkillBook" value="1" />
+		<objective type="FetchKeep" id="BlankSkillBook" value="1" />
 		<objective type="FetchKeep" id="IncendiaryAmmoBook" value="1" />
 		<reward type="SkillPoints" value="1" />
 	</quest>

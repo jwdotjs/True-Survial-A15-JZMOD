@@ -507,8 +507,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="blunderbuss" count="1" craft_time="60" craft_exp_gain="50">
 	<ingredient name="spring" count="2"/>
-	<ingredient name="shortMetalPipe" count="2"/>
-	<ingredient name="glue" count="1"/>
+	<ingredient name="shortMetalPipe" count="4"/>
 	<ingredient name="ductTape" count="1"/>
 	<ingredient name="stick" count="5"/>
     <ingredient name="scrapIron" count="10" />
@@ -1761,7 +1760,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="rScrapIronPlateMine" count="1" craft_area="workworkbench" craft_time="20" craft_exp_gain="15">
-	<ingredient name="scrapIron" count="30"/>
+	<ingredient name="scrapIron" count="40"/>
 	<ingredient name="gunPowder" count="10"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
@@ -3094,7 +3093,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="bellows" count="1" />
 		<ingredient name="scrapCable" count="5" />
 	</recipe>
-	<recipe name="BlankSkillBook" count="1" craft_area="workArmorTable" craft_time="15" craft_exp_gain="10">
+	<recipe name="BlankSkillBook" count="1" craft_area="workResearchDesk" craft_time="15" craft_exp_gain="10">
 		<ingredient name="Ink Pen" count="1" />
 		<ingredient name="book" count="1" />
 	</recipe>
@@ -4244,6 +4243,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="VenisonSteak" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="egg" count="1" />
 		<ingredient name="rawMeat" count="1" />
+	</recipe>
+    <recipe name="SoldierBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
+		<ingredient name="rScrapIronPlateMine" count="1" />
+		<ingredient name="BlankSkillBook" count="1" />
+	</recipe>
+    <recipe name="CopBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
+		<ingredient name="9mmShock" count="1" />
+		<ingredient name="BlankSkillBook" count="1" />
+	</recipe>
+    <recipe name="IncendiaryAmmoBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
+		<ingredient name="9mmFireBullet" count="1" />
+        <ingredient name="10mmFireBullet" count="1" />
+        <ingredient name="shotgunFireShell" count="1" />
+        <ingredient name="IncendiaryPowder" count="1" />
+		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
     
 </recipes>
