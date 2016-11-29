@@ -1759,7 +1759,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapIron" count="80"/>
 </recipe>
 
-<recipe name="rScrapIronPlateMine" count="1" craft_area="workworkbench" craft_time="20" craft_exp_gain="15">
+<recipe name="rScrapIronPlateMine" count="1" craft_time="20" craft_exp_gain="15">
 	<ingredient name="scrapIron" count="40"/>
 	<ingredient name="gunPowder" count="10"/>
 	<ingredient name="ductTape" count="1"/>
@@ -2819,9 +2819,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="RedBull" count="1"  craft_time="20" craft_exp_gain="5">
 		<ingredient name="bottledWater" count="1" />
-		<ingredient name="plantedGoldenrod3Harvest" count="1" />
-		<ingredient name="plantedChrysanthemum3Harvest" count="1" />
-		<ingredient name="plantedAloe3Harvest" count="1" />
+		<ingredient name="goldenrodPlant" count="1" />
+		<ingredient name="chrysanthemumPlant" count="1" />
+		<ingredient name="aloePlant" count="1" />
 		<ingredient name="PurificationTablets" count="1" />
 	</recipe>
 	<recipe name="PurificationTablets" count="1"  craft_time="5" craft_exp_gain="5">
@@ -2855,7 +2855,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="Stimulant" count="3"  craft_area="workchemistryStation" craft_tool="beaker" craft_time="30" craft_exp_gain="25">
 		<ingredient name="bottledWater" count="1" />
-		<ingredient name="plantedGoldenrod3Harvest" count="1" />
+		<ingredient name="goldenrodPlant" count="1" />
 		<ingredient name="MixedChemicals" count="1" />
 	</recipe>
 	<recipe name="SuperPill" count="1"  craft_area="workchemistryStation" craft_tool="MortarAndPestle" craft_time="30" craft_exp_gain="50">
@@ -2939,13 +2939,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="LawEnforcmentProfession" count="1" craft_time="5" craft_exp_gain="1000" >
 		<ingredient name="ChooseAProfession" count="1" />
 	</recipe>
-    <!-- SDX
-	<recipe name="BearTrap" count="1" >
+   	<recipe name="BearTrap" count="1" craft_time="30" craft_exp_gain="5">
 		<ingredient name="stick" count="10" />
 		<ingredient name="shortMetalPipe" count="2" />
 		<ingredient name="scrapIron" count="10" />
 		<ingredient name="FiberRope" count="3" />
-	</recipe>-->
+	</recipe>
 	<recipe name="MeltedRubber" count="2" craft_area="workcampfire" craft_time="15" craft_exp_gain="0">
 		<ingredient name="minibikeWheels" count="1" />
 	</recipe>
@@ -2969,16 +2968,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="SedativeShot" count="3"  craft_time="6" craft_exp_gain="3">
 		<ingredient name="feather" count="3" />
-		<ingredient name="plantedChrysanthemum3Harvest" count="2" />
+		<ingredient name="chrysanthemumPlant" count="2" />
 		<ingredient name="rockSmall" count="3" />
 		<ingredient name="stick" count="3" />
 	</recipe>
 	<recipe name="MixedChemicals" count="1" craft_area="workchemistryStation" craft_time="20" craft_exp_gain="20">
 		<ingredient name="grainAlcohol" count="1" />
 		<ingredient name="VenomSack" count="1" />
-		<ingredient name="bioFuel" count="1" />
 		<ingredient name="femur" count="1" />
-		<ingredient name="ZincPowder" count="1" />
+		<ingredient name="ZincPowder" count="3" />
 	</recipe>
 	<recipe name="CoffeeSeeds" count="4"  craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 		<ingredient name="coffeeBeans" count="1" />
@@ -3028,7 +3026,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="corn" count="2" />
 	</recipe>
 	<recipe name="IronSpear" count="1"  craft_time="30" craft_exp_gain="15">
-		<ingredient name="scrapIron" count="1" />
+		<ingredient name="scrapIron" count="5" />
 		<ingredient name="FiberRope" count="1" />
 		<ingredient name="stick" count="3" />
 	</recipe>
@@ -3209,11 +3207,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="cornMeal" count="15" />
 		<ingredient name="bottledWater" count="30" />
 	</recipe>
+    <!--
 	<recipe name="Soap" count="1"  craft_area="workcampfire" craft_tool="cookingPot" craft_time="20">
 		<ingredient name="animalFat" count="1" />
 		<ingredient name="plantedYucca3Harvest" count="1" />
 		<ingredient name="ZincPowder" count="1" />
-	</recipe>
+	</recipe>-->
 	<recipe name="workSteamGenerator" count="1" craft_area="workMetalWorkBench" craft_time="300" craft_exp_gain="100">
 		<ingredient name="FanBelt" count="1" />
 		<ingredient name="Alternator" count="1" />
@@ -4190,59 +4189,83 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
     <recipe name="MeatPotatoKabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="potato" count="1" />
+		<ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="MeatCornKabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="corn" count="1" />
+		<ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="MeatCarrotKabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="Carrot" count="1" />
+		<ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="MeatTomatoKabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />
 		<ingredient name="rawMeat" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/Po/Ca Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="potato" count="1" />
+        <ingredient name="Carrot" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/Po/Co Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="potato" count="1" />
+        <ingredient name="corn" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/Co/Ca Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="Carrot" count="1" />
+        <ingredient name="corn" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/To/Po Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
-		<ingredient name="Tomato" count="1" />
-		<ingredient name="mushrooms" count="1" />
+		<ingredient name="rawMeat" count="1" />
+		<ingredient name="potato" count="1" />
+        <ingredient name="Tomato" count="1" />
+		<ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/To/Co Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />
 		<ingredient name="rawMeat" count="1" />
+        <ingredient name="corn" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/To/Ca Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />
 		<ingredient name="rawMeat" count="1" />
+        <ingredient name="Carrot" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/To/Co/Po Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
-		<ingredient name="Tomato" count="1" />
 		<ingredient name="rawMeat" count="1" />
+        <ingredient name="Tomato" count="1" />
+		<ingredient name="corn" count="1" />
+        <ingredient name="potato" count="1" />
+        <ingredient name="stick" count="1" />
 	</recipe>
     <recipe name="Me/Co/Ca/To Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
-		<ingredient name="Tomato" count="1" />
 		<ingredient name="rawMeat" count="1" />
+        <ingredient name="Tomato" count="1" />
+        <ingredient name="corn" count="1" />
+        <ingredient name="Carrot" count="1" />
+        <ingredient name="stick" count="1" />		
 	</recipe>
     <recipe name="Me/Co/Ca/Po Kabob" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
-		<ingredient name="egg" count="1" />
 		<ingredient name="rawMeat" count="1" />
+        <ingredient name="potato" count="1" />
+        <ingredient name="corn" count="1" />
+        <ingredient name="Carrot" count="1" />
+        <ingredient name="stick" count="1" />	
 	</recipe>
     <recipe name="VenisonSteak" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="5" craft_exp_gain="0">
-		<ingredient name="egg" count="1" />
-		<ingredient name="rawMeat" count="1" />
+		<ingredient name="VenisonTenderloin" count="1" />
 	</recipe>
     <recipe name="SoldierBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
 		<ingredient name="rScrapIronPlateMine" count="1" />
@@ -4260,6 +4283,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
     
+    <recipe name="SuterKit" count="1"  craft_time="5" craft_exp_gain="50">
+		<ingredient name="Sutures" count="1" />
+		<ingredient name="SewingNeedle" count="1" />
+	</recipe>
 </recipes>
 <!-- To do (maybe / later)cookingGrill
 

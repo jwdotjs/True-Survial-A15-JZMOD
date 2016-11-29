@@ -14454,6 +14454,17 @@ kind of free
 		<property name="LPHardnessScale" value="0" />
 		<property name="CraftingSkillGroup" value="Science" />
 	</block>
+    <!--JZMOD Temp Bear Trap-->
+    <block id="2022" name="BearTrap">
+        <property name="Material" value="MBearTrap" />
+        <property name="Shape" value="Grass" />
+        <property name="Mesh" value="grass" />
+        <property name="Texture" value="39,40,364,365,39,364" />
+        <property name="BuffsWhenWalkedOn" value="bearTrap"/>
+        <drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
+        <property name="Group" value="Tools/Traps" />
+        <property name="DescriptionKey" value="BearTrapDesc"/>
+    </block>
     <!--
     <block id="1977" name="ShockTrapWood">
 		 this is a powered trap 

@@ -211,23 +211,19 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     </buff>
 
 
-    <buff id="megaCrushBuff" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_run"
-        name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
+    <buff id="megaCrushBuff" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
         <modify id="0" stat="stamina" amount="10" rate="1"/>
     </buff>
 
-    <buff id="yuccaJuiceCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea"
-        name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
+    <buff id="yuccaJuiceCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea" name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
         <modify id="1" stat="coretemp" modifyValue="-10"/>
     </buff>	
 
-    <buff id="stewWarming" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
-        name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
+    <buff id="stewWarming" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_coffee" name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
         <modify id="1" stat="coretemp" modifyValue="10"/>
     </buff>	
 
-    <buff id="redTeaCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea"
-        name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
+    <buff id="redTeaCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea" name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
         <modify id="1" stat="coretemp" modifyValue="-10"/>
     </buff>		
 
@@ -274,7 +270,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
         <modify id="1" stat="health" amount="1" rate="1"/>
     </buff>		
 
-    <buff id="painkillerBuff" duration="90" stack="extend" type="healthup" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
+    <buff id="painkillerBuff" duration="90" stack="extend" type="healthup" actions="debuff(pain)" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
         <modify id="1" stat="health" amount="0.34" rate="1"/>
     </buff>	
 
@@ -551,21 +547,21 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="stuffed12" duration="1" actions="increment(stuffed, 12, 0, 0, 1)" />
     <buff id="stuffed16" duration="1" actions="increment(stuffed, 16, 0, 0, 1)" />
     <buff id="stuffed18" duration="1" actions="increment(stuffed, 18, 0, 0, 1)" />
-    <buff id="stuffedFade" buffif="stuffed gequal 1" debuffif="stuffed less 1" actions="increment(stuffed, -1, 600t, 0, 0);min(stuffed, 0)" />	
+    <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" icon="ui_game_symbol_run"/>	
     <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 80" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="ui_game_symbol_run">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff> 
-	<!--JZMOD HYGIEN BUFF-->
+	<!--JZMOD HYGIEN BUFF
 	<buff id="Hygiene" buffif="coretemp lequal 300" actions="increment(hygiene, 1, 100t, 0, 0)" />
-	<buff id="dirty" name_key="Dirty" buffif="hygiene gequal 96" debuffif="hygiene lequal 95" mutex="grimy,filthy,infectious" smell="smallSmell" description_key="You are starting to smell a little you might want to use a piece of cloth and rinse off" tooltip_key="Getting a little dirty" icon="ui_game_symbol_muscle" />
-	<buff id="grimy" name_key="Grimy" buffif="hygiene gequal 168" debuffif="hygiene lequal 167" mutex="filthy,infectious" smell="mediumSmell" actions="debuff(dirty)" description_key="You’re really starting to smell. Might want to take a bath with soap soon." tooltip_key="You are grimy and smelly" icon="ui_game_symbol_muscle" />
-	<buff id="filthy" name_key="Filthy" buffif="hygiene gequal 288" debuffif="hygiene lequal 287" mutex="infectious" smell="largeSmell" actions="debuff(dirty);debuff(grimy)" description_key="Wow you really need a soapy bath. The dead will smell you coming a block away. If you get too filthy your cuts can get infected" tooltip_key="You’re filthy and you really stink" icon="ui_game_symbol_muscle" />
-	<buff id="infectious" name_key="Infectious" requires="filthy" buffif="scratch gequal 10" smell="exLargeSmell" actions="buff(bioInfection);debuff(filthy);debuff(dirty);debuff(grimy)" description_key="You have gotten an infection from your dirty wounds. Take a soapy bath and find some Antibiotics" tooltip_key="Your scratches are dirty" icon="ui_game_symbol_muscle" />
+	<buff id="dirty" name_key="Dirty" buffif="hygiene gequal 96" debuffif="hygiene lequal 95" mutex="grimy,filthy" smell="smallSmell" description_key="You are starting to smell a little you might want to use a piece of cloth and rinse off" tooltip_key="Getting a little dirty" icon="dirty" />
+	<buff id="grimy" name_key="Grimy" buffif="hygiene gequal 168" debuffif="hygiene lequal 167" mutex="filthy" smell="mediumSmell" actions="debuff(dirty)" description_key="You’re really starting to smell. Might want to take a bath with soap soon." tooltip_key="You are grimy and smelly" icon="dirty" />
+	<buff id="filthy" name_key="Filthy" buffif="hygiene gequal 288" debuffif="hygiene lequal 287" smell="largeSmell" actions="debuff(dirty);debuff(grimy)" description_key="Wow you really need a soapy bath. The dead will smell you coming a block away. If you get too filthy your cuts can get infected" tooltip_key="You’re filthy and you really stink" icon="dirty" />
 	<buff id="rinsingoff" requires="hygiene gequal 1" duration="10" />
-	<buff id="bathing" name_key="Bird Bath" duration="5" requires="rinsingoff" buffif="+water &gt; 6" actions="debuff(rinsingoff);increment(hygiene, -72, 0, 0, 1);min(hygiene, 24);debuff(dirty);debuff(grimy);debuff(filthy)" description_key="Small Bird baths will keep your stench down but won’t help clean your wounds" tooltip_key="Rinsing off" icon="ui_game_symbol_water" />
+	<buff id="bathing" name_key="Bird Bath" duration="5" requires="rinsingoff" buffif="+water &gt; 6" actions="debuff(rinsingoff);increment(hygiene, -72, 0, 0, 1);min(hygiene, 24);debuff(dirty);debuff(grimy);debuff(filthy)" description_key="Small Bird baths will keep your stench down but won’t help clean your wounds" tooltip_key="Rinsing off" icon="Soap" />
 	<buff id="soapy" duration="10" name_key="Nice and Soapy" actions="debuff(rinsingoff)" description_key="Find some water and wash your self before the soap drys" tooltip_key="All lathered up" icon="ui_game_symbol_water" />
-	<buff id="soapyBath" name_key="Soapy Bath" duration="5" requires="soapy" buffif="+water &gt; 5" actions="debuff(soapy);increment(hygiene, -144, 0, 0, 1);min(hygiene, 0);debuff(rinsingoff);debuff(infectious);increment(scratch, -5, 0, 0, 1);min(scratch, 0);debuff(ScratchLv10);debuff(ScratchLv11);debuff(ScratchLv12);debuff(ScratchLv13);debuff(ScratchLv14);debuff(ScratchLv15);debuff(ScratchLv16);debuff(ScratchLv17);debuff(ScratchLv18);debuff(ScratchLv19);debuff(ScratchLv20)" description_key="Occasionally taking a Soapy bath will help keep your cuts clean and stave off infection" tooltip_key="ahhh Feels good to get clean" icon="ui_game_symbol_water" />
-	<!--JZMOD LIMP-->
+	<buff id="soapyBath" name_key="Soapy Bath" duration="5" requires="soapy" buffif="+water &gt; 5" actions="debuff(soapy);increment(hygiene, -144, 0, 0, 1);min(hygiene, 0);debuff(rinsingoff)" description_key="Occasionally taking a Soapy bath will help keep your cuts clean and stave off infection" tooltip_key="ahhh Feels good to get clean" icon="Soap" />
+	-->
+    <!--JZMOD LIMP-->
 	<buff id="limp" name_key="Limp" buffif="health less .1" mutex="limp,stimulant,Drunk,limp1,limp2" duration="1" onexpired="limp1" type="speedmodifier" tooltip_key="You are injured and limping" icon="ui_game_symbol_run">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff>
@@ -577,16 +573,12 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="StaminaBoost" duration="180" name_key="Energy" type="staminaup" description_key="You feel energized" tooltip_key="You feel full of energy" icon="ui_game_symbol_run" stack="extend">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 	</buff>
-	<!--JZMOD FAST ROAD-->
-	<buff id="fastTravel" duration="1" actions="increment(fast, 1, 0, 0, 1)" /> 
-    <buff id="fastFade" buffif="fast gequal 3" debuffif="fast less 1" actions="increment(fast, -1, 1t, 0, 0);min(fast, 0)" />	
-    <buff id="onTheRoad" buffif="fast gequal 1" debuffif="fast less 1" name_key="Fast Travel" tooltip_key="You have been scratched" description_key="You make better time traveling on the road" icon="ui_game_symbol_run" />
-    <!--JZMOD Dumped Drink-->
+	<!--JZMOD Dumped Drink-->
 	<buff id="wetHead" duration="180" name_key="Wet Head" type="staminaup" description_key="You dumped a drink on your head" tooltip_key="Ahh that feels good" icon="ui_game_symbol_water" stack="extend">
 		<modify id="1" stat="coretemp" modifyValue="-15" />
 	</buff>
     <!--JZMOD SCUBA GEAR-->
-	<buff id="scuba" duration="300" name_key="Scuba Gear" mutex="scuba" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ui_game_symbol_water" />
+	<buff id="scuba" duration="300" name_key="Scuba Gear" mutex="scuba" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ScubaTankFull" />
 	<!--JZMOD COZY BED BUFF-->
 	<buff id="cozybed1" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_map_bed">
 		<modify id="0" stat="coretemp" modifyValue="20" />
@@ -616,72 +608,106 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<buff id="bioInfection4" name_key="BioInfection Stage 4" actions="kill" description_key="You have died from you infection" tooltip_key="You have died from you infection" icon="ui_game_symbol_temperature" />
 	<!--JZMOD SOMEBIE BIYES-->
-	<buff id="bite" castsound="Buffs/critical_blunt" duration="2400t" name_key="Bite" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 200t, 0, 0);buff(bleeding)" mutex="bite" onexpired="infection" description_key="You were biten. You must clean and cauterize the bite soon or you will catch the virus." tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="RedHotKinife,RedHotMachete,RedHotPipe">
+	<buff id="bite" castsound="Buffs/critical_blunt" duration="2400t" name_key="Bite" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 200t, 0, 0);buff(bleeding)" mutex="bite" onexpired="infection" description_key="You were biten. You must cauterize the bite soon or you will catch the Z virus." tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="RedHotPipe,RedHotSteelPipe">
 		<modify id="0" stat="stamina" amount="-1" rate="5" />
 		<modify id="1" stat="health" amount="-1" rate="30" />
 		<modify id="2" stat="coretemp" modifyValue="10" />
 	</buff>
-	<buff id="cauterize" castsound="Player_Female/player2death" duration="1" actions="increment(scratch, 5, 0, 0, 1);debuff(bite)" />
-	<!--JZMOD SCRATCH BUFFS-->
-    
-	<buff id="scratch" duration="1" actions="increment(scratch, 1, 0, 0, 1)" />
-	<buff id="ScratchesHealing" buffif="scratch gequal 1" actions="increment(scratch, -1, 800t, 0, 0);min(scratch, 0)" />
-	<buff id="ScratchLv1" buffif="scratch gequal 1" debuffif="scratch gequal 2" actions="debuff(ScratchLv2)" duration="800t" name_key="One Scratch" type="bleeding" tooltip_key="You have been scratched" description_key="One Scratch: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv2" buffif="scratch gequal 2" debuffif="scratch gequal 3" actions="debuff(ScratchLv1);debuff(ScratchLv3)" duration="0" name_key="Two Scratches" type="bleeding" tooltip_key="You have Two scratches" description_key="Two Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv3" buffif="scratch gequal 3" debuffif="scratch gequal 4" actions="debuff(ScratchLv2);debuff(ScratchLv4)" duration="0" name_key="Three Scratches" type="bleeding" tooltip_key="You have Three scratches" description_key="Three Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv4" buffif="scratch gequal 4" debuffif="scratch gequal 5" actions="debuff(ScratchLv3);debuff(ScratchLv5)" duration="0" name_key="Four Scratches" type="bleeding" tooltip_key="You have Four scratches" description_key="Four Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv5" buffif="scratch gequal 5" debuffif="scratch gequal 6" actions="debuff(ScratchLv4);debuff(ScratchLv6)" duration="0" name_key="Five Scratches" type="bleeding" tooltip_key="You have Five scratches" description_key="Five Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv6" buffif="scratch gequal 6" debuffif="scratch gequal 7" actions="debuff(ScratchLv5);debuff(ScratchLv7)" duration="0" name_key="Six Scratches" type="bleeding" tooltip_key="You have Six scratches" description_key="Six Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv7" buffif="scratch gequal 7" debuffif="scratch gequal 8" actions="debuff(ScratchLv6);debuff(ScratchLv8)" duration="0" name_key="Seven Scratches" type="bleeding" tooltip_key="You have Seven scratches" description_key="Seven Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv8" buffif="scratch gequal 8" debuffif="scratch gequal 9" actions="debuff(ScratchLv7);debuff(ScratchLv9)" duration="0" name_key="Eight Scratches" type="bleeding" tooltip_key="You have Eight scratches" description_key="Eight Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv9" buffif="scratch gequal 9" debuffif="scratch gequal 10" actions="debuff(ScratchLv8);debuff(ScratchLv10)" duration="0" name_key="Nine Scratches" type="bleeding" tooltip_key="You have Nine scratches" description_key="Nine Scratches: You were scratched. Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage" />
-	<buff id="ScratchLv10" buffif="scratch gequal 10" debuffif="scratch gequal 11" actions="debuff(ScratchLv9);debuff(ScratchLv11)" duration="0" name_key="Ten Scratches" type="bleeding" tooltip_key="You have Ten scratches" description_key="Ten Scratches:You have some nasty scratches.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing.." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="2" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.99" />
+	<buff id="cauterize" castsound="Player_Female/player2death" duration="1" actions="buff(biteWound);debuff(bite)" />
+	
+    <buff id="biteWound" duration="600t" onexpired="infection" cures="bandage"/>
+	
+    <buff id="tendingbite" requires="biteWound" duration="600t" onexpired="dirtyBiteBandage1" actions="debuff(biteWound)"/>
+	
+    <buff id="dirtyBiteBandage1" smell="smallSmell" duration="600t" onexpired="dirtyBite" cures="bandage"/>
+	
+    <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)"/>
+	    
+    <buff id="tendingbite2" requires="dirtyBiteBandage1" duration="600t" onexpired="healBiteWound" actions="debuff(dirtyBiteBandage1)" />
+	
+    <buff id="healBiteWound" duration="1" actions="increment(scratch, 5, 0, 0, 1)"/>
+    <!-- JZMOD WOUND SYSTEM TEST-->
+    <buff id="scratch" duration="1" actions="increment(scratch, 1, 0, 0, 1)" />
+	
+    <buff id="ScratchesHealing" buffif="scratch gequal 1" debuffif="scratch gequal 6" actions="increment(scratch, -1, 800t, 0, 0);min(scratch, 0)" />
+	<!--JZMOD WOUND 1-->
+    <buff id="bruised" buffif="scratch gequal 1" debuffif="scratch less 1" mutex="smallWound,wound,severeWound,InfectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You’re getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="bruised" >
+		<modify id="0" stat="stamina" amount="1" rate="5" />
 	</buff>
-	<buff id="ScratchLv11" buffif="scratch gequal 11" debuffif="scratch gequal 12" actions="debuff(ScratchLv10);debuff(ScratchLv12)" duration="0" name_key="Eleven Scratches" type="bleeding" tooltip_key="You have Eleven scratches" description_key="Eleven Scratches:You have some nasty scratches.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="2" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.98" />
-	</buff>
-	<buff id="ScratchLv12" buffif="scratch gequal 12" debuffif="scratch gequal 13" actions="debuff(ScratchLv11);debuff(ScratchLv13)" duration="0" name_key="Twelve Scratches" type="bleeding" tooltip_key="You have Twelve scratches" description_key="Twelve Scratches:You have some nasty scratches.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="2" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.97" />
-	</buff>
-	<buff id="ScratchLv13" buffif="scratch gequal 13" debuffif="scratch gequal 14" actions="debuff(ScratchLv12);debuff(ScratchLv14)" duration="0" name_key="Thirteen Scratches" type="bleeding" tooltip_key="You have Thirteen scratches" description_key="Thirteen Scratches:You have some nasty scratches.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="2" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.96" />
-	</buff>
-	<buff id="ScratchLv14" buffif="scratch gequal 14" debuffif="scratch gequal 15" actions="debuff(ScratchLv13);debuff(ScratchLv15)" duration="0" name_key="Fourteen Scratches" type="bleeding" tooltip_key="You have Fourteen scratches" description_key="Fourteen Scratches:You have some nasty scratches.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="2" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.95" />
-	</buff>
-	<buff id="ScratchLv15" buffif="scratch gequal 15" debuffif="scratch gequal 16" actions="debuff(ScratchLv14);debuff(ScratchLv16)" duration="0" name_key="Fifteen Scratches" type="bleeding" tooltip_key="You have Fifteen scratches" description_key="Fifteen Scratches:Your cuts smell of infection.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="4" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.94" />
-	</buff>
-	<buff id="ScratchLv16" buffif="scratch gequal 16" debuffif="scratch gequal 17" actions="debuff(ScratchLv15);debuff(ScratchLv17)" duration="0" name_key="Sixteen Scratches" type="bleeding" tooltip_key="You have Sixteen scratches" description_key="Sixteen Scratches:Your cuts smell of infection.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="4" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.93" />
-	</buff>
-	<buff id="ScratchLv17" buffif="scratch gequal 17" debuffif="scratch gequal 18" actions="debuff(ScratchLv16);debuff(ScratchLv18)" duration="0" name_key="Seventeen Scratches" type="bleeding" tooltip_key="You have Seventeen scratches" description_key="Seventeen Scratches:Your cuts smell of infection.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
-		<modify id="0" stat="stamina" amount="4" rate="5" />
-		<modify id="1" stat="speedmodifier" setValue="0.92" />
-	</buff>
-	<buff id="ScratchLv18" buffif="scratch gequal 18" debuffif="scratch gequal 19" actions="debuff(ScratchLv17);debuff(ScratchLv19)" duration="0" name_key="Eighteen Scratches" type="bleeding" tooltip_key="You have Eighteen scratches" description_key="Eighteen Scratches:Your cuts smell of infection.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
+    <!--JZMOD WOUND 2-->
+	<buff id="smallWound" buffif="scratch gequal 6" mutex="wound,severeWound,InfectedWound" actions="buff(pain);debuff(bruised)" name_key="Small Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a small wound. Treat it with a bandage and be sure to change it when it gets dirty." icon="smallWound" cures="bandage">
 		<modify id="0" stat="stamina" amount="4" rate="5" />
 		<modify id="1" stat="speedmodifier" setValue="0.91" />
 	</buff>
-	<buff id="ScratchLv19" buffif="scratch gequal 19" debuffif="scratch gequal 20" actions="debuff(ScratchLv18);debuff(ScratchLv20)" duration="0" name_key="Nineteen Scratches" type="bleeding" tooltip_key="You have Nineteen scratches" description_key="Nineteen Scratches:Your cuts smell of infection.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
+    
+    <buff id="pain" castsound="Buffs/critical_blunt" name_key="Pain" type="bleeding" description_key="The wound hurts take some Painkillers for the pain" tooltip_key="OOwww! It Hurts!" icon="pain" cures="painkillers">
+		<modify id="0" stat="stamina" amount="-1" rate="5" />
+		<modify id="1" stat="health" amount="-1" rate="30" />
+		<modify id="2" stat="coretemp" modifyValue="10" />
+	</buff>
+    
+    <buff id="tending1" requires="smallWound" duration="1200t" onexpired="dirtyBandage1" actions="debuff(smallWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
+	
+    <buff id="dirtyBandage1" smell="smallSmell" duration="600t" onexpired="dirtySmallWound" cures="bandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+	
+    <buff id="dirtySmallWound" duration="2" actions="setvar(scratch, 11)"/>
+	    
+    <buff id="tending2" requires="dirtyBandage1" duration="1200t" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged"/>
+	
+    <buff id="healSmallWound" duration="2" actions="setvar(scratch, 1)"/>
+    <!-- JZMOD WOUND 3-->
+    <buff id="wound" buffif="scratch gequal 11" mutex="severeWound,InfectedWound" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage">
 		<modify id="0" stat="stamina" amount="4" rate="5" />
 		<modify id="1" stat="speedmodifier" setValue="0.90" />
 	</buff>
-	<buff id="ScratchLv20" buffif="scratch gequal 20" debuffif="scratch lequal 19" actions="buff(bioInfection);debuff(ScratchLv19);debuff(ScratchLv2)" duration="0" name_key="Twenty Scratches" type="bleeding" tooltip_key="You have a lot of scratches" description_key="Twenty Scratches:Your cuts are infected.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="ui_game_symbol_character" cures="firstAidBandage,SanitizingBandage">
+    
+    <buff id="tending3" requires="wound" duration="1200t" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
+	
+    <buff id="dirtyBandage2" smell="mediumSmell" duration="600t" onexpired="dirtyWound" cures="firstAidBandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another First Aid Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+	
+    <buff id="dirtyWound" duration="1" actions="setvar(scratch, 16)"/>
+	    
+    <buff id="tending4" requires="dirtyBandage2" duration="1200t" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged"/>
+	
+    <buff id="healWound" duration="1" actions="setvar(scratch, 6)"/>
+	<!-- JZMOD WOUND 4-->
+    <buff id="severeWound" buffif="scratch gequal 16" mutex="InfectedWound" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(tending2);debuff(tending1);debuff(dirtyBandage2);debuff(dirtyBandage1);debuff(smallWound);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You’ve gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="severeWound" cures="SanitizingBandage">
 		<modify id="0" stat="stamina" amount="1" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.90" />
 	</buff>
-	<buff id="tendingWound" name_key="Tending Wound" duration="600t" mutex="tendingWound,sanitizingWound" actions="increment(scratch, -2, 0, 0, 1);min(scratch, 0);debuff(ScratchLv1);debuff(ScratchLv2);debuff(ScratchLv3);debuff(ScratchLv4);debuff(ScratchLv5);debuff(ScratchLv6);debuff(ScratchLv7);debuff(ScratchLv8);debuff(ScratchLv9);debuff(ScratchLv10);debuff(ScratchLv11);debuff(ScratchLv12);debuff(ScratchLv13);debuff(ScratchLv14);debuff(ScratchLv15);debuff(ScratchLv16);debuff(ScratchLv17);debuff(ScratchLv18);debuff(ScratchLv19);debuff(ScratchLv20)" tooltip_key="You are healing your scratches" description_key="You have healed two Scratches and can reapply First Aid Bandages or Sanitizing Bandages in six hours" icon="ui_game_symbol_medical" />
-	<buff id="sanitizingWound" name_key="Sanitizing Wound" duration="600t" mutex="tendingWound,sanitizingWound" actions="increment(scratch, -5, 0, 0, 1);min(scratch, 0);debuff(ScratchLv1);debuff(ScratchLv2);debuff(ScratchLv3);debuff(ScratchLv4);debuff(ScratchLv5);debuff(ScratchLv6);debuff(ScratchLv7);debuff(ScratchLv8);debuff(ScratchLv9);debuff(ScratchLv10);debuff(ScratchLv11);debuff(ScratchLv12);debuff(ScratchLv13);debuff(ScratchLv14);debuff(ScratchLv15);debuff(ScratchLv16);debuff(ScratchLv17);debuff(ScratchLv18);debuff(ScratchLv19);debuff(ScratchLv20)" tooltip_key="You are healing your scratches" description_key="You have healed five Scratches and can reapply First Aid Bandages or Sanitizing Bandages in six hours" icon="ui_game_symbol_medical" />
-	<!--Stimulan Addiction-->
+    
+    <buff id="gash" castsound="Buffs/critical_blunt" duration="2400t" name_key="Gash" type="bleeding" actions="buff(bleeding)" description_key="You have a large gash in your skin. You will need to use a suture kit to stitch it closed" tooltip_key="Thats going to need Stitches" icon="gash" cures="SuterKit">
+		<modify id="0" stat="stamina" amount="-1" rate="2" />
+		<modify id="1" stat="health" amount="-1" rate="15" />
+		<modify id="2" stat="coretemp" modifyValue="-25" />
+	</buff>
+    
+	<buff id="tending5" requires="severeWound" duration="1200t" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
+	
+    <buff id="dirtyBandage3" smell="largeSmell" duration="600t" onexpired="dirtySevereWound" cures="SanitizingBandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+	
+    <buff id="dirtySevereWound" duration="1" actions="setvar(scratch, 21)"/>
+	    
+    <buff id="tending6" requires="dirtyBandage3" duration="1200t" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged"/>
+	
+    <buff id="healSevereWound" duration="1" actions="setvar(scratch, 11)"/>
+    <!-- JZMOD WOUND 5-->
+    <buff id="InfectedWound" buffif="scratch gequal 21"  actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(dirtyBandage1);debuff(tending2);debuff(tending1);debuff(smallWound);debuff(wound);debuff(severeWound)" name_key="Infected Wound" type="bleeding" tooltip_key="You have a lot of scratches" description_key="Twenty Scratches:Your cuts are infected.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="InfectedWound" cures="SanitizingBandage">
+		<modify id="0" stat="stamina" amount="1" rate="1" />
+		<modify id="1" stat="speedmodifier" setValue="0.90" />
+	</buff>
+    
+    <buff id="tending7" requires="InfectedWound" duration="1200t" onexpired="dirtyBandage4" actions="debuff(InfectedWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
+	
+    <buff id="dirtyBandage4" smell="largeSmell" duration="300t" onexpired="dirtyInfectedWound" cures="SanitizingBandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+	
+    <buff id="dirtyInfectedWound" duration="1" actions="Kill"/>
+	    
+    <buff id="tending8" requires="dirtyBandage4" duration="1200t" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged"/>
+	
+    <buff id="healInfectedWound" duration="1" actions="setvar(scratch, 16)"/>
+        
+    <!--Stimulan Addiction-->
 	<buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_run" stack="extend">
 		<modify id="0" stat="stamina" amount="4" rate="1" />
 	</buff>
@@ -793,7 +819,14 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="health" amount="-15" rate="1" />
 	</buff>
     <!-- JZMOD Zombie Head Shot -->
+    <buff id="headshotMelee" mutex="isPlayer" hitmask="head" duration="2" stack="reset"  >
+        <modify id="1" stat="health" amount="-250" rate="1"/>
+    </buff>
+    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="2" stack="reset"  >
+        <modify id="1" stat="health" amount="-500" rate="1"/>
+    </buff>
     <buff id="headshot" mutex="isPlayer" hitmask="head" duration="2" stack="reset"  >
         <modify id="1" stat="health" amount="-1000" rate="1"/>
     </buff>
+    
 </buffs>

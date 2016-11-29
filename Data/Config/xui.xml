@@ -90,7 +90,7 @@
 																										<!-- 2: Medieval Compass - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
 <!--		<window name="windowCompass" /> -->
 			<window name="SMXQuestTracker" anchor="RightTop" />
-			<window name="SMXBuffFrame4" anchor="LeftBottom" />				<!-- Swappable frame. Change between different buff frames by changing the number. Choose between 1-4 -->
+			<window name="SMXBuffFrame3" anchor="LeftBottom" />				<!-- Swappable frame. Change between different buff frames by changing the number. Choose between 1-4 -->
 																										<!-- 1: Standard Buff Frames -->
 																										<!-- 2: Standard Buff Frames - Small -->
 																										<!-- 3: Improved Buff Frames -->
