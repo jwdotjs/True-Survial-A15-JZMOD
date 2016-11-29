@@ -631,7 +631,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	
     <buff id="ScratchesHealing" buffif="scratch gequal 1" debuffif="scratch gequal 6" actions="increment(scratch, -1, 800t, 0, 0);min(scratch, 0)" />
 	<!--JZMOD WOUND 1-->
-    <buff id="bruised" buffif="scratch gequal 1" debuffif="scratch less 1" mutex="smallWound,wound,severeWound,InfectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You’re getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="bruised" >
+    <buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,InfectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You’re getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="bruised" >
 		<modify id="0" stat="stamina" amount="1" rate="5" />
 	</buff>
     <!--JZMOD WOUND 2-->
@@ -654,7 +654,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	    
     <buff id="tending2" requires="dirtyBandage1" duration="1200t" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged"/>
 	
-    <buff id="healSmallWound" duration="2" actions="setvar(scratch, 1)"/>
+    <buff id="healSmallWound" duration="2" actions="setvar(scratch, 2)"/>
     <!-- JZMOD WOUND 3-->
     <buff id="wound" buffif="scratch gequal 11" mutex="severeWound,InfectedWound" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage">
 		<modify id="0" stat="stamina" amount="4" rate="5" />

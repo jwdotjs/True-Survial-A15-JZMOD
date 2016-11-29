@@ -526,7 +526,7 @@
 			</effect>
 		</crafting_skill>
 		<!--tools/traps-->
-        <perk name="woodWorkbench" icon="resource" description_key="Learn to craft a Wood Working Bench to craft more wood items and faster" title_key="Wood work bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+        <perk name="Wood Working Bench" icon="resource" description_key="Learn to craft a Wood Working Bench to craft more wood items and faster" title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
             <recipe name="workworkbench" unlock_level="1" />
 		</perk>

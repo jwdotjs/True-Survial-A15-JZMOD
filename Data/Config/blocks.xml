@@ -12581,7 +12581,7 @@ kind of free
 		<property name="HeatMapFrequency" value="25" />
 		<property class="Workstation">
 		<property name="Modules" value="output"/>
-            <property name="CraftingAreaRecipes" value="workbench" />
+            <property name="CraftingAreaRecipes" value="workworkbench" />
         </property>
         <property class="RepairItems"> <property name="forgedIron" value="35" /> <property name="wood" value="50" /> </property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />

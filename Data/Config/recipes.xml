@@ -2718,6 +2718,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="ToDryLeather" count="1"  craft_time="10" craft_exp_gain="5">
 		<ingredient name="FiberRope" count="4" />
+        <ingredient name="CuredLeather" count="4" />
 		<ingredient name="stick" count="10" />
 	</recipe>
     <recipe name="coal" count="1" craft_area="workBurnBarrel" craft_time="10" craft_exp_gain="5">
