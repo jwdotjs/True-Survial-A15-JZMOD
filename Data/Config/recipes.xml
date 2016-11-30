@@ -531,7 +531,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledRiverWater" count="1"/>
 </recipe>
 
-<recipe name="bottledRiverWater" count="1" craft_area="workcampfire" craft_time="30" craft_exp_gain="0">
+<recipe name="bottledRiverWater" count="1" craft_area="workcampfire" craft_time="10" craft_exp_gain="0">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="emptyJar" count="1"/>
 </recipe>
@@ -1365,6 +1365,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="huntingKnife" count="1" craft_time="30" craft_exp_gain="75">
 	<ingredient name="forgedIron" count="8"/>
 	<ingredient name="stick" count="2"/>
+    <ingredient name="SharpeningStone" count="1"/>
 </recipe>
 
 <recipe name="ironArrow" count="1" craft_time="3" craft_exp_gain="2">
@@ -2016,7 +2017,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
-<recipe name="steelArrowHead" count="1" craft_area="workforge" craft_tool="calipers" material_based="true" craft_time="3" craft_exp_gain="1">
+<recipe name="steelArrowHead" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="3" craft_exp_gain="1">
 	<ingredient name="unit_iron" count="5"/>
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
@@ -2413,10 +2414,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="egg" count="1" />
 		<ingredient name="Carrot" count="1" />
 		<ingredient name="bottledWater" count="1" />
-	</recipe>
-	<recipe name="HoneyGlazedMeat" count="1"  craft_area="workcampfire" craft_tool="cookingGrill" craft_time="30" craft_exp_gain="0">
-		<ingredient name="foodHoney" count="1" />
-		<ingredient name="rawMeat" count="1" />
 	</recipe>
 	<recipe name="WellnessJuice" count="1"  craft_area="workchemistryStation" craft_tool="beaker" craft_time="120" craft_exp_gain="50">
 		<ingredient name="foodYuccaJuice" count="1" />
@@ -4166,6 +4163,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="AppleBlueBerryGlazedMeat" count="1"  craft_area="workcampfire" craft_tool="FryingPan" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Apple" count="1" />
 		<ingredient name="blueberries" count="1" />
+        <ingredient name="rawMeat" count="1" />
 	</recipe>
     <recipe name="AppleYuccaGlazedMeat" count="1"  craft_area="workcampfire" craft_tool="FryingPan" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Apple" count="1" />
@@ -4181,6 +4179,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Apple" count="1" />
 		<ingredient name="blueberries" count="1" />
         <ingredient name="rawMeat" count="1" />
+        <ingredient name="foodHoney" count="1" />
 	</recipe>
     <recipe name="Ho/Ap/Yu GlazedMeat" count="1"  craft_area="workcampfire" craft_tool="FryingPan" craft_time="5" craft_exp_gain="0">
 		<ingredient name="Apple" count="1" />

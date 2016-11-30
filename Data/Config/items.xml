@@ -404,7 +404,7 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="4,12" />
 			<property name="BlockDamage" value="1,2" />
 			<property name="DegradationMax" value="25,150" />
-			<property name="DegradationRate" value="3,1" />
+			<property name="DegradationRate" value="10,1" />
 			<property name="DismembermentBaseChance" value="0,0.1" />
 			<property name="DismembermentBonus" value="0,0.0003" />
 		</property>
@@ -440,7 +440,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.organic" value="10" />
 			<property name="ToolCategory.Hunter" value="1" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
-			<property name="ActionExp" value="10" />
+			<property name="ActionExp" value="5" />
 			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Attributes">
@@ -7455,7 +7455,7 @@ which does not exist, yet. -->
 		<property name="Extends" value="schematicMaster" />
         <property name="EconomicValue" value="500" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="auger" />
+            <property name="Skills_to_gain" value="Auger" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
 	</item>
@@ -7463,7 +7463,7 @@ which does not exist, yet. -->
 		<property name="Extends" value="schematicMaster" />
         <property name="EconomicValue" value="500" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="chainsaw" />
+            <property name="Skills_to_gain" value="Chainsaw" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
 	</item>
@@ -17006,7 +17006,7 @@ which does not exist, yet. -->
 			<property name="ToolCategory.Butcher" value="1" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="4" />
+			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="5,10" />

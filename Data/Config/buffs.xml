@@ -125,7 +125,7 @@ built-in buff variables:
 
     <buff id="isPlayer" buffif="+full > 0" />
 	
-	<buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+	<buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="bleeding" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
         <modify id="0" stat="stamina" amount="-1" rate="1"/>
         <modify id="1" stat="health" amount="-1" rate="1"/>
     </buff>
@@ -250,23 +250,23 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="steroids" duration="3000" actions="addimmunity(sickness)" name_key="steroids" description_key="steroidsDesc" tooltip_key="steroidsTooltip" icon="ui_game_symbol_pills" />
 	<buff id="cured" duration="3000" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip" icon="ui_game_symbol_pills" stack="reset" />
 	<buff id="smelly" duration="30" name_key="smelly" smell="largeSmell" description_key="smellyDesc" tooltip_key="smellyTooltip" icon="ui_game_symbol_dysentery" />
-	<buff id="infection" name_key="Z Virus Stage 1" type="sickness" requires="bite" mutex="cured,infection1,infection2,infection3,infection4" onexpired="infection1" duration="7200t" description_key="You’ve been infected with the Z-Virus. Find some Anti-Viral Meds soon or you will die and turn" tooltip_key="You've been infected with the Z virus" icon="ui_game_symbol_infection" cures="AntivirialMeds,SuperPill"></buff>
+	<buff id="infection" name_key="Z Virus Stage 1" type="sickness" requires="bite" mutex="cured,infection1,infection2,infection3,infection4" onexpired="infection1" duration="7200t" description_key="You’ve been infected with the Z-Virus. Find some Anti-Viral Meds soon or you will die and turn" tooltip_key="You've been infected with the Z virus" icon="ZVirus" cures="AntivirialMeds,SuperPill"></buff>
 	<buff id="infection1" name_key="Z Virus Stage 2" type="sickness" onexpired="infection2" duration="7200t" description_key="The Z-Virus is spreading. Find some Anti-Viral Meds soon or you will die and turn" tooltip_key="The Z-Virus has progressed to Stage 2" icon="ui_game_symbol_infection" cures="AntivirialMeds,SuperPill">
 		<modify id="0" stat="stamina" amount="-0.3" rate="1" />
 	</buff>
-	<buff id="infection2" name_key="Z Virus Stage 3" type="sickness" duration="7200t" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection3" description_key="You now have progressed to Stage 3 of the Z-Virus, find some Anti-Viral soon time is running out.(Wellness loss 0.25 every game hour/lose 25hp every 21 game hours max of 3 times)" tooltip_key="The Z-Virus has progressed to Stage 3" icon="ui_game_symbol_infection" cures="AntivirialMeds,SuperPill">
+	<buff id="infection2" name_key="Z Virus Stage 3" type="sickness" duration="7200t" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection3" description_key="You now have progressed to Stage 3 of the Z-Virus, find some Anti-Viral soon time is running out.(Wellness loss 0.25 every game hour/lose 25hp every 21 game hours max of 3 times)" tooltip_key="The Z-Virus has progressed to Stage 3" icon="ZVirus" cures="AntivirialMeds,SuperPill">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 	</buff>
-	<buff id="infection3" name_key="Z Virus Stage 4" type="sickness" duration="2400t" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection4" description_key="The Z-Virus is spreading through your body fast, if not treated with Anti-Virials soon you will die and turn.(Wellness loss 0.25 every game hour/lose 25hp every 8 game hours max of 3 times)" tooltip_key="The Z-Virus has progressed to Stage 4" icon="ui_game_symbol_infection" cures="AntivirialMeds,SuperPill">
+	<buff id="infection3" name_key="Z Virus Stage 4" type="sickness" duration="2400t" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0)" onexpired="infection4" description_key="The Z-Virus is spreading through your body fast, if not treated with Anti-Virials soon you will die and turn.(Wellness loss 0.25 every game hour/lose 25hp every 8 game hours max of 3 times)" tooltip_key="The Z-Virus has progressed to Stage 4" icon="ZVirus" cures="AntivirialMeds,SuperPill">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 		<modify id="1" stat="health" amount="-1" rate="3" />
 	</buff>
-	<buff id="infection4" name_key="Z Virus Stage 5" actions="kill" description_key="infection4Desc" tooltip_key="infection4Tooltip" icon="ui_game_symbol_infection" />
+	<buff id="infection4" name_key="Z Virus Stage 5" actions="kill" description_key="infection4Desc" tooltip_key="infection4Tooltip" icon="ZVirus" />
 	<buff id="firstAid" duration="30" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAid" description_key="firstAidDesc" tooltip_key="firstAidTooltip" causes="firstAidBandage">
         <modify id="1" stat="health" amount="1" rate="1"/>
     </buff>	
 
-    <buff id="firstAidLarge" duration="10" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAidLarge" description_key="firstAidLargeDesc" tooltip_key="firstAidLargeTooltip" causes="firstAidKit">
+    <buff id="firstAidLarge" duration="10" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAidLarge" description_key="firstAidLargeDesc" tooltip_key="firstAidLargeTooltip" causes="FirstAidKit">
         <modify id="1" stat="health" amount="1" rate="1"/>
     </buff>		
 
@@ -547,7 +547,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="stuffed12" duration="1" actions="increment(stuffed, 12, 0, 0, 1)" />
     <buff id="stuffed16" duration="1" actions="increment(stuffed, 16, 0, 0, 1)" />
     <buff id="stuffed18" duration="1" actions="increment(stuffed, 18, 0, 0, 1)" />
-    <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" icon="ui_game_symbol_run"/>	
+    <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" />	
     <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 80" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="ui_game_symbol_run">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff> 
@@ -708,7 +708,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="healInfectedWound" duration="1" actions="setvar(scratch, 16)"/>
         
     <!--Stimulan Addiction-->
-	<buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_run" stack="extend">
+	<buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="Stimulant" stack="extend">
 		<modify id="0" stat="stamina" amount="4" rate="1" />
 	</buff>
 	<buff id="useStim" duration="1" actions="increment(stim, 1, 0, 0, 1);debuff(WithdrawalLv1);debuff(WithdrawalLv2);debuff(WithdrawalLv3)" />
@@ -753,22 +753,22 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="health" amount="-1" rate="1" />
 	</buff>
 	<buff id="shrapnel" castsound="Buffs/critical_blunt" duration="3" stack="reset" actions="increment(scratch, 10, 0, 0, 1);buff(brokenLeg);buff(bleeding)" />
-	<buff id="RedBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="ui_game_symbol_run" stack="extend">
+	<buff id="RedBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="RedBull" stack="extend">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 	</buff>
 	<buff id="Sedative" name_key="Sedative Shot" type="bleeding" duration="30" tooltip_key="Hit with a Sedative Shot" description_key="You have been shot with a sedative and are losing strength." icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 	</buff>
-	<buff id="Smoking" duration="100t" name_key="Smoking" type="sickness" actions="increment(@wellness, 0.1, 100t, 0, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every game hour)" icon="ui_game_symbol_stunned">
+	<buff id="Smoking" duration="100t" name_key="Smoking" type="sickness" actions="increment(@wellness, 0.1, 100t, 0, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every game hour)" icon="cigarette">
 		<modify id="0" stat="stamina" amount="-1" rate="5" />
 		<modify id="1" stat="food" amount="1" rate="140" />
 	</buff>
-	<buff id="vitamins" duration="1200t" name_key="Vitamins" tooltip_key="mmmmm Vitamins!" description_key="Vitamins make You feel a little stronger.(Wellness increase 0.2 every game hour)" actions="increment(@wellness, 0.2, 100t, 0, 0)" icon="ui_game_symbol_muscle" />
-	<buff id="Large1stAidKit" duration="10" name_key="First Aid" type="healthup" onexpired="splint" tooltip_key="That feels better" description_key="You applied first aid and are now healing." icon="ui_game_symbol_medical">
+	<buff id="vitamins" duration="1200t" name_key="Vitamins" tooltip_key="mmmmm Vitamins!" description_key="Vitamins make You feel a little stronger.(Wellness increase 0.2 every game hour)" actions="increment(@wellness, 0.2, 100t, 0, 0)" icon="vitamins" />
+	<buff id="Large1stAidKit" duration="10" name_key="First Aid" type="healthup" onexpired="splint" tooltip_key="That feels better" description_key="You applied first aid and are now healing." icon="firstAidKit">
 		<modify id="0" stat="health" amount="5" rate="1" />
 	</buff>
 	<!--Venom Poisoning/Anti-Venom-->
-	<buff id="AntiVenom" duration="200t" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning." icon="ui_game_symbol_medical" />
+	<buff id="AntiVenom" duration="200t" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning." icon="AntiVenom" />
 	<buff id="VenomPoisoning1" name_key="VenomPoisoning Stage 1" type="sickness" mutex="AntiVenom,VenomPoisoning2,VenomPoisoning3,VenomPoisoning4" onexpired="VenomPoisoning2" duration="2400t" tooltip_key="You've been poisoned" description_key="You have been poisoned with venom.Use antivenom to heal yourself." icon="ui_game_symbol_skull" cures="AntiVenom">
 		<modify id="0" stat="stamina" amount="-1" rate="3" />
 	</buff>
