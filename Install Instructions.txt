@@ -6,6 +6,7 @@ Note-The .gitattributes and .gitignore- files and the .git Folder are not import
 2) Place the True Survival Mod Folder in the main 7 Days to Die Directory
 3) Next open the Data Folder in your 7 Days to Die Main Directory. (It should be in the same location you just pasted the Mod Folder.)
 4) Next in that location remove or delete your Config Folder and replace it with the True Survival Config Folder.
+5) Then open the True Survival Prefab Folder, select all and copy. Open your 7D2D Prefab folder paste and over write the copied files into the Prefab Folder
 5) Tada you’re done and ready to be eaten by the horde 
 Have fun,
 Spider
