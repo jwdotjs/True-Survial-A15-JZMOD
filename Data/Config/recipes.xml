@@ -1068,7 +1068,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="ductTape" count="1" craft_area="workchemistryStation" craft_time="30" craft_exp_gain="0">
-	<ingredient name="glue" count="2"/>
+	<ingredient name="glue" count="1"/>
 	<ingredient name="cloth" count="1"/>
 </recipe>
 
@@ -1093,6 +1093,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="fertilizer" count="1" craft_area="workSeedNursery" craft_time="300" craft_exp_gain="0">
 	<ingredient name="turd" count="1"/>
+    <ingredient name="BoneMeal" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="20"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
@@ -1226,8 +1227,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="2"/>
 </recipe>
 
-<recipe name="glue" count="1" craft_area="workchemistryStation" craft_tool="beaker" craft_time="15" craft_exp_gain="10">
-	<ingredient name="femur" count="1"/>
+<recipe name="glue" count="2" craft_area="workchemistryStation" craft_tool="beaker" craft_time="15" craft_exp_gain="10">
+	<ingredient name="Hoof" count="2"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -4287,6 +4288,39 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Sutures" count="1" />
 		<ingredient name="SewingNeedle" count="1" />
 	</recipe>
+    
+    <recipe name="Sutures" count="1"  craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Sinew" count="1" />
+        <ingredient name="bottledWater" count="1" />
+	</recipe>
+    <recipe name="BoneMeal" count="1" craft_area="workchemistryStation" craft_tool="MortarAndPestle" craft_time="10" craft_exp_gain="0" >
+		<ingredient name="femur" count="3" />
+	</recipe>
+    <recipe name="FishingLine" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Sinew" count="20" />
+		<ingredient name="bottledWater" count="1" />
+	</recipe>
+    <recipe name="BowString" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Sinew" count="5" />
+		<ingredient name="bottledWater" count="1" />
+	</recipe>
+    <recipe name="Lashing" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
+		<ingredient name="Sinew" count="10" />
+		<ingredient name="bottledWater" count="1" />
+	</recipe>
+    <recipe name="SharpeningStone" count="1" craft_area="workforge" material_based="true" craft_time="15" craft_exp_gain="0">
+		<ingredient name="unit_stone" count="50" />
+	</recipe>
+    <recipe name="Nitroglycerin" count="1" craft_area="workchemistryStation" craft_tool="beaker" craft_time="30" craft_exp_gain="0" >
+		<ingredient name="tallow" count="1" />
+		<ingredient name="potassiumNitratePowder" count="5" />
+        <ingredient name="coal" count="5" />
+	</recipe>
+    <recipe name="BowString" count="1"  craft_time="5" craft_exp_gain="50">
+		<ingredient name="Sutures" count="1" />
+		<ingredient name="SewingNeedle" count="1" />
+	</recipe>
+    
 </recipes>
 <!-- To do (maybe / later)cookingGrill
 

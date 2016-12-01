@@ -683,6 +683,7 @@
 		<item name="Easy as ...." prob="0.7" />
 		<item name="Wood Shingles Book" prob="0.7" />
 		<item name="Fencing" prob="0.7" />
+        <item name="DuctTapeBook" prob="0.7" />
 		<item name="Miscellaneous Weekly" prob="0.4" />
 		<item name="Armor Smithing Weekly" prob="0.4" />
 		<item name="Leather Working Weekly" prob="0.4" />
@@ -736,6 +737,7 @@
 		<item name="pipeBomb" count="1,3" prob="0.8" />
 		<item name="IncendiaryPowder" count="5,30" prob="0.9" />
 		<item name="tnt" count="1,4" prob="0.5" />
+        <item name="Nitroglycerin" count="1,4" prob="0.5" />
 		<item name="gunPowder" count="12,36" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="cannedfood" count="1">
@@ -1115,6 +1117,7 @@
 		<item name="beaker" prob="0.06" />
 		<item name="antibiotics" prob="0.35" />
 		<item name="AntiVenom" prob="0.6" />
+        <item name="SuterKit" prob="0.6" />
 		<item name="AntivirialMeds" prob="0.75" />
 		<item name="bloodDrawKit" prob="0.4" />
 		<item name="MortarAndPestle" prob="0.1" />
@@ -1135,10 +1138,13 @@
 		<item name="PurificationTablets" count="1,2" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="sportingGoods" count="1">
+        <item name="SharpeningStone" prob="0.2" />
+        <item name="FishingLine" prob="0.2" />
+        <item name="BowString" prob="0.2" />
 		<item name="ScubaTankFull" prob="0.2" />
 		<item name="flashlight02" prob="0.3" />
 		<item name="bucket" prob="0.1" />
-		<item name="huntingKnife" prob="0.3" />
+		<item name="huntingKnife" count="1" quality="1,100" prob="0.3" />
 		<item name="weaponRepairKit" count="1,3" prob="0.5" />
 		<item name="gunPowder" count="20,50" prob="0.3" />
 		<item name="bulletCasing" count="20,50" prob="0.3" />
@@ -1889,7 +1895,7 @@
 	<item name="clubIron"/>
 	<item name="clubBarbed" prob="0.6"/>
 	<item name="clubSpiked" prob="0.5"/>
-	<item name="huntingKnife"/>
+	<item name="huntingKnife" count="1" quality="1,100" prob="0.9" />
 	<item name="machete" prob="0.8"/>
 	<item name="firstAidKit"/>
 	<item name="smallEngine" prob=".3"/>

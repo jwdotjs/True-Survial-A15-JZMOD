@@ -221,7 +221,7 @@
 		<perk name="Machete" icon="knife" description_key="Learn to craft a Machete on the metal work bench" title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="5" />
 			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="10" />
-			<recipe name="machete" unlock_level="2" />
+			<recipe name="machete" unlock_level="1" />
 		</perk>
 		<perk name="Knife Guy" icon="knife" description_key="knifeGuyDesc" title_key="knifeGuy" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="10" />
@@ -1745,11 +1745,11 @@
 		</perk>
         <perk name="Candles" icon="science" description_key="Learn to craft Candles" title_key="Candles" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="2" />
-			<recipe name="candle" unlock_level="2" />
+			<recipe name="candle" unlock_level="1" />
 		</perk>
         <perk name="Glue" icon="science" description_key="Learn to craft Glue with the chemistry set" title_key="Glue" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="2" />
-			<recipe name="glue" unlock_level="3" />
+			<recipe name="glue" unlock_level="1" />
 		</perk>
 		
        
@@ -1946,7 +1946,7 @@
             <recipe name="InfectedShot" unlock_level="1" />
             <recipe name="SedativeShot" unlock_level="1" />
             <recipe name="firstAidKit" unlock_level="1" />
-			<recipe name="Large1stAidKit" unlock_level="2" />
+			<recipe name="Large1stAidKit" unlock_level="1" />
             <recipe name="firstAidBandage" unlock_level="1" />
             <recipe name="aloeCream" unlock_level="1" />
 		</perk>

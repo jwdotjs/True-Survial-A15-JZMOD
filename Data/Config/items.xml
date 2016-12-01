@@ -1080,7 +1080,7 @@ Mesh files no longer used:
 			<property name="Gain_health" value="0" />
 			<property name="Gain_stamina" value="5" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_sickness" value="15" />
 			<property name="Condition_raycast_block" value="826,1472" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
@@ -6215,7 +6215,7 @@ which does not exist, yet. -->
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_food" value="0" />
 			<property name="Buff" value="yuccaJuiceCooling,stuffed2" />
 			<property name="Gain_stamina" value="40" />
@@ -6915,7 +6915,7 @@ which does not exist, yet. -->
 			<property name="Gain_health" value="0" />
 			<property name="Gain_stamina" value="5" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_sickness" value="15" />
 			<property name="Gain_wellness" value="-0.1" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
@@ -6941,7 +6941,7 @@ which does not exist, yet. -->
 			<property name="Gain_health" value="0" />
 			<property name="Gain_stamina" value="20" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Create_item" value="canEmpty" />
 			<property name="Debuff" value="burningSmall,burning" />
@@ -6979,7 +6979,7 @@ which does not exist, yet. -->
 			<property name="Gain_health" value="0" />
 			<property name="Gain_stamina" value="5" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_sickness" value="15" />
 			<property name="Gain_wellness" value="-0.1" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
@@ -7017,7 +7017,7 @@ which does not exist, yet. -->
 			<property name="Gain_health" value="0" />
 			<property name="Gain_stamina" value="20" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
@@ -7034,7 +7034,7 @@ which does not exist, yet. -->
             <property name="Delay" value="1.5" />
             <property name="Gain_stamina" value="10" />
             <property name="Gain_food" value="0" />
-            <property name="Gain_water" value="10" />
+            <property name="Gain_water" value="15" />
             <property name="Buff" value="eatsnowberryJuiceTrigger" />
             <property name="Debuff" value="burningSmall,burning" />
         </property>
@@ -7065,7 +7065,7 @@ which does not exist, yet. -->
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="20" />
+			<property name="Gain_water" value="25" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Create_item" value="emptyJar" />
@@ -7101,7 +7101,7 @@ which does not exist, yet. -->
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="20" />
+			<property name="Gain_water" value="25" />
 			<property name="Buff" value="redTeaCooling,stuffed2" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
@@ -7125,7 +7125,7 @@ which does not exist, yet. -->
         <property name="HoldType" value="3" /> -->
         <property name="EconomicValue" value="100" />
         <property class="Action1">
-            <property name="Gain_water" value="8" />
+            <property name="Gain_water" value="13" />
             <property name="Gain_stamina" value="0" />
             <property name="Buff" value="megaCrushBuff" />
             <property name="Debuff" value="burningSmall,burning" />
@@ -14503,7 +14503,7 @@ which does not exist, yet. -->
 		</property>
 	</item>
 	<!--JZMOD DRUGS-->
-    <item id="2039" name="SuterKit">
+    <item id="2049" name="SuterKit">
 		<property name="Meshfile" value="Items/Health/gauze" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="organic" />
@@ -15228,7 +15228,7 @@ which does not exist, yet. -->
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Create_item" value="emptyJar" />
@@ -15263,7 +15263,7 @@ which does not exist, yet. -->
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Create_item" value="emptyJar" />
@@ -15298,7 +15298,7 @@ which does not exist, yet. -->
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="15" />
+			<property name="Gain_water" value="20" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 			<property name="Create_item" value="emptyJar" />
@@ -15390,7 +15390,7 @@ which does not exist, yet. -->
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="20" />
+			<property name="Gain_water" value="25" />
 			<property name="Gain_stamina" value="40" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
@@ -17854,5 +17854,13 @@ which does not exist, yet. -->
 		<property name="RepairTime" value="10" />
 		<property name="RepairAmount" value="300" />
 		<property name="Group" value="Resources" />
+	</item>
+    <item id="2050" name="DuctTapeBook">
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="ductTape" />
+        </property>
+		<property name="DescriptionKey" value="DuctTapeBookDesc" />
+		<property name="Group" value="Books" />
 	</item>
 </items>

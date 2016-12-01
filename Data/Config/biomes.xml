@@ -679,6 +679,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeDesertShrub" prob="0.1"/>
 				<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.02"/>
 				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.03"/>
+                <decoration type="block" blockname="Wheat" prob="0.03"/>
 				<decoration type="block" blockname="plantedCorn3Harvest" prob=".009"/>
 				<decoration type="block" blockname="lootPlains" prob="0.00025"/>
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob =".5" />

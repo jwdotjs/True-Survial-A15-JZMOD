@@ -287,7 +287,7 @@ then add recipes for those white/red/green metals
 		<property name="Texture" value="10" />
 		<property name="DropScale" value="2" />
 		<property name="Map.Color" value="204,177,131" />
-        <!--<property name="BuffsWhenWalkedOn" value="fastTravel" />-->
+        
 		<property class="RepairItems"><property name="concreteMix" value="5" /></property>
         <property name="Group" value="Building" />
         <drop event="Harvest" name="rockSmall" count="13" />
@@ -7746,7 +7746,10 @@ kind of free
         <property name="MultiBlockDim" value="1,4,1" />
         <property name="Collide" value="melee" />
         <property name="Texture" value="529" />
-        <drop event="Harvest" name="corn" count="1" />
+        <property name="CanPickup" value="false" />
+		<drop event="Destroy" name="corn" count="0" prob="1" />
+		<drop event="Harvest" name="corn" count="1,2" tool_category="Farm" />
+		<drop event="Harvest" name="corn" count="0" />
         <property name="CropsGrown.BonusHarvestDivisor" value="99999" />
     </block>
 
@@ -12474,7 +12477,6 @@ kind of free
 		<property name="Texture" value="10" />
 		<property name="DropScale" value="2" />
 		<property name="Map.Color" value="204,177,131" />
-		<property name="BuffsWhenWalkedOn" value="fastTravel" />
 		<property class="RepairItems"> <property name="concreteMix" value="10" /> </property>
 		<drop event="Harvest" name="rockSmall" count="8" />
 		<drop event="Destroy" name="rockSmall" count="8" />

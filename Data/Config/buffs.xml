@@ -829,4 +829,4 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
         <modify id="1" stat="health" amount="-1000" rate="1"/>
     </buff>
     
-</buffs>
+    </buffs>
