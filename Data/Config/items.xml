@@ -80,7 +80,7 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="8,14" />
 			<property name="BlockDamage" value="3,12" />
 			<property name="DegradationMax" value="50,600" />
-			<property name="DegradationRate" value="3,1" />
+			<property name="DegradationRate" value="5,1" />
 		</property>
 		<property name="CritChance" value=".10" />
 		<property name="DescriptionKey" value="clubWoodDesc" />
@@ -3224,7 +3224,7 @@ which does not exist, yet. -->
 			<property name="DismembermentBonus" value="0,0.00036" />
 			<property name="DegradationMax" value="3000,6000" />
 		</property>
-        <property name="CraftingSkillGroup" value="Egineering"/>
+        <property name="CraftingSkillGroup" value="Engineering"/>
 	<property name="Group" value="Resources,Tools/Traps" />
 	</item>
 	<item id="265" name="partsAuger_parts">
@@ -5852,8 +5852,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-            <property name="Buff" value="tending1,tending2,tendingbite,tendingbite2" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -5863,8 +5862,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Buff" value="tending1,tending2" />
-            <property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property name="Group" value="Medicine" />
 		<property name="DescriptionKey" value="bandageDesc" />
@@ -5877,12 +5875,12 @@ which does not exist, yet. -->
 		<property name="Extends" value="bandage" />
         <property name="EconomicValue" value="15" />
 		<property class="Action0">
-			<property name="Debuff" value="bleeding" />
-			<property name="Buff" value="firstAid,tending3,tending4" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Buff" value="firstAid" />
 		</property>
 		<property class="Action1">
-			<property name="Debuff" value="bleeding" />
-			<property name="Buff" value="firstAid,tending3,tending4" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Buff" value="firstAid" />
 		</property>
 		<property name="DescriptionKey" value="firstAidBandageDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -5895,13 +5893,13 @@ which does not exist, yet. -->
 		<property class="Action0">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
-			<property name="Debuff" value="bleeding,burning" />
+		    <property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property class="Action1">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
-			<property name="Debuff" value="bleeding,burning" />
+			<property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 			<property name="Create_item" value="DeadBattery" />
 		</property>
@@ -6109,10 +6107,10 @@ which does not exist, yet. -->
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
         <property class="Action1">
-            <property name="Gain_food" value="-10" />
-            <property name="Gain_water" value="-10" />
-            <property name="Gain_wellness" value="10" />
-            <property name="Buff" value="stuffed18" />
+            <property name="Gain_food" value="0" />
+            <property name="Gain_water" value="0" />
+            <property name="Gain_wellness" value="0" />
+            <property name="Buff" value="scratch,bite,VenomPoisoning1" />
         </property>
     </item>
     
@@ -14514,7 +14512,7 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="0" />
+			<property name="Gain_health" value="-5" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
@@ -14544,8 +14542,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Debuff" value="bleeding" />
-			<property name="Buff" value="tending5,tending6,tending7,tending8" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Create_item" value="emptyjar" />
 		</property>
 		<property name="DescriptionKey" value="SanitizingBandageDesc" />
@@ -14855,7 +14852,7 @@ which does not exist, yet. -->
 			<property name="Gain_water" value="0" />
 			<property name="Create_item" value="DeadBattery" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
-			<property name="Debuff" value="bleeding,burning" />
+		    <property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge,splint" />
 		</property>
 		<property class="Preview">
@@ -14939,12 +14936,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="7" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="-5" />
 			<property name="Gain_sickness" value="30" />
-			<property name="Buff" value="foodPoisoning" />
+			<property name="Buff" value="foodPoisoning,eatFood_3_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="ExLargeSmell" />
@@ -14961,12 +14958,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="6" />
 			<property name="Gain_water" value="1" />
 			<property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.2" />
-            <property name="Buff" value="stuffed2" />
+            <property name="Buff" value="stuffed2,eatFood_2_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="CustomIcon" value="Fried Egg Omelet" />
@@ -14982,12 +14979,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="8" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="-5" />
 			<property name="Gain_sickness" value="60" />
-			<property name="Buff" value="foodPoisoning" />
+			<property name="Buff" value="foodPoisoning,eatFood_2_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="ExLargeSmell" />
@@ -15003,12 +15000,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="15" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="12" />
             <property name="Gain_stamina" value="7" />
 			<property name="Gain_wellness" value="0.8" />
-            <property name="Buff" value="stuffed16" />
+            <property name="Buff" value="stuffed8,eatFood_15_Trigger" />
 			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_drinking" />
 		</property>
@@ -15024,12 +15021,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="6" />
 			<property name="Gain_water" value="-5" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.2" />
-            <property name="Buff" value="stuffed2" />
+            <property name="Buff" value="stuffed2,eatFood_3_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="largeSmell" />
@@ -15044,12 +15041,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="8" />
 			<property name="Gain_water" value="-5" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.3" />
-            <property name="Buff" value="stuffed3" />
+            <property name="Buff" value="stuffed3,eatFood_5_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="LargeSmell" />
@@ -15064,12 +15061,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="7" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="12" />
 			<property name="Gain_water" value="6" />
             <property name="Gain_stamina" value="1" />
 			<property name="Gain_wellness" value="0.4" />
-            <property name="Buff" value="stuffed4" />
+            <property name="Buff" value="stuffed4,eatFood_7_Trigger" />
 			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
@@ -15106,10 +15103,11 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="1" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="1" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
+            <property name="Buff" value="eatFood_1_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="DescriptionKey" value="CarrotDesc" />
@@ -15147,12 +15145,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="-4" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.3" />
-            <property name="Buff" value="stuffed3" />
+            <property name="Buff" value="stuffed3,eatFood_5_Trigger" />
 			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
@@ -15167,12 +15165,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="-4" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.3" />
-            <property name="Buff" value="stuffed3" />
+            <property name="Buff" value="stuffed3,eatFood_5_Trigger" />
 			<property name="Gain_stamina" value="0" />
 			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_eating" />
@@ -15317,12 +15315,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="17" />
 			<property name="Gain_water" value="-12" />
             <property name="Gain_stamina" value="-2" />
 			<property name="Gain_wellness" value="0.1" />
-            <property name="Buff" value="stuffed1" />
+            <property name="Buff" value="stuffed1,eatFood_5_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
@@ -15337,11 +15335,11 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="-4" />
 			<property name="Gain_wellness" value="0.1" />
-            <property name="Buff" value="stuffed1" />
+            <property name="Buff" value="stuffed1,eatFood_2_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
@@ -15369,10 +15367,11 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="1" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="7" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_wellness" value="0" />
+            <property name="Buff" value="eatFood_1_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="DescriptionKey" value="GrubsDesc" />
@@ -15413,12 +15412,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="9" />
 			<property name="Gain_water" value="-5" />
             <property name="Gain_stamina" value="-2" />
 			<property name="Gain_wellness" value="0.6" />
-            <property name="Buff" value="stuffed6" />
+            <property name="Buff" value="stuffed6,eatFood_4_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="DescriptionKey" value="BoxLunchDesc" />
@@ -15434,11 +15433,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="1" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="7" />
 			<property name="Gain_water" value="-3" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0" />
+            <property name="Buff" value="eatFood_1_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="DescriptionKey" value="DonutsDesc" />
@@ -15454,12 +15454,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="20" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="30" />
 			<property name="Gain_water" value="1" />
             <property name="Gain_stamina" value="-20" />
 			<property name="Gain_wellness" value="1.8" />
-            <property name="Buff" value="stuffed18" />
+            <property name="Buff" value="stuffed18,eatFood_20_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="DescriptionKey" value="BrainShnitzelDesc" />
@@ -15505,12 +15505,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="18" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="28" />
 			<property name="Gain_water" value="-5" />
             <property name="Gain_stamina" value="-10" />
 			<property name="Gain_wellness" value="0.4" />
-            <property name="Buff" value="stuffed4" />
+            <property name="Buff" value="stuffed4,eatFood_18_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="LargeSmell" />
@@ -15530,12 +15530,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="1" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="-5" />
 			<property name="Gain_sickness" value="30" />
-			<property name="Buff" value="foodPoisoning" />
+			<property name="Buff" value="foodPoisoning,eatFood_1_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="ExLargeSmell" />
@@ -15554,12 +15554,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="-5" />
 			<property name="Gain_sickness" value="30" />
-			<property name="Buff" value="foodPoisoning" />
+			<property name="Buff" value="foodPoisoning,eatFood_2_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="ExLargeSmell" />
@@ -15578,12 +15578,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="1" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_stamina" value="-5" />
 			<property name="Gain_sickness" value="30" />
-			<property name="Buff" value="foodPoisoning" />
+			<property name="Buff" value="foodPoisoning,eatFood_1_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="ExLargeSmell" />
@@ -15600,12 +15600,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="2.1" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="9" />
 			<property name="Gain_water" value="-5" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.7" />
-            <property name="Buff" value="stuffed7" />
+            <property name="Buff" value="stuffed7,eatFood_5_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="mediumSmell" />
@@ -15622,12 +15622,12 @@ which does not exist, yet. -->
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="2.1" />
 			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="6" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="8" />
 			<property name="Gain_water" value="-5" />
             <property name="Gain_stamina" value="-3" />
 			<property name="Gain_wellness" value="0.9" />
-            <property name="Buff" value="stuffed9" />
+            <property name="Buff" value="stuffed9,eatFood_6_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Smell" value="mediumSmell" />
@@ -16317,18 +16317,6 @@ which does not exist, yet. -->
 		<property name="Stacknumber" value="50" />
 		<!-- STK food -->
 		<property name="CraftingIngredientTime" value="15" />
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1.0" />
-			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="1" />
-			<property name="Gain_food" value="2" />
-			<property name="Gain_water" value="1" />
-			<property name="Gain_stamina" value="0" />
-			<property name="Gain_sickness" value="30" />
-			<property name="Buff" value="foodPoisoning" />
-			<property name="Sound_start" value="UseActions/player_eating" />
-		</property>
 		<property name="Group" value="Food/Cooking" />
 	</item>
     <!--SDX
@@ -17071,10 +17059,11 @@ which does not exist, yet. -->
     <item id="1973" name="FruitSalad Ap/Bl">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="4" />
 			<property name="Gain_stamina" value="3" />
+            <property name="Buff" value="eatFood_2_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17082,10 +17071,11 @@ which does not exist, yet. -->
     <item id="1974" name="FruitSalad Ap/Yu">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="4" />
 			<property name="Gain_stamina" value="4" />
+            <property name="Buff" value="eatFood_2_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17093,10 +17083,11 @@ which does not exist, yet. -->
     <item id="1975" name="FruitSalad Ap/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="6" />
 			<property name="Gain_water" value="10" />
 			<property name="Gain_stamina" value="13" />
+            <property name="Buff" value="eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17104,10 +17095,11 @@ which does not exist, yet. -->
     <item id="1976" name="FruitSalad Bl/Yu">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="4" />
 			<property name="Gain_stamina" value="3" />
+            <property name="Buff" value="eatFood_2_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17115,10 +17107,11 @@ which does not exist, yet. -->
     <item id="1977" name="FruitSalad Bl/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="6" />
 			<property name="Gain_water" value="10" />
 			<property name="Gain_stamina" value="12" />
+            <property name="Buff" value="eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17126,10 +17119,11 @@ which does not exist, yet. -->
     <item id="1978" name="FruitSalad Yu/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="6" />
 			<property name="Gain_water" value="10" />
 			<property name="Gain_stamina" value="13" />
+            <property name="Buff" value="eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17137,10 +17131,11 @@ which does not exist, yet. -->
     <item id="1979" name="FruitSalad Ap/Bl/Yu">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="6" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="9" />
 			<property name="Gain_water" value="9" />
 			<property name="Gain_stamina" value="8" />
+            <property name="Buff" value="eatFood_6_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17148,10 +17143,11 @@ which does not exist, yet. -->
     <item id="1980" name="FruitSalad Ap/Bl/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="11" />
 			<property name="Gain_water" value="15" />
 			<property name="Gain_stamina" value="17" />
+            <property name="Buff" value="eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17159,10 +17155,11 @@ which does not exist, yet. -->
     <item id="1981" name="FruitSalad Bl/Yu/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="11" />
 			<property name="Gain_water" value="15" />
 			<property name="Gain_stamina" value="17" />
+            <property name="Buff" value="eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17170,10 +17167,11 @@ which does not exist, yet. -->
     <item id="1982" name="FruitSalad Ap/Yu/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="11" />
 			<property name="Gain_water" value="15" />
 			<property name="Gain_stamina" value="18" />
+            <property name="Buff" value="eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17181,10 +17179,11 @@ which does not exist, yet. -->
     <item id="1983" name="FruitSalad AP/Bl/Yu/Pe">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="14" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="18" />
 			<property name="Gain_water" value="22" />
 			<property name="Gain_stamina" value="24" />
+            <property name="Buff" value="eatFood_14_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitSalad" />
         <property name="DescriptionKey" value="FruitSaladDesc"/>
@@ -17192,10 +17191,11 @@ which does not exist, yet. -->
     <item id="1984" name="VeggieSalad To/Po">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="2" />
+            <property name="Buff" value="eatFood_2_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17203,10 +17203,11 @@ which does not exist, yet. -->
     <item id="1985" name="VeggieSalad To/Co">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="2" />
+            <property name="Buff" value="eatFood_2_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17214,10 +17215,11 @@ which does not exist, yet. -->
     <item id="1986" name="VeggieSalad To/Ca">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="2" />
+            <property name="Buff" value="eatFood_3_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17225,10 +17227,11 @@ which does not exist, yet. -->
     <item id="1987" name="VeggieSalad Po/Co">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="2" />
+            <property name="Buff" value="eatFood_2_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17236,10 +17239,11 @@ which does not exist, yet. -->
     <item id="1988" name="VeggieSalad Po/Ca">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="2" />
+            <property name="Buff" value="eatFood_3_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17247,10 +17251,11 @@ which does not exist, yet. -->
     <item id="1989" name="VeggieSalad Co/Ca">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="2" />
+            <property name="Buff" value="eatFood_3_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17258,10 +17263,11 @@ which does not exist, yet. -->
     <item id="1990" name="VeggieSalad To/Po/Co">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="6" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="6" />
+            <property name="Buff" value="eatFood_6_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17269,10 +17275,11 @@ which does not exist, yet. -->
     <item id="1991" name="VeggieSalad To/Po/Ca">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="7" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="6" />
+            <property name="Buff" value="eatFood_7_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17280,10 +17287,11 @@ which does not exist, yet. -->
     <item id="1992" name="VeggieSalad Po/Co/Ca">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="7" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="6" />
+            <property name="Buff" value="eatFood_7_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17291,10 +17299,11 @@ which does not exist, yet. -->
     <item id="1993" name="VeggieSalad To/Co/Ca">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="7" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="9" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="6" />
+            <property name="Buff" value="eatFood_7_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17302,10 +17311,11 @@ which does not exist, yet. -->
     <item id="1994" name="VeggieSalad To/Po/Ca/Co">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="13" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="17" />
 			<property name="Gain_water" value="13" />
 			<property name="Gain_stamina" value="13" />
+            <property name="Buff" value="eatFood_13_Trigger" />
         </property>
         <property name="CustomIcon" value="VeggieSalad" />
         <property name="DescriptionKey" value="VeggieSaladDesc"/>
@@ -17314,381 +17324,381 @@ which does not exist, yet. -->
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="ShamSandwich" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="16" />
 			<property name="Gain_water" value="-7" />
 			<property name="Gain_stamina" value="-1" />
             <property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_8_Trigger" />
         </property>
 	</item>
     <item id="1996" name="GrilledSandwich">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="ShamSandwich" />
 		<property class="Action1">
-			<property name="Gain_health" value="10" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="18" />
 			<property name="Gain_water" value="-7" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_10_Trigger" />
         </property>
 	</item>
     <item id="1997" name="BoiledSandwich">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="ShamSandwich" />
 		<property class="Action1">
-			<property name="Gain_health" value="12" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="20" />
 			<property name="Gain_water" value="4" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="stuffed1" />
+			<property name="Buff" value="stuffed1,eatFood_12_Trigger" />
         </property>
 	</item>
     <item id="1998" name="StirFry Po/Co">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="2" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="5" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="2" />
             <property name="Gain_wellness" value="0.1" />
-			<property name="Buff" value="stuffed1" />
+			<property name="Buff" value="stuffed1,eatFood_2_Trigger" />
         </property>
 	</item>
     <item id="1999" name="StirFry Po/Ca">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="2" />
             <property name="Gain_wellness" value="0.1" />
-			<property name="Buff" value="stuffed1" />
+			<property name="Buff" value="stuffed1,eatFood_3_Trigger" />
         </property>
 	</item>
     <item id="2000" name="StirFry Po/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="11" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
 	</item>
     <item id="2001" name="StirFry Co/Ca">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="3" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="4" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="2" />
             <property name="Gain_wellness" value="0.1" />
-			<property name="Buff" value="stuffed1" />
+			<property name="Buff" value="stuffed1,eatFood_3_Trigger" />
         </property>
 	</item>
     <item id="2002" name="StirFry Co/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
 	</item>
     <item id="2003" name="StirFry Ca/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="-3" />
      		<property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_5_Trigger" />
         </property>
 	</item>
     <item id="2004" name="StirFry Po/Ca/Co">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="7" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="6" />
  			<property name="Gain_wellness" value="0.2" />
-			<property name="Buff" value="stuffed2" />
+			<property name="Buff" value="stuffed2,eatFood_7_Trigger" />
         </property>
 	</item>
     <item id="2005" name="StirFry Po/Co/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="16" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="1" />
     		<property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
 	</item>
     <item id="2006" name="StirFry Co/Ca/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="9" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="1" />
      		<property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
 	</item>
     <item id="2007" name="StirFry Po/Ca/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="9" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="16" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="1" />
       		<property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
 	</item>
     <item id="2008" name="StirFry Po/Co/Ca/Me">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
 		<property class="Action1">
-			<property name="Gain_health" value="15" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="12" />
 			<property name="Gain_stamina" value="7" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="stuffed1" />
+			<property name="Buff" value="stuffed1,eatFood_15_Trigger" />
         </property>
 	</item>
     <item id="2009" name="HoneyGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="14" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="37" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1" />
-			<property name="Buff" value="stuffed10" />
+			<property name="Buff" value="stuffed10,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2010" name="AppleGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="-2" />
        		<property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2011" name="BlueBerryGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="-3" />
      		<property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2012" name="YuccaGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="-2" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2013" name="AppleHoneyGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="19" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="42" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1.1" />
-			<property name="Buff" value="stuffed11" />
+			<property name="Buff" value="stuffed11,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2014" name="BlueBerryHoneyGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="19" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="41" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1.1" />
-			<property name="Buff" value="stuffed11" />
+			<property name="Buff" value="stuffed11,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2015" name="YuccaHoneyGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="19" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="42" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1.1" />
-			<property name="Buff" value="stuffed11" />
+			<property name="Buff" value="stuffed11,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2016" name="AppleBlueBerryGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="8" />
 			<property name="Gain_stamina" value="2" />
     		<property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2017" name="AppleYuccaGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="8" />
 			<property name="Gain_stamina" value="3" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2018" name="BlueBerryYuccaGlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="8" />
 			<property name="Gain_stamina" value="2" />
      		<property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2019" name="Ho/Ap/Bl GlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="14" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="26" />
 			<property name="Gain_water" value="14" />
 			<property name="Gain_stamina" value="48" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1.2" />
-			<property name="Buff" value="stuffed12" />
+			<property name="Buff" value="stuffed12,eatFood_14_Trigger" />
         </property>
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2020" name="Ho/Ap/Yu GlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="14" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="26" />
 			<property name="Gain_water" value="14" />
 			<property name="Gain_stamina" value="49" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1.2" />
-			<property name="Buff" value="stuffed12" />
+			<property name="Buff" value="stuffed12,eatFood_14_Trigger" />
         </property>
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2021" name="Ap/Bl/Yu GlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="14" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="22" />
 			<property name="Gain_water" value="15" />
 			<property name="Gain_stamina" value="9" />
             <property name="Gain_wellness" value="0.9" />
-			<property name="Buff" value="stuffed9" />
+			<property name="Buff" value="stuffed9,eatFood_14_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2022" name="Ho/Bl/Yu GlazedMeat">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="14" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="26" />
 			<property name="Gain_water" value="14" />
 			<property name="Gain_stamina" value="48" />
             <property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1.2" />
-			<property name="Buff" value="stuffed12" />
+			<property name="Buff" value="stuffed12,eatFood_14_Trigger" />
         </property>
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2023" name="MeatPotatoKabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="-3" />
            	<property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2024" name="MeatCornKabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="4" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="-3" />
            	<property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2025" name="MeatCarrotKabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="5" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="2" />
 			<property name="Gain_stamina" value="-3" />
            	<property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_5_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
@@ -17700,43 +17710,43 @@ which does not exist, yet. -->
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="-3" />
            	<property name="Gain_wellness" value="0.6" />
-			<property name="Buff" value="stuffed6" />
+			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2027" name="Me/Po/Ca Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="9" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="16" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2028" name="Me/Po/Co Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="16" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2029" name="Me/Co/Ca Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="9" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="6" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
@@ -17748,91 +17758,91 @@ which does not exist, yet. -->
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2031" name="Me/To/Co Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2032" name="Me/To/Ca Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="8" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="7" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.7" />
-			<property name="Buff" value="stuffed7" />
+			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2032" name="Me/To/Ca/Po Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="15" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="13" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_15_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2033" name="Me/To/Co/Po Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="14" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="13" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_14_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2034" name="Me/Co/Ca/To Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="15" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="22" />
 			<property name="Gain_water" value="13" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_15_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2035" name="Me/Co/Ca/Po Kabob">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="15" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="12" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_15_Trigger" />
         </property>
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2036" name="VenisonSteak">
         <property name="Extends" value="FoodMaster" />
 		<property class="Action1">
-			<property name="Gain_health" value="7" />
+			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="13" />
 			<property name="Gain_water" value="-5" />
 			<property name="Gain_stamina" value="-6" />
             <property name="Gain_wellness" value="0.8" />
-			<property name="Buff" value="stuffed8" />
+			<property name="Buff" value="stuffed8,eatFood_7_Trigger" />
         </property>
 	</item>
     <item id="2037" name="Nitroglycerin">

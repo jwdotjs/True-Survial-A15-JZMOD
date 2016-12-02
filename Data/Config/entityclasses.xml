@@ -1693,8 +1693,6 @@
 		<property name="Class" value="EntityAnimalRabbit" />
 		<property name="Weight" value="10" />
 		<property name="MaxHealth" value="50" />
-		<property name="PhysicsBody" value="rabbit" />
-		<property name="PanicSpeed" value="1.5" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="HandItem" value="RabbitAttack" />
 		<!-- AI properties -->

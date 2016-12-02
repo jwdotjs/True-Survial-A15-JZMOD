@@ -337,7 +337,6 @@
 	<lootgroup name="empty" />
 	<lootgroup name="questChallenge" count="1">
 		<item name="qc_Hen" count="1" />
-		<item name="qc_Bath" count="1" />
 		<item name="qc_Vorpal" count="1" />
 		<item name="qc_AntiVenom" count="1" />
 		<item name="qc_PlantSeeds" count="1" />
@@ -1192,7 +1191,7 @@
 	<lootgroup name="backpacks" count="1">
 		<item group="cupboard" prob="0.5" />
 		<item group="ammoSmall" count="1,2" prob="0.5" />
-		<item group="ammoBig" count="1" prob="0.01" />
+		<item group="ammoBig" count="1" prob="0.001" />
 		<item group="melee" prob="0.05" />
 		<item group="clothes" prob="0.5" />
 		<item group="sportingGoods" prob="0.6" />
@@ -1368,7 +1367,7 @@
 		<item group="clothes" prob="0.5" />
 		<item group="trophyGroup" prob="0.3" />
 		<item group="ammoSmall" prob="0.5" />
-		<item group="ammoBig" prob="0.06" />
+		<item group="ammoBig" prob="0.001" />
 		<item name="book" count="1,2" prob="0.4" />
 		<item name="SewingNeedle" count="1" prob="0.2" />
 		<item group="medicine" prob="0.5" />
@@ -1525,7 +1524,7 @@
 		<item name="bottledWater" count="1" prob="0.15" />
 		<item name="shamSandwich" prob="0.2" />
 		<item group="cannedfood" prob="0.05" />
-		<item group="ammoBig" prob="0.05" />
+		<item group="ammoBig" prob="0.01" />
 		<item name="animalFat" count="1,2" />
 		<item name="painkillers" prob="0.09" />
 		<item group="ammoSmall" prob="0.1" />
@@ -1536,7 +1535,7 @@
 	<lootcontainer id="39" count="0,2" size="4,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"></lootcontainer>
 	<!-- military munitions ammo box -->
 	<lootcontainer id="40" count="1,2" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30" destroy_on_close="true">
-		<item group="ammoBig" count="1" prob="0.55" />
+		<item group="ammoBig" count="1" prob="0.01" />
 		<item group="militaryammo" count="2,4" prob="0.65" />
 		<item group="TierThreeBooks" prob="0.7" />
 		<item group="militaryWeaponParts" count="1,2" prob="0.8" />
@@ -1551,7 +1550,7 @@
 	</lootcontainer>
 	<!-- lootcontainer 42 gun safe -->
 	<lootcontainer id="42" count="1,2" size="8,8" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">
-		<item group="ammoBig" count="1" prob="0.08" />
+		<item group="ammoBig" count="1" prob="0.01" />
 		<item group="ammoSmall" count="2,4" prob="0.5" />
 		<item group="TierTwoBooks" prob="0.4" />
 		<item group="commonWeaponParts" count="1,2" prob="0.5" />
@@ -1638,7 +1637,7 @@
 		<item group="GunBooks" prob="0.09" />
 		<item group="crossbow+ammo" count="1" prob="0.4" />
 		<item group="ammoSmall" count="1,3" prob="0.9" />
-		<item group="ammoBig" count="1" prob="0.1" />
+		<item group="ammoBig" count="1" prob="0.01" />
 		<item name="weaponRepairKit" count="1,3" prob="0.5" />
 		<item group="commonWeaponParts" prob="0.8" />
 		<item group="empty" prob="0.2" />
@@ -1721,7 +1720,7 @@
 		<item group="TierThreeBooks" prob="0.5" />
 		<item group="books" prob="0.2" />
 		<item name="Mag_Extender" quality="1,100" prob="0.1" />
-		<item group="ammoBig" count="1" prob="0.3" />
+		<item group="ammoBig" count="1" prob="0.01" />
 		<item group="empty" prob="0.2" />
 	</lootcontainer>
 	<!-- minibike storage -->
@@ -1958,7 +1957,7 @@
 	</lootcontainer>
 	<!-- storageAmmo Loot  -->
 	<lootcontainer id="98" count="1" size="3,3" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<item group="ammoBig" count="1,2" />
+		<item group="militaryammo" count="1,2" />
 	</lootcontainer>
 	<!-- storageBuilding Loot  -->
 	<lootcontainer id="99" count="1" size="3,3" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
@@ -1982,7 +1981,7 @@
 		<item group="GunBooks" prob="0.01" />
 		<item group="empty" prob="0.1" />
 		<item group="ammoSmall" count="1,3" prob="0.9" />
-		<item group="ammoBig" count="1" prob="0.09" />
+		<item group="ammoBig" count="1" prob="0.01" />
 		<item name="weaponRepairKit" count="1,3" prob="0.5" />
 	</lootcontainer>
 	<!-- Burnt Zombie Loot  -->

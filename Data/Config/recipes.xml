@@ -1056,7 +1056,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cottonPlant" count="1"/>
 </recipe>
 
-<recipe name="crossbow" count="1" craft_area="assemble">
+<recipe name="crossbow" count="1" craft_area="assembly">
 	<ingredient name="Crossbow_Stock" count="1" />
 	<ingredient name="partsPistol_parts" count="1" />
 	<ingredient name="Crossbow_Limb" count="1" />
@@ -2351,7 +2351,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="egg" count="1" />
 		<ingredient name="mushrooms" count="1" />
 	</recipe>
-	<recipe name="SilencedPistol" count="1"  craft_area="assemble">
+	<recipe name="SilencedPistol" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="partsPistol_parts" count="1" />
 		<ingredient name="SilencedPistolBarrel" count="1" />
@@ -2374,7 +2374,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Silencer" count="1" />
 		<ingredient name="partsPistol_barrel" count="1" />
 	</recipe>
-	<recipe name="SilencedhuntingRifle" count="1"  craft_area="assemble">
+	<recipe name="SilencedhuntingRifle" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="SilencedHuntingBarrel" count="1" />
 		<ingredient name="partsHuntingRifle_stock" count="1" />
@@ -2446,35 +2446,35 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="PlantFibers" count="10" />
 		<ingredient name="feather" count="5" />
 	</recipe>
-	<recipe name="SniperExtClip" count="1"  craft_area="assemble">
+	<recipe name="SniperExtClip" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="partsSniperRifle_barrel" count="1" />
 		<ingredient name="partsSniperRifle_receiver" count="1" />
 		<ingredient name="partsSniperRifle_stock" count="1" />
 		<ingredient name="Mag_Extender" count="1" />
 	</recipe>
-	<recipe name="mp5ExtClip" count="1"  craft_area="assemble">
+	<recipe name="mp5ExtClip" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="partsMP5_stock" count="1" />
 		<ingredient name="partsMP5_receiver" count="1" />
 		<ingredient name="partsMP5_barrel" count="1" />
 		<ingredient name="Mag_Extender" count="1" />
 	</recipe>
-	<recipe name="ShotgunExtClip" count="1"  craft_area="assemble">
+	<recipe name="ShotgunExtClip" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="partsPumpShotgun_barrel" count="1" />
 		<ingredient name="partsPumpShotgun_receiver" count="1" />
 		<ingredient name="Mag_Extender" count="1" />
 		<ingredient name="partsPumpShotgun_stock" count="1" />
 	</recipe>
-	<recipe name="pistolExtClip" count="1"  craft_area="assemble">
+	<recipe name="pistolExtClip" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="Mag_Extender" count="1" />
 		<ingredient name="partsPistol_barrel" count="1" />
 		<ingredient name="partsPistol_receiver" count="1" />
 		<ingredient name="partsPistol_grip" count="1" />
 	</recipe>
-	<recipe name="ExtSilentPistol" count="1" craft_area="assemble">
+	<recipe name="ExtSilentPistol" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="Mag_Extender" count="1" />
 		<ingredient name="SilencedPistolBarrel" count="1" />
@@ -2630,27 +2630,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="forgedIron" count="1" />
 		<ingredient name="SteelHelmet" count="1" />
 	</recipe>
-	<recipe name="huntingRifleSilScope" count="1"  craft_area="assemble">
+	<recipe name="huntingRifleSilScope" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="SilencedHuntingBarrel" count="1" />
 		<ingredient name="huntingRifleStockScope" count="1" />
 		<ingredient name="partsHuntingRifle_receiver" count="1" />
 		<ingredient name="partsHuntingRifle_parts" count="1" />
 	</recipe>
-	<recipe name="crossbowScope" count="1"  craft_area="assemble">
+	<recipe name="crossbowScope" count="1"  craft_area="assembly">
 		<ingredient name="CrossbowStockScope" count="1" />
 		<ingredient name="Crossbow_Barrel" count="1" />
 		<ingredient name="Crossbow_Limb" count="1" />
 		<ingredient name="partsPistol_parts" count="1" />
 	</recipe>
-	<recipe name="44MagnumScope" count="1"  craft_area="assemble">
+	<recipe name="44MagnumScope" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="MagnumFrameScope" count="1" />
 		<ingredient name="parts44Magnum_cylinder" count="1" />
 		<ingredient name="parts44Magnum_parts" count="1" />
 		<ingredient name="parts44Magnum_grip" count="1" />
 	</recipe>
-	<recipe name="huntingRifleScope" count="1"  craft_area="assemble">
+	<recipe name="huntingRifleScope" count="1"  craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="partsHuntingRifle_barrel" count="1" />
 		<ingredient name="huntingRifleStockScope" count="1" />
@@ -2749,24 +2749,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="egg" count="1" />
 		<ingredient name="Bread" count="1" />
 	</recipe>
-		<recipe name="Remote" count="1" craft_area="workMetalWorkbench" craft_time="30" craft_exp_gain="30">
+		<recipe name="Remote" count="1" craft_area="workMetalWorkBench" craft_time="30" craft_exp_gain="30">
 		<ingredient name="electronicParts" count="10" />
 		<ingredient name="carBattery" count="2" />
 		<ingredient name="forgedSteel" count="7" />
 		<ingredient name="glue" count="3" />
 		<ingredient name="scrapCable" count="1" />
 	</recipe>
-	<recipe name="HidenWood" count="1" craft_area="workMetalWorkbench" craft_time="15" craft_exp_gain="10">
+	<recipe name="HidenWood" count="1" craft_area="workMetalWorkBench" craft_time="15" craft_exp_gain="10">
 		<ingredient name="paper" count="20" />
 		<ingredient name="woodFrameBlock" count="1" />
 		<ingredient name="wood" count="10" />
 	</recipe>
-	<recipe name="HidenConcrete" count="1" craft_area="workMetalWorkbench" craft_time="15" craft_exp_gain="10">
+	<recipe name="HidenConcrete" count="1" craft_area="workMetalWorkBench" craft_time="15" craft_exp_gain="10">
 		<ingredient name="paper" count="20" />
 		<ingredient name="concreteMix" count="1" />
 		<ingredient name="shortMetalPipe" count="8" />
 	</recipe>
-	<recipe name="HidenSteel" count="1" craft_area="workMetalWorkbench" craft_time="15" craft_exp_gain="10">
+	<recipe name="HidenSteel" count="1" craft_area="workMetalWorkBench" craft_time="15" craft_exp_gain="10">
 		<ingredient name="paper" count="20" />
 		<ingredient name="shortSteelPipe" count="8" />
 		<ingredient name="rebarFrameBlock" count="1" />
@@ -2798,7 +2798,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="blunderbuss" count="2" />
 		<ingredient name="ductTape" count="1" />
 	</recipe>
-	<recipe name="smallEngine" count="1" scrapable="True" craft_area="assemble">
+	<recipe name="smallEngine" count="1" scrapable="True" craft_area="assembly">
 		<ingredient name="airFilter" count="1" />
 		<ingredient name="radiator" count="1" />
 		<ingredient name="Exhaust" count="1" />
@@ -2874,7 +2874,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Grubs" count="1"  craft_time="5" craft_exp_gain="2">
 		<ingredient name="dirtFragment" count="40" />
 	</recipe>
-	<recipe name="AutoCrossbow" count="1"  craft_area="assemble">
+	<recipe name="AutoCrossbow" count="1"  craft_area="assembly">
 		<ingredient name="BoltCylinder" count="1" />
 		<ingredient name="Crossbow_Limb" count="1" />
 		<ingredient name="Crossbow_Stock" count="1" />
@@ -2917,7 +2917,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NightStick" count="1" />
 		<ingredient name="MeltedRubber" count="3" />
 		<ingredient name="scrapCable" count="1" />
-		<ingredient name="electricParts" count="1" />
+		<ingredient name="electricParts" count="10" />
 		<ingredient name="carBattery" count="1" />
 	</recipe>
 	<recipe name="SoldierProfession" count="1"  craft_time="5" craft_exp_gain="1000" >
@@ -4274,6 +4274,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
     <recipe name="CopBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
 		<ingredient name="9mmShock" count="1" />
+		<ingredient name="BlankSkillBook" count="1" />
+	</recipe>
+    <recipe name="EngineerBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
+		<ingredient name="clawHammer" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
     <recipe name="IncendiaryAmmoBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
