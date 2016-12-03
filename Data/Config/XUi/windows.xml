@@ -494,7 +494,7 @@
 		</grid>
 	</window>
 	
-	<window name="craftingInfoPanel" width="603" height="515" controller="CraftingInfoWindow" style="crafting.info.window" panel="Center"><!-- height="427"-->
+	<window name="craftingInfoPanel" width="603" height="427" controller="CraftingInfoWindow" style="crafting.info.window" panel="Center"><!-- height="515"-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{itemgroupicon}"/>
 			<label style="header.name" text="{itemname}" />
@@ -539,9 +539,9 @@
 				<label depth="2" name="descriptionText" pos="6,-5" width="440" height="98" text="{itemdescription}" />
 			</rect>
 			
-			<rect depth="1" pos="153,-115" name="ingredients" width="447" height="352"><!-- height="264"-->
+			<rect depth="1" pos="153,-115" name="ingredients" width="447" height="264">
 				
-				<grid rows="6" width="447" height="354" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical"><!-- height="266" -->
+				<grid rows="6" width="447" height="266" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical"><!-- height="266" -->
 					<ingredient_header/>
 					<ingredient_row name="0"/>
 					<ingredient_row name="1"/>
@@ -1637,7 +1637,7 @@
 		
 			<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" width="151" height="149" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="1" pos="2,-2" name="preview" width="148" height="148" color="[darkGrey]" type="sliced" />
-			<sprite depth="3" pos="77,-77" width="100" height="100" sprite="{groupicon}" pivot="center" foregroundlayer="true"/>
+			<sprite depth="3" pos="77,-77" width="100" height="100" sprite="{groupicon}" atlas="ItemIconAtlas" pivot="center" foregroundlayer="true"/>
 			
 			<panel depth="2" pos="3,-153" width="146" height="78" disableautobackground="true">
 				<sprite depth="1" pos="-3,8" width="151" height="91" name="background" color="[mediumGrey]" type="sliced"/> 

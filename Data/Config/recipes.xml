@@ -2612,7 +2612,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="GrassFallTrap" count="1"  craft_time="10" craft_exp_gain="5">
 		<ingredient name="PlantFibers" count="1" />
-		<ingredient name="fertileDirt" count="1" />
+		<ingredient name="dirtFragment" count="10" />
 		<ingredient name="stick" count="5" />
 	</recipe>
 	<recipe name="WoodFallTrap" count="1"  craft_time="10" craft_exp_gain="5">
@@ -2621,7 +2621,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="ForestFallTrap" count="1"  craft_time="10" craft_exp_gain="5">
 		<ingredient name="PlantFibers" count="2" />
-		<ingredient name="fertileDirt" count="1" />
+		<ingredient name="dirtFragment" count="10" />
 		<ingredient name="stick" count="5" />
 	</recipe>
 	<recipe name="SteelHelmet+Light" count="1" craft_area="workArmorTable" craft_time="15" craft_exp_gain="25">
@@ -3114,7 +3114,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="workSeedNursery" count="1"  craft_time="300">
 		<ingredient name="Plank" count="40" />
-		<ingredient name="fertileDirt" count="30" />
+		<ingredient name="dirtFragment" count="60" />
 		<ingredient name="turd" count="30" />
 		<ingredient name="earthworm" count="30" />
 		<!-- SDX <ingredient name="fish" count="5" />-->

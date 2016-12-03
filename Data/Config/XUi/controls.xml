@@ -528,7 +528,7 @@
 			
 			<sprite depth="1" color="{rowstatecolor}" sprite="{rowstatesprite}" width="644"  height="45" type="sliced" />
 			
-			<sprite depth="2" sprite="{groupicon}" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true"/>
+			<sprite depth="2"  sprite="{groupicon}" atlas="ItemIconAtlas" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true"/>
 			
 			<sprite depth="3" pos="0,-39" height="3" width="640" color="[lightGrey]" foregroundlayer="true" visible="{skillpercentshouldshow}" type="sliced" />
 			<sprite depth="3" pos="0,-39" height="3" width="640" color="[red]" foregroundlayer="true" type="filled" fill="{skillpercentthislevel}" visible="{skillpercentshouldshow}" />
@@ -546,7 +546,7 @@
 	
 	<skill_requirement>
 		<rect controller="SkillRequirementEntry">
-			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" sprite="{skillicon}" visible="{hasrequirement}" />
+			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" atlas="ItemIconAtlas" sprite="{skillicon}" visible="{hasrequirement}" />
 			<label depth="1" pos="0,-4" text="{requirementtext}" upper_case="true" font_size="26" visible="{hasrequirement}" height="43" width="300" color="{requirementcolor}" justify="center" />
 		</rect>
 	</skill_requirement>

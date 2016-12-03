@@ -292,7 +292,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="sprainedLeg" mutex="brokenLeg,healSevereWound" type="speedmodifier" duration="2400" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">
         <modify id="0" stat="speedmodifier" mulValue="0.80"/>			
     </buff>
-	<buff id="stunned" duration="4" mutex="stunCooldown" onexpired="stunCooldown" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" name_key="Grabbed" description_key="Its grabbed a hold of you, get away!" tooltip_key="It's trying to bite you!" icon="ui_game_symbol_stunned">
+	<buff id="stunned" duration="4" mutex="stunCooldown" onexpired="stunCooldown" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" name_key="Grabbed" description_key="Its grabbed a hold of you, get away!" tooltip_key="It's trying to bite you!" icon="grab">
 		<modify id="0" stat="speedmodifier" mulValue="0.1" />
 	</buff>
 	<buff id="stunCooldown" duration="3" stack="discard" />
@@ -548,7 +548,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="stuffed16" duration="1" actions="increment(stuffed, 16, 0, 0, 1)" />
     <buff id="stuffed18" duration="1" actions="increment(stuffed, 18, 0, 0, 1)" />
     <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" />	
-    <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 80" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="ui_game_symbol_run">
+    <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 80" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="stuffed">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff> 
 	<!--JZMOD HYGIEN BUFF
@@ -580,14 +580,14 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <!--JZMOD SCUBA GEAR-->
 	<buff id="scuba" duration="300" name_key="Scuba Gear" mutex="scuba" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ScubaTankFull" />
 	<!--JZMOD COZY BED BUFF-->
-	<buff id="cozybed1" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_map_bed">
+	<buff id="cozybed1" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="cozyBed">
 		<modify id="0" stat="coretemp" modifyValue="20" />
 	</buff>
-	<buff id="cozybed2" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed" icon="ui_game_symbol_map_bed">
+	<buff id="cozybed2" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed" icon="cozyBed">
 		<modify id="0" stat="health" amount="1" rate="5" />
 		<modify id="1" stat="coretemp" modifyValue="25" />
 	</buff>
-	<buff id="cozybed3" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed" icon="ui_game_symbol_map_bed">
+	<buff id="cozybed3" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed" icon="cozyBed">
 		<modify id="0" stat="health" amount="2" rate="5" />
 		<modify id="1" stat="coretemp" modifyValue="30" />
 	</buff>
@@ -615,11 +615,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<buff id="cauterize" castsound="Player_Female/player2death" duration="1" actions="buff(biteWound);debuff(bite)" />
 	
-    <buff id="biteWound" duration="600t" onexpired="infection" ondebuff="tendingbite" cures="bandage"/>
+    <buff id="biteWound" duration="600t" onexpired="infection" ondebuff="tendingbite" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" />
 	
     <buff id="tendingbite" duration="600t" onexpired="dirtyBiteBandage1" />
 	
-    <buff id="dirtyBiteBandage1" smell="smallSmell" duration="600t" onexpired="dirtyBite" ondebuff="tendingbite2" cures="bandage"/>
+    <buff id="dirtyBiteBandage1" smell="smallSmell" duration="600t" onexpired="dirtyBite" ondebuff="tendingbite2" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" />
 	
     <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)"/>
 	    
@@ -635,7 +635,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="stamina" amount="-1" rate="4" />
 	</buff>
     <!--JZMOD WOUND 2-->
-	<buff id="smallWound" buffif="scratch gequal 6" mutex="dirtyBandage1,dirtyBandage2,dirtyBandage,3dirtyBandage4,tending1,tending2,tending3,tending4,tending5,tending6,tending7,tending8,wound,severeWound,InfectedWound" ondebuff="tending1" actions="buff(pain);debuff(bruised)" name_key="Small Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a small wound. Treat it with a bandage and be sure to change it when it gets dirty." icon="smallWound" cures="bandage">
+	<buff id="smallWound" buffif="scratch gequal 6" mutex="dirtyBandage1,dirtyBandage2,dirtyBandage,3dirtyBandage4,tending1,tending2,tending3,tending4,tending5,tending6,tending7,tending8,wound,severeWound,InfectedWound" ondebuff="tending1" actions="buff(pain);debuff(bruised)" name_key="Small Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a small wound. Treat it with a bandage and be sure to change it when it gets dirty." icon="smallWound" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit">
 		<modify id="0" stat="stamina" amount="-4" rate="5" />
 		<modify id="1" stat="speedmodifier" setValue="0.91" />
         <modify id="2" stat="health" amount="-1" rate="30" />
@@ -648,7 +648,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     
     <buff id="tending1" mutex="wound" duration="1200t" onexpired="dirtyBandage1" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
 	
-    <buff id="dirtyBandage1" smell="smallSmell" duration="600t" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+    <buff id="dirtyBandage1" smell="smallSmell" duration="600t" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst" icon="dirtyBandage"/>
 	
     <buff id="dirtySmallWound" duration="1" actions="setvar(scratch, 11)"/>
 	    
@@ -656,7 +656,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	
     <buff id="healSmallWound" duration="1" actions="setvar(scratch, 2)"/>
     <!-- JZMOD WOUND 3-->
-    <buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,InfectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage">
+    <buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,InfectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.9" />
         <modify id="2" stat="health" amount="-1" rate="25" />
@@ -664,7 +664,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     
     <buff id="tending3" mutex="severeWound" duration="1200t" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
 	
-    <buff id="dirtyBandage2" smell="mediumSmell" duration="600t" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another First Aid Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+    <buff id="dirtyBandage2" smell="mediumSmell" duration="600t" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another First Aid Bandage soon or your wound could get worst" icon="dirtyBandage"/>
 	
     <buff id="dirtyWound" duration="1" actions="setvar(scratch, 16)"/>
 	    
@@ -672,7 +672,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	
     <buff id="healWound" duration="10" actions="setvar(scratch, 6)"/>
 	<!-- JZMOD WOUND 4-->
-    <buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You’ve gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="severeWound" cures="SanitizingBandage">
+    <buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You’ve gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="severeWound" cures="SanitizingBandage,firstAidKit,Large1stAidKit">
 		<modify id="0" stat="stamina" amount="-6" rate="5" />
 		<modify id="1" stat="speedmodifier" setValue="0.89" />
         <modify id="2" stat="health" amount="-1" rate="20" />
@@ -686,7 +686,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     
 	<buff id="tending5" mutex="InfectedWound" duration="1200t" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
 	
-    <buff id="dirtyBandage3" smell="largeSmell" duration="600t" onexpired="dirtySevereWound" ondebuff="tending6" cures="SanitizingBandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+    <buff id="dirtyBandage3" smell="largeSmell" duration="600t" onexpired="dirtySevereWound" ondebuff="tending6" cures="SanitizingBandage,firstAidKit,Large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="dirtyBandage"/>
 	
     <buff id="dirtySevereWound" duration="1" actions="setvar(scratch, 21)"/>
 	    
@@ -694,7 +694,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	
     <buff id="healSevereWound" duration="10" actions="setvar(scratch, 11)"/>
     <!-- JZMOD WOUND 5-->
-    <buff id="InfectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="Infected Wound" type="bleeding" tooltip_key="You have a lot of scratches" description_key="Twenty Scratches:Your cuts are infected.Use a First Aid Bandage to tend to your wound and remove two scratches or use a Sanitizing Bandage to clean your wound and remove five scratches for faster healing." icon="InfectedWound" cures="SanitizingBandage">
+    <buff id="InfectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="Infected Wound" type="bleeding" tooltip_key="Your wound has gotten infected" description_key="Your wound has gotten infected. Treat it with Sanitized Bandage and be sure to change it when it gets dirty or you could die." icon="InfectedWound" cures="SanitizingBandage,firstAidKit,Large1stAidKit">
 		<modify id="0" stat="stamina" amount="-7" rate="5" />
 		<modify id="1" stat="speedmodifier" setValue="0.88" />
         <modify id="2" stat="health" amount="-1" rate="15" />
@@ -702,7 +702,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     
     <buff id="tending7" duration="1200t" onexpired="dirtyBandage4" actions="debuff(InfectedWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged"/>
 	
-    <buff id="dirtyBandage4" smell="largeSmell" duration="300t" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="SanitizingBandage" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="dirtyBandage"/>
+    <buff id="dirtyBandage4" smell="largeSmell" duration="300t" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="SanitizingBandage,firstAidKit,Large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or you could die" icon="dirtyBandage"/>
 	
     <buff id="dirtyInfectedWound" duration="1" actions="kill" />
 	    
