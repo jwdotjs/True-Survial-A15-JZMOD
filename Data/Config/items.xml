@@ -9218,7 +9218,8 @@ which does not exist, yet. -->
 	<item id="1501" name="SilencedPistol">
 		<property name="Extends" value="gunPistol" />
 		<property name="DescriptionKey" value="SilencedPistolDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_SilencedPistol" />
+        <property class="Parts">
 			<property name="Barrel" value="SilencedPistolBarrel" />
 		</property>
 		<property class="Action0">
@@ -9230,7 +9231,8 @@ which does not exist, yet. -->
 	<item id="1502" name="SilencedhuntingRifle">
 		<property name="Extends" value="gunHuntingRifle" />
 		<property name="DescriptionKey" value="SilencedhuntingRifleDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_SilencedhuntingRifle" />
+        <property class="Parts">
 			<property name="Barrel" value="SilencedHuntingBarrel" />
 		</property>
 		<property class="Action0">
@@ -9366,7 +9368,8 @@ which does not exist, yet. -->
 	<item id="1511" name="pistolExtClip">
 		<property name="Extends" value="gunPistol" />
 		<property name="DescriptionKey" value="pistolExtClipDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_pistolExtClip" />
+        <property class="Parts">
 			<property name="Pump" value="Mag_Extender" />
 		</property>
 		<property class="Action0">
@@ -9378,7 +9381,8 @@ which does not exist, yet. -->
 	<item id="1512" name="mp5ExtClip">
 		<property name="Extends" value="gunMP5" />
 		<property name="DescriptionKey" value="mp5ExtClipDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_mp5ExtClip" />
+        <property class="Parts">
 			<property name="Pump" value="Mag_Extender" />
 		</property>
 		<property class="Action0">
@@ -9390,7 +9394,8 @@ which does not exist, yet. -->
 	<item id="1513" name="ShotgunExtClip">
 		<property name="Extends" value="gunPumpShotgun" />
 		<property name="DescriptionKey" value="ShotgunExtClipDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_ShotgunExtClip" />
+        <property class="Parts">
 			<property name="Pump" value="Mag_Extender" />
 		</property>
 		<property class="Action0">
@@ -9402,7 +9407,8 @@ which does not exist, yet. -->
 	<item id="1514" name="SniperExtClip">
 		<property name="Extends" value="gunSniperRifle" />
 		<property name="DescriptionKey" value="SniperExtClipDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_SniperExtClip" />
+        <property class="Parts">
 			<property name="Pump" value="Mag_Extender" />
 		</property>
 		<property class="Action0">
@@ -9424,7 +9430,8 @@ which does not exist, yet. -->
 	<item id="1516" name="huntingRifleScope">
 		<property name="Extends" value="gunHuntingRifle" />
 		<property name="DescriptionKey" value="huntingRifleScopeDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_huntingRifleScope" />
+        <property class="Parts">
 			<property name="Stock" value="huntingRifleStockScope" />
 		</property>
 		<property class="Action1">
@@ -9437,7 +9444,8 @@ which does not exist, yet. -->
 	<item id="1517" name="44MagnumScope">
 		<property name="Extends" value="gun44Magnum" />
 		<property name="DescriptionKey" value="44MagnumScopeDesc" />
-		<property class="Parts">
+		<property name="CustomIcon" value="ui_game_symbol_44MagnumScope" />
+        <property class="Parts">
 			<property name="Barrel" value="MagnumFrameScope" />
 		</property>
 		<property class="Action1">
@@ -11827,7 +11835,8 @@ which does not exist, yet. -->
 		<property name="Extends" value="clubSpiked" />
         <property name="Material" value="Msteel" />
 		<property name="DescriptionKey" value="clubSteelSpikedDesc" />
-		<property name="Weight" value="40" />
+		<property name="CustomIcon" value="ui_game_symbol_clubSteelSpiked" />
+        <property name="Weight" value="40" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="10" />
@@ -12042,6 +12051,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons,Basics" />
 		<property name="DescriptionKey" value="IronSpearDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_IronSpears" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
 		<property name="CraftingSkillGroup" value="Weapon Smithing" />
 	</item>
@@ -12052,7 +12062,7 @@ which does not exist, yet. -->
 		<property name="Stacknumber" value="250" />
 		<property name="FuelValue" value="8" />
 		<property name="Weight" value="2" />
-		<property name="CustomIcon" value="IronSpears" />
+		<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="Projectile" />
@@ -16213,6 +16223,7 @@ which does not exist, yet. -->
 		<!-- STK resource -->
 		<property name="Group" value="Resources" />
 		<property name="DescriptionKey" value="FanBeltDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_FanBelt" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</item>
 	<item id="1917" name="Turbine">
