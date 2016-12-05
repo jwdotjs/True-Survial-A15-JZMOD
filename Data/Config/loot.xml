@@ -703,7 +703,8 @@
 		<item name="Red Wood Book" prob="0.7" />
 		<item name="sawedoffPumpShotgunSchematic" prob="0.5" />
 		<item name="handleBarsSchematic" prob="0.6" />
-		<item name="Cooking with Eggs" prob="0.7" />
+		<item name="minibikesForDumbshits" prob="0.6"/>
+        <item name="Cooking with Eggs" prob="0.7" />
 		<item name="Making Bread" prob="0.7" />
 		<item name="Awning Book" prob="0.7" />
 		<item name="Fish N Chips" prob="0.7" />
@@ -1098,7 +1099,8 @@
 		<item name="anvil" count="1" prob="0.1" />
 		<item name="ironDoor1_v1" prob="0.1" />
 		<item name="AirCompressor" prob="0.1" />
-		<item group="BikeLoot" prob="0.3" />
+		<item name="BikeNABox" prob="0.2" />
+        <item group="BikeLoot" prob="0.3" />
         <item group="nailgun+parts"/>
 		<item name="calipers" prob="0.1" />
 		<item name="Wielder" prob="0.1" />
@@ -1280,6 +1282,17 @@
 		<item group="commonWeaponParts" count="1,3" />
 		<item group="ammoBig" count="1,3" />
 	</lootgroup>
+    <lootgroup name="BikeNABox" count="all">
+        <item name="minibikeWheels" count="1"/>
+        <item name="carBattery" count="1"/>
+        <item name="minibikeChassis" count="1"/>
+        <item name="minibikeSeat" count="1"/>
+        <item name="padlock" count="1"/>
+        <item name="minibikeHandlebars" count="1"/>
+        <item name="shoppingBasketItem" count="1"/>
+        <item name="smallEngine" count="1"/>
+        <item name="gasCan" count="250"/>
+    </lootgroup>
 	<lootgroup name="RabbitTrap" count="all">
 		<item name="rawMeat" count="1" />
 		<item name="animalHide" count="1" />
@@ -1461,6 +1474,7 @@
 		<item name="canDogfood" prob="0.5" />
 		<item group="tools" prob="0.4" />
 		<item group="BikeLoot" prob="0.5" />
+        <item name="BikeNABox" prob="0.3"/> 
 	</lootcontainer>
 	<!-- 23 see below !!! -->
 	<!-- lootcontainer 24 hornets and hives - NOTE: Hornet corpses harvest now so should be redundant -->
@@ -2012,5 +2026,9 @@
 	<lootcontainer id="110" count="1" size="2,1" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump">
 		<item name="Apple" count="1,6" />
 	</lootcontainer>
+    <!-- Bike N A Box loot  -->
+    <lootcontainer id="111" count="1" size="3,3" destroy_on_close="true" open_time="8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" >
+        <item group="BikeNABox" count="1" /> 
+    </lootcontainer>
 	<!--END JZMOD-->
 </lootcontainers>

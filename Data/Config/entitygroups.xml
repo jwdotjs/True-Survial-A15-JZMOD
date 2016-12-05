@@ -967,7 +967,9 @@
 	<entitygroup name="AnimalsSmall">
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
-	</entitygroup>
+        <entity name="ZombieChicken" prob="0.03"/>
+        <entity name="ZombieRabbit" prob="0.03"/>
+    </entitygroup>
 	
 	<entitygroup name="AnimalsFarm">
 		<entity name="animalPig" />
@@ -977,8 +979,20 @@
 	
 	<entitygroup name="AnimalsBig">
 		<entity name="animalStag" />
+		<entity name="animalPig" />
+		<entity name="animalBear" prob="0.04" />
+        <entity name="zombieBear" prob="0.02"/>
 	</entitygroup>   
 	
+    <entitygroup name="AnimalsSnow" >		
+		<entity name="animalRabbit" />
+		<entity name="ZombieRabbit" prob="0.03"/>
+		<entity name="animalStag" />
+		<entity name="animalPig" />
+		<entity name="animalBear" prob="0.04" />
+        <entity name="zombieBear" prob="0.02"/>
+	</entitygroup>	
+        
 	<entitygroup name="AnimalsAll" >		
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
@@ -987,6 +1001,7 @@
 		<entity name="animalStag" />
 		<entity name="animalPig" />
 		<entity name="animalBear" prob="0.04" />
+        <entity name="zombieBear" prob="0.02"/>
 	</entitygroup>	
 	
 	<entitygroup name="HornetGroup">

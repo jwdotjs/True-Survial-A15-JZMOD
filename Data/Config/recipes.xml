@@ -1385,7 +1385,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
 
-<recipe name="ironBoots" count="1" craft_area="workworkbench" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
+<recipe name="ironBoots" count="1" craft_area="workArmorTable" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="leather" count="3"/>
     <ingredient name="FiberRope" count="6" />
@@ -1393,21 +1393,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="MeltedRubber" count="2" />
 </recipe>
 
-<recipe name="ironChestArmor" count="1" craft_area="workworkbench" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
+<recipe name="ironChestArmor" count="1" craft_area="workArmorTable" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
 	<ingredient name="forgedIron" count="30"/>
 	<ingredient name="leather" count="5"/>
     <ingredient name="ductTape" count="1" />
 	<ingredient name="FiberRope" count="5" />
 </recipe>
 
-<recipe name="ironGloves" count="1" craft_area="workworkbench" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
+<recipe name="ironGloves" count="1" craft_area="workArmorTable" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="leather" count="3"/>
     <ingredient name="ductTape" count="1" />
 	<ingredient name="FiberRope" count="4" />
 </recipe>
 
-<recipe name="ironHelmet" count="1" craft_area="workworkbench" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
+<recipe name="ironHelmet" count="1" craft_area="workArmorTable" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="leather" count="3"/>
     <ingredient name="FiberRope" count="3" />
@@ -1415,7 +1415,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cottonPlant" count="6" />
 </recipe>
 
-<recipe name="ironLegArmor" count="1" craft_area="workworkbench" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
+<recipe name="ironLegArmor" count="1" craft_area="workArmorTable" craft_tool="anvil" craft_time="60" craft_exp_gain="100">
 	<ingredient name="forgedIron" count="30"/>
 	<ingredient name="leather" count="5"/>
     <ingredient name="FiberRope" count="6" />
@@ -3212,7 +3212,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="plantedYucca3Harvest" count="1" />
 		<ingredient name="ZincPowder" count="1" />
 	</recipe>-->
-	<recipe name="workSteamGenerator" count="1" craft_area="workMetalWorkBench" craft_time="300" craft_exp_gain="100">
+	<recipe name="workSteamGenerator" count="1" craft_time="300" craft_exp_gain="100">
 		<ingredient name="FanBelt" count="1" />
 		<ingredient name="Alternator" count="1" />
 		<ingredient name="Turbine" count="1" />
@@ -3241,7 +3241,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="3" />
 		<ingredient name="unit_coal" count="3" />
 	</recipe>
-    <recipe name="Turbine" count="1" craft_area="workMetalWorkBench" craft_time="30" craft_tool="Wielder" craft_exp_gain="100">
+    <recipe name="Turbine" count="1" craft_time="300" craft_exp_gain="100">
 		<ingredient name="forgedIron" count="8" />
 		<ingredient name="hubcap" count="2" />
 		<ingredient name="glue" count="1" />

@@ -15585,6 +15585,24 @@ kind of free
         <drop event="Harvest" name="scrapSteel" count="10" />
         <drop event="Destroy" name="scrapSteel" count="5" />
     </block>
+    <block id="2023" name="BikeLoot">
+        <property name="Class" value="Backpack" />
+        <property name="Material" value="MdroppedBackpack" />
+        <property name="Texture" value="423" />
+        <property name="LootList" value="111" />
+        <property name="CanPickup" value="false" />
+        <drop event="Destroy" count="0" />
+        <property name="CustomIcon" value="cntSuitcase" />
+    </block>
+    <block id="2024" name="BikeNABox">
+        <property name="Material" value="glass" />
+        <property name="Texture" value="423" />
+        <property name="CanPickup" value="true" />
+        <property name="DescriptionKey" value="BikeNABoxDesc"/>
+        <property name="Group" value="Basics" />
+        <drop event="Destroy" count="0" />
+        <property name="DowngradeBlock" value="BikeLoot" />
+    </block>
 	
 	<!-- JZMOD MORTELENTUS FARMING/FISHING 
 	<block id="758" name="bassWall">
