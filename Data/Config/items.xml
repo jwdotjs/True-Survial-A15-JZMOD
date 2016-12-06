@@ -5903,7 +5903,7 @@ which does not exist, yet. -->
 			<property name="Buff" value="firstAidLarge" />
 			<property name="Create_item" value="DeadBattery" />
 		</property>
-		<property name="CustomIcon" value="FirstAidKit" />
+		<property name="CustomIcon" value="ui_game_symbol_FirstAidKit" />
 		<property name="DescriptionKey" value="firstAidKitDesc" />
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
@@ -9215,7 +9215,8 @@ which does not exist, yet. -->
 		<property name="Weight" value="10" />
 		<property name="Stacknumber" value="250" />
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
-		<property name="DescriptionKey" value="SilencerDesc" />
+		<property name="CustomIcon" value="ui_game_symbol_Silencer" />
+        <property name="DescriptionKey" value="SilencerDesc" />
 	</item>
 	<item id="1501" name="SilencedPistol">
 		<property name="Extends" value="gunPistol" />
@@ -11803,6 +11804,7 @@ which does not exist, yet. -->
 		<property name="Material" value="Msteel" />
 		<property name="Stacknumber" value="250" />
 		<property name="Weight" value="10" />
+        <property name="CustomIcon" value="ui_game_symbol_CarbonArrow" />
 		<property name="DescriptionKey" value="CarbonArrowDesc" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -13135,6 +13137,7 @@ which does not exist, yet. -->
 			<property name="Layer" value="2" />
 			<property name="UISlot" value="ChestArmor" />
 		</property>
+        <property name="CustomIcon" value="ui_game_symbol_SteelChestArmor" />
 		<property name="DescriptionKey" value="SteelArmorDesc" />
 		<property name="ActionSkillGroup" value="Heavy Armor" />
 		<property name="CraftingSkillGroup" value="Armor Smithing" />
@@ -13229,6 +13232,7 @@ which does not exist, yet. -->
 	</item>
 	<item id="1702" name="Chicken Shit!">
 		<property name="Extends" value="schematicMaster" />
+        <property name="CustomIcon" value="blockbook" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="workChickenCoop" />
 		</property>
@@ -13482,6 +13486,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13503,6 +13508,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13524,6 +13530,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13545,6 +13552,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13566,6 +13574,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13587,6 +13596,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13608,6 +13618,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13629,6 +13640,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13650,6 +13662,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -13671,6 +13684,7 @@ which does not exist, yet. -->
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="50" />
+        <property name="CustomIcon" value="GunSchematic" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="LearnRecipe" />
@@ -14890,6 +14904,7 @@ which does not exist, yet. -->
 			<property name="Pos" value="0,-0.05" />
 			<property name="Rot" value="90,45,0" />
 		</property>
+        <property name="CustomIcon" value="ui_game_symbol_PurificationTablets" />
 		<property name="DescriptionKey" value="PurificationDesc" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -15001,6 +15016,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Smell" value="ExLargeSmell" />
 		<property name="Group" value="Food/Cooking" />
+        <property name="CustomIcon" value="BearMeat" />
 		<property name="DescriptionKey" value="BearMeatDesc" />
 	</item>
 	<item id="1821" name="BearStew">
@@ -15208,6 +15224,7 @@ which does not exist, yet. -->
 			<property name="Create_item" value="emptyJar" />
 			<property name="Gain_wellness" value="1" />
 		</property>
+        <property name="CustomIcon" value="ui_game_symbol_WellnessJuice" />
 		<property name="DescriptionKey" value="WellnessJuiceDesc" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="ActionSkillGroup" value="Medicine" />
@@ -16025,7 +16042,8 @@ which does not exist, yet. -->
 		<property name="Stacknumber" value="1000" />
 		<property name="FuelValue" value="5" />
 		<property name="Group" value="Resources" />
-		<property name="DescriptionKey" value="PlankDesc" />
+		<property name="CustomIcon" value="ui_game_symbol_Plank" />
+        <property name="DescriptionKey" value="PlankDesc" />
 		<property name="CraftingSkillGroup" value="Wood Working" />
 	</item>
 	<item id="1888" name="AirCompressor">
@@ -17883,7 +17901,8 @@ which does not exist, yet. -->
 	</item>
     <item id="2050" name="DuctTapeBook">
 		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
+		<property name="CustomIcon" value="An Assassins Guide" />
+        <property class="Action1">
 			<property name="Recipes_to_learn" value="ductTape" />
         </property>
 		<property name="DescriptionKey" value="DuctTapeBookDesc" />

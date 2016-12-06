@@ -1953,7 +1953,7 @@ then add recipes for those white/red/green metals
 	<block id="261" name="plantedPotato3Harvest">
 		<property name="Extends" value="cropsHarvestableMaster" />
         <property name="Texture" value="298" />
-		<drop event="Harvest" name="potato" count="2" tool_category="Farm" />
+		<drop event="Harvest" name="potato" count="1" tool_category="Farm" />
 		<drop event="Harvest" name="potato" count="0" prob="1" />
 		<drop event="Destroy" name="potato" count="0" />
 	</block>
@@ -3357,6 +3357,7 @@ then add recipes for those white/red/green metals
 	<block id="422" name="workchemistryStation">
         <property name="Class" value="Campfire" />
         <property name="Material" value="metal" />
+        <property name="CustomIcon" value="chemistryStation" />
         <property name="StabilitySupport" value="false" />
         <property name="Shape" value="ModelEntity" />
         <!-- <property name="Shape" value="Ext3dModel" />-->
@@ -7748,7 +7749,7 @@ kind of free
         <property name="Texture" value="529" />
         <property name="CanPickup" value="false" />
 		<drop event="Destroy" name="corn" count="0" prob="1" />
-		<drop event="Harvest" name="corn" count="1,2" tool_category="Farm" />
+		<drop event="Harvest" name="corn" count="3" tool_category="Farm" />
 		<drop event="Harvest" name="corn" count="0" />
         <property name="CropsGrown.BonusHarvestDivisor" value="99999" />
     </block>
@@ -12538,6 +12539,7 @@ kind of free
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
         <drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble" />
         <property name="Group" value="Building" />
+        <property name="CustomIcon" value="ui_game_symbol_cementMixer" />
         <property name="DescriptionKey" value="cementMixerDesc"/>
         <property name="EconomicValue" value="1544" />
     </block>
@@ -14741,7 +14743,7 @@ kind of free
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanPickup" value="false" />
 		<drop event="Destroy" name="Carrot" count="0" prob="1" />
-		<drop event="Harvest" name="Carrot" count="2" tool_category="Farm" />
+		<drop event="Harvest" name="Carrot" count="1" tool_category="Farm" />
 		<drop event="Harvest" name="Carrot" count="0" />
 	</block>
 	<block id="1981" name="CarrotYoung">
@@ -14749,12 +14751,24 @@ kind of free
 		<property name="Shape" value="BillboardPlant" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="297" />
+        <property class="PlantGrowing">
+			<property name="Next" value="carrotPlant" />
+			<property name="GrowthRate" value="300" />
+			<property name="FertileLevel" value="5" />
+			<property name="IsRandom" value="false" />
+		</property>
 	</block>
 	<block id="1982" name="carrotSprout">
 		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Shape" value="BillboardPlant" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="296" />
+        <property class="PlantGrowing">
+			<property name="Next" value="CarrotYoung" />
+			<property name="GrowthRate" value="300" />
+			<property name="FertileLevel" value="5" />
+			<property name="IsRandom" value="false" />
+		</property>
 	</block>
 	<block id="1983" name="YuccaCactus03">
 		<property name="Class" value="Cactus" />
@@ -14821,7 +14835,7 @@ kind of free
 		<property name="CanPickup" value="false" />
 		<!--<property name="DowngradeBlock" value="youngWheat2" />-->
 		<drop event="Destroy" name="Wheat" count="0" prob="1" />
-		<drop event="Harvest" name="Wheat" count="2" tool_category="Farm" />
+		<drop event="Harvest" name="Wheat" count="1" tool_category="Farm" />
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="1987" name="youngWheat2">
@@ -14971,7 +14985,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="scrapCopper" value="25" />
 		</property>
-		<property name="CustomIcon" value="SteamGenerator" />
+		<property name="CustomIcon" value="ui_game_symbol_SteamGenerator" />
 		<property name="Group" value="Resources,Tools/Traps" />
 		<property name="DescriptionKey" value="SteamGeneratorDesc" />
 		<drop event="Destroy" name="scrapCopper" count="1" />
@@ -15045,7 +15059,7 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<property name="CustomIcon" value="SeedNursery" />
+		<property name="CustomIcon" value="ui_game_symbol_SeedNursery" />
 		<property name="DescriptionKey" value="SeedNurseryDesc" />
 		<drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
@@ -15076,7 +15090,7 @@ kind of free
 			<property name="Modules" value="output,fuel,material_input" />
 			<property name="InputMaterials" value="steel,iron,coal,copper,zinc,clay" />
 		</property>
-		<property name="CustomIcon" value="BlastFurnace" />
+		<property name="CustomIcon" value="ui_game_symbol_BlastFurnace" />
 		<property name="DescriptionKey" value="BlastFurnaceDesc" />
 		<property name="CraftingSkillGroup" value="Steel Working" />
 	</block>
@@ -15099,7 +15113,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="forgedIron" value="20" />
 		</property>
-		<property name="CustomIcon" value="OilRefinery" />
+		<property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
 		<property name="DescriptionKey" value="OilRefineryDesc" />
 		<drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
@@ -15129,7 +15143,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="forgedIron" value="20" />
 		</property>
-		<property name="CustomIcon" value="Still" />
+		<property name="CustomIcon" value="ui_game_symbol_Still" />
 		<property name="DescriptionKey" value="workStillDesc" />
 		<drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
@@ -15581,6 +15595,7 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="OutdoorDecor/scrapmetalblock" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
+        <property name="CustomIcon" value="scrapMetalPile" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
         <drop event="Harvest" name="scrapSteel" count="10" />
         <drop event="Destroy" name="scrapSteel" count="5" />

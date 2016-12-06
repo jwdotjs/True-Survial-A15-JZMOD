@@ -1,4 +1,4 @@
-<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="casinoCoin" >
+<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="bulletCasing" >
 <!--
 When adding items or blocks to the list, check if they have an "EconomicValue".
 Most world-decoration blocks like "cntSuitcase" or "airConditioner" do not have values set.
@@ -616,7 +616,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="cntGraniteSink"/>
 			<item name="cntGreenDrawer"/>
 			<item name="cntLockers"/>
-			<item name="cntMunitionsBox"/>
 			<item name="cntOven"/>
 			<item name="faucet02"/>
 			<item name="faucet04"/>
@@ -743,14 +742,14 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="workcementMixer"/>
 			<item name="chainLink"/>
 			<item name="chainsaw"/>
-			<!--<item name="chainsawSchematic"/>-->
+			
 			<item name="chair04"/>
 			<item name="challengeQuestMaster"/>
 			<item name="charredMeat"/>
 			<item name="cigar"/>
 			<item name="cigarette"/>
 			<item name="clawHammer"/>
-			<!--<item name="clawHammerSchematic"/>-->
+			
 			<item name="clayLump"/>
 			<item name="clayRoofBlock"/>
 			<item name="cloth"/>
@@ -760,7 +759,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="clubBarbed"/>
 			<item name="clubIron"/>
 			<item name="clubSpiked"/>
-			<!--<item name="clubSpikedSchematic"/>-->
+			
 			<item name="clubWood"/>
 			<item name="cntCabinet"/>
 			<item name="cntCabinetTop"/>
@@ -793,7 +792,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="coffee"/>
 			<item name="coffeeBeans"/>
 			<item name="commercialDoor2_v1"/>
-			<!-- <item name="commercialDoor3_v1"/> -->
 			<item name="commercialDoor4_v1"/>
 			<item name="concreteBlock"/>
 			<item name="concreteHalf"/>
@@ -811,7 +809,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="cottonSeed"/>
 			<item name="cowboyHat"/>
 			<item name="crossbow"/>
-			<!--<item name="crossbowSchematic"/>-->
 			<item name="crushedSand"/>
 			<item name="denimPants"/>
 			<item name="doorKnob"/>
@@ -821,7 +818,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="eggboiled"/>
 			<item name="emptyJar"/>
 			<item name="explodingCrossbowBolt"/>
-			<!--<item name="explodingCrossbowBoltSchematic"/>-->
 			<item name="feather"/>
 			<item name="femur"/>
 			<item name="fenceWoodSheet"/>
@@ -830,12 +826,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="fireaxeSteel"/>
 			<item name="firstAidBandage"/>
 			<item name="firstAidKit"/>
-			<!--<item name="firstAidKitSchematic"/>-->
 			<item name="fishingWeight"/>
 			<item name="flagstoneBlock"/>
 			<item name="flagstoneStairs25"/>
 			<item name="flamingArrow"/>
-			<!--<item name="flamingArrowSchematic"/>-->
 			<item name="flashlight02"/>
 			<item name="foodHoney"/>
 			<item name="foodYuccaJuice"/>
@@ -844,7 +838,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="forgedIron"/>
 			<item name="forgedSteel"/>
 			<item name="gasCan"/>
-			<!--<item name="gasCanSchematic"/>-->
 			<item name="gasMask"/>
 			<item name="glassBusinessBlock"/>
 			<item name="glassBusinessCTRSheet"/>
@@ -867,7 +860,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunRocketLauncher"/>
 			<item name="gunSawedOffPumpShotgun"/>
 			<item name="gunSniperRifle"/>
-			<!--<item name="handleBarsSchematic"/>-->
 			<item name="hayBaleBlock"/>
 			<item name="hazmatBoots"/>
 			<item name="hazmatPants"/>
@@ -882,40 +874,24 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="houseFrontDoor2_v1"/>
 			<item name="hubcap"/>
 			<item name="huntingKnife"/>
-			<!--<item name="huntingKnifeBook"/>-->
 			<item name="huntingRifleSchematic"/>
 			<item name="ironArrow"/>
 			<item name="ironArrowHead"/>
 			<item name="ironBars"/>
 			<item name="ironBoots"/>
-			<!--<item name="ironBootsSchematic"/>
-			<item name="ironChestArmor"/>
-			<item name="ironChestArmorSchematic"/>-->
 			<item name="ironCrossbowBolt"/>
 			<item name="ironDoor1_v1"/>
-			<!--<item name="ironGlovesSchematic"/>
-			<item name="ironHelmetSchematic"/>
-			<item name="ironLegArmor"/>
-			<item name="ironLegArmorSchematic"/>-->
 			<item name="jacketWhite"/>
-			<!--<item name="keystoneBlock"/>-->
 			<item name="ladderMetal"/>
 			<item name="ladderWood"/>
 			<item name="leather"/>
 			<item name="leatherBoots"/>
-			<!--<item name="leatherBootsSchematic"/>-->
 			<item name="leatherDuster"/>
 			<item name="leatherDusterBlack"/>
-			<!--<item name="leatherGlovesSchematic"/>-->
 			<item name="leatherHoodBlack"/>
-			<!--<item name="leatherHoodSchematic"/>-->
 			<item name="leatherJacket"/>
-			<!--<item name="leatherJacketSchematic"/>-->
 			<item name="leatherPants"/>
-			<!--<item name="leatherPantsSchematic"/>
-			<item name="leatherTanning"/>-->
 			<item name="logCabinBlock"/>
-			<!--<item name="macDyverBook"/>-->
 			<item name="machete"/>
 			<item name="mapleSeed"/>
 			<item name="meatStew"/>

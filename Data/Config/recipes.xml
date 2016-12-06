@@ -303,7 +303,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="aloePlant" count="4"/>
 </recipe>
 
-<recipe name="aloeSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="aloeSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="aloePlant" count="1"/>
 </recipe>
 
@@ -501,7 +501,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="blueberrySeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="blueberrySeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="blueberries" count="1"/>
 </recipe>
 
@@ -707,7 +707,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
-<recipe name="chrysanthemumSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="chrysanthemumSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="chrysanthemumPlant" count="1"/>
 </recipe>
 
@@ -1052,7 +1052,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn" count="1"/>
 </recipe>
 
-<recipe name="cottonSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="cottonSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="cottonPlant" count="1"/>
 </recipe>
 
@@ -1237,7 +1237,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="goldenrodSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="goldenrodSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="goldenrodPlant" count="1"/>
 </recipe>
 
@@ -1359,7 +1359,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="20"/>
 </recipe>
 
-<recipe name="hopSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="hopSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="hopsFlower" count="1"/>
 </recipe>
 
@@ -1668,7 +1668,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="shortMetalPipe" count="6"/>
 </recipe>
 <recipe name="mushroomSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
-	<ingredient name="mushrooms" count="2"/>
+	<ingredient name="mushrooms" count="1"/>
 	<ingredient name="dirtFragment" count="1"/>
 </recipe>
 
@@ -1753,7 +1753,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Plank" count="100"/>
 </recipe>
 
-<recipe name="potatoSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="potatoSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="potato" count="1"/>
 </recipe>
 
@@ -2285,7 +2285,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
-<recipe name="yuccaSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+<recipe name="yuccaSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 	<ingredient name="foodYuccaFruit" count="1"/>
 </recipe>
 
@@ -2381,13 +2381,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsHuntingRifle_receiver" count="1" />
 		<ingredient name="partsHuntingRifle_parts" count="1" />
 	</recipe>
-	<recipe name="WheatSeed" count="4" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+	<recipe name="WheatSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 		<ingredient name="Wheat" count="1" />
 	</recipe>
 	<recipe name="CarrotSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 		<ingredient name="Carrot" count="1" />
     </recipe>
-	<recipe name="AppleSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+	<recipe name="AppleSeed" count="1" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 		<ingredient name="Apple" count="1" />
 	</recipe>
 	<recipe name="YuccaCactuSeed" count="2" craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
@@ -2977,7 +2977,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="femur" count="1" />
 		<ingredient name="ZincPowder" count="3" />
 	</recipe>
-	<recipe name="CoffeeSeeds" count="4"  craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
+	<recipe name="CoffeeSeeds" count="2"  craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 		<ingredient name="coffeeBeans" count="1" />
 	</recipe>
 	<recipe name="painkillers" count="1" craft_area="workchemistryStation" craft_time="10" craft_exp_gain="10">
@@ -3206,12 +3206,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="cornMeal" count="15" />
 		<ingredient name="bottledWater" count="30" />
 	</recipe>
-    <!--
-	<recipe name="Soap" count="1"  craft_area="workcampfire" craft_tool="cookingPot" craft_time="20">
-		<ingredient name="animalFat" count="1" />
-		<ingredient name="plantedYucca3Harvest" count="1" />
-		<ingredient name="ZincPowder" count="1" />
-	</recipe>-->
 	<recipe name="workSteamGenerator" count="1" craft_time="300" craft_exp_gain="100">
 		<ingredient name="FanBelt" count="1" />
 		<ingredient name="Alternator" count="1" />
