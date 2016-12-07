@@ -822,32 +822,21 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="health" amount="-15" rate="1" />
 	</buff>
     <!-- JZMOD Zombie Head Shot -->
-    <buff id="headshotMelee" mutex="isPlayer" hitmask="head" duration="2" stack="reset"  >
+    <buff id="headshotMelee" mutex="isPlayer" hitmask="head" duration="2" stack="extend"  >
         <modify id="1" stat="health" amount="-200" rate="1"/>
     </buff>
-    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="2" stack="reset"  >
+    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="2" stack="extend"  >
         <modify id="1" stat="health" amount="-400" rate="1"/>
     </buff>
-    <buff id="headshot" mutex="isPlayer" hitmask="head" duration="2" stack="reset"  >
+    <buff id="headshot" mutex="isPlayer" hitmask="head" duration="2" stack="extend"  >
         <modify id="1" stat="health" amount="-1000" rate="1"/>
+    </buff>
+    <!-- JZMOD Bandit Zombie Bonus -->
+    <buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend"  >
+        <modify id="1" stat="health" amount="-350" rate="1"/>
     </buff>
     
     
     
     
-    
-    
-    
-     <buff id="Dirty" duration="1" actions="increment(Dirtamount, 1, 0, 0, 1)"/>
-
-
-<buff id="Soiled1" buffif="Dirtamount greater 39" duration="2400t" onexpired="Soiled2" icon="ui_game_symbol_dysentery" name_key="Dirty" description_key="Your Accumulating Dirt" tooltip_key="" />
-
-
-
-<buff id="Soiled2" duration="2400t" icon="ui_game_symbol_beer" name_key="beerBuzz" description_key="beerBuzzDesc" tooltip_key="beerBuzzTooltip"/>
-
-
-<buff id="Soiled3" icon="ui_game_symbol_beer" name_key="beerBuzz" description_key="beerBuzzDesc" tooltip_key="beerBuzzTooltip"/>
-
     </buffs>

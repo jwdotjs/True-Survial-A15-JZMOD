@@ -544,7 +544,6 @@ Mesh files no longer used:
 			<property name="Zoom_max_in" value="35" />
 		</property>
 		<property name="LightSource" value="lightSource" /> <!-- Start: Needed for the attachment flashlight -->
-
         <property name="ActivateObject" value="Attachments/flashlight/lightSource" />
         <property name="AttachmentFlashlight" value="flashlight02" /> <!-- End: Needed for the attachment flashlight -->
         <property name="Group" value="Ammo/Weapons" />
@@ -2464,8 +2463,9 @@ which does not exist, yet. -->
 			<property name="Explosion.ParticleIndex" value="0" />
 			<!-- no expl. -->
 			<property name="Velocity" value="75" />
-			<property name="FlyTime" value="0.15" />
-			<property name="LifeTime" value="12" />
+			<property name="Velocity" value="55"/>
+            <property name="FlyTime" value="0"/>
+            <property name="Gravity" value="-6"/>
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="2" />
@@ -2533,8 +2533,9 @@ which does not exist, yet. -->
 			<property name="Buff_chance" value="0.5,0.5" />
 			<property name="Explosion.ParticleIndex" value="0" /><!-- no expl. -->
 			<property name="Velocity" value="80" />
-			<property name="FlyTime" value=".25" />
-			<property name="LifeTime" value="17" />
+			<property name="FlyTime" value="0"/>
+            <property name="Gravity" value="-4"/>
+            <property name="LifeTime" value="12"/>
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="0.1" />
@@ -2570,8 +2571,9 @@ which does not exist, yet. -->
 			<property name="Explosion.ParticleIndex" value="0" />
 			<!-- no expl. -->
 			<property name="Velocity" value="85" />
-			<property name="FlyTime" value=".25" />
-			<property name="LifeTime" value="17" />
+			<property name="FlyTime" value="0"/>
+            <property name="Gravity" value="-4"/>
+            <property name="LifeTime" value="12"/>
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="0.1" />
@@ -2606,8 +2608,9 @@ which does not exist, yet. -->
 			<property name="Explosion.ParticleIndex" value="0" />
 			<!-- no expl. -->
 			<property name="Velocity" value="65" />
-			<property name="FlyTime" value=".25" />
-			<property name="LifeTime" value="17" />
+			<property name="FlyTime" value="0"/>
+            <property name="Gravity" value="-6"/>
+            <property name="LifeTime" value="12"/>
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="0.1" />
@@ -7510,7 +7513,7 @@ which does not exist, yet. -->
 		<property name="Extends" value="schematicMaster" />
         <property name="EconomicValue" value="500" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="minibikeChassis,minibikeWheels,minibikeSeat,minibikeHandlebars" />
+			<property name="Recipes_to_learn" value="minibikeChassis,minibikeSeat,minibikeHandlebars"/>
 		</property>
 	</item>
 	<!--<item id="1010" name="leatherTanning"><property name="Extends" value="schematicMaster" /><property class="Action1"><property name="Recipes_to_learn" value="leather" /><property name="Skills_to_gain" value="Leatherworking" /></property></item>-->
@@ -17402,7 +17405,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.1" />
 			<property name="Buff" value="stuffed1,eatFood_2_Trigger" />
         </property>
-	</item>
+    </item>
     <item id="1999" name="StirFry Po/Ca">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="StirFry" />
@@ -17426,6 +17429,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2001" name="StirFry Co/Ca">
         <property name="Extends" value="FoodMaster" />
@@ -17450,6 +17454,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2003" name="StirFry Ca/Me">
         <property name="Extends" value="FoodMaster" />
@@ -17462,6 +17467,7 @@ which does not exist, yet. -->
      		<property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_5_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2004" name="StirFry Po/Ca/Co">
         <property name="Extends" value="FoodMaster" />
@@ -17486,6 +17492,7 @@ which does not exist, yet. -->
     		<property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2006" name="StirFry Co/Ca/Me">
         <property name="Extends" value="FoodMaster" />
@@ -17498,6 +17505,7 @@ which does not exist, yet. -->
      		<property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2007" name="StirFry Po/Ca/Me">
         <property name="Extends" value="FoodMaster" />
@@ -17510,6 +17518,7 @@ which does not exist, yet. -->
       		<property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2008" name="StirFry Po/Co/Ca/Me">
         <property name="Extends" value="FoodMaster" />
@@ -17523,6 +17532,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="0" />
 			<property name="Buff" value="stuffed1,eatFood_15_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2009" name="HoneyGlazedMeat">
         <property name="Extends" value="FoodMaster" />
@@ -17535,6 +17545,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1" />
 			<property name="Buff" value="stuffed10,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2010" name="AppleGlazedMeat">
@@ -17547,6 +17558,7 @@ which does not exist, yet. -->
        		<property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2011" name="BlueBerryGlazedMeat">
@@ -17559,6 +17571,7 @@ which does not exist, yet. -->
      		<property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2012" name="YuccaGlazedMeat">
@@ -17571,6 +17584,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2013" name="AppleHoneyGlazedMeat">
@@ -17584,6 +17598,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1.1" />
 			<property name="Buff" value="stuffed11,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2014" name="BlueBerryHoneyGlazedMeat">
@@ -17597,6 +17612,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1.1" />
 			<property name="Buff" value="stuffed11,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2015" name="YuccaHoneyGlazedMeat">
@@ -17610,6 +17626,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1.1" />
 			<property name="Buff" value="stuffed11,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2016" name="AppleBlueBerryGlazedMeat">
@@ -17622,6 +17639,7 @@ which does not exist, yet. -->
     		<property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2017" name="AppleYuccaGlazedMeat">
@@ -17635,6 +17653,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2018" name="BlueBerryYuccaGlazedMeat">
@@ -17647,6 +17666,7 @@ which does not exist, yet. -->
      		<property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2019" name="Ho/Ap/Bl GlazedMeat">
@@ -17660,6 +17680,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1.2" />
 			<property name="Buff" value="stuffed12,eatFood_14_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2020" name="Ho/Ap/Yu GlazedMeat">
@@ -17673,6 +17694,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1.2" />
 			<property name="Buff" value="stuffed12,eatFood_14_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="HoneyGlazedMeat" />
 	</item>
     <item id="2021" name="Ap/Bl/Yu GlazedMeat">
@@ -17685,6 +17707,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.9" />
 			<property name="Buff" value="stuffed9,eatFood_14_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2022" name="Ho/Bl/Yu GlazedMeat">
@@ -17698,6 +17721,7 @@ which does not exist, yet. -->
 			<property name="Gain_wellness" value="1.2" />
 			<property name="Buff" value="stuffed12,eatFood_14_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="FruitGlazedMeats" />
 	</item>
     <item id="2023" name="MeatPotatoKabob">
@@ -17710,6 +17734,7 @@ which does not exist, yet. -->
            	<property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2024" name="MeatCornKabob">
@@ -17722,6 +17747,7 @@ which does not exist, yet. -->
            	<property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2025" name="MeatCarrotKabob">
@@ -17734,6 +17760,7 @@ which does not exist, yet. -->
            	<property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_5_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2026" name="MeatTomatoKabob">
@@ -17746,6 +17773,7 @@ which does not exist, yet. -->
            	<property name="Gain_wellness" value="0.6" />
 			<property name="Buff" value="stuffed6,eatFood_4_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2027" name="Me/Po/Ca Kabob">
@@ -17758,6 +17786,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2028" name="Me/Po/Co Kabob">
@@ -17770,6 +17799,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2029" name="Me/Co/Ca Kabob">
@@ -17782,6 +17812,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_9_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2030" name="Me/To/Po Kabob">
@@ -17794,6 +17825,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2031" name="Me/To/Co Kabob">
@@ -17806,6 +17838,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2032" name="Me/To/Ca Kabob">
@@ -17818,6 +17851,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
 			<property name="Buff" value="stuffed7,eatFood_8_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2032" name="Me/To/Ca/Po Kabob">
@@ -17830,6 +17864,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_15_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2033" name="Me/To/Co/Po Kabob">
@@ -17842,6 +17877,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_14_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2034" name="Me/Co/Ca/To Kabob">
@@ -17854,6 +17890,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_15_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2035" name="Me/Co/Ca/Po Kabob">
@@ -17866,6 +17903,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_15_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
         <property name="CustomIcon" value="Kabob" />
 	</item>
     <item id="2036" name="VenisonSteak">
@@ -17878,6 +17916,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_7_Trigger" />
         </property>
+        <property name="Smell" value="mediumSmell" />
 	</item>
     <item id="2037" name="Nitroglycerin">
         <property name="Meshfile" value="Items/Food/honeyPrefab" />
@@ -17908,4 +17947,512 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="DuctTapeBookDesc" />
 		<property name="Group" value="Books" />
 	</item>
+       
+  <!-- BANDIT ITEMS -->
+  <!-- guns -->
+  <item id="2053" name="gunBanditPistol">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunPistol"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="1"/>
+    <property name="Stacknumber" value="1"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.3"/>
+      <property name="Magazine_size" value="15"/>
+      <property name="Magazine_items" value="9mmBanditBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Reload_time" value="2"/>
+      <property name="Bullet_icon" value="pistol"/>
+      <property name="Sound_start" value="Weapons/Ranged/Pistol/pistol_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/Pistol/pistol_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.wood" value="3"/>
+      <property name="DamageBonus.earth" value=".4"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="50,50"/>
+      <property name="Accuracy" value="0.05,0.05"/>
+      <property name="EntityDamage" value="15,15"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2054" name="gunBandit44Magnum">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gun44Magnum"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="44"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.34"/>
+      <property name="Magazine_size" value="6"/>
+      <property name="Magazine_items" value="44MagBanditBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Reload_time" value="4"/>
+      <property name="Bullet_icon" value="pistol"/>
+      <property name="Sound_start" value="Weapons/Ranged/44Magnum/44magnum_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/44Magnum/44magnum_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.wood" value="4"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="50,50"/>
+      <property name="Accuracy" value="0.05,0.05"/>
+      <property name="EntityDamage" value="35,35"/>
+      <property name="BlockDamage" value="10,10"/>
+    </property>
+  </item>
+  <item id="2055" name="gunBanditSawedOffPumpShotgun">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunSawedOffPumpShotgun"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="5"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.8"/>
+      <property name="Crosshair_min_distance" value="30"/>
+      <property name="Crosshair_max_distance" value="50"/>
+      <property name="Magazine_size" value="8"/>
+      <property name="Magazine_items" value="shotgunBanditShell"/>
+      <property name="Magazine_item_ray_counts" value="9"/>
+      <property name="Magazine_item_ray_spreads" value="0.8"/>
+      <property name="Reload_time" value="2.6"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="Buff" value="shotgunWound"/>
+      <property name="Buff_chance" value=".8"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="66,66"/>
+      <property name="Accuracy" value="0.05,0.05"/>
+      <property name="EntityDamage" value="8,8"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2056" name="gunBanditPumpShotgun">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunPumpShotgun"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="5"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.8"/>
+      <property name="Crosshair_min_distance" value="30"/>
+      <property name="Crosshair_max_distance" value="50"/>
+      <property name="Magazine_size" value="8"/>
+      <property name="Magazine_items" value="shotgunBanditShell"/>
+      <property name="Magazine_item_ray_counts" value="8"/>
+      <property name="Magazine_item_ray_spreads" value="0.65"/>
+      <property name="Reload_time" value="2.6"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/PumpShotgun/pump_shotgun_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="Buff" value="shotgunWound"/>
+      <property name="Buff_chance" value=".8"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="66,66"/>
+      <property name="Accuracy" value="0.05,0.05"/>
+      <property name="EntityDamage" value="8,8"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2057" name="gunBanditMP5">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunMP5"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="6"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.150"/>
+      <property name="Auto_fire" value="true"/>
+      <property name="Crosshair_min_distance" value="5"/>
+      <property name="Crosshair_max_distance" value="30"/>
+      <property name="Magazine_size" value="30"/>
+      <property name="Magazine_items" value="10mmBanditBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Reload_time" value="4.1"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start"/>
+      <property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp"/>
+      <property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end"/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload"/>
+      <property name="Horde_meter_rate" value="2.5"/>
+      <property name="Horde_meter_distance" value="20"/>
+      <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+      <!-- critGunMP5, 100 damage too deadly for players -->
+      <property name="Buff" value="arrowCriticalBleedout"/>
+      <property name="Buff_chance" value=".2"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="72,72"/>
+      <property name="Accuracy" value="0.05,0.05"/>
+      <property name="EntityDamage" value="25,25"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2058" name="gunBanditAK47">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunAK47"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="48"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.150"/>
+      <property name="Auto_fire" value="true"/>
+      <property name="Crosshair_min_distance" value="5"/>
+      <property name="Crosshair_max_distance" value="30"/>
+      <property name="Magazine_size" value="30"/>
+      <property name="Magazine_items" value="762mmBanditBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Reload_time" value="3.9"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/AK47/ak47_fire_start"/>
+      <property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+      <property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload"/>
+      <property name="Horde_meter_rate" value="2.5"/>
+      <property name="Horde_meter_distance" value="20"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+      <!-- critGunAK47, 150 damage too deadly for players -->
+      <property name="Buff" value="arrowCriticalBleedout"/>
+      <property name="Buff_chance" value=".2"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="90,90"/>
+      <property name="Accuracy" value="0.05,0.05"/>
+      <property name="EntityDamage" value="35,35"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2059" name="gunBanditHuntingRifle">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunHuntingRifle"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="30"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.5"/>
+      <property name="Crosshair_min_distance" value="30"/>
+      <property name="Crosshair_max_distance" value="100"/>
+      <property name="Magazine_size" value="1"/>
+      <property name="Magazine_items" value="762mmBanditBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Reload_time" value="2.66"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+    </property>
+    <property class="Attributes">
+      <property name="DismembermentBaseChance" value="0.25,0.25"/>
+      <property name="DismembermentBonus" value="0.00045,0.00045"/>
+      <property name="FalloffRange" value="160,160"/>
+      <property name="Accuracy" value="0.03,0.03"/>
+      <property name="EntityDamage" value="65,65"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2060" name="gunBanditSniperRifle">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunSniperRifle"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/SniperRifle/sniperRiflePrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="11"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.5"/>
+      <property name="Crosshair_min_distance" value="30"/>
+      <property name="Crosshair_max_distance" value="100"/>
+      <property name="Magazine_size" value="5"/>
+      <property name="Magazine_items" value="762mmBanditBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Reload_time" value="2.5"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/SniperRifle/sniperrifle_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/SniperRifle/sniperrifle_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value=".2"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+    </property>
+    <property class="Attributes">
+      <property name="DismembermentBaseChance" value="0.3,0.3"/>
+      <property name="DismembermentBonus" value="0.00050,0.00050"/>
+      <property name="FalloffRange" value="160,160"/>
+      <property name="Accuracy" value="0.03,0.03"/>
+      <property name="EntityDamage" value="55,55"/>
+      <property name="BlockDamage" value="5,5"/>
+    </property>
+  </item>
+  <item id="2061" name="gunBanditRocketLauncher">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="gunRocketLauncher"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="10"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="Weapons/weapon_jam"/>
+    <property class="Action0">
+      <property name="Class" value="Launcher"/>
+      <property name="Delay" value="0.8"/>
+      <property name="Range" value="200"/>
+      <property name="Magazine_size" value="1"/>
+      <property name="Magazine_items" value="BanditRocket"/>
+      <property name="Reload_time" value="2"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="Weapons/Ranged/M136/m136_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="Weapons/weapon_empty"/>
+      <property name="Sound_reload" value="Weapons/Ranged/M136/m136_reload"/>
+      <property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="90,90"/>
+      <property name="Accuracy" value="0.01,0.01"/>
+      <property name="EntityDamage" value="50,50"/>
+      <property name="BlockDamage" value="500,500"/>
+    </property>
+  </item>
+
+  <!-- melee -->
+  <item id="2062" name="meleeBanditSledgeHammer">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="CustomIcon" value="sledgehammer"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="33"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="Degradation" value="99999" param1="true"/>
+    <property name="SoundJammed" value="ItemNeedsRepair"/>
+    <property name="SoundDestroy" value="metaldestroy1"/>
+    <property class="Action0">
+      <property name="Class" value="Melee"/>
+      <property name="Delay" value="1.8"/>
+      <property name="Range" value="2.4"/>
+      <property name="Sphere" value="0.2"/>
+      <property name="Block_range" value="2.5"/>
+      <property name="Sound_start" value="SlowSwoosh"/>
+      <property name="Stamina_usage" value="15"/>
+      <property name="Buff" value="criticalBlunt,stunned,sprainedLeg,banditBonus"/>
+      <property name="Buff_chance" value=".5,.3,.3,1"/>
+      <property name="DamageBonus.wood" value=".5"/>
+      <property name="DamageBonus.head" value="1"/>
+      <property name="DamageBonus.glass" value="0.01"/>
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="30,30"/>
+      <property name="BlockDamage" value="800,800"/>
+      <property name="DismembermentBaseChance" value="0.3,0.3"/>
+      <property name="DismembermentBonus" value="0.00036,0.00036"/>
+    </property>
+  </item>
+
+  <!-- ammo -->
+  <item id="2063" name="9mmBanditBullet">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+  </item>
+  <item id="2064" name="44MagBanditBullet">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+  </item>
+  <item id="2065" name="10mmBanditBullet">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/10mm_bulletPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+  </item>
+  <item id="2065" name="762mmBanditBullet">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+  </item>
+  <item id="2066" name="shotgunBanditShell">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
+    <property name="Material" value="lead"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="250"/>
+    <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+  </item>
+  <item id="2067" name="BanditRocket">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Candrop" value="false"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+    <property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="3"/>
+    <property name="Stacknumber" value="50"/>
+    <property class="Attributes">
+        <property name="GetQualityFromWeapon" value="true"/>
+        <property name="EntityDamage" value="50,50"/>
+        <property name="BlockDamage" value="1000,1000"/>
+        <property name="ApplyBuff" value="1,1" param1="banditBonus" />
+	</property>
+    <property class="Action1">
+      <property name="Class" value="Projectile"/>
+      <property name="Explosion.ParticleIndex" value="4"/>
+      <property name="Explosion.RadiusBlocks" value="5"/>
+      <property name="Explosion.BlockDamage" value="1500"/>
+      <property name="Explosion.RadiusEntities" value="5"/>
+      <property name="Explosion.EntityDamage" value="250"/>
+      <property name="Velocity" value="50"/>
+      <property name="FlyTime" value="1.2"/>
+      <property name="LifeTime" value="8"/>
+    </property>
+  </item>
+
+    
+    
 </items>

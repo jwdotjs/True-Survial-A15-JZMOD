@@ -251,8 +251,8 @@
 
 	<wilderness_rules>
 		<wilderness_rule name="wildernessDefault" spawn_min_max="9,15">  <!-- minimun and maximun wildernessPOI's -->
-			<path_material value="gravel" /> 
-			<path_radius value="2" />
+			<path_material value="asphalt" /> 
+			<path_radius value="3" />
 			<prefab_rule name="wildernessPOIs" prob="1"/>
 		</wilderness_rule>
 	</wilderness_rules>
@@ -440,7 +440,7 @@
 		</prefab_rule>		
 		
 		<prefab_rule name="wildernessPOIs">
-			<path_material value="gravel" /> 
+			<path_material value="asphalt" /> 
 			<path_radius value="2" />
 			
 			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="20"/>
