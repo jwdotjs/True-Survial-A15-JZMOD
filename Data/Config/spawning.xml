@@ -1225,6 +1225,19 @@
 			<property name="TotalPerWave"       value="60" />
 		</day>
 	</entityspawner>
-		
+	<!--JZMOD BANDIT POI SPAWNER-->	
+    <entityspawner name="BanditSpawn">
+        
+        <day value="*">
+            <property name="ResetToday"        value="false" />
+            <property name="EntityGroupName"    value="BanditGroup" />
+            <property name="Time"               value="Any" />
+            <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+            <property name="TotalAlive"         value="8" />
+            <property name="TotalPerWave"       value="8" />
+            <property name="DaysToRespawnIfPlayerLeft" value="1" /> <!-- in game days -->
+            <property name="AttackPlayerAtOnce" value="false" />
+          </day>
+    </entityspawner>
 		
 </spawning>

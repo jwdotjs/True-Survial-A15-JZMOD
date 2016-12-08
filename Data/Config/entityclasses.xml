@@ -719,7 +719,7 @@
 		<property name="TimeStayAfterDeath" value="300" />
 		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
-		<property name="ExperienceGain" value="1" />
+		<property name="ExperienceGain" value="50" />
         <property name="CorpseBlock" value="animalGore" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
@@ -822,7 +822,7 @@
 		<property name="TimeStayAfterDeath" value="300" />
 		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
-		<property name="ExperienceGain" value="25" />
+		<property name="ExperienceGain" value="75" />
 		<property name="DeadBodyHitPoints" value="250" />
 		<!-- JZMOD Harvest For Beginner -->
 		<drop event="Harvest" name="rawMeat" count="5" />
@@ -916,7 +916,7 @@
 		<property name="TimeStayAfterDeath" value="300" />
 		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="true" />
-		<property name="ExperienceGain" value="40" />
+		<property name="ExperienceGain" value="100" />
 		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="250" />
 		<!-- JZMOD Harvest For Beginner -->
@@ -961,7 +961,7 @@
 		<property name="SoundDeath" value="Animals/rabbitdeath" />
 		<property name="PanicSpeed" value="2.6" />
 		<property name="CorpseBlockChance" value="0" />
-		<property name="ExperienceGain" value="1" />
+		<property name="ExperienceGain" value="5" />
 		<property name="SwimOffset" value="2"/>
         <!-- JZMOD Harvest For Beginner -->
 		<drop event="Harvest" name="rawMeat" count="1" />
@@ -994,7 +994,7 @@
 		<property name="SoundDeath" value="Animals/Chicken/chickendeath" />
 		<property name="PanicSpeed" value="2.6" />
 		<property name="CorpseBlockChance" value="0" />
-		<property name="ExperienceGain" value="1" />
+		<property name="ExperienceGain" value="5" />
         <property name="SwimOffset" value="2"/>
 		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="100" />
@@ -1029,7 +1029,7 @@
 		<property name="SoundDeath" value="Animals/pigdeath" />
 		<property name="PanicSpeed" value="2.7" />
 		<property name="PhysicsBody" value="pig" />
-		<property name="ExperienceGain" value="1" />
+		<property name="ExperienceGain" value="30" />
         <property name="SwimOffset" value="0.7"/>
 		<!-- JZMOD Harvest For Beginner -->
 		<drop event="Harvest" name="rawMeat" count="4" />
@@ -1188,14 +1188,14 @@
 	<entity_class name="zombieMaleHazmat" extends="zombieUMA" >
         <property name="Archetype" value="ZombieMaleHazmat"/>
         <property name="HandItem" value="handZombieHazMat" />
-        <property name="ExperienceGain" value="15"/>
+        <property name="ExperienceGain" value="25"/>
         <property name="LootListOnDeath" value="65" />
     </entity_class>
 
     <entity_class name="zombieFemaleHazmat" extends="ZombieFemaleUMA" >
         <property name="Archetype" value="ZombieFemaleHazmat"/>
         <property name="HandItem" value="handZombieHazMat" />
-        <property name="ExperienceGain" value="15"/>
+        <property name="ExperienceGain" value="25"/>
         <property name="LootListOnDeath" value="65" />
     </entity_class>
 
@@ -1206,7 +1206,7 @@
         <property name="MaxHealth" value="3000" /> <!-- used to be 15 -->
         <property name="HandItem" value="handStrongZombie"/>
         <property name="WalkType" value="1" />
-        <property name="ExperienceGain" value="15"/>
+        <property name="ExperienceGain" value="25"/>
         <property name="LootListOnDeath" value="85" />
     </entity_class>
 
@@ -1214,7 +1214,7 @@
         <property name="Archetype" value="ZombieSoldier"/>
         <property name="LootListOnDeath" value="73" />
         <property name="MaxHealth" value="5000" />
-        <property name="ExperienceGain" value="30"/>
+        <property name="ExperienceGain" value="35"/>
         <property name="WalkType" value="7" />
     </entity_class>
 
@@ -1228,7 +1228,7 @@
     <entity_class name="ZombieMiner" extends="zombieUMA" >
         <property name="Archetype" value="ZombieMiner"/>
         <property name="HandItem" value="handZombieWorker" />
-        <property name="ExperienceGain" value="20"/>
+        <property name="ExperienceGain" value="25"/>
         <property name="LootListOnDeath" value="82" />
     </entity_class>
 
@@ -1240,7 +1240,7 @@
         <property name="ApproachSpeed" value="1.15" />
         <property name="NightWanderSpeed" value="0.75" />
         <property name="NightApproachSpeed" value="1.15" />	
-        <property name="ExperienceGain" value="40"/>
+        <property name="ExperienceGain" value="65"/>
         <property name="LootListOnDeath" value="78" />
     </entity_class>
 
@@ -1264,7 +1264,7 @@
         <property name="Archetype" value="ZombieBiker"/>
         <property name="HandItem" value="handStrongZombie" />
         <property name="MaxHealth" value="6000" />
-        <property name="ExperienceGain" value="30"/>
+        <property name="ExperienceGain" value="40"/>
         <property name="LootListOnDeath" value="83" />
         <property name="WalkType" value="7" />
     </entity_class>
@@ -1484,7 +1484,7 @@
         <property name="LootListOnDeath" value="71" />
         <property name="CorpseBlock" value="GoreBlock1Prefab"/>
         <property name="CorpseBlockChance" value="1"/>
-        <property name="ExperienceGain" value="15"/>
+        <property name="ExperienceGain" value="100"/>
         <property name="DeadBodyHitPoints" value="20" />
         <property name="HasDeathAnim" value="true" />
     </entity_class>
@@ -1575,6 +1575,7 @@
     </entity_class>
     
 	<!-- JZMOD ADDED ZOMBIE WALK VARIATIONS -->
+    
 	<!-- Climbers-->
 	<entity_class name="GorillaZombie" extends="zombieMoe">
 		<property name="WalkType" value="2" />
@@ -1686,7 +1687,7 @@
 		<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense" />
 		<property name="SoundHurt" value="Animals/rabbitpain" />
 		<property name="SoundDeath" value="Animals/rabbitdeath" />
-		<property name="ExperienceGain" value="200" />
+		<property name="ExperienceGain" value="10" />
 		<property name="WanderSpeed" value="0.7" />
 		<property name="PanicSpeed" value="2.3" />
 		<property name="ApproachSpeed" value="1.3" />
@@ -2404,6 +2405,40 @@
 		<property name="WalkType" value="8" />
 		<property name="ApproachSpeed" value="0.32" />
 	</entity_class>
+    <!-- JZMOD Brute-->
+    <entity_class name="ZombieBrute" extends="zombieUMA" >
+        <property name="Archetype" value="ZombieBrute"/>
+        <property name="MaxHealth" value="20000" />
+        <property name="ExperienceGain" value="75"/>
+        <property name="LootListOnDeath" value="15" />
+        <property name="HandItem" value="BruteBash" />
+        <property name="WalkType" value="2" />
+        <property name="WanderSpeed" value="0.25" />
+		<property name="PanicSpeed" value="1.0" />
+		<property name="ApproachSpeed" value="0.35" />
+		<property name="NightWanderSpeed" value="0.25" />
+		<property name="NightApproachSpeed" value="0.5" />
+        <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+        <!-- AI properties -->
+        <property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachSpot" />
+		<property name="AITask-6" value="Wander" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+        <property name="AITarget-3" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+    </entity_class>
     <!-- JZMOD ADDED BANDITS -->
     
       <entity_class name="BanditTemplate">
@@ -2453,7 +2488,7 @@
         <property name="SoundAttack" value="malehateattack"/>
         <!-- Stats -->
         <property name="MaxHealth" value="150"/>
-        <property name="ExperienceGain" value="1275"/>
+        <property name="ExperienceGain" value="200"/>
         <property name="CorpseBlock" value="banditPistolCorpse"/>
         <property name="MaxViewAngle" value="270"/>
         <property name="TimeStayAfterDeath" value="5"/>
@@ -3429,13 +3464,11 @@
         <property name="CorpseBlock" value="banditSniperRifleCorpse"/>
       </entity_class>
       <entity_class name="BanditThugPestilenceRocketLauncherFemale" extends="BanditFemaleTemplate">
-
         <property name="Archetype" value="BanditFemalePestilence"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditRocketLauncher,BanditRocket"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditRocketLauncher,BanditRocket"/>
         <property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="12"/>
         <property name="CorpseBlock" value="banditRocketLauncherCorpse"/>
-
       </entity_class>
 
     <!-- <property name="MeshScale" value="2,2" />-->

@@ -276,6 +276,7 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
+        <entity name="ZombieBrute" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />			
 		<entity name="spider1" />
@@ -369,6 +370,7 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
+        <entity name="ZombieBrute" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
 		<entity name="zombieBear" />
@@ -474,6 +476,7 @@
 		<entity name="hornet" />
 		<entity name="zombiedog" />
 		<entity name="zombieSteveCrawler" />
+        <entity name="ZombieBrute" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
 		<entity name="zombieferal" />
@@ -574,6 +577,7 @@
 		<entity name="hornet" prob="0.15"/>
 		<entity name="zombiedog" prob="0.15"/>
 		<entity name="zombieSteveCrawler" prob="0.05"/>
+        <entity name="ZombieBrute" prob="0.15"/>
 		<entity name="fatzombiecop" prob="0.15"/>
 		<entity name="burntzombie" prob="0.07"/>
 		<entity name="zombieBear" prob="0.1"/>
@@ -679,6 +683,7 @@
 		<entity name="hornet" prob="0.15"/>
 		<entity name="zombiedog" prob="0.15"/>
 		<entity name="zombieSteveCrawler" prob="0.05"/>
+        <entity name="ZombieBrute" prob="0.15"/>
 		<entity name="fatzombiecop" prob="0.15"/>
 		<entity name="burntzombie" prob="0.07"/>
 		<entity name="zombieferal" prob="0.1"/>
@@ -775,7 +780,8 @@
 		<entity name="zombieArlene" />
 		<entity name="zombieDarlene" />
 		<entity name="zombieMarlene" />
-		<entity name="zombieNurse" />		
+		<entity name="zombieNurse" />	
+        <entity name="ZombieBrute" prob="0.05"/>        
 		<entity name="fatzombiecop" prob="0.05"/>
 		<entity name="hornet" prob="0.05"/>
 		<entity name="zombiedog" prob="0.05"/>
@@ -902,6 +908,7 @@
 	</entitygroup>			
 	
 	<entitygroup name="ZombiesBoss">
+        <entity name="ZombieBrute" prob="0.3"/>
 		<entity name="fatzombiecop" />		
 	</entitygroup>	
 	
@@ -1021,12 +1028,13 @@
     </entitygroup>
     
     <entitygroup name="ZombieChikenNBearHorde" >
-        <entity name="zombieBear" />
+        <entity name="zombieBear" prob="0.6" />
         <entity name="ZombieChicken" />
     </entitygroup>
 
     <entitygroup name="Zombie7thDayHorde">
         <entity name="GorillaZombie" prob="0.3"/>
+        <entity name="ZombieBrute" prob="0.3"/>
         <entity name="Boe8" prob="0.3"/>
         <entity name="Joe8" prob="0.3"/>
         <entity name="Moe8" prob="0.3"/>
@@ -1040,6 +1048,7 @@
 		<entity name="hornet" prob="0.2"/>
 		<entity name="zombiedog" prob="0.3"/>
 		<entity name="zombieBear" prob="0.1"/>
+        <entity name="ZombieBrute" prob="0.5"/>
 		<entity name="FatZombieCopClimber" prob="0.5"/>
         <entity name="burnt8" prob="0.3"/>
         <entity name="burnt6" prob="0.3"/>
@@ -1134,10 +1143,159 @@
 	</entitygroup>	
 	
 	<entitygroup name="BanditGroup">
-		<entity name="banditMelee" />
-		<entity name="banditRanged" />
-		<entity name="banditLeader" prob="0.2"/>
-	</entitygroup>		
+        <entity name="BanditThugPistol" prob="0.95"/>
+        <entity name="BanditThugPistolFemale" prob="0.95"/>
+        <entity name="BanditThugHuntingRifle" prob="0.85"/>
+        <entity name="BanditThugHuntingRifleFemale" prob="0.85"/>
+        <entity name="BanditThugSawedOffPumpShotgun" prob="0.75"/>
+        <entity name="BanditThugSawedOffPumpShotgunFemale" prob="0.75"/>
+        <entity name="BanditThugPumpShotgun" prob="0.65"/>
+        <entity name="BanditThugPumpShotgunFemale" prob="0.65"/>
+        <entity name="BanditThug44Magnum" prob="0.55"/>
+        <entity name="BanditThug44MagnumFemale" prob="0.55"/>
+        <entity name="BanditThugMP5" prob="0.45"/>
+        <entity name="BanditThugMP5Female" prob="0.45"/>
+        <entity name="BanditThugSniperRifle" prob="0.35"/>
+        <entity name="BanditThugSniperRifleFemale" prob="0.35"/>
+        <entity name="BanditThugAK47" prob="0.25"/>
+        <entity name="BanditThugAK47Female" prob="0.25"/>
+        <entity name="BanditThugRocketLauncher" prob="0.15"/>
+        <entity name="BanditThugRocketLauncherFemale" prob="0.15"/>
+        <entity name="BanditWarLeader" prob="0.15"/>
+        <entity name="BanditDreadLeader" prob="0.15"/>
+        <entity name="BanditTheMakerLeader" prob="0.15"/>
+        <entity name="BanditFamineLeader" prob="0.15"/>
+        <entity name="BanditDragonLeader" prob="0.15"/>
+        <entity name="BanditDeathLeader" prob="0.15"/>
+        <entity name="BanditPestilenceLeader" prob="0.15"/>
+        <entity name="BanditThugSledgeHammer" prob="0.25"/>
+        <entity name="BanditThugWarPistol" prob="0.45"/>
+        <entity name="BanditThugWarPistolFemale" prob="0.95"/>
+        <entity name="BanditThugWarHuntingRifle" prob="0.45"/>
+        <entity name="BanditThugWarHuntingRifleFemale" prob="0.85"/>
+        <entity name="BanditThugWarSawedOffPumpShotgun" prob="0.35"/>
+        <entity name="BanditThugWarSawedOffPumpShotgunFemale" prob="0.75"/>
+        <entity name="BanditThugWarPumpShotgun" prob="0.35"/>
+        <entity name="BanditThugWarPumpShotgunFemale" prob="0.65"/>
+        <entity name="BanditThugWar44Magnum" prob="0.25"/>
+        <entity name="BanditThugWar44MagnumFemale" prob="0.55"/>
+        <entity name="BanditThugWarMP5" prob="0.25"/>
+        <entity name="BanditThugWarMP5Female" prob="0.45"/>
+        <entity name="BanditThugWarSniperRifle" prob="0.15"/>
+        <entity name="BanditThugWarSniperRifleFemale" prob="0.35"/>
+        <entity name="BanditThugWarAK47" prob="0.15"/>
+        <entity name="BanditThugWarAK47Female" prob="0.25"/>
+        <entity name="BanditThugWarRocketLauncher" prob="0.05"/>
+        <entity name="BanditThugWarRocketLauncherFemale" prob="0.15"/>
+        <entity name="BanditThugDreadPistol" prob="0.95"/>
+        <entity name="BanditThugDreadPistolFemale" prob="0.55"/>
+        <entity name="BanditThugDreadHuntingRifle" prob="0.85"/>
+        <entity name="BanditThugDreadHuntingRifleFemale" prob="0.45"/>
+        <entity name="BanditThugDreadSawedOffPumpShotgun" prob="0.75"/>
+        <entity name="BanditThugDreadSawedOffPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugDreadPumpShotgun" prob="0.65"/>
+        <entity name="BanditThugDreadPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugDread44Magnum" prob="0.55"/>
+        <entity name="BanditThugDread44MagnumFemale" prob="0.35"/>
+        <entity name="BanditThugDreadMP5" prob="0.45"/>
+        <entity name="BanditThugDreadMP5Female" prob="0.25"/>
+        <entity name="BanditThugDreadSniperRifle" prob="0.35"/>
+        <entity name="BanditThugDreadSniperRifleFemale" prob="0.15"/>
+        <entity name="BanditThugDreadAK47" prob="0.25"/>
+        <entity name="BanditThugDreadAK47Female" prob="0.10"/>
+        <entity name="BanditThugDreadRocketLauncher" prob="0.15"/>
+        <entity name="BanditThugDreadRocketLauncherFemale" prob="0.05"/>
+        <entity name="BanditThugTheMakerPistol" prob="0.95"/>
+        <entity name="BanditThugTheMakerPistolFemale" prob="0.55"/>
+        <entity name="BanditThugTheMakerHuntingRifle" prob="0.85"/>
+        <entity name="BanditThugTheMakerHuntingRifleFemale" prob="0.45"/>
+        <entity name="BanditThugTheMakerSawedOffPumpShotgun" prob="0.75"/>
+        <entity name="BanditThugTheMakerSawedOffPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugTheMakerPumpShotgun" prob="0.65"/>
+        <entity name="BanditThugTheMakerPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugTheMaker44Magnum" prob="0.55"/>
+        <entity name="BanditThugTheMaker44MagnumFemale" prob="0.35"/>
+        <entity name="BanditThugTheMakerMP5" prob="0.45"/>
+        <entity name="BanditThugTheMakerMP5Female" prob="0.25"/>
+        <entity name="BanditThugTheMakerSniperRifle" prob="0.35"/>
+        <entity name="BanditThugTheMakerSniperRifleFemale" prob="0.15"/>
+        <entity name="BanditThugTheMakerAK47" prob="0.25"/>
+        <entity name="BanditThugTheMakerAK47Female" prob="0.10"/>
+        <entity name="BanditThugTheMakerRocketLauncher" prob="0.15"/>
+        <entity name="BanditThugTheMakerRocketLauncherFemale" prob="0.05"/>
+        <entity name="BanditThugFaminePistol" prob="0.95"/>
+        <entity name="BanditThugFaminePistolFemale" prob="0.55"/>
+        <entity name="BanditThugFamineHuntingRifle" prob="0.85"/>
+        <entity name="BanditThugFamineHuntingRifleFemale" prob="0.45"/>
+        <entity name="BanditThugFamineSawedOffPumpShotgun" prob="0.75"/>
+        <entity name="BanditThugFamineSawedOffPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugFaminePumpShotgun" prob="0.65"/>
+        <entity name="BanditThugFaminePumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugFamine44Magnum" prob="0.55"/>
+        <entity name="BanditThugFamine44MagnumFemale" prob="0.35"/>
+        <entity name="BanditThugFamineMP5" prob="0.45"/>
+        <entity name="BanditThugFamineMP5Female" prob="0.25"/>
+        <entity name="BanditThugFamineSniperRifle" prob="0.35"/>
+        <entity name="BanditThugFamineSniperRifleFemale" prob="0.15"/>
+        <entity name="BanditThugFamineAK47" prob="0.25"/>
+        <entity name="BanditThugFamineAK47Female" prob="0.10"/>
+        <entity name="BanditThugFamineRocketLauncher" prob="0.15"/>
+        <entity name="BanditThugFamineRocketLauncherFemale" prob="0.05"/>
+        <entity name="BanditThugDragonPistol" prob="0.95"/>
+        <entity name="BanditThugDragonPistolFemale" prob="0.55"/>
+        <entity name="BanditThugDragonHuntingRifle" prob="0.85"/>
+        <entity name="BanditThugDragonHuntingRifleFemale" prob="0.45"/>
+        <entity name="BanditThugDragonSawedOffPumpShotgun" prob="0.75"/>
+        <entity name="BanditThugDragonSawedOffPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugDragonPumpShotgun" prob="0.65"/>
+        <entity name="BanditThugDragonPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugDragon44Magnum" prob="0.55"/>
+        <entity name="BanditThugDragon44MagnumFemale" prob="0.35"/>
+        <entity name="BanditThugDragonMP5" prob="0.45"/>
+        <entity name="BanditThugDragonMP5Female" prob="0.25"/>
+        <entity name="BanditThugDragonSniperRifle" prob="0.35"/>
+        <entity name="BanditThugDragonSniperRifleFemale" prob="0.15"/>
+        <entity name="BanditThugDragonAK47" prob="0.25"/>
+        <entity name="BanditThugDragonAK47Female" prob="0.10"/>
+        <entity name="BanditThugDragonRocketLauncher" prob="0.15"/>
+        <entity name="BanditThugDragonRocketLauncherFemale" prob="0.05"/>
+        <entity name="BanditThugDeathPistol" prob="0.45"/>
+        <entity name="BanditThugDeathPistolFemale" prob="0.95"/>
+        <entity name="BanditThugDeathHuntingRifle" prob="0.45"/>
+        <entity name="BanditThugDeathHuntingRifleFemale" prob="0.85"/>
+        <entity name="BanditThugDeathSawedOffPumpShotgun" prob="0.35"/>
+        <entity name="BanditThugDeathSawedOffPumpShotgunFemale" prob="0.75"/>
+        <entity name="BanditThugDeathPumpShotgun" prob="0.35"/>
+        <entity name="BanditThugDeathPumpShotgunFemale" prob="0.65"/>
+        <entity name="BanditThugDeath44Magnum" prob="0.25"/>
+        <entity name="BanditThugDeath44MagnumFemale" prob="0.55"/>
+        <entity name="BanditThugDeathMP5" prob="0.25"/>
+        <entity name="BanditThugDeathMP5Female" prob="0.45"/>
+        <entity name="BanditThugDeathSniperRifle" prob="0.15"/>
+        <entity name="BanditThugDeathSniperRifleFemale" prob="0.35"/>
+        <entity name="BanditThugDeathAK47" prob="0.15"/>
+        <entity name="BanditThugDeathAK47Female" prob="0.25"/>
+        <entity name="BanditThugDeathRocketLauncher" prob="0.05"/>
+        <entity name="BanditThugDeathRocketLauncherFemale" prob="0.15"/>
+        <entity name="BanditThugPestilencePistol" prob="0.95"/>
+        <entity name="BanditThugPestilencePistolFemale" prob="0.55"/>
+        <entity name="BanditThugPestilenceHuntingRifle" prob="0.85"/>
+        <entity name="BanditThugPestilenceHuntingRifleFemale" prob="0.45"/>
+        <entity name="BanditThugPestilenceSawedOffPumpShotgun" prob="0.75"/>
+        <entity name="BanditThugPestilenceSawedOffPumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugPestilencePumpShotgun" prob="0.65"/>
+        <entity name="BanditThugPestilencePumpShotgunFemale" prob="0.35"/>
+        <entity name="BanditThugPestilence44Magnum" prob="0.55"/>
+        <entity name="BanditThugPestilence44MagnumFemale" prob="0.35"/>
+        <entity name="BanditThugPestilenceMP5" prob="0.45"/>
+        <entity name="BanditThugPestilenceMP5Female" prob="0.25"/>
+        <entity name="BanditThugPestilenceSniperRifle" prob="0.35"/>
+        <entity name="BanditThugPestilenceSniperRifleFemale" prob="0.15"/>
+        <entity name="BanditThugPestilenceAK47" prob="0.25"/>
+        <entity name="BanditThugPestilenceAK47Female" prob="0.10"/>
+        <entity name="BanditThugPestilenceRocketLauncher" prob="0.15"/>
+        <entity name="BanditThugPestilenceRocketLauncherFemale" prob="0.05"/>
+    </entitygroup>		
 
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />		
@@ -1740,6 +1898,7 @@
 		<entity name="ZombieSoldier" prob="0.546"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="zombieDarlene"/>
+        <entity name="ZombieBrute" prob="0.265"/>
 		<entity name="fatzombiecop" prob="0.265"/>
 		<entity name="zombieArlene"/>
 		<entity name="zombieMaleHazmat"/>
@@ -1750,6 +1909,7 @@
 	<entitygroup name="hordeStageGS190">
 		<entity name="spiderzombie"/>
 		<entity name="zombieArlene"/>
+        <entity name="ZombieBrute" prob="0.267"/>
 		<entity name="fatzombiecop" prob="0.267"/>
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieFemaleFatUMA"/>
@@ -1818,6 +1978,7 @@
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS220">
+        <entity name="ZombieBrute" prob="0.267"/>
 		<entity name="fatzombiecop" prob="0.277"/>
 		<entity name="zombieNurse"/>
 		<entity name="zombieYo"/>
@@ -1837,6 +1998,7 @@
 		<entity name="zombieNurse"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieferal" prob="0.097"/>
+         <entity name="ZombieBrute" prob="0.267"/>
 		<entity name="fatzombiecop" prob="0.28"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="zombiedog"/>
@@ -1862,6 +2024,7 @@
 	<entitygroup name="hordeStageGS239">
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieCheerleader"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.284"/>
 		<entity name="zombieMarlene"/>
 		<entity name="zombieNurse"/>
@@ -1878,6 +2041,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombiedog"/>
 		<entity name="zombieMaleHazmat"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.287"/>
 		<entity name="zombieBoe"/>
 		<entity name="zombieSteveCrawler"/>
@@ -1888,6 +2052,7 @@
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS252">
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.289"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="zombieSteveCrawler"/>
@@ -1903,6 +2068,7 @@
 
 	<entitygroup name="hordeStageGS259">
 		<entity name="ZombieFemaleFatUMA"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.291"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="ZombieSoldier" prob="0.565"/>
@@ -1934,6 +2100,7 @@
 		<entity name="zombiedog"/>
 		<entity name="zombieNurse"/>
 		<entity name="ZombieUtilityWorker"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.296"/>
 		<entity name="zombieSteve"/>
 		<entity name="ZombieFemaleUMA"/>
@@ -1954,6 +2121,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="zombiedog"/>
 		<entity name="fatzombiecop" prob="0.298"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="ZombieCheerleader"/>
 	</entitygroup>
 
@@ -2017,6 +2185,7 @@
 		<entity name="zombiedog"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieBoe"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.31"/>
 		<entity name="zombieYo"/>
 		<entity name="zombieJoe"/>
@@ -2030,6 +2199,7 @@
 	<entitygroup name="hordeStageGS319">
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombiedog"/>
+        <entity name="ZombieBrute" prob="0.284"/>
 		<entity name="fatzombiecop" prob="0.312"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -2061,6 +2231,7 @@
 		<entity name="zombieferal" prob="0.142"/>
 		<entity name="zombieBoe"/>
 		<entity name="fatzombiecop" prob="0.317"/>
+        <entity name="ZombieBrute" prob="0.317"/>
 		<entity name="zombieMoe"/>
 		<entity name="zombiedog"/>
 		<entity name="burntzombie"/>
@@ -2079,6 +2250,7 @@
 		<entity name="zombieDarlene"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieSoldier" prob="0.585"/>
+        <entity name="ZombieBrute" prob="0.317"/>
 		<entity name="fatzombiecop" prob="0.319"/>
 		<entity name="ZombieMiner"/>
 	</entitygroup>
@@ -2092,6 +2264,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieSoldier" prob="0.587"/>
+        <entity name="ZombieBrute" prob="0.317"/>
 		<entity name="fatzombiecop" prob="0.322"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieSkateboarder"/>
@@ -2108,6 +2281,7 @@
 		<entity name="ZombieSoldier" prob="0.589"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombieMaleHazmat"/>
+        <entity name="ZombieBrute" prob="0.317"/>
 		<entity name="fatzombiecop" prob="0.325"/>
 	</entitygroup>
 
@@ -2117,6 +2291,7 @@
 		<entity name="zombieSteve"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieFootballPlayer"/>
+        <entity name="ZombieBrute" prob="0.317"/>
 		<entity name="fatzombiecop" prob="0.327"/>
 		<entity name="burntzombie"/>
 		<entity name="spiderzombie"/>
@@ -2149,6 +2324,7 @@
 		<entity name="zombieJoe"/>
 		<entity name="zombieMoe"/>
 		<entity name="fatzombiecop" prob="0.332"/>
+        <entity name="ZombieBrute" prob="0.317"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="ZombieMiner"/>
 	</entitygroup>
@@ -2186,6 +2362,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.34"/>
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="zombieferal" prob="0.17"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieYo"/>
@@ -2202,6 +2379,7 @@
 		<entity name="zombieMoe"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="zombieBoe"/>
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="fatzombiecop" prob="0.342"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieNurse"/>
@@ -2224,6 +2402,7 @@
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS420">
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="fatzombiecop" prob="0.347"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -2247,11 +2426,13 @@
 		<entity name="zombieferal" prob="0.182"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieUtilityWorker"/>
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="fatzombiecop" prob="0.35"/>
 		<entity name="zombieSteve"/>
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS435">
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="fatzombiecop" prob="0.353"/>
 		<entity name="zombieJoe"/>
 		<entity name="zombieBoe"/>
@@ -2269,6 +2450,7 @@
 		<entity name="ZombieSoldier" prob="0.611"/>
 		<entity name="zombieDarlene"/>
 		<entity name="fatzombiecop" prob="0.356"/>
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="ZombieMiner"/>
@@ -2286,6 +2468,7 @@
 		<entity name="zombieferal" prob="0.192"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.358"/>
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="zombieArlene"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMoe"/>
@@ -2304,6 +2487,7 @@
 		<entity name="ZombieMaleUMA"/>
 		<entity name="zombieMoe"/>
 		<entity name="fatzombiecop" prob="0.361"/>
+        <entity name="ZombieBrute" prob="0.34"/>
 		<entity name="ZombieFemaleUMA"/>
 	</entitygroup>
 
@@ -2312,6 +2496,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.364"/>
+        <entity name="ZombieBrute" prob="0.364"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieSkateboarder"/>
 		<entity name="ZombieMiner"/>
@@ -2324,6 +2509,7 @@
 	<entitygroup name="hordeStageGS474">
 		<entity name="zombieYo"/>
 		<entity name="fatzombiecop" prob="0.366"/>
+        <entity name="ZombieBrute" prob="0.364"/>
 		<entity name="ZombieSoldier" prob="0.619"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombiedog"/>
@@ -2351,6 +2537,7 @@
 
 	<entitygroup name="hordeStageGS489">
 		<entity name="fatzombiecop" prob="0.372"/>
+        <entity name="ZombieBrute" prob="0.364"/>
 		<entity name="zombieNurse"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="zombieDarlene"/>
@@ -2367,6 +2554,7 @@
 		<entity name="burntzombie"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.374"/>
+        <entity name="ZombieBrute" prob="0.364"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="ZombieSoldier" prob="0.625"/>
 		<entity name="zombieferal" prob="0.212"/>
@@ -2395,6 +2583,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="fatzombiecop" prob="0.38"/>
+        <entity name="ZombieBrute" prob="0.364"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieSteve"/>
 		<entity name="zombieferal" prob="0.219"/>
@@ -2410,6 +2599,7 @@
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="fatzombiecop" prob="0.383"/>
+        <entity name="ZombieBrute" prob="0.383"/>
 		<entity name="zombieArlene"/>
 		<entity name="zombiedog"/>
 		<entity name="ZombieSoldier" prob="0.631"/>
@@ -2427,6 +2617,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.386"/>
+        <entity name="ZombieBrute" prob="0.383"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombiedog"/>
@@ -2441,6 +2632,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.388"/>
+        <entity name="ZombieBrute" prob="0.383"/>
 		<entity name="zombieYo"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="ZombieFemaleFatUMA"/>
@@ -2451,6 +2643,7 @@
 		<entity name="zombieYo"/>
 		<entity name="zombieferal" prob="0.232"/>
 		<entity name="fatzombiecop" prob="0.391"/>
+        <entity name="ZombieBrute" prob="0.383"/>
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -2470,6 +2663,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="zombieMarlene"/>
 		<entity name="fatzombiecop" prob="0.394"/>
+        <entity name="ZombieBrute" prob="0.394"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieferal" prob="0.236"/>
 		<entity name="zombieMaleHazmat"/>
@@ -2480,6 +2674,7 @@
 		<entity name="ZombieSoldier" prob="0.641"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.397"/>
+        <entity name="ZombieBrute" prob="0.394"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieYo"/>
 		<entity name="zombieJoe"/>
@@ -2500,6 +2695,7 @@
 		<entity name="burntzombie"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.4"/>
+        <entity name="ZombieBrute" prob="0.394"/>
 		<entity name="ZombieMiner"/>
 	</entitygroup>
 
@@ -2528,6 +2724,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.405"/>
+        <entity name="ZombieBrute" prob="0.394"/>
 		<entity name="zombieDarlene"/>
 	</entitygroup>
 
@@ -2550,6 +2747,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieSoldier" prob="0.651"/>
 		<entity name="fatzombiecop" prob="0.411"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieSkateboarder"/>
 		<entity name="burntzombie"/>
@@ -2567,6 +2765,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieSoldier" prob="0.653"/>
 		<entity name="fatzombiecop" prob="0.414"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="zombieMoe"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -2578,6 +2777,7 @@
 		<entity name="ZombieSoldier" prob="0.655"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.417"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieNurse"/>
 		<entity name="spiderzombie"/>
@@ -2595,6 +2795,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="zombieferal" prob="0.267"/>
 		<entity name="fatzombiecop" prob="0.42"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="zombiedog"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -2603,6 +2804,7 @@
 
 	<entitygroup name="hordeStageGS635">
 		<entity name="fatzombiecop" prob="0.423"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="zombieNurse"/>
 		<entity name="ZombieSoldier" prob="0.659"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -2621,6 +2823,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieSoldier" prob="0.661"/>
 		<entity name="fatzombiecop" prob="0.426"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="zombieMarlene"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieCheerleader"/>
@@ -2647,6 +2850,7 @@
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieSoldier" prob="0.665"/>
 		<entity name="fatzombiecop" prob="0.431"/>
+        <entity name="ZombieBrute" prob="0.411"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieferal" prob="0.281"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -2667,6 +2871,7 @@
 		<entity name="zombieYo"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.435"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieFemaleFatUMA"/>
 	</entitygroup>
@@ -2676,6 +2881,7 @@
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.437"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="zombieSteve"/>
@@ -2694,6 +2900,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="fatzombiecop" prob="0.441"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieMarlene"/>
 		<entity name="zombiedog"/>
@@ -2715,6 +2922,7 @@
 
 	<entitygroup name="hordeStageGS703">
 		<entity name="fatzombiecop" prob="0.447"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="ZombieSoldier" prob="0.676"/>
 		<entity name="zombieBoe"/>
 		<entity name="zombieMaleHazmat"/>
@@ -2750,6 +2958,7 @@
 		<entity name="zombieSteveCrawler"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.453"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="ZombieMiner"/>
@@ -2766,6 +2975,7 @@
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="fatzombiecop" prob="0.456"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="ZombieSoldier" prob="0.683"/>
 	</entitygroup>
 
@@ -2778,6 +2988,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.459"/>
+        <entity name="ZombieBrute" prob="0.435"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieNurse"/>
 		<entity name="zombieferal" prob="0.314"/>
@@ -2787,6 +2998,7 @@
 		<entity name="zombieBoe"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.462"/>
+        <entity name="ZombieBrute" prob="0.462"/>
 		<entity name="zombiedog"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieferal" prob="0.318"/>
@@ -2819,6 +3031,7 @@
 		<entity name="ZombieCheerleader"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.468"/>
+        <entity name="ZombieBrute" prob="0.462"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieferal" prob="0.325"/>
 		<entity name="zombieNurse"/>
@@ -2841,6 +3054,7 @@
 
 	<entitygroup name="hordeStageGS782">
 		<entity name="fatzombiecop" prob="0.474"/>
+        <entity name="ZombieBrute" prob="0.462"/>
 		<entity name="ZombieSoldier" prob="0.696"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -2856,6 +3070,7 @@
 	<entitygroup name="hordeStageGS791">
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.477"/>
+        <entity name="ZombieBrute" prob="0.462"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieSoldier" prob="0.698"/>
@@ -2872,6 +3087,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieSoldier" prob="0.7"/>
 		<entity name="fatzombiecop" prob="0.48"/>
+        <entity name="ZombieBrute" prob="0.462"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombieSteve"/>
@@ -2888,6 +3104,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.484"/>
+        <entity name="ZombieBrute" prob="0.462"/>
 		<entity name="zombieSteve"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieMaleHazmat"/>
@@ -2914,6 +3131,7 @@
 		<entity name="ZombieSoldier" prob="0.707"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.49"/>
+        <entity name="ZombieBrute" prob="0.49"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombieMaleHazmat"/>
@@ -2925,6 +3143,7 @@
 
 	<entitygroup name="hordeStageGS836">
 		<entity name="fatzombiecop" prob="0.493"/>
+        <entity name="ZombieBrute" prob="0.49"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombieferal" prob="0.356"/>
 		<entity name="zombieMaleHazmat"/>
@@ -2955,6 +3174,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="zombieBoe"/>
 		<entity name="fatzombiecop" prob="0.499"/>
+        <entity name="ZombieBrute" prob="0.49"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieSkateboarder"/>
@@ -2970,6 +3190,7 @@
 		<entity name="ZombieSoldier" prob="0.716"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="fatzombiecop" prob="0.503"/>
+        <entity name="ZombieBrute" prob="0.49"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieSteve"/>
 		<entity name="ZombieMiner"/>
@@ -2983,6 +3204,7 @@
 		<entity name="zombieSteve"/>
 		<entity name="zombieNurse"/>
 		<entity name="fatzombiecop" prob="0.506"/>
+        <entity name="ZombieBrute" prob="0.49"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="zombieMarlene"/>
 		<entity name="zombiedog"/>
@@ -2998,6 +3220,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombieMoe"/>
 		<entity name="fatzombiecop" prob="0.509"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="zombieferal" prob="0.375"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieFemaleUMA"/>
@@ -3041,6 +3264,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieDarlene"/>
 		<entity name="fatzombiecop" prob="0.519"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="zombieMoe"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -3053,6 +3277,7 @@
 		<entity name="zombieferal" prob="0.391"/>
 		<entity name="zombiedog"/>
 		<entity name="fatzombiecop" prob="0.522"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="burntzombie"/>
@@ -3068,6 +3293,7 @@
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="spiderzombie"/>
 		<entity name="fatzombiecop" prob="0.525"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieMaleUMA"/>
@@ -3097,6 +3323,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="zombieBoe"/>
 		<entity name="fatzombiecop" prob="0.532"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="ZombieSoldier" prob="0.737"/>
 		<entity name="zombieNurse"/>
 		<entity name="zombieSteveCrawler"/>
@@ -3113,6 +3340,7 @@
 		<entity name="ZombieSoldier" prob="0.739"/>
 		<entity name="zombieferal" prob="0.407"/>
 		<entity name="fatzombiecop" prob="0.535"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="zombiedog"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="ZombieCheerleader"/>
@@ -3121,6 +3349,7 @@
 
 	<entitygroup name="hordeStageGS966">
 		<entity name="fatzombiecop" prob="0.539"/>
+        <entity name="ZombieBrute" prob="0.509"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieSoldier" prob="0.742"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -3144,6 +3373,7 @@
 		<entity name="zombieNurse"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.542"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="ZombieUtilityWorker"/>
 	</entitygroup>
 
@@ -3152,6 +3382,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.545"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="zombieMoe"/>
 		<entity name="zombieferal" prob="0.419"/>
 		<entity name="ZombieCheerleader"/>
@@ -3171,6 +3402,7 @@
 		<entity name="ZombieSkateboarder"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="fatzombiecop" prob="0.548"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieSteve"/>
 	</entitygroup>
@@ -3182,6 +3414,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.552"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieMiner"/>
@@ -3197,6 +3430,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieSoldier" prob="0.754"/>
 		<entity name="fatzombiecop" prob="0.555"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="zombieArlene"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombiedog"/>
@@ -3234,6 +3468,7 @@
 	<entitygroup name="hordeStageGS1042">
 		<entity name="zombieMaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.565"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -3251,6 +3486,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="zombieNurse"/>
 		<entity name="fatzombiecop" prob="0.569"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieferal" prob="0.448"/>
@@ -3269,6 +3505,7 @@
 		<entity name="zombieArlene"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.572"/>
+        <entity name="ZombieBrute" prob="0.542"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="spiderzombie"/>
 	</entitygroup>
@@ -3283,6 +3520,7 @@
 		<entity name="zombieArlene"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.575"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="zombieSteve"/>
 		<entity name="ZombieMiner"/>
 	</entitygroup>
@@ -3291,6 +3529,7 @@
 		<entity name="ZombieSoldier" prob="0.771"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="fatzombiecop" prob="0.579"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="zombieferal" prob="0.46"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieSkateboarder"/>
@@ -3309,6 +3548,7 @@
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombiedog"/>
 		<entity name="fatzombiecop" prob="0.582"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieferal" prob="0.464"/>
@@ -3317,6 +3557,7 @@
 
 	<entitygroup name="hordeStageGS1100">
 		<entity name="fatzombiecop" prob="0.585"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="ZombieSoldier" prob="0.775"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombieferal" prob="0.468"/>
@@ -3338,6 +3579,7 @@
 		<entity name="burntzombie"/>
 		<entity name="zombieSteve"/>
 		<entity name="fatzombiecop" prob="0.589"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieDarlene"/>
 		<entity name="zombiedog"/>
@@ -3352,6 +3594,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="spiderzombie"/>
 		<entity name="fatzombiecop" prob="0.592"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="zombieMoe"/>
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieSkateboarder"/>
@@ -3376,6 +3619,7 @@
 		<entity name="ZombieSoldier" prob="0.785"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.599"/>
+        <entity name="ZombieBrute" prob="0.575"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -3394,6 +3638,7 @@
 		<entity name="ZombieMaleUMA"/>
 		<entity name="ZombieSoldier" prob="0.788"/>
 		<entity name="fatzombiecop" prob="0.603"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="zombieDarlene"/>
 		<entity name="zombieSteve"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -3403,6 +3648,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.606"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="zombieferal" prob="0.493"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="spiderzombie"/>
@@ -3416,6 +3662,7 @@
 	<entitygroup name="hordeStageGS1169">
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.61"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="ZombieSoldier" prob="0.793"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombieSteveCrawler"/>
@@ -3434,6 +3681,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.613"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="zombieferal" prob="0.502"/>
 		<entity name="ZombieMiner"/>
 		<entity name="spiderzombie"/>
@@ -3448,6 +3696,7 @@
 		<entity name="zombiedog"/>
 		<entity name="zombieYo"/>
 		<entity name="fatzombiecop" prob="0.617"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="ZombieSoldier" prob="0.798"/>
 		<entity name="zombieferal" prob="0.506"/>
@@ -3460,6 +3709,7 @@
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieSoldier" prob="0.8"/>
 		<entity name="fatzombiecop" prob="0.62"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="zombiedog"/>
 		<entity name="zombieYo"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -3471,6 +3721,7 @@
 
 	<entitygroup name="hordeStageGS1209">
 		<entity name="fatzombiecop" prob="0.624"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieferal" prob="0.514"/>
 		<entity name="zombieNurse"/>
@@ -3488,6 +3739,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombiedog"/>
 		<entity name="fatzombiecop" prob="0.627"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="zombieMarlene"/>
 		<entity name="zombieferal" prob="0.519"/>
 		<entity name="zombieSteveCrawler"/>
@@ -3499,6 +3751,7 @@
 
 	<entitygroup name="hordeStageGS1229">
 		<entity name="fatzombiecop" prob="0.631"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieSoldier" prob="0.808"/>
 		<entity name="zombieFemaleHazmat"/>
@@ -3521,6 +3774,7 @@
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="zombieferal" prob="0.527"/>
 		<entity name="fatzombiecop" prob="0.634"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="ZombieSkateboarder"/>
 		<entity name="spiderzombie"/>
 	</entitygroup>
@@ -3555,6 +3809,7 @@
 
 	<entitygroup name="hordeStageGS1270">
 		<entity name="fatzombiecop" prob="0.645"/>
+        <entity name="ZombieBrute" prob="0.603"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieMiner"/>
@@ -3571,6 +3826,7 @@
 		<entity name="zombieYo"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.648"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="ZombieSoldier" prob="0.82"/>
 		<entity name="zombieferal" prob="0.544"/>
 		<entity name="ZombieMaleUMA"/>
@@ -3587,6 +3843,7 @@
 		<entity name="zombieferal" prob="0.549"/>
 		<entity name="ZombieSoldier" prob="0.823"/>
 		<entity name="fatzombiecop" prob="0.652"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="zombieMoe"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieMiner"/>
@@ -3602,6 +3859,7 @@
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="fatzombiecop" prob="0.656"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieYo"/>
 		<entity name="zombieMaleHazmat"/>
@@ -3618,6 +3876,7 @@
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieJoe"/>
 		<entity name="fatzombiecop" prob="0.659"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="ZombieMiner"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieMaleHazmat"/>
@@ -3629,6 +3888,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.663"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieMiner"/>
@@ -3643,6 +3903,7 @@
 		<entity name="ZombieSoldier" prob="0.833"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.666"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="ZombieSkateboarder"/>
@@ -3675,12 +3936,14 @@
 		<entity name="zombieferal" prob="0.575"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.674"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieSteveCrawler"/>
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS1362">
 		<entity name="fatzombiecop" prob="0.677"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -3698,6 +3961,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieferal" prob="0.584"/>
 		<entity name="fatzombiecop" prob="0.681"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="zombiedog"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -3710,6 +3974,7 @@
 	<entitygroup name="hordeStageGS1383">
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="fatzombiecop" prob="0.685"/>
+        <entity name="ZombieBrute" prob="0.65"/>
 		<entity name="zombieArlene"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="ZombieSoldier" prob="0.846"/>
@@ -3726,6 +3991,7 @@
 		<entity name="zombieferal" prob="0.593"/>
 		<entity name="ZombieSoldier" prob="0.849"/>
 		<entity name="fatzombiecop" prob="0.688"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 		<entity name="zombieMarlene"/>
 		<entity name="zombieJoe"/>
 		<entity name="zombieSteveCrawler"/>
@@ -3740,6 +4006,7 @@
 		<entity name="zombieferal" prob="0.597"/>
 		<entity name="ZombieSoldier" prob="0.851"/>
 		<entity name="fatzombiecop" prob="0.692"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieSkateboarder"/>
@@ -3761,12 +4028,14 @@
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="spiderzombie"/>
 		<entity name="fatzombiecop" prob="0.696"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS1425">
 		<entity name="ZombieSoldier" prob="0.857"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.699"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="zombieMaleHazmat"/>
@@ -3786,6 +4055,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="fatzombiecop" prob="0.703"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 		<entity name="zombiedog"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="zombieSteve"/>
@@ -3827,6 +4097,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="ZombieSoldier" prob="0.867"/>
 		<entity name="fatzombiecop" prob="0.714"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieNurse"/>
 		<entity name="zombieArlene"/>
@@ -3837,6 +4108,7 @@
 		<entity name="zombieNurse"/>
 		<entity name="spiderzombie"/>
 		<entity name="fatzombiecop" prob="0.718"/>
+        <entity name="ZombieBrute" prob="0.69"/>
 		<entity name="zombieferal" prob="0.629"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFootballPlayer"/>
@@ -3865,6 +4137,7 @@
 		<entity name="spiderzombie"/>
 		<entity name="ZombieSoldier" prob="0.875"/>
 		<entity name="fatzombiecop" prob="0.725"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="zombieBoe"/>
 		<entity name="zombiedog"/>
 		<entity name="zombieferal" prob="0.638"/>
@@ -3881,6 +4154,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.729"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieArlene"/>
 		<entity name="ZombieSkateboarder"/>
@@ -3895,6 +4169,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.733"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieMoe"/>
@@ -3915,6 +4190,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="zombieMarlene"/>
 		<entity name="fatzombiecop" prob="0.736"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 	</entitygroup>
 
 	<entitygroup name="hordeStageGS1542">
@@ -3928,6 +4204,7 @@
 		<entity name="ZombieSoldier" prob="0.886"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.74"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="ZombieCheerleader"/>
 	</entitygroup>
 
@@ -3939,6 +4216,7 @@
 		<entity name="zombieferal" prob="0.661"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.744"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombiedog"/>
@@ -3947,6 +4225,7 @@
 
 	<entitygroup name="hordeStageGS1564">
 		<entity name="fatzombiecop" prob="0.748"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="ZombieMiner"/>
@@ -3963,6 +4242,7 @@
 		<entity name="zombieMarlene"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="fatzombiecop" prob="0.752"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieSteve"/>
 		<entity name="ZombieFemaleFatUMA"/>
@@ -3980,6 +4260,7 @@
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.755"/>
+        <entity name="ZombieBrute" prob="0.73"/>
 		<entity name="ZombieSoldier" prob="0.897"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="ZombieSkateboarder"/>
@@ -4006,6 +4287,7 @@
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.763"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="zombieferal" prob="0.683"/>
 		<entity name="spiderzombie"/>
 		<entity name="ZombieSoldier" prob="0.902"/>
@@ -4019,6 +4301,7 @@
 		<entity name="zombieDarlene"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.767"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="zombieferal" prob="0.688"/>
 		<entity name="zombiedog"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -4038,6 +4321,7 @@
 		<entity name="zombieSteve"/>
 		<entity name="zombieferal" prob="0.693"/>
 		<entity name="fatzombiecop" prob="0.771"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="zombieArlene"/>
 		<entity name="ZombieSkateboarder"/>
 		<entity name="zombieMoe"/>
@@ -4053,6 +4337,7 @@
 		<entity name="zombieferal" prob="0.697"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.774"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="zombieYo"/>
 		<entity name="zombieMarlene"/>
 	</entitygroup>
@@ -4067,6 +4352,7 @@
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombieferal" prob="0.702"/>
 		<entity name="fatzombiecop" prob="0.778"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="zombieSteve"/>
 	</entitygroup>
@@ -4074,6 +4360,7 @@
 	<entitygroup name="hordeStageGS1662">
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.782"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="ZombieSoldier" prob="0.916"/>
@@ -4092,6 +4379,7 @@
 		<entity name="zombieMarlene"/>
 		<entity name="spiderzombie"/>
 		<entity name="fatzombiecop" prob="0.786"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="ZombieSkateboarder"/>
 		<entity name="zombieYo"/>
 		<entity name="zombieJoe"/>
@@ -4110,6 +4398,7 @@
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieMoe"/>
 		<entity name="fatzombiecop" prob="0.79"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="burntzombie"/>
 	</entitygroup>
 
@@ -4119,6 +4408,7 @@
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.794"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieSoldier" prob="0.924"/>
@@ -4129,6 +4419,7 @@
 
 	<entitygroup name="hordeStageGS1706">
 		<entity name="fatzombiecop" prob="0.798"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMaleHazmat"/>
@@ -4151,6 +4442,7 @@
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.801"/>
+        <entity name="ZombieBrute" prob="0.77"/>
 		<entity name="zombiedog"/>
 		<entity name="zombieJoe"/>
 	</entitygroup>
@@ -4158,6 +4450,7 @@
 	<entitygroup name="hordeStageGS1728">
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.805"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieMarlene"/>
 		<entity name="zombieferal" prob="0.735"/>
@@ -4176,6 +4469,7 @@
 		<entity name="ZombieSoldier" prob="0.935"/>
 		<entity name="zombieferal" prob="0.74"/>
 		<entity name="fatzombiecop" prob="0.809"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieFemaleUMA"/>
@@ -4199,6 +4493,7 @@
 
 	<entitygroup name="hordeStageGS1761">
 		<entity name="fatzombiecop" prob="0.817"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="zombieferal" prob="0.749"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="spiderzombie"/>
@@ -4218,6 +4513,7 @@
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMoe"/>
 		<entity name="fatzombiecop" prob="0.821"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombieArlene"/>
 		<entity name="zombiedog"/>
@@ -4227,6 +4523,7 @@
 
 	<entitygroup name="hordeStageGS1784">
 		<entity name="fatzombiecop" prob="0.825"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="zombieArlene"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="zombieSteve"/>
@@ -4241,6 +4538,7 @@
 
 	<entitygroup name="hordeStageGS1795">
 		<entity name="fatzombiecop" prob="0.829"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="zombieSteve"/>
 		<entity name="zombieYo"/>
 		<entity name="ZombieSoldier" prob="0.949"/>
@@ -4289,6 +4587,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieSoldier" prob="0.958"/>
 		<entity name="fatzombiecop" prob="0.841"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="ZombieMaleUMA"/>
 		<entity name="zombieDarlene"/>
 		<entity name="zombieSteveCrawler"/>
@@ -4303,6 +4602,7 @@
 		<entity name="zombieferal" prob="0.782"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="fatzombiecop" prob="0.844"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="ZombieMiner"/>
 		<entity name="zombieMoe"/>
 		<entity name="ZombieCheerleader"/>
@@ -4311,6 +4611,7 @@
 
 	<entitygroup name="hordeStageGS1851">
 		<entity name="fatzombiecop" prob="0.848"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="ZombieFootballPlayer"/>
 		<entity name="ZombieCheerleader"/>
 		<entity name="zombieDarlene"/>
@@ -4353,6 +4654,7 @@
 
 	<entitygroup name="hordeStageGS1885">
 		<entity name="fatzombiecop" prob="0.86"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="ZombieSoldier" prob="0.972"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieFemaleUMA"/>
@@ -4371,6 +4673,7 @@
 		<entity name="zombiedog"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.864"/>
+        <entity name="ZombieBrute" prob="0.82"/>
 		<entity name="burntzombie"/>
 		<entity name="zombieferal" prob="0.807"/>
 		<entity name="zombieMaleHazmat"/>
@@ -4396,6 +4699,7 @@
 	<entitygroup name="hordeStageGS1919">
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.872"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="ZombieMiner"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMoe"/>
@@ -4414,6 +4718,7 @@
 		<entity name="burntzombie"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="fatzombiecop" prob="0.876"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="zombieYo"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieSteveCrawler"/>
@@ -4440,6 +4745,7 @@
 		<entity name="zombieferal" prob="0.831"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.884"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="zombieBoe"/>
 		<entity name="ZombieMiner"/>
 		<entity name="spiderzombie"/>
@@ -4453,6 +4759,7 @@
 		<entity name="zombiedog"/>
 		<entity name="ZombieMiner"/>
 		<entity name="fatzombiecop" prob="0.888"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="ZombieFemaleUMA"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -4485,6 +4792,7 @@
 		<entity name="zombieMaleHazmat"/>
 		<entity name="zombieYo"/>
 		<entity name="fatzombiecop" prob="0.896"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="ZombieSoldier" prob="0.997"/>
 		<entity name="zombieJoe"/>
 		<entity name="ZombieUtilityWorker"/>
@@ -4498,6 +4806,7 @@
 		<entity name="zombieYo"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="fatzombiecop" prob="0.9"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieMaleHazmat"/>
 		<entity name="ZombieMiner"/>
@@ -4511,6 +4820,7 @@
 		<entity name="ZombieMiner"/>
 		<entity name="zombieFemaleHazmat"/>
 		<entity name="fatzombiecop" prob="0.9"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="ZombieUtilityWorker"/>
 		<entity name="zombieNurse"/>
 		<entity name="zombieArlene"/>
@@ -4521,6 +4831,7 @@
 
 	<entitygroup name="hordeStageGS2023">
 		<entity name="fatzombiecop" prob="0.9"/>
+        <entity name="ZombieBrute" prob="0.88"/>
 		<entity name="ZombieSoldier" prob="1"/>
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="zombieferal" prob="0.85"/>

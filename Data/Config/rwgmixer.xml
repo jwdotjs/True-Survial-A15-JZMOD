@@ -6,8 +6,8 @@
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.6" generation_distance="10000" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" prob="0"/>
 			
-			<cell_rule name="lowDensity" prob="1"/>
-			<cell_rule name="highDensity" prob="0.4"/>
+			<cell_rule name="lowDensity" prob="0.5"/>
+			<cell_rule name="highDensity" prob="0.5"/>
 			
 		</ruleset>
 	</rulesets>
@@ -29,9 +29,9 @@
 			<cave_count value="4,8"/>
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
-			<hub_rule name="townSmall" prob="0.4"/>
+			<hub_rule name="townSmall" prob="0.3"/>
 			<hub_rule name="WastyTown" prob="0.2" />
-			<hub_rule name="wastycity" prob="0.6" />
+			<hub_rule name="wastycity" prob="0.2" />
 			<hub_rule name="CoronadoCity" prob="0.3" />
             <hub_rule name="ColtTownHub" prob="0.3" />
             <hub_rule name="Custom_Town01_Hub" prob="0.3" />
@@ -293,7 +293,6 @@
 			<prefab name="xcostum_Dark_Mausoleum(by_LuckyStar)" min_count="1" max_count="1" />
 			<prefab name="xcostum_GasnWash(by_LuckyStar)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Tank_Garage(by_LuckyStar)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" />
 			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_CityPark(by_Spider)" min_count="1" max_count="1" />
 			<prefab name="xcostum_MiniMall(by_Spider)" min_count="1" max_count="1" />
@@ -346,7 +345,6 @@
 			<prefab name="xcostum_Shrub_Conservatory_city(by_Werewulfen)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Stripmall(by_Guppycur)" min_count="1" max_count="1" />
-			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
 			<prefab name="xcostum_TruckStop(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)" min_count="1" max_count="1" />
@@ -441,7 +439,7 @@
 		
 		<prefab_rule name="wildernessPOIs">
 			<path_material value="asphalt" /> 
-			<path_radius value="2" />
+			<path_radius value="3" />
 			
 			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="20"/>
 			<prefab rule="W_POIs_common" prob="0.6"/>
@@ -505,13 +503,13 @@
 			<prefab rule="W_POIs_rare_Set_B" prob="0.4"/>
 		</prefab_rule>		
 		
-		<prefab_rule name="W_POIs_rare_Set_A">		
+		<prefab_rule name="W_POIs_rare_Set_A">
+            <prefab name="prison_01" max_count="1" prob="0.3"/>		
 			<prefab name="xcostum_Nuket0wn(by_Limodor)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_Recycling(by_Limodor)" max_count="1" prob="0.3" />			
 			<prefab name="xcostum_strandresort(by_magoli)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_LumberMill(by_IceJudge)" max_count="1" prob="0.3"/>
     		<prefab name="xcostum_Tavern(by_Limodor)" max_count="1" prob="0.3"/>
-			
 			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.2"/>
 			<prefab name="xvanilla_snowy_ski_lodge" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.2"/>
@@ -534,7 +532,6 @@
 			<prefab name="xcostum_ZHigh(by_Volar)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_ZombieZoo_city(by_Wsiegel)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.2"/>
-			<prefab name="xcostum_shootingrange(by_magoli)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.4"/>
 		</prefab_rule>			
 	
@@ -570,7 +567,6 @@
 		</prefab_rule>  -->
 		
 		<prefab_rule name="ruralSmallPOIs">
-			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" prob="0.3" />
 			<prefab rule="gasStations" max_count="1" prob="1"/>
 			<prefab rule="abandoned_houses" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_utility_waterworks_01" max_count="1" prob="0.2" />			
@@ -613,7 +609,6 @@
 			<prefab name="xcostum_Haulier_lg(by_Limodor)"	max_count="1" prob="0.2" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_ZombieZoo(by_Wsiegel)" max_count="1" prob="0.2" />
-			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" prob="0.2" />			
 			<prefab name="xcostum_kwikemart(by_magoli)" max_count="1" prob="0.2" />
 		    <prefab name="xvanilla_cornfield_md" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_potatofield1" max_count="1" prob="0.2" />
@@ -910,7 +905,7 @@
 			<prefab name="utility_waterworks_01" />
 			<prefab name="utility_electric_co_01" />
 			<prefab name="utility_refinery_01" />
-			<prefab name="prison_01" />
+			
 			<prefab name="installation_red_mesa" />
 		</prefab_rule>		
 
@@ -951,7 +946,6 @@
 		<prefab_rule name="governmentOffices">
 			<prefab name="mp_waste_bldg_governer_08" max_count="1"/>
 			<prefab name="police_station1" max_count="1"/>
-			<prefab name="prison_01" max_count="1"/>
 			<prefab name="installation_red_mesa" max_count="1" />
 			<prefab name="xvanilla_police_station1" />
 			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" />

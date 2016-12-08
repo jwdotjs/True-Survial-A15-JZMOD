@@ -7,7 +7,7 @@
     <property name="Zoning" value="Industrial" />
     <property name="AllowedTownships" value="rural,wilderness" />
     <property name="AllowedBiomes" value="snow,forest,burnt_forest,wasteland" />
-    <property name="StaticSpawner.Class" value="SpawnLarge" />
+    <property name="StaticSpawner.Class" value="BanditSpawn" />
     <property name="StaticSpawner.Size" value="64,32,64" />
     <property name="StaticSpawner.Trigger" value="120" />
     <property name="MaxPerHub" value="1" />
