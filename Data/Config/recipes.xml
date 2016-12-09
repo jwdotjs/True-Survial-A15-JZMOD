@@ -2980,7 +2980,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="CoffeeSeeds" count="2"  craft_area="workSeedNursery" craft_time="600" craft_exp_gain="0">
 		<ingredient name="coffeeBeans" count="1" />
 	</recipe>
-	<recipe name="painkillers" count="1" craft_area="workchemistryStation" craft_time="10" craft_exp_gain="10">
+	<recipe name="painkillers" count="1" craft_time="10" craft_exp_gain="10">
 		<ingredient name="hangingMoss" count="1" />
 		<ingredient name="potassiumNitratePowder" count="5" />
 		<ingredient name="mushrooms" count="1" />

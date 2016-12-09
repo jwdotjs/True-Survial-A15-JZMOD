@@ -1052,6 +1052,34 @@
 		<entity name="zombieMarlene" prob="0.3"/>
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieSteveCrawler" prob="0.3"/>
+        <entity name="spider6" prob="0.3"/>
+        <entity name="spider7" prob="0.3"/>
+        <entity name="Boe1" prob="0.3"/>
+        <entity name="Boe3" prob="0.3"/>
+        <entity name="CrawlerBoe" prob="0.3"/>
+        <entity name="Boe5" prob="0.3"/>
+        <entity name="Boe6" prob="0.3"/>
+        <entity name="Boe7" prob="0.3"/>
+        <entity name="Moe2" prob="0.3"/>
+        <entity name="Moe3" prob="0.3"/>
+        <entity name="CrawlerMoe" />
+        <entity name="Moe5" prob="0.3"/>
+        <entity name="Moe6" prob="0.3"/>
+        <entity name="Moe7" prob="0.3"/>
+        <entity name="Arlene1" prob="0.3"/>
+        <entity name="Arlene2" prob="0.3"/>
+        <entity name="CrawlerArlene" prob="0.3"/>
+        <entity name="Arlene5" prob="0.3"/>
+        <entity name="Arlene6" prob="0.3"/>
+        <entity name="Arlene7" prob="0.3"/>
+        <entity name="Darlene1" prob="0.3"/>
+        <entity name="Darlene2" prob="0.3"/>
+        <entity name="CrawlerDarlene" prob="0.3"/>
+        <entity name="Darlene6" prob="0.3"/>
+        <entity name="Darlene7" prob="0.3"/>
+        <entity name="Marlene1" prob="0.3"/>
+        <entity name="Marlene2" prob="0.3"/>
+        <entity name="Marlene3" prob="0.3"/>
         <entity name="spider1" prob="0.2"/>
         <entity name="DarrylDixon" prob="0.2" />
         <entity name="Tara" prob="0.2"/>
