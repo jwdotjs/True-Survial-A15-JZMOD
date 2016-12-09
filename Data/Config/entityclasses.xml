@@ -387,7 +387,7 @@
 		<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
 		<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
-		<property name="HandItem" value="handBurningZombie" />
+		<property name="HandItem" value="ZombieCharred" />
         <property name="MaxHealth" value="1000" />
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.63" />
@@ -2405,6 +2405,607 @@
 		<property name="WalkType" value="8" />
 		<property name="ApproachSpeed" value="0.32" />
 	</entity_class>
+    <!--JZMOD FOLLOWERS-->
+          
+    <entity_class name="Maggi" extends="Survivor" >
+        <property name="Archetype" value="Maggi"/>
+        <property name="Class" value="EntityNPC" />
+        <property name="SoundHurt" value="Player_Female/player2painlg" />
+        <property name="SoundHurtSmall" value="Player_Female/player2painsm" />
+        <property name="SoundDeath" value="Player_Female/player2death" />
+        <property name="SoundStamina" value="Player_Female/player2stamina" />
+        <property name="SoundDrownPain" value="Player_Female/player2drownpain" />
+        <property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
+        <property name="SoundJump" value="Player_Male/player2Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player2LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="followermachete" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followermachete" />
+        <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="AITask-1" value="ApproachAndAttackTarget" param1="EntityEnemy" />
+        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-3" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-4" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
+        <property name="AITarget-3" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="followermachete" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Morgan" extends="Survivor">
+        <property name="Archetype" value="Morgan"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="followerclubSpiked" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followerclubSpiked" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundRandom" value="Player_Male/player1stamina" />
+        <property name="SoundHurt" value="Player_Male/player1painlg" />
+        <property name="SoundHurtSmall" value="Player_Male/player1painsm" />
+        <property name="SoundDeath" value="Player_Male/player1death" />
+        <property name="SoundStamina" value="Player_Male/player1stamina" />
+        <property name="SoundDrownPain" value="Player_Male/player1drownpain" />
+        <property name="SoundWaterSurface" value="Player_Male/player1drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Male/player1drowndeath" />
+        <property name="SoundJump" value="Player_Male/player1Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player1LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="ApproachAndAttackTarget" param1="EntityEnemy" />
+        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-3" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-4" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
+        <property name="AITarget-3" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="followerclubSpiked" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="DarrylDixon" extends="Survivor">
+        <property name="Archetype" value="DarrylDixon"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="followercrossbow2,followersteelCrossbowBolt" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followercrossbow2,followersteelCrossbowBolt" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundRandom" value="Player_Male/player1stamina" />
+        <property name="SoundHurt" value="Player_Male/player1painlg" />
+        <property name="SoundHurtSmall" value="Player_Male/player1painsm" />
+        <property name="SoundDeath" value="Player_Male/player1death" />
+        <property name="SoundStamina" value="Player_Male/player1stamina" />
+        <property name="SoundDrownPain" value="Player_Male/player1drownpain" />
+        <property name="SoundWaterSurface" value="Player_Male/player1drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Male/player1drowndeath" />
+        <property name="SoundJump" value="Player_Male/player1Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player1LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="followercrossbow2" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Tara" extends="Survivor">
+        <property name="Archetype" value="Tara"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMP5,10mmBanditBullet" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMP5,10mmBanditBullet" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundHurt" value="Player_Female/player2painlg" />
+        <property name="SoundHurtSmall" value="Player_Female/player2painsm" />
+        <property name="SoundDeath" value="Player_Female/player2death" />
+        <property name="SoundStamina" value="Player_Female/player2stamina" />
+        <property name="SoundDrownPain" value="Player_Female/player2drownpain" />
+        <property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
+        <property name="SoundJump" value="Player_Male/player2Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player2LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="gunBanditMP5" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Michonne" extends="Survivor">
+        <property name="Archetype" value="Michonne"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="followermachete" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followermachete" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundHurt" value="Player_Female/player2painlg" />
+        <property name="SoundHurtSmall" value="Player_Female/player2painsm" />
+        <property name="SoundDeath" value="Player_Female/player2death" />
+        <property name="SoundStamina" value="Player_Female/player2stamina" />
+        <property name="SoundDrownPain" value="Player_Female/player2drownpain" />
+        <property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
+        <property name="SoundJump" value="Player_Male/player2Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player2LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="ApproachAndAttackTarget" param1="EntityEnemy" />
+        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-3" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-4" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
+        <property name="AITarget-3" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityEnemy" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="followermachete" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Rosita" extends="Survivor">
+        <property name="Archetype" value="Rosita"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,762mmBanditBullet" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,762mmBanditBullet" />
+        <property name="SoundHurt" value="Player_Female/player2painlg" />
+        <property name="SoundHurtSmall" value="Player_Female/player2painsm" />
+        <property name="SoundDeath" value="Player_Female/player2death" />
+        <property name="SoundStamina" value="Player_Female/player2stamina" />
+        <property name="SoundDrownPain" value="Player_Female/player2drownpain" />
+        <property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
+        <property name="SoundJump" value="Player_Male/player2Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player2LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="gunBanditHuntingRifle" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Carl" extends="Survivor">
+        <property name="Archetype" value="Carl"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,9mmBanditBullet" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,9mmBanditBullet" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundHurt" value="Player_Female/player2painlg" />
+        <property name="SoundHurtSmall" value="Player_Female/player2painsm" />
+        <property name="SoundDeath" value="Player_Female/player2death" />
+        <property name="SoundStamina" value="Player_Female/player2stamina" />
+        <property name="SoundDrownPain" value="Player_Female/player2drownpain" />
+        <property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
+        <property name="SoundJump" value="Player_Male/player2Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player2LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="gunBanditPistol" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Rick" extends="Survivor">
+        <property name="Archetype" value="Rick"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBandit44Magnum,44MagBanditBullet" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBandit44Magnum,44MagBanditBullet" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundRandom" value="Player_Male/player1stamina" />
+        <property name="SoundHurt" value="Player_Male/player1painlg" />
+        <property name="SoundHurtSmall" value="Player_Male/player1painsm" />
+        <property name="SoundDeath" value="Player_Male/player1death" />
+        <property name="SoundStamina" value="Player_Male/player1stamina" />
+        <property name="SoundDrownPain" value="Player_Male/player1drownpain" />
+        <property name="SoundWaterSurface" value="Player_Male/player1drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Male/player1drowndeath" />
+        <property name="SoundJump" value="Player_Male/player1Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player1LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="gunBandit44Magnum" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Abraham" extends="Survivor">
+        <property name="Archetype" value="Abraham"/>
+         <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAK47,762mmBanditBullet" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAK47,762mmBanditBullet" />
+         <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundRandom" value="Player_Male/player1stamina" />
+        <property name="SoundHurt" value="Player_Male/player1painlg" />
+        <property name="SoundHurtSmall" value="Player_Male/player1painsm" />
+        <property name="SoundDeath" value="Player_Male/player1death" />
+        <property name="SoundStamina" value="Player_Male/player1stamina" />
+        <property name="SoundDrownPain" value="Player_Male/player1drownpain" />
+        <property name="SoundWaterSurface" value="Player_Male/player1drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Male/player1drowndeath" />
+        <property name="SoundJump" value="Player_Male/player1Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player1LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="gunBanditAK47" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>
+
+    <entity_class name="Carol" extends="Survivor">
+        <property name="Archetype" value="Carol"/>
+        <property name="Class" value="EntityNPC" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSniperRifle,762mmBanditBullet" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle,762mmBanditBullet" />
+        <property name="Parent" value="Players" />
+        <property name="PhysicsBody" value="Player" />
+        <property name="SoundHurt" value="Player_Female/player2painlg" />
+        <property name="SoundHurtSmall" value="Player_Female/player2painsm" />
+        <property name="SoundDeath" value="Player_Female/player2death" />
+        <property name="SoundStamina" value="Player_Female/player2stamina" />
+        <property name="SoundDrownPain" value="Player_Female/player2drownpain" />
+        <property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
+        <property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
+        <property name="SoundJump" value="Player_Male/player2Jump" />
+        <property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
+        <property name="SoundLandHard" value="Player_Male/player2LandHard" />
+        <property name="SoundPlayerLandThump" value="PlayerLandThump" />
+        <property name="AttackTimeoutDay" value="0.5" />
+        <property name="AttackTimeoutNight" value="0.5" />
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-6" value="ApproachSpot" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+        <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityBandit" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+        <property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+        <property name="HandItem" value="gunBanditSniperRifle" />
+        <property name="MaxHealth" value="550" />
+        <property name="MaxViewAngle" value="180" />
+        <property name="Weight" value="70" />
+        <property name="WanderSpeed" value="0.5" />
+        <property name="ApproachSpeed" value="1" />
+        <property name="NightWanderSpeed" value="0.5" />
+        <property name="NightApproachSpeed" value="1" />
+        <property name="PanicSpeed" value="1.15" />
+        <property name="CanClimbLadders" value="true" />
+        <property name="IsEnemyEntity" value="false" />
+        <property name="SurfaceCategory" value="organic" />
+        <property name="WalkType" value="7" />
+        <property name="ParticleOnDeath" value="blood_death" />
+        <property name="SoundRandomTime" value="200.0" />
+        <property name="TimeStayAfterDeath" value="5" />
+        <property name="CorpseBlock" value="FollowerCorpse"/>
+        <property name="CorpseBlockChance" value="1"/> 
+        <property name="ExperienceGain" value="1"/>
+        <property name="DeadBodyHitPoints" value="20" />
+        <property name="HasDeathAnim" value="true" />
+    </entity_class>  
+    <!-- JZMOD CHARRED ZOMBIE-->
+    <entity_class name="ZombieCharred" extends="zombieUMA" >
+        <property name="Archetype" value="ZombieCharred"/>
+        <property name="WalkType" value="7" />
+        <property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
+        <property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert" />
+        <property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack" />
+        <property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain" />
+        <property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
+        <property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
+        <property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
+        <property name="HandItem" value="CharredHand" />
+        <property name="MaxHealth" value="80" />
+        <property name="LootListOnDeath" value="15" />
+        <!-- AI properties -->
+        <property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachSpot" />
+		<property name="AITask-6" value="Wander" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
+        <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+        <property name="AITarget-3" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+        <property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+        <property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+    </entity_class>
+        <!-- JZMOD BABY ZOMBIE-->
+        <entity_class name="ZombieBaby" extends="zombieUMA">
+        <property name="Archetype" value="ZombieBaby"/>
+        <property name="MaxHealth" value="800"/>
+        <property name="HandItem" value="handZombie02"/>
+        <property name="Class" value="EntityZombie"/>
+        <property name="WalkType" value="8"/>
+        <property name="CanClimbLadders" value="true"/>
+        <property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+        <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
+        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain"/>
+        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath"/>
+        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
+        <property name="WanderSpeed" value="0.08"/>
+        <property name="ApproachSpeed" value="0.45"/>
+        <property name="NightWanderSpeed" value="0.08"/>
+        <property name="NightApproachSpeed" value="0.75"/>
+        <property name="CanClimbVertical" value="true" />
+      </entity_class>
+      
     <!-- JZMOD Brute-->
     <entity_class name="ZombieBrute" extends="zombieUMA" >
         <property name="Archetype" value="ZombieBrute"/>
@@ -3470,6 +4071,7 @@
         <property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="12"/>
         <property name="CorpseBlock" value="banditRocketLauncherCorpse"/>
       </entity_class>
+      
 
     <!-- <property name="MeshScale" value="2,2" />-->
 </entity_classes>

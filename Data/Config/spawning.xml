@@ -20,6 +20,7 @@
         <spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>
 <!-- Gravestown & Perishton-->
     <biome name="city_wasteland">
@@ -27,6 +28,7 @@
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+      <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>
 <!-- Random gen city-->    
     <biome name="wasteland_hub">
@@ -34,34 +36,35 @@
         <spawn maxcount="6" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
         <spawn maxcount="1" respawndelay="0" time="Any" entitygroup="ZombiesBoss" />
         <spawn maxcount="1" respawndelay="0" time="Any" entitygroup="ZombieDogGroup" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>    
 
     <biome name="forest">
         <spawn maxcount="2" respawndelay="3" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
         <spawn maxcount="1" respawndelay="30" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>
 	
     <biome name="pine_forest">
         <spawn maxcount="2" respawndelay="2" time="Any"   entitygroup="ZombiesAll" />
         <spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesNight" />
-        
         <spawn maxcount="1" respawndelay="30" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>	
 
     <biome name="plains">
         <spawn maxcount="1" respawndelay="4" time="Any"   entitygroup="ZombiesAll" />
         <spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombiesNight" />
-        
         <spawn maxcount="1" respawndelay="30" time="Any" entitygroup="AnimalsSmall" spawnDeadChance="0" />
-
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>
 
     <biome name="desert">
         <spawn maxcount="1" respawndelay="3" time="Any"   entitygroup="ZombiesAll" />
         <spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesNight" />
-        
         <spawn maxcount="1" respawndelay="40" time="Any"   entitygroup="AnimalsSmall" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>
 
     <biome name="wasteland">
@@ -69,6 +72,7 @@
 		<spawn maxcount="4" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieDogGroup" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
     </biome>
 
     <biome name="burnt_forest">
@@ -76,13 +80,14 @@
         <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
         <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSmall" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
 		</biome>
 		
     <biome name="snow">
 		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="SnowZombies" />
         <spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
-		
-       	<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="15" time="Day" entitygroup="Followers" />
 	</biome>		
 	
 

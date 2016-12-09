@@ -4270,6 +4270,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="9mmShock" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
+    <recipe name="FarmerBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
+		<ingredient name="BearTrap" count="1" />
+		<ingredient name="BlankSkillBook" count="1" />
+	</recipe>
     <recipe name="EngineerBook" count="1"  craft_area="workResearchDesk" craft_time="10" craft_exp_gain="100">
 		<ingredient name="clawHammer" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
@@ -4318,7 +4322,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Sutures" count="1" />
 		<ingredient name="SewingNeedle" count="1" />
 	</recipe>
-    
+    <recipe name="minibikeChassis" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
+        <ingredient name="unit_iron" count="400"/>
+        <ingredient name="unit_clay" count="40"/>
+    </recipe>
 </recipes>
 <!-- To do (maybe / later)cookingGrill
 

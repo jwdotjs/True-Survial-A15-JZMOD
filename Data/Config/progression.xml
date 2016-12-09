@@ -1,12 +1,12 @@
 <progression>
 	<player max_level="200" 
-    exp_to_level="8000"
+    exp_to_level="5000"
     experience_multiplier="1.0142"
     skill_points_per_level="5" 
     skill_point_multiplier="0" />
     
 	<skills max_level="100"
-    exp_to_level="500" 
+    exp_to_level="375" 
     experience_multiplier="1.02" 
     skill_point_cost_multiplier="0" 
     skill_point_cost_per_level="3">
@@ -858,7 +858,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="Leatherworking" exp_to_level="125" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
+		<crafting_skill name="Leatherworking" exp_to_level="150" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -944,7 +944,7 @@
 			<requirement perk_level="1" required_skill_name="Leatherworking" required_skill_level="5" />
 			<recipe name="workDryingRack" unlock_level="1" />
 		</perk>
-        <action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="125" group="clothing">
+        <action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="150" group="clothing">
 			<effect name="ArmorDefense">
 				<add skill_level="1,5" value="0,.03" />
 				<add skill_level="5,11" value=".03,.05" />
@@ -956,7 +956,7 @@
 			</effect>
 		</action_skill>
         
-		<crafting_skill name="Armor Smithing" exp_to_level="125" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
+		<crafting_skill name="Armor Smithing" exp_to_level="150" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1053,7 +1053,7 @@
 			<recipe name="SteelHelmet+Light" unlock_level="1" />
 		</perk>
         <!--Building-->
-        <crafting_skill name="Wood Working" icon="wood" description_key="Crafting wood items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Wood Working" group="crafting" skill_point_cost_per_level="3">
+        <crafting_skill name="Wood Working" icon="wood" description_key="Crafting wood items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Wood Working" exp_to_level="120" experience_multiplier="1.022" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1162,7 +1162,7 @@
 			<recipe name="StorageHealth" unlock_level="1" />
 			<recipe name="StorageWeapons" unlock_level="1" />
 		</perk>
-        <crafting_skill name="Stone Working" icon="Stone" description_key="Crafting stone items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Stone Working" group="crafting" skill_point_cost_per_level="3">
+        <crafting_skill name="Stone Working" icon="Stone" exp_to_level="120" experience_multiplier="1.022" description_key="Crafting stone items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Stone Working" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1229,7 +1229,7 @@
 			<recipe name="cobblestoneFrameRamp" unlock_level="1" />
 			<recipe name="cobblestoneStairs25" unlock_level="1" />
 		</perk>
-        <crafting_skill name="Iron Working" icon="IronFragment" description_key="Crafting iron items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Iron Working" group="crafting" skill_point_cost_per_level="3">
+        <crafting_skill name="Iron Working" icon="IronFragment" exp_to_level="120" experience_multiplier="1.022" description_key="Crafting iron items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Iron Working" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1348,7 +1348,7 @@
 			<recipe name="rebarFrameRamp" unlock_level="1" />
 		</perk>
         
-        <crafting_skill name="Steel Working" icon="forgedSteel" description_key="weaponSmithingDesc" title_key="Steel Working" group="crafting" skill_point_cost_per_level="3">
+        <crafting_skill name="Steel Working" icon="forgedSteel" exp_to_level="120" experience_multiplier="1.022" description_key="weaponSmithingDesc" title_key="Steel Working" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />

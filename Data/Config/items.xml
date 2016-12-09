@@ -428,8 +428,7 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
-            <property name="Buff" value="headshot" />
-			<property name="Buff_chance" value=".5" />
+            <property name="Buff" value="headshotMelee2" />
 			<property name="DamageBonus.head" value="10" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.stone" value="10" />
@@ -473,8 +472,7 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="7" />
-            <property name="Buff" value="headshot" />
-			<property name="Buff_chance" value=".8" />
+            <property name="Buff" value="headshotMelee2" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.head" value="5" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -8386,7 +8384,7 @@ which does not exist, yet. -->
 		<property name="Meshfile" value="Items/Crafting/bullet_casingPrefab" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
-		<property name="Stacknumber" value="500" /> <!-- STK resource -->
+		<property name="Stacknumber" value="10000" /> <!-- STK resource -->
         <property name="EconomicValue" value="25" />
         <property name="EconomicBundleSize" value="5" />
         <property name="Group" value="Resources,Ammo/Weapons" />
@@ -14530,7 +14528,7 @@ which does not exist, yet. -->
 		</property>
 	</item>
 	<!--JZMOD DRUGS-->
-    <item id="2049" name="SuterKit">
+    <item id="2070" name="SuterKit">
 		<property name="Meshfile" value="Items/Health/gauze" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="organic" />
@@ -17938,7 +17936,7 @@ which does not exist, yet. -->
 		<property name="RepairAmount" value="300" />
 		<property name="Group" value="Resources" />
 	</item>
-    <item id="2050" name="DuctTapeBook">
+    <item id="2071" name="DuctTapeBook">
 		<property name="Extends" value="schematicMaster" />
 		<property name="CustomIcon" value="An Assassins Guide" />
         <property class="Action1">
@@ -18501,5 +18499,338 @@ which does not exist, yet. -->
             <property name="Buff" value="bruteCharge" />
 		</property>
 	</item>
+    <item id="2072" name="CharredHand">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">			
+			<property name="Class" value="Melee" />
+			<property name="Sphere" value="0.4" />
+			<property name="DamageEntity" value="12" />
+			<property name="DamageBlock" value="2" />
+			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
+			<property name="Buff_chance" value="0.5,0.4,0.1,0.3" />
+			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.metal" value="10" />
+			<property name="DamageBonus.glass" value="10" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="10" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+            <property name="Consume" value="false" />
+            <property name="Buff" value="charredFlame" />
+		</property>
+	</item>
+    <!--JZMOD FOLLOWERS WEAPONS-->
+    <item id="2082" name="followerchainsaw" >
+        <property name="Extends" value="chainsaw" />
+        <property class="Action0"> 
+            <property name="Class" value="Ranged" />
+            <property name="Delay" value="1" />
+            <property name="Magazine_size" value="1" />
+            <property name="Infinite_ammo" value="true" />
+            <property name="Single_magazine_usage" value="false" />
+            <property name="Magazine_items" value="followergasCan" />
+            <property name="Reload_time" value="1" />	
+        </property>
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+    </item>
+
+    <item id="2083" name="followerclubSpiked" >
+        <property name="Extends" value="clubSpiked" />
+        <property name="EntityDamage" value="45,75" />
+        <property name="BlockDamage" value="11.8,29.5" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Action0"> <!-- AttackAction -->
+            <property name="Delay" value="1" />
+            <property name="Buff" value="banditBonus" />
+        </property>
+    </item>
+    <item id="2085" name="followerclubWood" >
+        <property name="Extends" value="clubWood" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+    </item>
+
+    <item id="2086" name="followerfireaxeSteel" >
+        <property name="Extends" value="fireaxeSteel" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+    </item>
+
+    <item id="2087" name="followermachete" >
+        <property name="Extends" value="machete" />
+        <property class="Action0"> <!-- AttackAction -->
+            <property name="Delay" value="1" />
+            <property name="Buff" value="banditBonus" />
+        </property>
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+    </item>
+        <item id="2096" name="followerblunderbuss" >
+        <property name="Extends" value="blunderbuss" />
+        <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab" />
+        <property name="Material" value="metal" />
+        <property name="RepairTools" value="repairKit" />
+        <property name="EconomicValue" value="460" />
+        <property name="HoldType" value="39" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="SoundJammed" value="Weapons/weapon_jam" />
+        <property class="Action0"> <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <property name="Delay" value="5" />
+            <property name="Range" value="40" />
+            <property name="Crosshair_min_distance" value="30" />
+            <property name="Crosshair_max_distance" value="50" />
+            <property name="Magazine_size" value="1" />
+            <property name="Infinite_ammo" value="true" />
+            <property name="Magazine_items" value="followerblunderbussAmmo" />
+            <property name="Magazine_item_ray_counts" value="10" />
+            <property name="Magazine_item_ray_spreads" value="0.96" />
+            <property name="Reload_time" value="3" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Blunderbuss/blunderbuss_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Blunderbuss/blunderbuss_reload" />
+            <property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
+            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+            <property name="DamageBonus.head" value="3" />
+            <property name="DamageBonus.wood" value="2.5" />
+            <property name="DamageBonus.glass" value="25" />
+            <property name="DamageBonus.earth" value=".2" />
+            <property name="Buff" value="shotgunWound" />
+            <property name="Buff_chance" value=".8" />
+        </property>
+        <property class="Action1"> <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="40" />
+            <property name="Zoom_max_in" value="40" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property class="Attributes">
+            <property name="EntityDamage" value="6,9.4" />
+            <property name="BlockDamage" value="0,0" />
+            <property name="Accuracy" value="1,0.1" />
+            <property name="DegradationMax" value="0,0" />
+            <property name="DegradationRate" value="0,0" />
+        </property>
+        <property name="Group" value="Ammo/Weapons" />
+        <property name="ActionSkillGroup" value="Shotguns"/>
+        <property name="CraftingSkillGroup" value="Weapon Smithing"/> <!-- 15.0 workaround. Should be Gun Smithing -->
+        <property name="RepairExpMultiplier" value="10.8"/>
+    </item>
+
+    <item id="2097" name="followerwoodenBow" >
+        <property name="Extends" value="woodenBow" />
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/WoodenBowPrefab" />
+        <property name="Material" value="wood" />
+        <property name="RepairTools" value="wood" />
+        <property name="HoldType" value="27" />
+        <property name="FuelValue" value="36" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="SoundJammed" value="ItemNeedsRepair" />
+        <property name="SoundDestroy" value="wooddestroy1" />
+        <property name="CrosshairOnAim" value="true" />
+        <property name="CrosshairUpAfterShot" value="false" />
+        <property class="Action0"> <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
+            <property name="Hitmask_override" value="Arrow" />
+            <property name="Delay" value="0.5" />
+            <property name="Magazine_size" value="1" />
+            <property name="Infinite_ammo" value="true" />
+            <property name="Magazine_items" value="followerarrow" />
+            <property name="Rays_spread" value="0.017" />
+            <property name="Reload_time" value="0.1" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Bows/Bow/bow_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Bows/Bow/bow_reload" />
+            <property name="Sound_draw" value="Weapons/Ranged/Bows/Bow/bow_draw" />
+            <property name="Sound_cancel" value="Weapons/Ranged/Bows/Bow/bow_fire_cancel" />
+            <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+            <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+            <property name="Max_strain_time" value=".5" />
+            <!-- ammunition can override Exp values 
+            <property name="ActionExp" value="3" />
+            <property name="ActionExpBonusMultiplier" value="3" />-->
+        </property>
+        <property class="Action1"> <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="35" />
+            <property name="Zoom_max_in" value="35" />
+        </property>
+        <property name="Group" value="Ammo/Weapons,Basics" />
+        <property class="Attributes">
+            <property name="DegradationRate" value="1,1" />
+            <property name="DegradationMax" value="50,600" />
+        </property>
+        <property name="DescriptionKey" value="woodenBowDesc"/>
+        <property name="ActionSkillGroup" value="Archery"/>
+        <property name="CraftingSkillGroup" value="Weapon Smithing"/>
+        <property name="RepairExpMultiplier" value="5.5"/>
+        <property name="PickupJournalEntry" value="alternateAmmoTip" />
+    </item>
+       
+    <item id="2100" name="followercrossbow" >
+        <property name="Extends" value="crossbow" />
+        <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="Material" value="metal" />
+        <property name="RepairTools" value="repairKit" />
+        <property name="HoldType" value="26" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property name="DegradationBreaksAfter" value="false" />
+        <property name="SoundJammed" value="Weapons/weapon_jam" />
+        <property name="SoundDestroy" value="wooddestroy1" />
+        <property name="Attachments" value="flashlight02" />
+        <property class="Action0"> <!-- AttackAction -->
+            <property name="Class" value="Ranged" />
+            <property name="Hitmask_override" value="Arrow" />
+            <property name="Crosshair_min_distance" value="5" />
+            <property name="Crosshair_max_distance" value="50" />
+            <!--<property name="Range" value="200" />-->
+            <property name="Delay" value="2" />
+            <property name="Magazine_size" value="1" />
+            <property name="Infinite_ammo" value="true" />
+            <property name="Magazine_items" value="followerCrossbowBolt" />
+            <property name="Reload_time" value="3" />
+            <property name="Bullet_icon" value="uzi" />
+            <property name="Sound_start" value="Weapons/Ranged/Bows/Crossbow/crossbow_fire" />
+            <property name="Sound_repeat" value="" />
+            <property name="Sound_end" value="" />
+            <property name="Sound_empty" value="Weapons/weapon_empty" />
+            <property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
+        </property>
+        <property class="Action1"> <!-- UseAction -->
+            <property name="Class" value="Zoom" />
+            <property name="Zoom_max_out" value="45" />
+            <property name="Zoom_max_in" value="45" />
+        </property>
+        <property name="LightSource" value="lightSource" /> <!-- Start: Needed for the attachment flashlight -->
+        <property name="ActivateObject" value="Attachments/flashlight/lightSource" />
+        <property name="AttachmentFlashlight" value="flashlight02" /> <!-- End: Needed for the attachment flashlight -->
+        <property name="Group" value="Ammo/Weapons" />
+        <property name="ActionSkillGroup" value="Shotguns"/>
+        <property name="CraftingSkillGroup" value="Gun Smithing"/>
+        <property name="RepairExpMultiplier" value="10.8"/>
+        <property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
+    </item>
+
+    <item id="2101" name="followercrossbow1" >
+        <property name="Extends" value="followercrossbow" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property name="Magazine_items" value="followerexplodingCrossbowBolt" />
+    </item>
+
+    <item id="2102" name="followercrossbow2" >
+        <property name="Extends" value="followercrossbow" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property name="Magazine_items" value="followersteelCrossbowBolt" />
+    </item>		
+    <item id="2109" name="followerblunderbussAmmo" >
+        <property name="Extends" value="blunderbussAmmo" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+    </item>
+
+    <item id="2110" name="followergasCan" >
+        <property name="Extends" value="gasCan" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+    </item>
+
+    <item id="2111" name="followerCrossbowBolt" > 
+        <property name="Extends" value="ironCrossbowBolt" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+    </item>
+
+    <item id="2112" name="followersteelCrossbowBolt" >
+        <property name="Extends" value="followerCrossbowBolt" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+    </item>
+        
+    <item id="2113" name="followerhuntingKnife" >
+        <property name="Extends" value="huntingKnife" />
+        <property class="Action0"> 
+            <property name="Delay" value="1" />
+            <property name="Buff" value="banditBonus" />
+        </property>
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+    </item>	
+
+    <item id="2162" name="followerexplodingCrossbowBolt" >
+        <property name="Extends" value="explodingCrossbowBolt" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+    </item>
+
+    <item id="2163" name="followerarrow" >
+        <property name="Extends" value="arrow" />
+        <property name="SellableToTrader" value="false" />
+        <property name="Candrop" value="false" />
+        <property name="IsDeveloper" value="true" />
+        <property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+    </item>
    
 </items>

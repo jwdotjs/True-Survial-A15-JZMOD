@@ -15699,6 +15699,10 @@ kind of free
     <property name="Extends" value="banditLeaderCorpse"/>
     <property name="LootList" value="210"/>
   </block>
+  <block id="58" name="FollowerCorpse">
+    <property name="Extends" value="banditLeaderCorpse"/>
+    <property name="LootList" value="211"/>
+  </block>
 	
 	<!-- JZMOD MORTELENTUS FARMING/FISHING 
 	<block id="758" name="bassWall">

@@ -176,7 +176,7 @@
     </entitygroup>
 	
 	<entitygroup name="ZombiesNight">
-	
+        <entity name="ZombieBaby" prob="0.05"/>
 		<entity name="spiderzombie"/>
 		<entity name="zombieBoe"/>
 		<entity name="zombieJoe" />
@@ -278,7 +278,8 @@
 		<entity name="zombieSteveCrawler" />
         <entity name="ZombieBrute" />
 		<entity name="fatzombiecop" />
-		<entity name="burntzombie" />			
+		<entity name="burntzombie" />	
+        <entity name="ZombieCharred" />		
 		<entity name="spider1" />
         <entity name="spider2" />
         <entity name="spider3" />
@@ -373,6 +374,7 @@
         <entity name="ZombieBrute" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
+        <entity name="ZombieCharred" />		
 		<entity name="zombieBear" />
 		<entity name="zombieferal" />
 		<entity name="spider1" />
@@ -479,6 +481,7 @@
         <entity name="ZombieBrute" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
+        <entity name="ZombieCharred" />		
 		<entity name="zombieferal" />
         <entity name="spider1" />
         <entity name="spider2" />
@@ -580,6 +583,7 @@
         <entity name="ZombieBrute" prob="0.15"/>
 		<entity name="fatzombiecop" prob="0.15"/>
 		<entity name="burntzombie" prob="0.07"/>
+        <entity name="ZombieCharred" prob="0.07"/>		
 		<entity name="zombieBear" prob="0.1"/>
 		<entity name="zombieferal" prob="0.1"/>
         <entity name="spider1" />
@@ -686,6 +690,7 @@
         <entity name="ZombieBrute" prob="0.15"/>
 		<entity name="fatzombiecop" prob="0.15"/>
 		<entity name="burntzombie" prob="0.07"/>
+        <entity name="ZombieCharred" prob="0.07"/>		
 		<entity name="zombieferal" prob="0.1"/>
         <entity name="spider1" />
         <entity name="spider2" />
@@ -876,6 +881,7 @@
 
 	<entitygroup name="ZombiesBurntForest">
 		<entity name="burntzombie" prob="0.2"/>
+        <entity name="ZombieCharred" prob="0.2"/>		
 		<entity name="zombieSteveCrawler" prob="0.05"/>
 		<entity name="zombiedog" prob="0.01"/>
         <entity name="burnt8" prob="0.2" />
@@ -909,6 +915,7 @@
 	
 	<entitygroup name="ZombiesBoss">
         <entity name="ZombieBrute" prob="0.3"/>
+        <entity name="ZombieBaby" prob="0.2"/>
 		<entity name="fatzombiecop" />		
 	</entitygroup>	
 	
@@ -1031,7 +1038,30 @@
         <entity name="zombieBear" prob="0.6" />
         <entity name="ZombieChicken" />
     </entitygroup>
-
+    <!--JZMOD FOLLOWERS-->
+    <entitygroup name="Followers" >
+        <entity name="Maggi" prob="0.4" />
+        <entity name="Morgan" prob="0.4"/>
+        <entity name="zombieBoe" prob="0.3"/>
+		<entity name="zombieJoe" prob="0.3"/>
+		<entity name="zombieSteve" prob="0.3"/>
+		<entity name="zombieMoe" prob="0.3"/>
+		<entity name="zombieYo" prob="0.3"/>
+		<entity name="zombieArlene" prob="0.3"/>
+		<entity name="zombieDarlene" prob="0.3"/>
+		<entity name="zombieMarlene" prob="0.3"/>
+		<entity name="zombieNurse" prob="0.3"/>
+		<entity name="zombieSteveCrawler" prob="0.3"/>
+        <entity name="spider1" prob="0.2"/>
+        <entity name="DarrylDixon" prob="0.2" />
+        <entity name="Tara" prob="0.2"/>
+        <entity name="Rosita" prob="0.2"/>
+        <entity name="Carl" prob="0.2" />
+        <entity name="Rick" prob="0.2"/>
+        <entity name="Abraham" prob="0.2"/>
+        <entity name="Carol" prob="0.2"/>
+    </entitygroup>
+    
     <entitygroup name="Zombie7thDayHorde">
         <entity name="GorillaZombie" prob="0.3"/>
         <entity name="ZombieBrute" prob="0.3"/>
@@ -1320,6 +1350,7 @@
 	<entitygroup name="hordeStageGS2">
 		<entity name="zombieSteve"/>
 		<entity name="burntzombie"/>
+        <entity name="ZombieCharred" />		
 		<entity name="zombieMoe"/>
 		<entity name="ZombieSkateboarder"/>
 		<entity name="zombieYo"/>

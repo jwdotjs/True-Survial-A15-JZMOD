@@ -833,7 +833,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     </buff>
     <!-- JZMOD Bandit Zombie Bonus -->
     <buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend"  >
-        <modify id="1" stat="health" amount="-350" rate="1"/>
+        <modify id="1" stat="health" amount="-400" rate="1"/>
     </buff>
     <!-- JZMOD MYSTERY CAN FOOD -->
     <buff id="randomFood1" duration="1.5" mutex="randomFood2,randomFood3,randomWater1,randomWater2" stack="discard" >
@@ -855,6 +855,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="bruteCharge" duration="4" castsound="Enemies/Acid_Puking_Hulk/hulkpain" onexpiredsound="Enemies/Acid_Puking_Hulk/hulkattack" type="speedmodifier" >
         <modify id="0" stat="speedmodifier" modifyMaxValue="2" />
 		<modify id="1" stat="speedmodifier" modifyValue="2" />
+    </buff>
+    <!--JZMOD Brute Charge -->
+    <buff id="charredFlame" duration="4" castsound="Enemies/Spider_Zombie/spideralert" type="speedmodifier" actions="attach(ParticleEffects/p_onFire, @impact)">
+        <modify id="0" stat="speedmodifier" modifyMaxValue="2" />
+		<modify id="1" stat="speedmodifier" modifyValue="1.5" />
     </buff>
    
    
