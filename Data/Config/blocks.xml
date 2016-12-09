@@ -14346,6 +14346,7 @@ kind of free
         <property name="Group" value="Tools/Traps" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 		<property name="DescriptionKey" value="SetUpASpikeTrapDesc" />
+        <property name="CraftingSkillGroup" value="Wood Working" />
 	</block>
 	<block id="1970" name="FireTrap">
 		<property name="Material" value="wood" />

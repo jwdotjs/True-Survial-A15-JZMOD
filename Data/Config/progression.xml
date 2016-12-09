@@ -1739,12 +1739,12 @@
 		</perk>
         
         <perk name="Red Tea" icon="redTea" description_key="Learn to brew healthy Red Tea on the campfire" title_key="Red Tea" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
-			<recipe name="redTea" unlock_level="2" />
+			<recipe name="redTea" unlock_level="1" />
 		</perk>
         
         <perk name="Wellness Juice" icon="WellnessJuice" description_key="Learn to brew Wellness Juice on the campfire" title_key="Wellness Juice" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
-			<recipe name="WellnessJuice" unlock_level="3" />
+			<recipe name="WellnessJuice" unlock_level="1" />
 		</perk>
         <!--
 		<perk name="Fishing Pole" icon="fork" description_key="Learn to craft Fishing Pole" title_key="Fishing Pole" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="health">

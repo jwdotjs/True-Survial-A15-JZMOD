@@ -87,7 +87,7 @@ Mesh files no longer used:
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
 		<property name="CraftingSkillGroup" value="Weapon Smithing" />
-        <property name="RepairExpMultiplier" value="5.5"/> <!-- 54 = about 250 points of crafting skill XP. This does not base off the crafting XP auto-calculation. It has a base value of 5 or so. -->
+        <property name="RepairExpMultiplier" value="2.2"/> <!-- 54 = about 250 points of crafting skill XP. This does not base off the crafting XP auto-calculation. It has a base value of 5 or so. -->
     </item>
 	<item id="6" name="clubWood">
 		<property name="Extends" value="clubMaster" />
@@ -453,7 +453,7 @@ Mesh files no longer used:
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Hunting" />
 		<property name="CraftingSkillGroup" value="Weapon Smithing" />
-        <property name="RepairExpMultiplier" value="5.5"/>
+        <property name="RepairExpMultiplier" value="2.2"/>
     </item>
 	<item id="22" name="machete">
 		<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
@@ -495,7 +495,7 @@ Mesh files no longer used:
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
 		<property name="CraftingSkillGroup" value="Weapon Smithing" />
-        <property name="RepairExpMultiplier" value="5.5"/>
+        <property name="RepairExpMultiplier" value="2.2"/>
     </item>
 	<!-- 40* * * * * * * * * * firearms * * * * * * * * * * -->
 	<item id="40" name="gunPistol">
@@ -1379,7 +1379,7 @@ Mesh files no longer used:
 		<property name="Group" value="Tools/Traps,Basics" />
 		<property name="ActionSkillGroup" value="Athletics" />
 		<property name="CraftingSkillGroup" value="Stone Working" />
-        <property name="RepairExpMultiplier" value="5.5"/>
+        <property name="RepairExpMultiplier" value="2.2"/>
 	</item>
 	<item id="106" name="tazasStoneaxe">
 		<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axe" />
@@ -8083,6 +8083,7 @@ which does not exist, yet. -->
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
+        <property name="CraftingSkillGroup" value="Stone Working" />
 	</item>
 	<item id="1323" name="cement">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />

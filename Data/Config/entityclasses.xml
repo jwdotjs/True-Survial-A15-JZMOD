@@ -387,7 +387,7 @@
 		<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
 		<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
-		<property name="HandItem" value="ZombieCharred" />
+		<property name="HandItem" value="CharredHand" />
         <property name="MaxHealth" value="1000" />
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.63" />
@@ -467,7 +467,7 @@
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
-		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
 		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
 		<property name="AITask-6" value="ApproachSpot" />
@@ -549,7 +549,7 @@
         <!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
         <!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<property name="WalkType" value="3" />
-		<property name="MaxHealth" value="500" />
+		<property name="MaxHealth" value="250" />
 		<property name="MaxViewAngle" value="180" />
 		<property name="HandItem" value="stingHornet" />
 		<property name="Weight" value="20" />

@@ -1038,10 +1038,11 @@
         <entity name="zombieBear" prob="0.6" />
         <entity name="ZombieChicken" />
     </entitygroup>
+    
     <!--JZMOD FOLLOWERS-->
     <entitygroup name="Followers" >
-        <entity name="Maggi" prob="0.4" />
-        <entity name="Morgan" prob="0.4"/>
+        <entity name="Maggi" prob="0.01" />
+        <entity name="Morgan" prob="0.1"/>
         <entity name="zombieBoe" prob="0.3"/>
 		<entity name="zombieJoe" prob="0.3"/>
 		<entity name="zombieSteve" prob="0.3"/>
@@ -1082,12 +1083,12 @@
         <entity name="Marlene3" prob="0.3"/>
         <entity name="spider1" prob="0.2"/>
         <entity name="DarrylDixon" prob="0.2" />
-        <entity name="Tara" prob="0.2"/>
-        <entity name="Rosita" prob="0.2"/>
-        <entity name="Carl" prob="0.2" />
-        <entity name="Rick" prob="0.2"/>
-        <entity name="Abraham" prob="0.2"/>
-        <entity name="Carol" prob="0.2"/>
+        <entity name="Tara" prob="0.08"/>
+        <entity name="Rosita" prob="0.08"/>
+        <entity name="Carl" prob="0.08" />
+        <entity name="Rick" prob="0.08"/>
+        <entity name="Abraham" prob="0.08"/>
+        <entity name="Carol" prob="0.08"/>
     </entitygroup>
     
     <entitygroup name="Zombie7thDayHorde">
