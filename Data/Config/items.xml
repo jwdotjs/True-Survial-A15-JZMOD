@@ -1668,7 +1668,7 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.2" />
 			<property name="Block_range" value="4" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="4" />
+			<property name="Stamina_usage" value="6" />
 			<property name="DamageBonus.earth" value="1" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.head" value="4" />
@@ -6111,7 +6111,7 @@ which does not exist, yet. -->
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Gain_wellness" value="0" />
-            <property name="Buff" value="bruteCharge" />
+            <property name="Buff" value="carAlarm" />
         </property>
     </item>
     

@@ -1558,7 +1558,7 @@
 		<item name="militaryFiber" count="1,4" prob="0.04" />
 	</lootcontainer>
 	<!-- lootcontainer 19 cars-->
-	<lootcontainer id="19" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
+	<lootcontainer id="19" count="0,2" size="7,4" buff="carAlarm" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
 		<item group="automotive+tools+junk" />
 	</lootcontainer>
 	<!-- lootcontainer 20 air conditioners-->

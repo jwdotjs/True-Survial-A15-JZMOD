@@ -467,7 +467,7 @@
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
-		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
 		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
 		<property name="AITask-6" value="ApproachSpot" />

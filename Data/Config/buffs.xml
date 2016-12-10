@@ -615,15 +615,15 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<buff id="cauterize" castsound="Player_Female/player2death" duration="1" actions="buff(biteWound);debuff(bite)" />
 	
-    <buff id="biteWound" duration="600t" onexpired="infection" ondebuff="tendingbite" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" />
+    <buff id="biteWound" duration="600t" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You’ve held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" icon="bite" />
 	
-    <buff id="tendingbite" duration="600t" onexpired="dirtyBiteBandage1" />
+    <buff id="tendingbite" duration="600t" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="bandaged"/>
 	
-    <buff id="dirtyBiteBandage1" smell="smallSmell" duration="600t" onexpired="dirtyBite" ondebuff="tendingbite2" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" />
+    <buff id="dirtyBiteBandage1" smell="smallSmell" duration="600t" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="Dirty Bite" tooltip_key="Your bite wound is getting dirty" description_key="Your bite wound is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst and you could catch the z virus" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" icon="bite"/>
 	
     <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)"/>
 	    
-    <buff id="tendingbite2" duration="600t" onexpired="healBiteWound" />
+    <buff id="tendingbite2" duration="600t" onexpired="healBiteWound" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve done it your bite wound is healing nicely and you are clear of the z virus. You may still have a wound or some bruises left that may need tending to." icon="bandaged"/>
 	
     <buff id="healBiteWound" duration="1" actions="increment(scratch, 5, 0, 0, 1)"/>
     <!-- JZMOD WOUND SYSTEM TEST-->
@@ -861,6 +861,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
         <modify id="0" stat="speedmodifier" modifyMaxValue="2" />
 		<modify id="1" stat="speedmodifier" modifyValue="1.5" />
     </buff>
-   
-   
+    
+    <buff id="carAlarm" duration="2.5" smell="exLargeSmell" onexpired="carAlarm1" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm1" duration="2.5" smell="exLargeSmell" onexpired="carAlarm2" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm2" duration="2.5" smell="exLargeSmell" onexpired="carAlarm3" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm3" duration="2.5" smell="exLargeSmell" onexpired="carAlarm4" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm4" duration="2.5" smell="exLargeSmell" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Zombies are coming" icon="ui_game_symbol_drunk"/>
+      
     </buffs>
