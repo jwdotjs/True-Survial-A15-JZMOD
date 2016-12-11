@@ -1344,7 +1344,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="25" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="0.1" />
-			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.earth" value="1" />
 			<property name="DamageBonus.cloth" value="10" />
 			<property name="ActionExp" value="1" />
             <property name="ActionExpBonusMultiplier" value="1" />
@@ -1668,7 +1668,7 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.2" />
 			<property name="Block_range" value="4" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="6" />
+			<property name="Stamina_usage" value="5" />
 			<property name="DamageBonus.earth" value="1" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.head" value="4" />
@@ -1806,7 +1806,7 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="2,1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
-		<property name="ActionSkillGroup" value="Farming" />
+		<property name="ActionSkillGroup" value="Harvesting" />
         <property name="PickupJournalEntry" value="farmingTip" />
 		<property name="CraftingSkillGroup" value="Iron Working" />
         <property name="RepairExpMultiplier" value="5.5"/>
@@ -17949,7 +17949,7 @@ which does not exist, yet. -->
        
   <!-- BANDIT ITEMS -->
   <!-- guns -->
-  <item id="2053" name="gunBanditPistol">
+  <item id="2164" name="gunBanditPistol">
     <property name="IsDeveloper" value="true"/>
     <property name="Candrop" value="false"/>
     <property name="CustomIcon" value="gunPistol"/>
@@ -17989,7 +17989,7 @@ which does not exist, yet. -->
       <property name="BlockDamage" value="5,5"/>
     </property>
   </item>
-  <item id="2054" name="gunBandit44Magnum">
+  <item id="2165" name="gunBandit44Magnum">
     <property name="IsDeveloper" value="true"/>
     <property name="Candrop" value="false"/>
     <property name="CustomIcon" value="gun44Magnum"/>
@@ -18003,11 +18003,11 @@ which does not exist, yet. -->
     <property class="Action0">
       <property name="Class" value="Ranged"/>
       <property name="Delay" value="0.34"/>
-      <property name="Magazine_size" value="6"/>
+      <property name="Magazine_size" value="10"/>
       <property name="Magazine_items" value="44MagBanditBullet"/>
       <property name="Magazine_item_ray_counts" value="1"/>
       <property name="Magazine_item_ray_spreads" value="0"/>
-      <property name="Reload_time" value="4"/>
+      <property name="Reload_time" value="1"/>
       <property name="Bullet_icon" value="pistol"/>
       <property name="Sound_start" value="Weapons/Ranged/44Magnum/44magnum_fire"/>
       <property name="Sound_repeat" value=""/>
@@ -18028,7 +18028,7 @@ which does not exist, yet. -->
       <property name="BlockDamage" value="10,10"/>
     </property>
   </item>
-  <item id="2055" name="gunBanditSawedOffPumpShotgun">
+  <item id="2166" name="gunBanditSawedOffPumpShotgun">
     <property name="IsDeveloper" value="true"/>
     <property name="Candrop" value="false"/>
     <property name="CustomIcon" value="gunSawedOffPumpShotgun"/>
@@ -18071,7 +18071,7 @@ which does not exist, yet. -->
       <property name="BlockDamage" value="5,5"/>
     </property>
   </item>
-  <item id="2056" name="gunBanditPumpShotgun">
+  <item id="2167" name="gunBanditPumpShotgun">
     <property name="IsDeveloper" value="true"/>
     <property name="Candrop" value="false"/>
     <property name="CustomIcon" value="gunPumpShotgun"/>
@@ -18114,7 +18114,7 @@ which does not exist, yet. -->
       <property name="BlockDamage" value="5,5"/>
     </property>
   </item>
-  <item id="2057" name="gunBanditMP5">
+  <item id="2168" name="gunBanditMP5">
     <property name="IsDeveloper" value="true"/>
     <property name="Candrop" value="false"/>
     <property name="CustomIcon" value="gunMP5"/>
@@ -18161,7 +18161,7 @@ which does not exist, yet. -->
       <property name="BlockDamage" value="5,5"/>
     </property>
   </item>
-  <item id="2058" name="gunBanditAK47">
+  <item id="2169" name="gunBanditAK47">
     <property name="IsDeveloper" value="true"/>
     <property name="Candrop" value="false"/>
     <property name="CustomIcon" value="gunAK47"/>
@@ -18451,6 +18451,7 @@ which does not exist, yet. -->
       <property name="LifeTime" value="8"/>
     </property>
   </item>
+  
     <item id="2068" name="canUnlabeled">
         <property name="Meshfile" value="Items/Food/can_misoPrefab" />
         <property name="Material" value="metal" />

@@ -2268,11 +2268,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="workworkbench" count="1" craft_time="300" craft_exp_gain="100">
-	<ingredient name="forgedIron" count="25"/>
-	<ingredient name="mechanicalParts" count="20"/>
-	<ingredient name="wrench" count="1"/>
-	<ingredient name="clawHammer" count="1"/>
 	<ingredient name="Plank" count="50"/>
+	<ingredient name="nail" count="25"/>
+	<ingredient name="glue" count="10"/>
+	<ingredient name="clawHammer" count="1"/>
+	<ingredient name="CircularSaw" count="1"/>
 </recipe>
 
 <recipe name="wrench" count="1" craft_area="workforge" craft_tool="anvil" material_based="true" craft_exp_gain="50" craft_time="60">

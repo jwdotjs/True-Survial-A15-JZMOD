@@ -5368,7 +5368,6 @@ kind of free
 		<drop event="Harvest" name="rockSmall" count="22" prob="1" />
 		<drop event="Harvest" name="ZincPowder" count="3" prob="1" />
 		<drop event="Destroy" name="rockSmall" count="11" prob="1" />
-
 		<property name="DowngradeBlock" value="rockResourceBroke1" />
 	</block>
 
@@ -7779,18 +7778,18 @@ kind of free
     </block>
 
 	<block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
-	<property name="CustomIcon" value="plantedCorn3Harvest" /> <property name="CustomIconTint" value="ffffa0" />
-	<property name="Material" value="Mcorn" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="New" />
-	<property name="Model" value="corn_dead_shape" />
-	<property name="Mesh" value="cutoutmoveable" />
-	<property name="MultiBlockDim" value="1,4,1" />
-	<property name="Texture" value="530" />
-	<property name="Collide" value="melee" />
-	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Destroy" count="0" />
-</block>
+        <property name="CustomIcon" value="plantedCorn3Harvest" /> <property name="CustomIconTint" value="ffffa0" />
+        <property name="Material" value="Mcorn" />
+        <property name="StabilitySupport" value="false" />
+        <property name="Shape" value="New" />
+        <property name="Model" value="corn_dead_shape" />
+        <property name="Mesh" value="cutoutmoveable" />
+        <property name="MultiBlockDim" value="1,4,1" />
+        <property name="Texture" value="530" />
+        <property name="Collide" value="melee" />
+        <property name="IsTerrainDecoration" value="true" />
+        <drop event="Destroy" count="0" />
+    </block>
 
     <block id="904" name="plantedCornStalk2Legacy"> <!-- used in prefabs -->
         <property name="Extends" value="plantedCorn3Harvest"/>
