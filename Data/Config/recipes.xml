@@ -1501,7 +1501,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawMeat" count="1"/>
 	<ingredient name="potato" count="1"/>
 	<ingredient name="corn" count="1"/>
-    <ingredient name="flour" count="1" />
+    <ingredient name="Flour" count="1" />
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -2089,7 +2089,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="vegetableStew" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="20" craft_exp_gain="0">
-	<ingredient name="flour" count="1"/>
+	<ingredient name="Flour" count="1"/>
     <ingredient name="potato" count="1"/>
 	<ingredient name="corn" count="1"/>
 	<ingredient name="Carrot" count="1"/>
@@ -3267,7 +3267,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="BearFlank" count="1" />
 		<ingredient name="potato" count="1" />
 		<ingredient name="Carrot" count="1" />
-        <ingredient name="flour" count="1" />
+        <ingredient name="Flour" count="1" />
 	</recipe>
 	<recipe name="carBattery" count="1"  craft_area="workSteamGenerator" craft_tool="scrapCable" craft_time="300">
 		<ingredient name="DeadBattery" count="1" />
