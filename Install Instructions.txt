@@ -10,3 +10,6 @@ Note-The .gitattributes and .gitignore- files and the .git Folder are not import
 5) Tada you’re done and ready to be eaten by the horde 
 Have fun,
 Spider
+
+
+To use this mod on a MP Server you must do all the above and all the Players(clients) must also install the mod as instructed above.

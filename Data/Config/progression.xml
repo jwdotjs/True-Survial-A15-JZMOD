@@ -1930,7 +1930,7 @@
 			<recipe name="huntingKnife" unlock_level="1" />
 		</perk>
         
-        <perk name="Field Kinfe" icon="huntingKnife" description_key="Learn to craft the finest hunting knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Kinfe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+        <perk name="Field Kinfe" icon="FieldKnife" description_key="Learn to craft the finest hunting knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Kinfe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="40" />
 			<recipe name="FieldKnife" unlock_level="1" />
 		</perk>

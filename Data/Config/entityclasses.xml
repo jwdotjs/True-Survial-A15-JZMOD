@@ -2425,15 +2425,15 @@
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followermachete" />
         <property name="Parent" value="Players" />
         <property name="PhysicsBody" value="Player" />
-        <property name="AITask-1" value="ApproachAndAttackTarget" param1="EntityEnemy" />
-        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityBandit" />
-        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
-        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombie" />
-        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
-        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
-        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityHornet" />
-        <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
-        <property name="AITask-9" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />
+        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityEnemy" />
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
+        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
+        <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
         <property name="AITask-10" value="ApproachSpot" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
         <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
@@ -2498,16 +2498,16 @@
         <property name="Archetype" value="DarrylDixon"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="followercrossbow2,followersteelCrossbowBolt" />
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followercrossbow2,followersteelCrossbowBolt" />
-     	<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>	
-        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityEnemy" />
-        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityBandit" />
-        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
-        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombie" />
-        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
-        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
-        <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
-        <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
-        <property name="AITask10" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />
+     	<property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityEnemy" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
+        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
+        <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityHornet" />
+        <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
         <property name="AITask-11" value="ApproachSpot" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
         <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
@@ -2533,16 +2533,16 @@
         <property name="Archetype" value="Tara"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditMP5,10mmBanditBullet" />
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditMP5,10mmBanditBullet" />
-        <property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>	
-        <property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityEnemy" />
-        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityBandit" />
-        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
-        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombie" />
-        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
-        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
-        <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
-        <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
-        <property name="AITask10" value="Follow" param1="EntityPlayer" />	
+        <property name="AITask-1" value="Follow" param1="EntityPlayer" />
+     	<property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
+        <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityEnemy" />
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityBandit" />
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
+        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombie" />
+        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
+        <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+        <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityHornet" />
+        <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
         <property name="AITask-11" value="ApproachSpot" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
         <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />

@@ -295,11 +295,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="woodFrameBlock" count="1" />
 </recipe>
 
-<recipe name="aloeCream" count="1" craft_exp_gain="10" craft_time="10">
+<recipe name="aloeCream" count="1" craft_exp_gain="10" craft_time="25">
 	<ingredient name="aloePlant" count="5"/>
 </recipe>
 
-<recipe name="aloeCream" count="1" craft_area="workchemistryStation" craft_exp_gain="10" craft_time="5">
+<recipe name="aloeCream" count="1" craft_area="workchemistryStation" craft_exp_gain="10" craft_time="25">
 	<ingredient name="aloePlant" count="4"/>
 </recipe>
 
@@ -439,7 +439,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potato" count="1"/>
 </recipe>
 
-<recipe name="bandage" count="1" craft_time="5" craft_exp_gain="10">
+<recipe name="bandage" count="1" craft_time="5" craft_exp_gain="25">
 	<ingredient name="cloth" count="3"/>
 </recipe>
 
@@ -1108,12 +1108,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="stick" count="20"/>
 </recipe>
 
-<recipe name="firstAidBandage" count="1" craft_time="5" craft_exp_gain="20">
+<recipe name="firstAidBandage" count="1" craft_time="5" craft_exp_gain="50">
 	<ingredient name="aloeCream" count="1" />
 	<ingredient name="bandage" count="1" />
 </recipe>
 
-<recipe name="firstAidKit" count="1" craft_time="10" craft_exp_gain="50">
+<recipe name="firstAidKit" count="1" craft_time="10" craft_exp_gain="100">
 	<ingredient name="bloodBag" count="1"/>
 	<ingredient name="grainAlcohol" count="1"/>
 	<ingredient name="bandage" count="1"/>
@@ -1363,10 +1363,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="hopsFlower" count="1"/>
 </recipe>
 
-<recipe name="huntingKnife" count="1" craft_time="30" craft_exp_gain="75">
-	<ingredient name="forgedIron" count="8"/>
-	<ingredient name="stick" count="2"/>
-    <ingredient name="SharpeningStone" count="1"/>
+<recipe name="huntingKnife" count="1" craft_area="workforge" material_based="true" craft_time="30" craft_exp_gain="75">
+	<ingredient name="unit_iron" count="50"/>
+	<ingredient name="unit_clay" count="5"/>
 </recipe>
 
 <recipe name="ironArrow" count="1" craft_time="3" craft_exp_gain="2">
@@ -1502,6 +1501,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawMeat" count="1"/>
 	<ingredient name="potato" count="1"/>
 	<ingredient name="corn" count="1"/>
+    <ingredient name="flour" count="1" />
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -1999,7 +1999,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="dirtFragment" count="12"/>
 </recipe>
 
-<recipe name="splint" count="1" craft_time="10" craft_exp_gain="10">
+<recipe name="splint" count="1" craft_time="10" craft_exp_gain="25">
 	<ingredient name="cloth" count="2"/>
 	<ingredient name="stick" count="2"/>
 </recipe>
@@ -2089,7 +2089,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="vegetableStew" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="20" craft_exp_gain="0">
-	<ingredient name="potato" count="1"/>
+	<ingredient name="flour" count="1"/>
+    <ingredient name="potato" count="1"/>
 	<ingredient name="corn" count="1"/>
 	<ingredient name="Carrot" count="1"/>
 	<ingredient name="Tomato" count="5"/>
@@ -2684,7 +2685,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="ductTape" count="1" />
 		<ingredient name="shortMetalPipe" count="1" />
 	</recipe>
-	<recipe name="Large1stAidKit" count="1" craft_time="15" craft_exp_gain="100">
+	<recipe name="Large1stAidKit" count="1" craft_time="15" craft_exp_gain="150">
 		<ingredient name="bloodBag" count="1" />
 		<ingredient name="splint" count="1" />
 		<ingredient name="carBattery" count="1" />
@@ -3094,7 +3095,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Ink Pen" count="1" />
 		<ingredient name="book" count="1" />
 	</recipe>
-	<recipe name="SanitizingBandage" count="1"  craft_time="20">
+	<recipe name="SanitizingBandage" count="1"  craft_time="20" craft_exp_gain="30" >
 		<ingredient name="grainAlcohol" count="1" />
 		<ingredient name="bandage" count="1" />
 	</recipe>
@@ -3266,6 +3267,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="BearFlank" count="1" />
 		<ingredient name="potato" count="1" />
 		<ingredient name="Carrot" count="1" />
+        <ingredient name="flour" count="1" />
 	</recipe>
 	<recipe name="carBattery" count="1"  craft_area="workSteamGenerator" craft_tool="scrapCable" craft_time="300">
 		<ingredient name="DeadBattery" count="1" />
@@ -3273,82 +3275,80 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="tshirtBlack" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="coal" count="5" />
 	</recipe>
 	<recipe name="tshirtBlue" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="blueberries" count="5" />
 	</recipe>
 	<recipe name="tshirtBrown" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="dirtFragment" count="5" />
 	</recipe>
 	<recipe name="tshirtGreen" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="PlantFibers" count="5" />
 	</recipe>
 	<recipe name="tshirtRed" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="chrysanthemumPlant" count="5" />
 	</recipe>
 	<recipe name="tshirtWhite" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
-	</recipe>
+    </recipe>
 	<recipe name="sweatshirt" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
 	</recipe>
 	<recipe name="sweatshirtBlack" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="coal" count="5" />
 	</recipe>
 	<recipe name="sweatshirtBlue" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="blueberries" count="5" />
 	</recipe>
 	<recipe name="sweatshirtBrown" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="dirtFragment" count="5" />
 	</recipe>
 	<recipe name="sweatshirtGreen" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="PlantFibers" count="5" />
 	</recipe>
 	<recipe name="sweatshirtRed" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="8" />
 		<ingredient name="FiberRope" count="3" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="chrysanthemumPlant" count="5" />
 	</recipe>
 	<recipe name="denimPants" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="5" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="blueberries" count="5" />
 	</recipe>
 	<recipe name="blackDenimPants" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="5" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="coal" count="5" />
 	</recipe>
 	<recipe name="redDenimPants" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="5" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="chrysanthemumPlant" count="5" />
 	</recipe>
 	<recipe name="brownDenimPants" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="5" />
-		<ingredient name="coal" count="1" />
+		<ingredient name="dirtFragment" count="5" />
 	</recipe>
 	<recipe name="armyPants" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
@@ -3499,6 +3499,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="2" />
 		<ingredient name="coal" count="1" />
 	</recipe>
+    <recipe name="denimShortsPants" count="1"  craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="4" />
+    </recipe>
 	<recipe name="WeaponSmithing1" count="1"  craft_time="5" craft_exp_gain="50">
 		<ingredient name="Weapon Smithing Weekly" count="1" />
 	</recipe>
@@ -4326,6 +4330,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="unit_iron" count="400"/>
         <ingredient name="unit_clay" count="40"/>
     </recipe>
+    <recipe name="AnimalGuts" count="1"  craft_time="5" craft_exp_gain="30">
+		<ingredient name="rawMeat" count="2" />
+		<ingredient name="BrainMatter" count="2" />
+	</recipe>
 </recipes>
 <!-- To do (maybe / later)cookingGrill
 

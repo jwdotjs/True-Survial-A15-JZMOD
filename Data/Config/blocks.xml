@@ -683,11 +683,11 @@ then add recipes for those white/red/green metals
 	<property name="Mesh" value="grass" />
 	<property name="Texture" value="293" />
     <property name="MultiBlockDim" value="1,2,1"/>
-	<property name="Collide" value="melee" />
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
-    <property name="CanPickup" value="movement,melee,bullet,arrow,rocket" />
+    <property name="CanPickup" value="false" />
 	<property name="Class" value="PlantGrowing" />
 	<property name="PlantGrowing.Next" value="cropsHarvestableMaster" />
 	<property name="PlantGrowing.GrowthRate" value="300" />
@@ -4467,6 +4467,7 @@ kind of free
 		<property name="CanPickup" value="true" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<drop event="Harvest" name="leather" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
 		<drop event="Destroy" name="Plank" count="1" />
 		<drop event="Destroy" name="stick" count="4" />
 		<drop event="Destroy" count="0" />
@@ -14846,10 +14847,6 @@ kind of free
 		</property>
 	</block>
 	<block id="1986" name="Wheat">
-		<!--JZMOD MAKE ANOTHER FOR PLAYER PLANTED
-        <property name="Class" value="Damage" />
-        <property name="Damage" value="1" />
-        <property name="Damage_received" value="20" />-->
 		<property name="Material" value="Mtallgrass" />
 		<property name="Shape" value="Grass" />
 		<property name="Mesh" value="grass" />
@@ -14859,7 +14856,6 @@ kind of free
 		<property name="CanDecorateOnSlopes" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanPickup" value="false" />
-		<!--<property name="DowngradeBlock" value="youngWheat2" />-->
 		<drop event="Destroy" name="Wheat" count="0" prob="1" />
 		<drop event="Harvest" name="Wheat" count="1" tool_category="Farm" />
 		<drop event="Destroy" count="0" />
@@ -14869,15 +14865,16 @@ kind of free
 		<property name="Shape" value="Grass" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="39,40,364,365,39,40" />
-		<property name="CustomIcon" value="wheat" />
-		<property name="CustomIconTint" value="775f31" />
+		<property name="PlantGrowing.Next" value="Wheat" />
 	</block>
 	<block id="1988" name="youngWheat">
         <property name="Extends" value="cropsGrowingMaster" />
 		<property name="Shape" value="Grass" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="39,40,364,365,39,40" />
+        <property name="PlantGrowing.Next" value="youngWheat2" />
 	</block>
+   
     <!--
 	<block id="457" name="plantedBamboo1">
     	<property name="IsDeveloper" value="true" />

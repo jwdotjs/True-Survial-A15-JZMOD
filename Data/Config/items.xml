@@ -6111,7 +6111,7 @@ which does not exist, yet. -->
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="0" />
             <property name="Gain_wellness" value="0" />
-            <property name="Buff" value="carAlarm" />
+            <property name="Buff" value="guts" />
         </property>
     </item>
     
@@ -12897,6 +12897,7 @@ which does not exist, yet. -->
 		<property name="Material" value="stone" />
 		<property name="Degradation" value="150" param1="true" />
 		<property name="RepairTools" value="rockSmall" />
+        <property name="CraftingSkillGroup" value="Stone Working" />
 	</item>
 	<item id="1677" name="Engfireaxe">
 		<property name="Extends" value="fireaxeIron" />
@@ -13211,7 +13212,7 @@ which does not exist, yet. -->
 	<item id="1699" name="CircularSaw">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="Plank" />
+			<property name="Skills_to_gain" value="Plank" />
 		</property>
 		<property name="DescriptionKey" value="HandSawDesc" />
 		<property name="Group" value="Books" />
@@ -18834,5 +18835,36 @@ which does not exist, yet. -->
 			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
 		</property>
     </item>
-   
+    
+    <item id="2170" name="AnimalGuts">
+		<property name="Meshfile" value="Items/Food/meat_rabbit" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="21" />
+        <property name="DegradationBreaksAfter" value="false" />
+		<property name="Stacknumber" value="1000" />
+		<property class="Action0">	<!-- AttackAction -->
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1" />
+			<property name="Range" value="3" />
+			<property name="Stamina_usage" value="0" />
+            <property name="Sound_start" value="UseActions/bucketbail_water" />
+            <property name="Buff" value="guts" />
+			<property name="DamageBonus.head" value="0" />
+			<property name="DamageBonus.glass" value="0.01" />
+			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.cloth" value="0" />
+			<property name="DamageBonus.stone" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.earth" value="0" />
+		</property>
+        <property class="Attributes">
+			<property name="EntityDamage" value="1,1" />
+			<property name="BlockDamage" value="1,1" />
+			<property name="DegradationMax" value="1,1" />
+			<property name="DegradationRate" value="5,5" />
+		</property>
+		<property name="Group" value="Medicine" />
+		<property name="DescriptionKey" value="AnimalGutsDesc" />
+   </item>
+
 </items>
