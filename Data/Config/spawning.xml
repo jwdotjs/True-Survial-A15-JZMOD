@@ -1232,8 +1232,7 @@
 	</entityspawner>
 	<!--JZMOD BANDIT POI SPAWNER-->	
     <entityspawner name="BanditSpawn">
-        
-        <day value="*">
+         <day value="*">
             <property name="ResetToday"        value="false" />
             <property name="EntityGroupName"    value="BanditGroup" />
             <property name="Time"               value="Any" />

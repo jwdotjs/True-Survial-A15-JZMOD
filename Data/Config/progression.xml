@@ -784,7 +784,6 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-        
         <!--Clothes-->
         <action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="125" group="clothing">
 			<effect name="ArmorDefense">
@@ -1139,6 +1138,7 @@
 			<recipe name="woodPillar100" unlock_level="1" />
 			<recipe name="woodPlate" unlock_level="1" />
 			<recipe name="woodPole" unlock_level="1" />
+            <recipe name="woodArrowSlitHalf" unlock_level="1" />
 		</perk>
          <perk name="Wooden Door" icon="secureDoorWooden" description_key="Learn to craft Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Wood Working" required_skill_level="1" />
@@ -1225,9 +1225,11 @@
 		</crafting_skill>
         <perk name="Cobble Building" icon="Cobblestone" description_key="Learn to craft Cobblestone blocks" title_key="Cobble Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Wood Working" required_skill_level="20" />
             <recipe name="cobblestoneFrameBlock" unlock_level="1" />
 			<recipe name="cobblestoneFrameRamp" unlock_level="1" />
 			<recipe name="cobblestoneStairs25" unlock_level="1" />
+            <recipe name="cobblestoneArrowSlitHalf" unlock_level="1" />
 		</perk>
         <crafting_skill name="Iron Working" icon="IronFragment" exp_to_level="120" experience_multiplier="1.022" description_key="Crafting iron items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Iron Working" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
@@ -1305,6 +1307,7 @@
 			<recipe name="scrapIronStairs25" unlock_level="1" />
 			<recipe name="rScrapIronPlate" unlock_level="1" />
 			<recipe name="scrapIronSheet" unlock_level="1" />
+            <recipe name="scrapIronArrowSlitHalf" unlock_level="1" />
 		</perk>
         <perk name="Door Knob" icon="doorKnob" description_key="Learn to craft Door Knobs in the forge" title_key="Door Knob" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
 			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="1" />
@@ -1600,7 +1603,11 @@
 				<setvalue skill_level="3" value="4" />
 			</effect>
 		</perk>
-		
+		<perk name="Chemistry Station" icon="AloeCream" description_key="Learn to craft achemistry Station on the wood working bench" title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
+			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
+            <requirement perk_level="1" required_player_level="5" />
+			<recipe name="workchemistryStation" unlock_level="1" />
+		</perk>
         <perk name="Aloe Cream" icon="AloeCream" description_key="Learn to craft Aloe Cream" title_key="Aloe Cream" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
             <requirement perk_level="1" required_player_level="5" />
@@ -1710,7 +1717,7 @@
 		</perk>
 			
 		<perk name="Asphalt" icon="asphalt" description_key="Learn to make asphalt in a mixer. use it to make traveling easier" title_key="Asphalt" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
-			<requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="50" />
 			<recipe name="asphalt" unlock_level="1" />
 		</perk>
 		
@@ -1721,7 +1728,7 @@
         <perk name="First Aid" icon="FirstAidKit" description_key="Learn advanced a first aid kit" title_key="First Aid" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="10" />
 			<recipe name="firstAidKit" unlock_level="1" />
-			<recipe name="Large1stAidKit" unlock_level="2" />
+			<recipe name="Large1stAidKit" unlock_level="1" />
 		</perk>
         
 		<perk name="Cooking Gear" icon="FryingPan" description_key="Learn to craft cooking equipment in the forge" title_key="Cooking Gear" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
@@ -1772,7 +1779,28 @@
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="2" />
 			<recipe name="glue" unlock_level="1" />
 		</perk>
-		       
+        <perk name="Door Knob" icon="doorKnob" description_key="Learn to craft Door Knobs in the forge" title_key="Door Knob" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Engineering" required_skill_level="3" />
+			<recipe name="doorKnob" unlock_level="1" />
+		</perk>  
+        <perk name="Garage Door" icon="lightbulb" description_key="Learn to craft a Garage Door on the metal work bench Bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="55" />
+			<recipe name="garageDoorMetal_v1" unlock_level="1" />
+        </perk>
+        <perk name="Draw Bridge" icon="lightbulb" description_key="Learn to craft more a Draw Bridge on the metal work bench Bench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="75" />
+			<recipe name="metalReinforcedWoodDrawBridge" unlock_level="1" />
+        </perk>
+        <perk name="Electric Lights" icon="lightbulb" description_key="Learn to craft working electric lights on the Metal Work Bench" title_key="Electric Lights" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="100" />
+			<recipe name="porchLight01Switch" unlock_level="1" />
+            <recipe name="ceilingLight02Switch" unlock_level="1" />
+            <recipe name="ceilingLight07Switch" unlock_level="1" />
+            <recipe name="industrialLight01Switch" unlock_level="1" />
+            <recipe name="streetLight01Switch" unlock_level="1" />
+        </perk>
+        
         <perk name="Spikes" icon="TrapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
 			<recipe name="SetUpASpikeTrap" unlock_level="1" />
 		</perk>
@@ -1957,7 +1985,6 @@
             <recipe name="EngShovel" unlock_level="1" />
             <recipe name="nailgun" unlock_level="1" />
             <recipe name="ShockStick" unlock_level="1" />
-            <recipe name="CircuitBoard" unlock_level="1" />
             <recipe name="Plank" unlock_level="1" />
             <recipe name="nail" unlock_level="1" />
 		</perk>
@@ -1967,7 +1994,6 @@
             <recipe name="painkillers" unlock_level="1" />
             <recipe name="SuperPill" unlock_level="1" />
             <recipe name="PainKillerShot" unlock_level="1" />
-            <recipe name="mp5ExtClip" unlock_level="1" />
             <recipe name="StimulantShot" unlock_level="1" />
             <recipe name="InfectedShot" unlock_level="1" />
             <recipe name="SedativeShot" unlock_level="1" />

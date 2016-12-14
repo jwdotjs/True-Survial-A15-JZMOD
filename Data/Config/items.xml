@@ -4590,6 +4590,7 @@ which does not exist, yet. -->
 	</item>
 	<item id="478" name="cigarette">
 		<property name="Extends" value="cigar"/>
+        <property name="Stacknumber" value="20" />
         <property class="UMA">
             <property name="Mesh" value="cigarette" />
             <property name="Overlay0" value="cigarette" />
@@ -13281,7 +13282,7 @@ which does not exist, yet. -->
 	<item id="1707" name="Adobe White Book">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="adobeWhiteBlock,adobeWhiteCNRFull,adobeWhiteCNRInside,adobeWhiteCNRRamp,adobeWhitePillar100,adobeWhitePillar50,adobeWhitePlate,adobeWhitePole,adobeWhiteRamp,adobeWhiteWedge,adobeWhiteWedgeTip" />
+			<property name="Recipes_to_learn" value="adobeWhiteBlock,adobeWhiteCNRFull,adobeWhiteCNRInside,adobeWhiteCNRRamp,adobeWhitePillar100,adobeWhitePillar50,adobeWhitePlate,adobeWhitePole,adobeWhiteRamp,adobeWhiteWedge,adobeWhiteWedgeTip,adobeWhiteArrowSlitHalf" />
 		</property>
 		<property name="DescriptionKey" value="SkillBookDesc" />
 		<property name="CustomIcon" value="blockbook" />
@@ -13335,7 +13336,7 @@ which does not exist, yet. -->
 	<item id="1713" name="Flagstone Book">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="flagstoneBlock,flagstoneStairs25,cabinFlagstoneRamp" />
+			<property name="Recipes_to_learn" value="flagstoneBlock,flagstoneStairs25,cabinFlagstoneRamp,flagstoneArrowSlitHalf" />
 		</property>
 		<property name="DescriptionKey" value="SkillBookDesc" />
 		<property name="CustomIcon" value="blockbook" />

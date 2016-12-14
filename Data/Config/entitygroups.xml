@@ -127,12 +127,6 @@
         <entity name="Boe5" />
         <entity name="Boe6" />
         <entity name="Boe7" />
-        <entity name="Moe2" />
-        <entity name="Moe3" />
-        <entity name="CrawlerMoe" />
-        <entity name="Moe5" />
-        <entity name="Moe6" />
-        <entity name="Moe7" />
         <entity name="Arlene1" />
         <entity name="Arlene2" />
         <entity name="CrawlerArlene" />
@@ -145,6 +139,12 @@
         <entity name="Darlene6" />
         <entity name="Darlene7" />
         <entity name="Marlene1" />
+        <entity name="Moe2" />
+        <entity name="Moe3" />
+        <entity name="CrawlerMoe" />
+        <entity name="Moe5" />
+        <entity name="Moe6" />
+        <entity name="Moe7" />
         <entity name="Marlene2" />
         <entity name="Marlene3" />
         <entity name="CrawlerMarlene" />
