@@ -1148,7 +1148,7 @@
             <requirement perk_level="1" required_skill_name="Wood Working" required_skill_level="1" />
             <recipe name="woodHatch1_v1" unlock_level="1" />
 		</perk>
-        <perk name="Storage" icon="SecureStorageChest" description_key="Learn to craft a secure storage container" title_key="Secure Storage" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="crafting">
+        <perk name="Chest" icon="SecureStorageChest" description_key="Learn to craft a secure storage container" title_key="Secure Storage" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="crafting">
 			<requirement perk_level="1" required_skill_name="Wood Working" required_skill_level="5" />
 			<recipe name="SecureStorageChest" unlock_level="1" />
 		</perk>
