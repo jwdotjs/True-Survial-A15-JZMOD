@@ -6645,7 +6645,7 @@ which does not exist, yet. -->
             <property name="Gain_wellness" value="0.7" />
             <property name="Create_item" value="emptyJar" />
             <property name="Sound_start" value="UseActions/player_eating" />
-            <!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
+            <property name="Create_item" value="emptyJar" /> 
         </property>
         <property name="Smell" value="smallSmell" />
         <property name="Group" value="Food/Cooking" />
@@ -6669,7 +6669,7 @@ which does not exist, yet. -->
             <property name="Gain_stamina" value="-20" />
             <property name="Gain_wellness" value="0.6" />
             <property name="Sound_start" value="UseActions/player_drinking" />
-            <!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
+            <property name="Create_item" value="emptyJar" /> 
         </property>
         <property name="Smell" value="exLargeSmell" />
         <property name="Group" value="Food/Cooking" />
