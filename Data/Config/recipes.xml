@@ -810,7 +810,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" count="5"/>
     <ingredient name="NutAndBolt" count="10" />
 </recipe>
-<recipe name="cntSecureStorageChest" count="1" craft_time="30" craft_exp_gain="5">
+
+<recipe name="SecureStorageChest" count="1" craft_time="30" craft_exp_gain="5">
 	<ingredient name="Plank" count="20" />
 	<ingredient name="doorKnob" count="1" />
 	<ingredient name="spring" count="2" />
@@ -2602,13 +2603,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsSniperRifle_receiver" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
-	<recipe name="Plank" count="4"  craft_time="5" craft_exp_gain="1">
+	<recipe name="Plank" count="4"  craft_time="5" craft_exp_gain="2">
 		<ingredient name="driftwood2" count="1" />
 	</recipe>
-	<recipe name="Plank" count="5" craft_time="5" craft_exp_gain="1">
+	<recipe name="Plank" count="5" craft_time="5" craft_exp_gain="2">
 		<ingredient name="wood" count="1" />
 	</recipe>
-	<recipe name="Plank" count="10" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="3" craft_exp_gain="1">
+	<recipe name="Plank" count="10" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="3" craft_exp_gain="3">
 		<ingredient name="wood" count="1" />
 	</recipe>
 	<recipe name="GrassFallTrap" count="1"  craft_time="10" craft_exp_gain="5">
@@ -4335,6 +4336,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="rawMeat" count="2" />
 		<ingredient name="BrainMatter" count="2" />
 	</recipe>
+    <recipe name="cntSteelGunSafe" count="1" craft_area="workMetalWorkBench" craft_time="30" craft_exp_gain="50">
+        <ingredient name="forgedSteel" count="20"/>
+        <ingredient name="spring" count="5"/>
+        <ingredient name="mechanicalParts" count="5"/>
+        <ingredient name="NutAndBolt" count="10" />
+    </recipe>
 </recipes>
 <!-- To do (maybe / later)cookingGrill
 

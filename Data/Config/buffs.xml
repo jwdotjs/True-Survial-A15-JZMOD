@@ -227,8 +227,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
         <modify id="1" stat="coretemp" modifyValue="-10"/>
     </buff>		
 
-    <buff id="criticalBlunt" hitmask="body;head" critical="true" duration="1" icon="ui_game_symbol_stunned"
-        name_key="criticalBlunt" description_key="criticalBluntDesc" tooltip_key="criticalBluntTooltip" castsound="Buffs/critical_blunt">
+    <buff id="criticalBlunt" hitmask="body;head" critical="true" duration="1" icon="ui_game_symbol_stunned" name_key="criticalBlunt" description_key="criticalBluntDesc" tooltip_key="criticalBluntTooltip" castsound="Buffs/critical_blunt">
         <modify id="1" stat="health" amount="-100" rate="1"/>
     </buff>
 
@@ -584,11 +583,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="coretemp" modifyValue="20" />
 	</buff>
 	<buff id="cozybed2" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed" icon="cozyBed">
-		<modify id="0" stat="health" amount="1" rate="5" />
+		<modify id="0" stat="health" amount="1" rate="4" />
 		<modify id="1" stat="coretemp" modifyValue="25" />
 	</buff>
 	<buff id="cozybed3" stack="reset" duration="10" mutex="cozybed1,cozybed2,cozybed3" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed" icon="cozyBed">
-		<modify id="0" stat="health" amount="2" rate="5" />
+		<modify id="0" stat="health" amount="2" rate="4" />
 		<modify id="1" stat="coretemp" modifyValue="30" />
 	</buff>
 	<!--JZMOD BIOINFECTION-->
@@ -764,7 +763,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<buff id="Smoking" duration="100t" name_key="Smoking" type="sickness" actions="increment(@wellness, 0.1, 100t, 0, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every game hour)" icon="cigarette">
 		<modify id="0" stat="stamina" amount="-1" rate="5" />
-		<modify id="1" stat="food" amount="1" rate="140" />
+		<modify id="1" stat="food" amount="1" rate="90" />
 	</buff>
 	<buff id="vitamins" duration="1200t" name_key="Vitamins" tooltip_key="mmmmm Vitamins!" description_key="Vitamins make You feel a little stronger.(Wellness increase 0.2 every game hour)" actions="increment(@wellness, 0.2, 100t, 0, 0)" icon="vitamins" />
 	<buff id="Large1stAidKit" duration="10" name_key="First Aid" type="healthup" onexpired="splint" tooltip_key="That feels better" description_key="You applied first aid and are now healing." icon="firstAidKit">

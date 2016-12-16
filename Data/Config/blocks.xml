@@ -717,11 +717,11 @@ then add recipes for those white/red/green metals
 
 <block id="121" name="stainlessSteelMaster">
 	<property name="Material" value="MstainlessSteel" />
-	<property name="Texture" value="267" />
+    <property name="Texture" value="355,355,267,267,267,267" />
 	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="forgedSteel" value="15" /> <property name="steelPolish" value="3" /> </property>
-	<drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
-	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property class="RepairItems"> <property name="forgedSteel" value="15" /> </property>
+	<drop event="Destroy" name="scrapSteel" count="5,10" prob="1" />
+	<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -750,14 +750,14 @@ then add recipes for those white/red/green metals
 		<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
 		<property name="FuelValue" value="40" />
 		<property name="CanPickup" value="true" />
-		<property class="RepairItems"> <property name="wood" value="5" /> </property>
+		<property class="RepairItems"> <property name="stick" value="5" /> </property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="cobblestoneMaster" />
 			<property name="Item" value="cobblestones" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="8" />
+			<property name="UpgradeHitCount" value="4" />
 		</property>
-		<drop event="Destroy" name="wood" count="1,3" prob="1" />
+		<drop event="Destroy" name="stick" count="1,3" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
         <property name="CraftingSkillGroup" value="Wood Working" />
         <property name="EconomicValue" value="6" />
@@ -771,9 +771,9 @@ then add recipes for those white/red/green metals
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems"> <property name="cobblestones" value="10" /> </property>
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="concreteMaster" />
-			<property name="Item" value="concreteMix" />
-			<property name="ItemCount" value="10" />
+			<property name="ToBlock" value="brickMaster" />
+			<property name="Item" value="clayLump" />
+			<property name="ItemCount" value="20" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 		<drop event="Harvest" name="rockSmall" count="8" />
@@ -905,8 +905,8 @@ then add recipes for those white/red/green metals
 		<property class="RepairItems"> <property name="forgedSteel" value="10" /> </property>
         <property class="UpgradeBlock">
             <property name="ToBlock" value="stainlessSteelMaster" />
-            <property name="Item" value="steelPolish" />
-            <property name="ItemCount" value="10" />
+            <property name="Item" value="shortSteelPipe" />
+            <property name="ItemCount" value="20" />
             <property name="UpgradeHitCount" value="4" />
         </property>
         <property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
@@ -957,7 +957,7 @@ then add recipes for those white/red/green metals
 			<property name="ToBlock" value="pouredConcreteMaster" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="1" />
 		</property>
 		<drop event="Destroy" count="0" />
         <property name="CraftingSkillGroup" value="Stone Working" />
@@ -1022,7 +1022,7 @@ then add recipes for those white/red/green metals
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems"> <property name="concreteMix" value="10" /> </property>
 	    <property class="UpgradeBlock">
-			<property name="ToBlock" value="pouredConcreteMaster" />
+			<property name="ToBlock" value="rConcreteMaster" />
 			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="4" />
@@ -1041,8 +1041,8 @@ then add recipes for those white/red/green metals
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
         <property class="UpgradeBlock">
-            <property name="ToBlock" value="concreteMaster" />
-            <property name="Item" value="concreteMix" />
+            <property name="ToBlock" value="steelMaster" />
+            <property name="Item" value="forgedSteel" />
             <property name="ItemCount" value="10" />
             <property name="UpgradeHitCount" value="4" />
         </property>
@@ -1157,7 +1157,7 @@ then add recipes for those white/red/green metals
 		<property name="Texture" value="379" />
 		<property name="IsDeveloper" value="true" />
 		<property name="FuelValue" value="80" />
-		<property class="RepairItems"> <property name="wood" value="10" /> </property>
+		<property class="RepairItems"> <property name="Plank" value="10" /> </property>
         <property class="UpgradeBlock">
 			<property name="ToBlock" value="rWoodMetalMaster" />
 			<property name="Item" value="scrapIron" />
@@ -1576,12 +1576,11 @@ then add recipes for those white/red/green metals
 	<block id="204" name="rConcreteBlock">
 		<property name="Extends" value="rConcreteMaster" />
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="3rdUpgradedEngConcrete" />
+			<property name="ToBlock" value="4thUpgradedSteel" />
 			<property name="Item" value="shortSteelPipe" />
 			<property name="ItemCount" value="20" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
-		<property name="DowngradeBlock" value="concreteBlock" />
 	</block>
 	<block id="205" name="pouredConcreteWedgeTip">
 		<property name="Extends" value="pouredConcreteMaster" />
@@ -1617,12 +1616,12 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="210" name="brickBlock">
         <property name="Extends" value="brickMaster" />
-        <property class="UpgradeBlock">	<property name="ToBlock" value="concreteBlock" /> </property>
+        <property class="UpgradeBlock">	<property name="ToBlock" value="2ndUpgradedConcrete" /> </property>
     </block>
 
     <block id="211" name="concreteBlock">
         <property name="Extends" value="concreteMaster" />
-        <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock" /> </property>
+        <property class="UpgradeBlock"> <property name="ToBlock" value="3rdUpgradedRConcrete" /> </property>
     </block>
 
     <block id="212" name="scrapIronFrameBlock">
@@ -2201,7 +2200,7 @@ then add recipes for those white/red/green metals
 	<block id="294" name="rWoodMetalBlock">
 		<property name="Extends" value="rWoodMetalMaster" />
 		<property name="DowngradeBlock" value="rWoodBlock" />
-		<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronBlock" /> </property>
+		<property class="UpgradeBlock"> <property name="ToBlock" value="2ndUpgradedScrapIron" /> </property>
     </block>
 	<block id="295" name="woodFrameBlock">
 		<property name="Extends" value="woodFrameMaster" />
@@ -3336,6 +3335,7 @@ then add recipes for those white/red/green metals
         <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
         <property name="Group" value="Tools/Traps" />
         <property name="DescriptionKey" value="woodLogSpike1Desc"/>
+        <property name="CraftingSkillGroup" value="Wood Working" />
         <property name="EconomicValue" value="30" />
         <property name="EconomicBundleSize" value="20" />
     </block>
@@ -5683,6 +5683,7 @@ kind of free
         <property name="Place" value="TowardsPlacerInverted" />
         <property class="RepairItems"> <property name="forgedIron" value="4" /> </property>
         <property name="LightOpacity" value="0"/>
+        <property name="MaxDamage" value="150" />
         <property name="EconomicValue" value="2000" />
         <drop event="Harvest" name="RedBull" count="1" prob="0.4" />
         <drop event="Harvest" name="redTea" count="1" prob="0.4" />
@@ -6796,7 +6797,7 @@ kind of free
 
 	<block id="785" name="cobblestoneBlock">
 		<property name="Extends" value="cobblestoneMaster" />
-		<property class="UpgradeBlock">	<property name="ToBlock" value="2ndUpGradedConcrete" /> </property>
+		<property class="UpgradeBlock">	<property name="ToBlock" value="UpGradedBrick" /> </property>
 	</block>
 	
 	<block id="786" name="garageDoor1CTRPlate">
@@ -10720,7 +10721,7 @@ kind of free
 
 	<block id="1339" name="cashRegisterEmpty">
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="150" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -10737,7 +10738,7 @@ kind of free
 	<block id="1340" name="cntCashRegister">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="150" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -14085,16 +14086,219 @@ kind of free
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="KeystoneDesc" />
 	</block>
-	<block id="1947" name="forgedFrame">
+	
+	<block id="1948" name="UpgradedCobble"><!--delete-->
+		<property name="Extends" value="cobblestoneBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="UpGradedConcrete" />
+			<property name="Item" value="concreteMix" />
+			<property name="ItemCount" value="10" />
+			<property name="UpgradeHitCount" value="4" />
+		</property>
+		<property name="DowngradeBlock" value="brickDecayedBlock" />
+	</block>
+	<block id="1949" name="UpGradedConcrete"><!--delete-->
+		<property name="Extends" value="rConcreteBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="UpgradedEngConcrete" />
+			<property name="Item" value="shortSteelPipe" />
+			<property name="ItemCount" value="20" />
+			<property name="UpgradeHitCount" value="4" />
+		</property>
+		<property name="DowngradeBlock" value="UpgradedCobble" />
+	</block>
+	<block id="1950" name="UpgradedEngConcrete"><!--delete-->
 		<property name="Material" value="Msteel" />
-		<property name="MaxDamage" value="10000" />
+		<property name="Texture" value="315,315,46,46,46,46" />
+		<property name="DowngradeBlock" value="UpGradedConcrete" />
+        <property name="IsDeveloper" value="true" />
+		<property class="RepairItems">
+			<property name="shortSteelPipe" value="10" />
+		</property>
+		<drop event="Destroy" count="0" />
+        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
+	</block>
+    <!--stone set1-->
+	<block id="1951" name="UpGradedBrick">
+		<property name="Extends" value="brickMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="UpgradedConcrete" /> </property>
+		<property name="DowngradeBlock" value="cobblestoneBlock" />
+	</block>
+    <block id="1952" name="UpgradedConcrete">
+        <property name="Extends" value="concreteMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="UpgradedRConcrete" /> </property>
+		<property name="DowngradeBlock" value="UpGradedBrick" />
+	</block>
+    <block id="59" name="UpgradedRConcrete">
+        <property name="Extends" value="rConcreteMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="UpgradedSteel" /> </property>
+		<property name="DowngradeBlock" value="UpgradedConcrete" />
+	</block>
+    <block id="60" name="UpgradedSteel">
+        <property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="UpgradedEngSteel" /> </property>
+		<property name="DowngradeBlock" value="UpgradedRConcrete" />
+	</block>
+    <block id="61" name="UpgradedEngSteel">
+        <property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="UpgradedSteel" />
+	</block>
+    <!--end stone set1-->
+    <!--Stone set2-->
+    <block id="62" name="2ndUpgradedConcrete">
+        <property name="Extends" value="concreteMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="2ndUpgradedRConcrete" /> </property>
+		<property name="DowngradeBlock" value="brickBlock" />
+	</block>
+    <block id="63" name="2ndUpgradedRConcrete">
+        <property name="Extends" value="rConcreteMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="2ndUpgradedSteel" /> </property>
+		<property name="DowngradeBlock" value="2ndUpgradedConcrete" />
+	</block>
+    <block id="64" name="2ndUpgradedSteel">
+        <property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="2ndUpgradedEngSteel" /> </property>
+		<property name="DowngradeBlock" value="2ndUpgradedRConcrete" />
+	</block>
+    <block id="65" name="2ndUpgradedEngSteel">
+        <property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="2ndUpgradedSteel" />
+	</block>
+    <!-- end stone set2-->
+    <!--stone set3-->
+    <block id="66" name="3rdUpgradedRConcrete">
+        <property name="Extends" value="rConcreteMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="3rdUpgradedSteel" /> </property>
+		<property name="DowngradeBlock" value="concreteBlock" />
+	</block>
+    <block id="67" name="3rdUpgradedSteel">
+        <property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="3rdUpgradedEngSteel" /> </property>
+		<property name="DowngradeBlock" value="3rdUpgradedRConcrete" />
+	</block>
+    <block id="68" name="3rdUpgradedEngSteel">
+        <property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="3rdUpgradedSteel" />
+	</block>
+    <!--stone set4-->    
+	<block id="69" name="4thUpgradedSteel">
+		<property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="4thUpgradedEngSteel2" /> </property>
+		<property name="DowngradeBlock" value="rConcreteBlock" />
+	</block>
+    <block id="70" name="4thUpgradedEngSteel2">
+        <property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="4thUpgradedSteel" />
+	</block>
+    <!--wood set1-->
+	<block id="1954" name="UpgradedWood">
+		<property name="Extends" value="woodBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock">	<property name="ToBlock" value="UpgradedWood2" /> </property>
+		<property name="DowngradeBlock" value="logCabinBlock" />
+	</block>
+	<block id="1955" name="UpgradedWood2">
+		<property name="Extends" value="rWoodBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="UpgradedWood3" /> </property>
+		<property name="DowngradeBlock" value="UpgradedWood" />
+	</block>
+	<block id="1956" name="UpgradedWood3">
+		<property name="Extends" value="rWoodMetalBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="UpgradedScrapIron" /> </property>
+		<property name="DowngradeBlock" value="UpgradedWood2" />
+	</block>
+	<block id="1957" name="UpgradedScrapIron">
+		<property name="Extends" value="scrapIronBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="UpgradedScrapIron2" /> </property>
+		<property name="DowngradeBlock" value="UpgradedWood3" />
+	</block>
+	<block id="1958" name="UpgradedScrapIron2">
+		<property name="Extends" value="rScrapIronBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="UpgradedSteel" /> </property>
+		<property name="DowngradeBlock" value="UpgradedScrapIron" />
+	</block>
+	<block id="1959" name="UpgradedSteel">
+        <property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="UpgradedEngSteel" /> </property>
+		<property name="DowngradeBlock" value="UpgradedScrapIron2" />
+	</block>
+    <block id="1960" name="UpgradedEngSteel">
+        <property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="UpgradedSteel" />
+	</block>
+    <!--wood set2-->
+   	<block id="1961" name="2ndUpgradedScrapIron">
+		<property name="Extends" value="scrapIronBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="2ndUpgradedScrapIron2" /> </property>
+		<property name="DowngradeBlock" value="rWoodMetalBlock" />
+	</block>
+	<block id="1962" name="2ndUpgradedScrapIron2">
+		<property name="Extends" value="rScrapIronBlock" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="2ndUpgradedSteel" /> </property>
+		<property name="DowngradeBlock" value="2ndUpgradedScrapIron" />
+	</block>
+	<block id="1963" name="2ndUpgradedSteel">
+		<property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="2ndUpgradedEngSteel" /> </property>
+		<property name="DowngradeBlock" value="2ndUpgradedScrapIron2" />
+	</block>
+	<block id="1964" name="2ndUpgradedEngSteel">
+		<property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="2ndUpgradedSteel" />
+	</block>
+    <!--wood set3-->
+	<block id="1965" name="3rdUpgradedSteel">
+		<property name="Extends" value="steelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property class="UpgradeBlock"> <property name="ToBlock" value="3rdUpgradedEngSteel" /> </property>
+		<property name="DowngradeBlock" value="rScrapIronBlock" />
+	</block>
+	<block id="1966" name="3rdUpgradedEngSteel">
+		<property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="3rdUpgradedSteel" />
+	</block>
+    <!--wood set4-->
+	<block id="1967" name="4thUpgradedEngSteel">
+		<property name="Extends" value="stainlessSteelMaster" />
+        <property name="IsDeveloper" value="true" />
+		<property name="DowngradeBlock" value="steelBlock" />
+	</block>
+    <block id="1947" name="forgedFrame">
+		<property name="Material" value="Msteel" />
+		<property name="MaxDamage" value="5000" />
 		<property name="LightOpacity" value="0" />
 		<property name="Group" value="Building" />
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
 		<property name="Texture" value="357" />
 		<property name="Collide" value="movement,melee" />
-		<!-- -rocket -->
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelBlock" />
 			<property name="Item" value="forgedSteel" />
@@ -14105,214 +14309,14 @@ kind of free
 			<property name="forgedSteel" value="5" />
 		</property>
 		<property name="CanPickup" value="true" />
-		<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+		<drop event="Destroy" name="scrapSteel" count="2,4" prob="1" />
 		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
 		<property name="CustomIcon" value="scrapIronFrameMaster" />
-		<property name="CustomIconTint" value="7ea8a5" />
-		<property name="Group" value="Building" />
-	</block>
-	<block id="1948" name="UpgradedCobble">
-		<property name="Extends" value="cobblestoneBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpGradedConcrete" />
-			<property name="Item" value="concreteMix" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="brickDecayedBlock" />
-	</block>
-	<block id="1949" name="UpGradedConcrete">
-		<property name="Extends" value="rConcreteBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedEngConcrete" />
-			<property name="Item" value="shortSteelPipe" />
-			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="UpgradedCobble" />
-	</block>
-	<block id="1950" name="UpgradedEngConcrete">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="315,315,46,46,46,46" />
-		<property name="DowngradeBlock" value="UpGradedConcrete" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	</block>
-	<block id="1951" name="2ndUpGradedConcrete">
-		<property name="Extends" value="rConcreteBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="2ndUpgradedEngConcrete" />
-			<property name="Item" value="shortSteelPipe" />
-			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="cobblestoneBlock" />
-	</block>
-	<block id="1952" name="2ndUpgradedEngConcrete">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="315,315,46,46,46,46" />
-		<property name="DowngradeBlock" value="2ndUpGradedConcrete" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	</block>
-	<block id="1953" name="3rdUpgradedEngConcrete">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="315,315,46,46,46,46" />
-		<property name="DowngradeBlock" value="rConcreteBlock" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	</block>
-	<block id="1954" name="UpgradedWood">
-		<property name="Extends" value="woodBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedWood2" />
-			<property name="Item" value="Plank" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="logCabinBlock" />
-	</block>
-	<block id="1955" name="UpgradedWood2">
-		<property name="Extends" value="rWoodBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedWood3" />
-			<property name="Item" value="scrapIron" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="UpgradedWood" />
-	</block>
-	<block id="1956" name="UpgradedWood3">
-		<property name="Extends" value="rWoodMetalBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedScrapIron" />
-			<property name="Item" value="scrapIron" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="UpgradedWood2" />
-	</block>
-	<block id="1957" name="UpgradedScrapIron">
-		<property name="Extends" value="scrapIronBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedScrapIron2" />
-			<property name="Item" value="scrapIron" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="UpgradedWood3" />
-	</block>
-	<block id="1958" name="UpgradedScrapIron2">
-		<property name="Extends" value="rScrapIronBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedSteel" />
-			<property name="Item" value="forgedSteel" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="UpgradedScrapIron" />
-	</block>
-	<block id="1959" name="UpgradedSteel">
-		<property name="Extends" value="steelMaster" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="UpgradedEngSteel" />
-			<property name="Item" value="shortSteelPipe" />
-			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="UpgradedScrapIron2" />
-	</block>
-	<block id="1960" name="UpgradedEngSteel">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="307,307,46,46,46,46" />
-		<property name="DowngradeBlock" value="UpgradedSteel" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	</block>
-	<block id="1961" name="2ndUpgradedScrapIron">
-		<property name="Extends" value="scrapIronBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="2ndUpgradedScrapIron2" />
-			<property name="Item" value="scrapIron" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="rWoodMetalBlock" />
-	</block>
-	<block id="1962" name="2ndUpgradedScrapIron2">
-		<property name="Extends" value="rScrapIronBlock" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="2ndUpgradedSteel" />
-			<property name="Item" value="forgedSteel" />
-			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="2ndUpgradedScrapIron" />
-	</block>
-	<block id="1963" name="2ndUpgradedSteel">
-		<property name="Extends" value="steelMaster" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="2ndUpgradedEngSteel" />
-			<property name="Item" value="shortSteelPipe" />
-			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="2ndUpgradedScrapIron2" />
-	</block>
-	<block id="1964" name="2ndUpgradedEngSteel">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="307,307,46,46,46,46" />
-		<property name="DowngradeBlock" value="2ndUpgradedSteel" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	</block>
-	<block id="1965" name="3rdUpgradedSteel">
-		<property name="Extends" value="steelMaster" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="3rdUpgradedEngSteel" />
-			<property name="Item" value="shortSteelPipe" />
-			<property name="ItemCount" value="20" />
-			<property name="UpgradeHitCount" value="4" />
-		</property>
-		<property name="DowngradeBlock" value="rScrapIronBlock" />
-	</block>
-	<block id="1966" name="3rdUpgradedEngSteel">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="307,307,46,46,46,46" />
-		<property name="DowngradeBlock" value="3rdUpgradedSteel" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	</block>
-	<block id="1967" name="4thUpgradedEngSteel">
-		<property name="Material" value="Msteel" />
-		<property name="Texture" value="307,307,46,46,46,46" />
-		<property name="DowngradeBlock" value="steelBlock" />
-		<property class="RepairItems">
-			<property name="shortSteelPipe" value="10" />
-		</property>
-		<drop event="Destroy" count="0" />
-        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
+        <property name="Group" value="Building" />
 	</block>
 	<block id="1968" name="solidforgedFrame">
 		<property name="Extends" value="forgedFrame" />
+        <property name="CanPickup" value="false" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelBlock" />
 			<property name="Item" value="forgedSteel" />
@@ -14323,7 +14327,7 @@ kind of free
         <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
 		<property name="DowngradeBlock" value="scrapMetalPile" />
 	</block>
-	<!--JZMOD TRAPS-->
+    <!--JZMOD TRAPS-->
 	<block id="1969" name="SetUpASpikeTrap">
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="Ext3dModel" />

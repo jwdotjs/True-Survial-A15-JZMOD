@@ -1330,6 +1330,7 @@
 			<recipe name="cntGunSafe" unlock_level="1" />
             <recipe name="cntDeskSafe" unlock_level="1" />
             <recipe name="cntWallSafe" unlock_level="1" />
+            <recipe name="cntSteelGunSafe" unlock_level="1" />
 		</perk>
         
         <perk name="Iron Hatch" icon="scrapHatch_v1" description_key="Learn to craft Iron Hatches on the metal work bench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
