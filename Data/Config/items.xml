@@ -5838,7 +5838,7 @@ which does not exist, yet. -->
 		<property name="Group" value="Medicine" />
 		<property name="DescriptionKey" value="bandageDesc" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10"/>
         <property name="PickupJournalEntry" value="firstAidTip" />
     </item>
@@ -5854,7 +5854,7 @@ which does not exist, yet. -->
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property name="DescriptionKey" value="firstAidBandageDesc" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
@@ -5932,7 +5932,7 @@ which does not exist, yet. -->
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
         <property name="ActionSkillGroup" value="Medicine"/>
-        <property name="CraftingSkillGroup" value="Science"/>
+        <property name="CraftingSkillGroup" value="Medicine"/>
         <property name="Group" value="Medicine" />
         <property name="ActionExp" value="10"/>
     </item>
@@ -5962,7 +5962,7 @@ which does not exist, yet. -->
 			<property name="Buff" value="vitamins" />
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="25" />
 	</item>
@@ -5995,7 +5995,7 @@ which does not exist, yet. -->
 			<property name="Buff" value="painkillerBuff" />
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="5" />
 	</item>
@@ -6030,7 +6030,7 @@ which does not exist, yet. -->
 			<property name="Debuff" value="bioInfection,dysentery,dysentery2" />
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
@@ -6064,7 +6064,7 @@ which does not exist, yet. -->
 			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysentery,dysentery2" />
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
@@ -6144,7 +6144,7 @@ which does not exist, yet. -->
 		<property name="Meshfile" value="Items/Food/fruit_yucca" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="14" />
-		<property name="Stacknumber" value="50" /> <!-- STK food -->
+		<property name="Stacknumber" value="100" /> <!-- STK food -->
         <property name="EconomicValue" value="5" />
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
@@ -9564,7 +9564,7 @@ which does not exist, yet. -->
 		<property name="Extends" value="woodenBow" />
 		<property name="Material" value="metal" />
 		<property name="Weight" value="20" />
-		<property name="RepairTools" value="scrapCable" />
+		<property name="RepairTools" value="BowString" />
 		<property name="DescriptionKey" value="CompoundBowDesc" />
 		<property class="Action0">
 			<property name="Delay" value="0.5" />
@@ -12020,7 +12020,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="5,14" />
 			<property name="BlockDamage" value="1.5,2" />
 			<property name="DegradationMax" value="80,400" />
-			<property name="DegradationRate" value="1,1" />
+			<property name="DegradationRate" value="5,1" />
 		</property>
 		<property name="Group" value="Ammo/Weapons,Basics" />
 		<property name="DescriptionKey" value="IronSpearDesc" />
@@ -14544,7 +14544,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="SanitizingBandageDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1805" name="RedHotSteelPipe">
@@ -14571,7 +14571,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="RedHotDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1806" name="RedHotPipe">
@@ -14599,7 +14599,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="RedHotDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1807" name="AntiVenom">
@@ -14625,13 +14625,14 @@ which does not exist, yet. -->
 		<property name="CustomIconTint" value="96f91d" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="25" />
 	</item>
 	<item id="1808" name="Stimulant">
 		<property name="Meshfile" value="Items/Misc/parcel" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="23" />
+        <property name="CustomIcon" value="ui_game_symbol_Stimulant" />
 		<property name="Stacknumber" value="64" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -14648,7 +14649,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="StimulantDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
 	<item id="1809" name="SuperPill">
@@ -14673,7 +14674,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="SuperPillDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="50" />
 	</item>
 	<item id="1810" name="PainKillerShot">
@@ -14717,7 +14718,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="DescriptionKey" value="DoctorShotDesc" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
 	<item id="1811" name="StimulantShot">
@@ -14762,7 +14763,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="DescriptionKey" value="DoctorShotDesc" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
 	<item id="1812" name="InfectedShot">
@@ -14796,7 +14797,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value=".6,1.1" />
 		</property>
 		<property name="DescriptionKey" value="DoctorShotDesc" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
 	<item id="1813" name="SedativeShot">
@@ -14830,7 +14831,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value=".6,1.1" />
 		</property>
 		<property name="DescriptionKey" value="DoctorShotDesc" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
 	<item id="1814" name="Large1stAidKit">
@@ -14900,7 +14901,7 @@ which does not exist, yet. -->
 		<property name="Group" value="Medicine" />
 		<property name="DescriptionKey" value="AntivirialDesc" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="50" />
 	</item>
 	<!--JZMOD Consumables-->
@@ -15934,7 +15935,7 @@ which does not exist, yet. -->
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="forgewood" />
 		<property name="HoldType" value="45" />
-		<property name="Stacknumber" value="1000" />
+		<property name="Stacknumber" value="5000" />
 		<property name="Degradation" value="5000" param1="false" />
 		<property name="RepairAmount" value="10" />
 		<property name="FuelValue" value="1" />
@@ -16679,8 +16680,7 @@ which does not exist, yet. -->
 		<property name="RepairAmount" value="30" />
 		<property name="Group" value="Resources" />
 		<property name="DescriptionKey" value="FiberRopeDesc" />
-        <property name="CustomIcon" value="Sinew" />
-	</item>
+    </item>
     <item id="1951" name="BoneMeal">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -16689,6 +16689,8 @@ which does not exist, yet. -->
 		<property name="Stacknumber" value="250" />
 		<property name="Group" value="Resources" />
         <property name="DescriptionKey" value="FiberRopeDesc" />
+        <property name="CustomIcon" value="potassiumNitratePowder" />
+        <property name="CustomIconTint" value="662909"/>
 	</item>
     <item id="1952" name="FishingLine">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -16706,6 +16708,7 @@ which does not exist, yet. -->
 		<property name="Material" value="organic" />
 		<property name="Stacknumber" value="250" />
 		<property name="Group" value="Resources" />
+        <property name="RepairAmount" value="300" />
         <property name="DescriptionKey" value="FiberRopeDesc" />
 	</item>
     <item id="1554" name="Lashing">

@@ -549,7 +549,7 @@
         <!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
         <!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<property name="WalkType" value="3" />
-		<property name="MaxHealth" value="250" />
+		<property name="MaxHealth" value="150" />
 		<property name="MaxViewAngle" value="180" />
 		<property name="HandItem" value="stingHornet" />
 		<property name="Weight" value="20" />
@@ -724,12 +724,12 @@
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
 		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="3" />
+		<drop event="Harvest" name="rawMeat" count="5" />
         <drop event="Harvest" name="animalHide" count="2" />
         <drop event="Harvest" name="BrainMatter" count="2" />
         <!--JZMOD Hunter-->
-        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="5" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="6" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
@@ -744,9 +744,9 @@
         <drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
         <drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
         <!--JZMOD Butcher-->   
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2"  />
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4"  />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="8" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
@@ -825,12 +825,12 @@
 		<property name="ExperienceGain" value="75" />
 		<property name="DeadBodyHitPoints" value="250" />
 		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="5" />
+		<drop event="Harvest" name="rawMeat" count="7" />
         <drop event="Harvest" name="animalHide" count="2" />
         <drop event="Harvest" name="BrainMatter" count="2" />
         <!--JZMOD Hunter-->
-        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="5" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="8" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="3" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="3" prob=".5" />
@@ -845,8 +845,8 @@
         <drop event="Harvest" name="BearFlank" tool_category="Hunter" count="1" prob=".2" />
         <drop event="Harvest" name="BearFlank" tool_category="Hunter" count="1" prob=".2" />
         <!--JZMOD Butcher-->   
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
@@ -964,18 +964,18 @@
 		<property name="ExperienceGain" value="5" />
 		<property name="SwimOffset" value="2"/>
         <!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="1" />
+		<drop event="Harvest" name="rawMeat" count="3" />
         <drop event="Harvest" name="animalHide" count="1" />
         <drop event="Harvest" name="BrainMatter" count="1" />
         <!--JZMOD Hunter-->
-        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" />
 		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="2" />
         <!--JZMOD Butcher-->  
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />        
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" />        
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" prob=".5" />
         <drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="3" />
@@ -999,19 +999,19 @@
 		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="100" />
 		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="1" />
+		<drop event="Harvest" name="rawMeat" count="3" />
         <drop event="Harvest" name="feather" count="5" />
         <!--JZMOD Hunter-->
-        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" />
-        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="1" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" />
+        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
 		<drop event="Harvest" name="feather" tool_category="Hunter" count="10" />
 		<drop event="Harvest" name="feather" tool_category="Hunter" count="4" prob=".5" />
 		<drop event="Harvest" name="feather" tool_category="Hunter" count="4" prob=".5" />
 		<!--JZMOD Butcher--> 
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" prob=".5" />
 		<drop event="Harvest" name="feather" tool_category="Butcher" count="15" />
 		<drop event="Harvest" name="feather" tool_category="Butcher" count="5" prob=".5" />
 		<drop event="Harvest" name="feather" tool_category="Butcher" count="5" prob=".5" />
@@ -1032,12 +1032,12 @@
 		<property name="ExperienceGain" value="30" />
         <property name="SwimOffset" value="0.7"/>
 		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="4" />
+		<drop event="Harvest" name="rawMeat" count="6" />
         <drop event="Harvest" name="animalHide" count="2" />
         <drop event="Harvest" name="BrainMatter" count="2" />
         <!--JZMOD Hunter-->
-        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
@@ -1052,8 +1052,8 @@
         <drop event="Harvest" name="PorkBelly" tool_category="Hunter" count="1" prob=".2" />
         <drop event="Harvest" name="PorkBelly" tool_category="Hunter" count="1" prob=".2" />
         <!--JZMOD Butcher-->   
-        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+        <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
@@ -1544,35 +1544,7 @@
         <property name="LootListOnDeath" value="72" />
     </entity_class>
 
-    <entity_class name="traderJoel" extends="Trader">
-        <property name="Archetype" value="TraderJoel" />
-        <property name="NPCID" value="traitorjoel" />
-    </entity_class>
-
-    <entity_class name="traderRekt" extends="Trader">
-        <property name="Archetype" value="TraderRekt" />
-        <property name="NPCID" value="traderric" />
-    </entity_class>
-
-    <entity_class name="traderBob" extends="Trader">
-        <property name="Archetype" value="TraderBob" />
-        <property name="NPCID" value="traderric" />
-    </entity_class>
-
-    <entity_class name="traderJimmy" extends="Trader">
-        <property name="Archetype" value="TraderJimmy" />
-        <property name="NPCID" value="traderric" />
-    </entity_class>
-
-    <entity_class name="traderHugh" extends="Trader">
-        <property name="Archetype" value="TraderHugh" />
-        <property name="NPCID" value="traderric" />
-    </entity_class>
-
-    <entity_class name="traderTest" extends="Trader">
-        <property name="Archetype" value="TraderJoel" />
-        <property name="NPCID" value="traderTest" />
-    </entity_class>
+    
     
 	<!-- JZMOD ADDED ZOMBIE WALK VARIATIONS -->
     
@@ -2496,8 +2468,8 @@
 
     <entity_class name="DarrylDixon" extends="Morgan">
         <property name="Archetype" value="DarrylDixon"/>
-        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="followercrossbow2,followersteelCrossbowBolt" />
-        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="followercrossbow2,followersteelCrossbowBolt" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,shotgunBanditShell" />
+        <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,shotgunBanditShell" />
         <property name="AITask-1" value="Follow" param1="EntityPlayer" />
      	<property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>	
         <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityEnemy" />
@@ -2526,7 +2498,7 @@
         <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
         <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet" />
         <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
-        <property name="HandItem" value="followercrossbow2" />
+        <property name="HandItem" value="gunBanditPumpShotgun" />
     </entity_class>
 
     <entity_class name="Tara" extends="Maggi">
@@ -2605,6 +2577,36 @@
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSniperRifle,762mmBanditBullet" />
         <property name="HandItem" value="gunBanditSniperRifle" />
     </entity_class> 
+    
+    <entity_class name="traderJoel" extends="Trader">
+        <property name="Archetype" value="TraderJoel" />
+        <property name="NPCID" value="traitorjoel" />
+    </entity_class>
+
+    <entity_class name="traderRekt" extends="Trader">
+        <property name="Archetype" value="TraderRekt" />
+        <property name="NPCID" value="traderric" />
+    </entity_class>
+
+    <entity_class name="traderBob" extends="Trader">
+        <property name="Archetype" value="TraderBob" />
+        <property name="NPCID" value="traderric" />
+    </entity_class>
+
+    <entity_class name="traderJimmy" extends="Trader">
+        <property name="Archetype" value="TraderJimmy" />
+        <property name="NPCID" value="traderric" />
+    </entity_class>
+
+    <entity_class name="traderHugh" extends="Trader">
+        <property name="Archetype" value="TraderHugh" />
+        <property name="NPCID" value="traderric" />
+    </entity_class>
+
+    <entity_class name="traderTest" extends="Trader">
+        <property name="Archetype" value="TraderJoel" />
+        <property name="NPCID" value="traderTest" />
+    </entity_class>
     
     <!-- JZMOD CHARRED ZOMBIE-->
     <entity_class name="ZombieCharred" extends="zombieUMA" >

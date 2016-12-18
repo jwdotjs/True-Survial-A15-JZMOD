@@ -548,6 +548,8 @@
 					<ingredient_row name="2"/>
 					<ingredient_row name="3"/>
 					<ingredient_row name="4"/>
+                    <!--<ingredient_row name="5"/>
+                    <ingredient_row name="6"/>-->
                 </grid>
 			</rect>
 		

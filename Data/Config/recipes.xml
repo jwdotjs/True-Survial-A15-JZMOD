@@ -3079,7 +3079,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="FiberRope" count="20" />
 	</recipe>
 	<recipe name="workStill" count="1"  craft_time="300">
-		<ingredient name="scrapCopper" count="50" />
+		<ingredient name="scrapBrass" count="50" />
 		<ingredient name="shortMetalPipe" count="10" />
 		<ingredient name="cookingPot" count="2" />
 		<ingredient name="scrapCable" count="2" />
@@ -3173,9 +3173,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="glue" count="5" />
 	</recipe>
 	<recipe name="MortarAndPestle" count="1"  craft_area="workforge" craft_tool="calipers" material_based="true" craft_time="300">
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="5" />
-		<ingredient name="unit_stone" count="20" />
+		<ingredient name="unit_lead" count="10" />
+		<ingredient name="unit_clay" count="25" />
+		<ingredient name="unit_stone" count="75" />
 	</recipe>
 	<recipe name="LeatherNeedle" count="1"  craft_time="60">
 		<ingredient name="femur" count="1" />
@@ -4064,6 +4064,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="VeggieSalad To/Co/Ca" count="1"  craft_time="5" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />
 		<ingredient name="corn" count="1" />
+        <ingredient name="Carrot" count="1" />
 	</recipe>
     <recipe name="VeggieSalad To/Po/Ca/Co" count="1"  craft_time="5" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />
@@ -4341,6 +4342,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="spring" count="5"/>
         <ingredient name="mechanicalParts" count="5"/>
         <ingredient name="NutAndBolt" count="10" />
+    </recipe>
+    <recipe name="FieldKnife" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
+        <ingredient name="unit_iron" count="75"/>
+        <ingredient name="unit_clay" count="10"/>
     </recipe>
 </recipes>
 <!-- To do (maybe / later)cookingGrill

@@ -391,7 +391,7 @@
 		<item name="moldyBread" />
 	</lootgroup>
 	<lootgroup name="toiletLoot" count="1">
-		<item name="turd" count="1,2" prob="0.5" />
+		<item name="turd" count="1,6" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="trophyGroup" count="1">
 		<item name="trophy" />
@@ -410,47 +410,48 @@
 		<item name="incendiaryGrenade" count="1,5" prob="0.2"/>-->
 	</lootgroup>
 	<lootgroup name="ammoSmall" count="1">
-		<item name="9mmShock" count="1,12" prob="0.3" />
-		<item name="10mmFireBullet" count="1,10" prob="0.3" />
-		<item name="9mmFireBullet" count="1,12" prob="0.3" />
-		<item name="shotgunFireShell" count="1,8" prob="0.8" />
-		<item name="shotgunSlug" count="1,8" prob="0.4" />
-		<item name="308mmBullet" count="1,10" prob="0.6" />
-		<item name="5.45mmBullet" count="1,10" prob="0.5" />
-		<item name="steelCrossbowBolt" count="1,6" prob="0.5" />
-		<item name="shotgunShell" count="1,8" prob="0.8" />
-		<item name="9mmBullet" count="1,12" prob="0.8" />
-		<item name="10mmBullet" count="1,10" prob="0.5" />
-		<item name="762mmBullet" count="1,5" prob="0.5" />
-		<item name="44MagBullet" count="1,10" prob="0.6" />
-		<item name="steelArrow" count="1,5" prob="0.4" />
-		<item name="weaponRepairKit" count="1,2" prob="0.5" />
+		<item name="9mmShock" count="5,25" prob="0.3" />
+		<item name="10mmFireBullet" count="5,25" prob="0.3" />
+		<item name="9mmFireBullet" count="5,25" prob="0.3" />
+		<item name="shotgunFireShell" count="5,15" prob="0.8" />
+		<item name="shotgunSlug" count="5,15" prob="0.4" />
+		<item name="308mmBullet" count="5,25" prob="0.6" />
+		<item name="5.45mmBullet" count="5,25" prob="0.5" />
+		<item name="steelCrossbowBolt" count="3,12" prob="0.5" />
+		<item name="shotgunShell" count="5,15" prob="0.8" />
+		<item name="9mmBullet" count="5,25" prob="0.8" />
+		<item name="10mmBullet" count="5,25" prob="0.5" />
+		<item name="762mmBullet" count="5,15" prob="0.5" />
+		<item name="44MagBullet" count="5,25" prob="0.6" />
+		<item name="steelArrow" count="3,12" prob="0.4" />
+		<item name="weaponRepairKit" count="1,3" prob="0.5" />
+        <item name="GunOil" count="6,24" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="magnumparts" count="1">
-		<item name="parts44Magnum_cylinder" quality="1,50" prob="0.5" />
-		<item name="parts44Magnum_frame" quality="1,50" prob="0.5" />
-		<item name="parts44Magnum_grip" quality="1,50" prob="0.5" />
-		<item name="parts44Magnum_parts" quality="1,50" prob="0.5" />
+		<item name="parts44Magnum_cylinder" quality="1,350" prob="0.5" />
+		<item name="parts44Magnum_frame" quality="1,350" prob="0.5" />
+		<item name="parts44Magnum_grip" quality="1,350" prob="0.5" />
+		<item name="parts44Magnum_parts" quality="1,350" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="pistolWeaponParts" count="1">
-		<item name="partsPistol_barrel" quality="1,50" prob="0.5" />
-		<item name="partsPistol_parts" quality="1,50" prob="0.5" />
-		<item name="partsPistol_receiver" quality="1,50" prob="0.5" />
-		<item name="partsPistol_grip" quality="1,50" prob="0.5" />
+		<item name="partsPistol_barrel" quality="1,350" prob="0.5" />
+		<item name="partsPistol_parts" quality="1,350" prob="0.5" />
+		<item name="partsPistol_receiver" quality="1,350" prob="0.5" />
+		<item name="partsPistol_grip" quality="1,350" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="PumpShotgunWeaponParts" count="1">
-		<item name="partsPumpShotgun_barrel" quality="1,50" prob="0.5" />
-		<item name="partsPumpShotgun_parts" quality="1,50" prob="0.5" />
-		<item name="partsPumpShotgun_barrelShort" quality="1,50" prob="0.5" />
-		<item name="partsPumpShotgun_stockShort" quality="1,50" prob="0.5" />
-		<item name="partsPumpShotgun_stock" quality="1,50" prob="0.5" />
-		<item name="partsPumpShotgun_receiver" quality="1,50" prob="0.5" />
+		<item name="partsPumpShotgun_barrel" quality="1,350" prob="0.5" />
+		<item name="partsPumpShotgun_parts" quality="1,350" prob="0.5" />
+		<item name="partsPumpShotgun_barrelShort" quality="1,350" prob="0.5" />
+		<item name="partsPumpShotgun_stockShort" quality="1,350" prob="0.5" />
+		<item name="partsPumpShotgun_stock" quality="1,350" prob="0.5" />
+		<item name="partsPumpShotgun_receiver" quality="1,350" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="huntingRifleWeaponParts" count="1">
-		<item name="partsHuntingRifle_barrel" quality="1,50" prob="0.5" />
-		<item name="partsHuntingRifle_stock" quality="1,50" prob="0.5" />
-		<item name="partsHuntingRifle_receiver" quality="1,50" prob="0.5" />
-		<item name="partsHuntingRifle_parts" quality="1,50" prob="0.5" />
+		<item name="partsHuntingRifle_barrel" quality="1,350" prob="0.5" />
+		<item name="partsHuntingRifle_stock" quality="1,350" prob="0.5" />
+		<item name="partsHuntingRifle_receiver" quality="1,350" prob="0.5" />
+		<item name="partsHuntingRifle_parts" quality="1,350" prob="0.5" />
 	</lootgroup>
     <!-- SDX
     <lootgroup name="lsatWeaponParts" count="1">
@@ -512,22 +513,22 @@
 		<!-- SDX <item group="AdvHandgunWeaponParts" prob="0.5" />-->
 	</lootgroup>
     <lootgroup name="mp5WeaponParts" count="1">
-		<item name="partsMP5_barrel" quality="1,50" prob="0.5" />
-		<item name="partsMP5_stock" quality="1,50" prob="0.5" />
-		<item name="partsMP5_receiver" quality="1,50" prob="0.5" />
-		<item name="partsMP5_parts" quality="1,50" prob="0.5" />
+		<item name="partsMP5_barrel" quality="1,350" prob="0.5" />
+		<item name="partsMP5_stock" quality="1,350" prob="0.5" />
+		<item name="partsMP5_receiver" quality="1,350" prob="0.5" />
+		<item name="partsMP5_parts" quality="1,350" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="ak47WeaponParts" count="1">
-		<item name="partsAK47_barrel" quality="1,50" prob="0.5" />
-		<item name="partsAK47_stock" quality="1,50" prob="0.5" />
-		<item name="partsAK47_receiver" quality="1,50" prob="0.5" />
-		<item name="partsAK47_parts" quality="1,50" prob="0.5" />
+		<item name="partsAK47_barrel" quality="1,350" prob="0.5" />
+		<item name="partsAK47_stock" quality="1,350" prob="0.5" />
+		<item name="partsAK47_receiver" quality="1,350" prob="0.5" />
+		<item name="partsAK47_parts" quality="1,350" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="sniperRifleWeaponParts" count="1">
-		<item name="partsSniperRifle_barrel" quality="1,50" prob="0.5" />
-		<item name="partsSniperRifle_stock" quality="1,50" prob="0.5" />
-		<item name="partsSniperRifle_receiver" quality="1,50" prob="0.5" />
-		<item name="partsSniperRifle_parts" quality="1,50" prob="0.5" />
+		<item name="partsSniperRifle_barrel" quality="1,350" prob="0.5" />
+		<item name="partsSniperRifle_stock" quality="1,350" prob="0.5" />
+		<item name="partsSniperRifle_receiver" quality="1,350" prob="0.5" />
+		<item name="partsSniperRifle_parts" quality="1,350" prob="0.5" />
 	</lootgroup>
     <!-- SDX
     <lootgroup name="amr2WeaponParts" count="1">
@@ -580,21 +581,21 @@
     </lootgroup>
 	<lootgroup name="smallCommonWeaponParts" count="1">
 		<item group="pistolWeaponParts" prob="0.5" />
-		<item name="partsPumpShotgun_receiver" quality="1,50" prob="0.5" />
-		<item name="partsPumpShotgun_parts" quality="1,50" prob="0.5" />
-		<item name="partsHuntingRifle_receiver" quality="1,50" prob="0.5" />
-		<item name="partsHuntingRifle_parts" quality="1,50" prob="0.5" />
+		<item name="partsPumpShotgun_receiver" quality="1,350" prob="0.5" />
+		<item name="partsPumpShotgun_parts" quality="1,350" prob="0.5" />
+		<item name="partsHuntingRifle_receiver" quality="1,350" prob="0.5" />
+		<item name="partsHuntingRifle_parts" quality="1,350" prob="0.5" />
 		<item name="sniperRifle_scopeFrame" prob="0.2" />
-		<item name="partsPumpShotgun_stockShort" quality="1,50" prob="0.5" />
+		<item name="partsPumpShotgun_stockShort" quality="1,350" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="smallUncommonWeaponParts" count="1">
-		<item group="magnumparts" quality="1,50" prob="0.3" />
-		<item name="partsMP5_receiver" quality="1,50" prob="0.5" />
-		<item name="partsMP5_stock" quality="1,50" prob="0.5" />
-		<item name="partsMP5_parts" quality="1,50" prob="0.5" />
-		<item name="partsAK47_parts" quality="1,50" prob="0.5" />
-		<item name="partsSniperRifle_receiver" quality="1,50" prob="0.4" />
-		<item name="partsSniperRifle_parts" quality="1,50" prob="0.4" />
+		<item group="magnumparts" prob="0.3" />
+		<item name="partsMP5_receiver" quality="1,350" prob="0.5" />
+		<item name="partsMP5_stock" quality="1,350" prob="0.5" />
+		<item name="partsMP5_parts" quality="1,350" prob="0.5" />
+		<item name="partsAK47_parts" quality="1,350" prob="0.5" />
+		<item name="partsSniperRifle_receiver" quality="1,350" prob="0.4" />
+		<item name="partsSniperRifle_parts" quality="1,350" prob="0.4" />
 	</lootgroup>
 	<lootgroup name="melee" count="1">
 		<item name="SteakKnife" prob="0.3" />
@@ -602,7 +603,7 @@
 		<item name="machete" prob="0.1" quality="1,50" />
 	</lootgroup>
 	<lootgroup name="crossbow+ammo" count="all">
-		<item name="crossbow" count="1" quality="1,50" />
+		<item name="crossbow" count="1" quality="1,350" />
 		<item name="crossbowBolt" count="40" />
 	</lootgroup>
     <lootgroup name="nailgun+parts" count="1">
@@ -727,12 +728,12 @@
 		<item name="gasCan" />
 	</lootgroup>
 	<lootgroup name="militaryammo" count="1">
-		<item name="10mmBullet" count="10,40" prob="0.4" />
-		<item name="762mmBullet" count="5,30" prob="0.3" />
-		<item name="shotgunSlug" count="3,7" prob="0.2" />
+		<item name="10mmBullet" count="15,50" prob="0.4" />
+		<item name="762mmBullet" count="12,45" prob="0.3" />
+		<item name="shotgunSlug" count="12,36" prob="0.2" />
 		<item name="mineAirFilter" count="1,2" prob="0.2" />
 		<item name="mineCandyTin" count="1,3" prob="0.4" />
-		<item name="CarbonArrow" count="1,6" prob="0.6" />
+		<item name="CarbonArrow" count="3,12" prob="0.6" />
 		<item name="mineHubcap" count="1,2" prob="0.5" />
 		<item name="pipeBomb" count="1,3" prob="0.8" />
 		<item name="IncendiaryPowder" count="5,30" prob="0.9" />
@@ -848,7 +849,8 @@
 		<item name="fishingWeight" count="1,3" prob="0.5" />
 		<item name="Plank" count="1" prob="0.5" />
 		<item name="glue" count="1,2" prob="0.7" />
-		<item name="nail" count="1" prob="0.7" />
+		<item name="nail" count="1,6" prob="0.7" />
+        <item name="NutAndBolt" count="1,6" prob="0.7" />
 		<item name="bulletCasing" count="1,10" prob="0.5" />
 		<item name="feather" count="1,3" prob="0.5" />
 		<item group="rottenFood" count="1" prob="0.5" />
@@ -1002,7 +1004,7 @@
         <item name="hoodedSweatshirtWhite" quality="1,100" />
     </lootgroup>
     <lootgroup name="overallsAll">
-        <item name="overalls"/>
+        <item name="overalls" quality="1,100" />
     </lootgroup>
     <lootgroup name="banditArmor">
         <item name="heavyBanditGloves" quality="1,100" />
@@ -1138,6 +1140,8 @@
 		<item name="emptyJar" prob="0.6" />
 		<item name="SanitizingBandage" prob="0.2" />
 		<item name="PurificationTablets" count="1,2" prob="0.5" />
+        <item name="PainKillerShot" count="1,4" prob="0.03" />
+        <item name="StimulantShot" count="1,4" prob="0.03" />
 	</lootgroup>
 	<lootgroup name="sportingGoods" count="1">
         <item name="SharpeningStone" prob="0.2" />
@@ -1282,6 +1286,7 @@
 		<item group="militaryWeaponParts" count="1,3" />
 		<item group="commonWeaponParts" count="1,3" />
 		<item group="ammoBig" count="1,3" />
+        <item name="GunOil" count="6,24" />
 	</lootgroup>
     <lootgroup name="BikeNABox" count="all">
         <item name="minibikeWheels" count="1"/>
@@ -1588,7 +1593,8 @@
 	</lootcontainer>
 	<!-- lootcontainer 25 birds nest-->
 	<lootcontainer id="25" count="1,3" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3">
-		<item name="egg" count="1" prob="0.25" />
+		<item name="turd" count="1" prob="0.02" />
+        <item name="egg" count="1" prob="0.25" />
 		<item name="feather" count="1,4" prob="0.75" />
 	</lootcontainer>
 	<!-- lootcontainer 23 Supply Crate Melee weapons -->
@@ -1761,7 +1767,7 @@
 		<item group="commonWeaponParts" prob="0.8" />
 		<item group="empty" prob="0.2" />
         <item name="mechanicalParts" count="1,5" prob=".1"/>
-	<item name="scrapPlastics" count="1,6" prob=".15"/>
+        <item name="GunOil" count="6,24" prob="0.5" />
 	</lootcontainer>
 	<!-- pop n pills -->
 	<lootcontainer id="51" count="0,2" size="4,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5">

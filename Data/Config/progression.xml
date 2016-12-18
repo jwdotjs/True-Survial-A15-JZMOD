@@ -920,7 +920,7 @@
 		</crafting_skill>
         
         <perk name="Animal Hide Armor" icon="armor_leather" description_key="Learn to craft basic animal hide clothing" title_key="Animal Hide Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
-			<requirement perk_level="1" required_skill_name="Leatherworking" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="Leatherworking" required_skill_level="1" />
             <requirement perk_level="1" required_player_level="5" />
 			<recipe name="animalHideBoots" unlock_level="1" />
 			<recipe name="animalHideGloves" unlock_level="1" />
@@ -1330,8 +1330,7 @@
 			<recipe name="cntGunSafe" unlock_level="1" />
             <recipe name="cntDeskSafe" unlock_level="1" />
             <recipe name="cntWallSafe" unlock_level="1" />
-            <recipe name="cntSteelGunSafe" unlock_level="1" />
-		</perk>
+        </perk>
         
         <perk name="Iron Hatch" icon="scrapHatch_v1" description_key="Learn to craft Iron Hatches on the metal work bench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
 			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="15" />

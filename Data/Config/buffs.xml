@@ -712,6 +712,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <!--Stimulan Addiction-->
 	<buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="Stimulant" stack="extend">
 		<modify id="0" stat="stamina" amount="4" rate="1" />
+        <modify id="1" stat="food" amount="1" rate="35" />
 	</buff>
 	<buff id="useStim" duration="1" actions="increment(stim, 1, 0, 0, 1);debuff(WithdrawalLv1);debuff(WithdrawalLv2);debuff(WithdrawalLv3)" />
 	<buff id="zz" buffif="stim greater 0" debuffif="stim less 1" actions="increment(stim, -1, 800t, 0, 0);min(stim, 0)" />
@@ -720,16 +721,19 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="stamina" amount="1" rate="1" />
 		<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
 		<modify id="2" stat="speedmodifier" modifyValue="0.1" />
+        <modify id="3" stat="food" amount="1" rate="25" />
 	</buff>
 	<buff id="AddictionLv2" mutex="AddictionLv3,WithdrawalLv3" buffif="stim gequal 6" debuffif="stim less 6" name_key="Adiction Stage 2" type="staminaup" ondebuff="WithdrawalLv2" actions="increment(@wellness, -0.1, 800t, 0, 0);debuff(AddictionLv1)" tooltip_key="You have become more addicted to Stimulants" description_key="O Ya! I feel great!(Wellness loss 0.2 every 2 game hours)" icon="ui_game_symbol_run">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 		<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
 		<modify id="2" stat="speedmodifier" modifyValue=".15" />
+        <modify id="3" stat="food" amount="1" rate="20" />
 	</buff>
 	<buff id="AddictionLv3" buffif="stim gequal 9" debuffif="stim less 9" name_key="Adiction Stage 3" type="staminaup" ondebuff="WithdrawalLv3" actions="increment(@wellness, -0.2, 800t, 0, 0);debuff(AddictionLv2)" tooltip_key="You have become very addicted to Stimulants" description_key="Wooo! Man I feel pumped. I need to find more of these.(Wellness loss 0.3 every 2 game hours)" icon="ui_game_symbol_run">
 		<modify id="0" stat="stamina" amount="4" rate="1" />
 		<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
 		<modify id="2" stat="speedmodifier" modifyValue=".25" />
+        <modify id="3" stat="food" amount="1" rate="20" />
 	</buff>
 	<buff id="WithdrawalLv1" mutex="AddictionLv2" debuffif="stim gequal 3;stim less 1" name_key="Withdrawal Stage 1" type="staminadown" actions="increment(@wellness, -0.2, 200t, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="I know if I could just find another Stim I would feel better.(Wellness loss 0.5 every 2 game hours)" icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="1" rate="1" />
@@ -810,7 +814,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="lucilleimpact" hitmask="body;head" duration="1" castsound="lucille_impact" />
 	
 	<buff id="internalBleeding1" duration="50" name="Internal Bleeding1" ffcheck="true" description="You are bleeding internally." actions="damage(45,1,0,0)" icon="buff_icon_critical_hit">
-		<modify id="1" stat="health" amount="-25" rate="1" />
+		<modify id="0" stat="health" amount="-25" rate="1" />
 	</buff>
 	<buff id="internalBleeding2" duration="50" name="Cutted off" ffcheck="true" description="You lost some parts of your Body" icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-25" rate="1" />
@@ -821,18 +825,18 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="health" amount="-15" rate="1" />
 	</buff>
     <!-- JZMOD Zombie Head Shot -->
-    <buff id="headshotMelee" mutex="isPlayer" hitmask="head" duration="2" stack="extend"  >
-        <modify id="1" stat="health" amount="-200" rate="1"/>
+    <buff id="headshotMelee" mutex="isPlayer" hitmask="head" duration="1" stack="extend"  >
+        <modify id="0" stat="health" amount="-200" rate="0.6"/>
     </buff>
-    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="2" stack="extend"  >
-        <modify id="1" stat="health" amount="-400" rate="1"/>
+    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="1" stack="extend"  >
+        <modify id="0" stat="health" amount="-400" rate="0.6"/>
     </buff>
-    <buff id="headshot" mutex="isPlayer" hitmask="head" duration="2" stack="extend"  >
-        <modify id="1" stat="health" amount="-1000" rate="1"/>
+    <buff id="headshot" mutex="isPlayer" hitmask="head" duration="1" stack="extend"  >
+        <modify id="0" stat="health" amount="-1000" rate="0.6"/>
     </buff>
     <!-- JZMOD Bandit Zombie Bonus -->
     <buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend"  >
-        <modify id="1" stat="health" amount="-400" rate="1"/>
+        <modify id="0" stat="health" amount="-400" rate="1"/>
     </buff>
     <!-- JZMOD MYSTERY CAN FOOD -->
     <buff id="randomFood1" duration="1.5" mutex="randomFood2,randomFood3,randomWater1,randomWater2" stack="discard" >

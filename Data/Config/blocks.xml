@@ -3210,7 +3210,7 @@ then add recipes for those white/red/green metals
 	<block id="408" name="trapSpikesNew">
 		<property name="Class" value="TrunkTip" />
         <property name="Damage" value="5" />
-        <property name="Damage_received" value="40" />
+        <property name="Damage_received" value="20" />
         <property name="Material" value="MtrapSpikes1" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -3244,7 +3244,7 @@ then add recipes for those white/red/green metals
         <property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh" />
         <property name="DowngradeBlock" value="trapSpikesDamage3" />
         <property class="UpgradeBlock"> 
-            <property name="ItemCount" value="10"/>
+            <property name="ItemCount" value="8"/>
             <property name="ToBlock" value="trapSpikesNew"/>
             </property>
 </block>
@@ -3253,7 +3253,7 @@ then add recipes for those white/red/green metals
 		<property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh" />
 		<property name="DowngradeBlock" value="trapSpikesDamage4" />
         <property class="UpgradeBlock"> 
-            <property name="ItemCount" value="15"/>
+            <property name="ItemCount" value="10"/>
             <property name="ToBlock" value="trapSpikesNew"/>
         </property>
     </block>
@@ -3262,7 +3262,7 @@ then add recipes for those white/red/green metals
 		<property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
 		<property name="DowngradeBlock" value="trapSpikesDamage5" />
         <property class="UpgradeBlock"> 
-            <property name="ItemCount" value="20"/>
+            <property name="ItemCount" value="12"/>
             <property name="ToBlock" value="trapSpikesNew"/>
         </property>
     </block>
@@ -3270,7 +3270,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="trapSpikesDamage1" param1="DowngradeBlock" />
         <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
         <property class="UpgradeBlock"> 
-            <property name="ItemCount" value="25"/>
+            <property name="ItemCount" value="15"/>
             <property name="ToBlock" value="trapSpikesNew"/>
         </property>
         </block>
@@ -5658,14 +5658,14 @@ kind of free
         <property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
         <property name="Material" value="Mmetal_medium"/>
         <property name="StabilitySupport" value="false" />
-        <property name="Class" value="VendingMachine" />
+        <!--<property name="Class" value="VendingMachine" />-->
         <property name="Shape" value="ModelEntity" />
         <property name="Model" value="Entities/LootContainers/vending_machine_playerPrefab" />
         <property name="Texture" value="191,191,190,191,191,191" />
         <property name="RotationAllowed" value="pivotOnFloor" />
         <property name="Place" value="TowardsPlacerInverted" />
         <property class="RepairItems"> <property name="forgedIron" value="4" /> </property>
-        <property name="TraderID" value="3" />
+        <!--<property name="TraderID" value="3" />-->
         <property name="EconomicValue" value="2000" />
         <property name="LightOpacity" value="0"/>
         <drop event="Destroy" count="0" />
@@ -13637,7 +13637,7 @@ kind of free
         <property name="Extends" value="cntVendingMachine" />
         <property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab" />
         <property name="LightOpacity" value="0"/>
-        <property name="TraderID" value="5" />
+        <!--<property name="TraderID" value="5" />-->
     </block>
 
     <block id="1927" name="signShopOpen">
@@ -14337,9 +14337,7 @@ kind of free
 		<property name="FuelValue" value="15" />
 		<property name="CustomIcon" value="trapSpikesNew" />
 		<property name="IsTerrainDecoration" value="true" />
-		<property class="RepairItems">
-			<property name="stick" value="3" />
-		</property>
+		<property class="RepairItems"> <property name="stick" value="3" /> </property>
 		<property name="CanPickup" value="true" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="trapSpikesNew" />

@@ -15,7 +15,7 @@
 	<cell_rules>
 		
 		<cell_rule name="lowDensity">
-			<cave_count value="4,8"/>
+			<cave_count value="5,9"/>
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
             <hub_rule name="ruralSmall" prob="0.3"/>
@@ -26,7 +26,7 @@
 		</cell_rule>
 		
 		<cell_rule name="highDensity">
-			<cave_count value="4,8"/>
+			<cave_count value="5,9"/>
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
 			<hub_rule name="townSmall" prob="0.3"/>
