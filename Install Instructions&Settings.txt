@@ -1,0 +1,46 @@
+Installation Instructions-
+
+Note-The .gitattributes and .gitignore- files and the .git Folder are not important and not needed
+
+1) Find your 7 Days to Die Main Directory
+2) Place the True Survival Mod Folder in the main 7 Days to Die Directory( When updating the Mod Folder be sure to delete the old one then paste the new one. Do not overwright)
+3) Next open the Data Folder in your 7 Days to Die Main Directory. (It should be in the same location you just pasted the Mod Folder.)
+4) Next in that location remove or delete your Config Folder and replace it with the True Survival Config Folder.
+5) Then open the True Survival Prefab Folder, select all and copy. Open your 7D2D Prefab folder paste and over write the copied files into the Prefab Folder
+5) Tada you’re done and ready to be eaten by the horde 
+Have fun,
+Spider
+
+
+To use this mod on a MP Server you must do all the above and all the Players(clients) must also install the mod as instructed above.
+
+Suggested Game settings-
+
+  <property name="GameWorld" 				value="Random Gen"/>			<!-- Navezgane, Random Gen -->
+  <property name="GameDifficulty" 			value="3"/>  				<!-- 0 - 5, 0=easiest, 5=hardest -->
+  <property name="ZombiesRun"				value="0" />				<!-- 0 = default day/night walk/run, 1 = never run, 2 = always run -->
+  <property name="BuildCreate"				value="false" />			<!-- cheat mode on/off -->
+  <property name="DayNightLength"			value="60" />				<!-- real time minutes per in game day: 50 minutes -->
+  <property name="DayLightLength"			value="18" />				<!-- in game hours the sun shines per day: 18 hours day light per day-->
+  <property name="PlayerKillingMode" 			value="3" />
+  <property name="PersistentPlayerProfiles"		value="false" />			<!-- If disabled a player can join with any selected profile. If true they will join with the last profile they joined with -->
+  <property name="PlayerSafeZoneLevel"	    		value="10" />				<!-- If a player is less or equal this level he will create a safe zone (no enemies) when spawned -->
+  <property name="PlayerSafeZoneHours"	    		value="12" />				<!-- Hours in world time this safe zone exists -->
+  <property name="DropOnDeath"				value="0" />				<!-- 0 = everything, 1 = toolbelt only, 2 = backpack only, 3 = delete all -->
+  <property name="DropOnQuit"				value="0" />				<!-- 0 = nothing, 1 = everything, 2 = toolbelt only, 3 = backpack only -->
+  <property name="EnemySenseMemory"			value="60" />				<!-- Time, in seconds, that a zombie will pursue something that has been sensed. -->
+  <property name="EnemySpawnMode"			value="3" />				<!-- 0 = Disabled 0%, 1 = Very Low 50%, 2 = Low 75%, 3 = Medium 100%, 4 = High 125%, 5 = Very High 150% -->
+  <property name="EnemyDifficulty"			value="0" />				<!-- 0 = Normal, 1 = Feral -->
+  <property name="BlockDurabilityModifier" 		value="100" /> 				<!-- percentage in whole numbers -->
+  <property name="LootAbundance" 			value="100" /> 				<!-- percentage in whole numbers -->
+  <property name="LootRespawnDays"		 	value="80" /> (if SP no respawn)	<!-- days in whole numbers -->
+  <property name="LandClaimSize" 			value="21"/>				<!-- Size in blocks that is protected by a keystone -->
+  <property name="LandClaimDeadZone" 			value="31"/>				<!-- Keystones must be this many blocks apart (unless you are friends with the other player) -->
+  <property name="LandClaimExpiryTime" 			value="7"/>				<!-- The number of days a player can be offline before their claims expire and are no longer protected -->
+  <property name="LandClaimDecayMode" 			value="0"/>				<!-- Controls how offline players land claims decay. All claims have full protection for the first 24hrs. 0=Linear, 1=Exponential, 2=Full protection until claim is expired. -->
+  <property name="LandClaimOnlineDurabilityModifier" 	value="4"/>				<!-- How much protected claim area block hardness is increased when a player is online. 0 means infinite (no damage will ever be taken). Default is 32x -->
+  <property name="LandClaimOfflineDurabilityModifier" 	value="32"/>				<!-- How much protected claim area block hardness is increased when a player is offline. 0 means infinite (no damage will ever be taken). Default is 32x -->
+  <property name="AirDropFrequency"			value="720"/>    			<!-- How often airdrop occur in game-hours, 0 == never -->
+  <property name="MaxSpawnedZombies"			value="80"/>    			<!-- Making this number too large (more than about 80) may cause servers to run at poor framerates which will effect lag and play quality for clients. -->
+  <property name="MaxSpawnedAnimals"			value="50"/>
+  
