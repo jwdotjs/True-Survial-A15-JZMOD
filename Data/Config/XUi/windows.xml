@@ -541,15 +541,15 @@
 			
 			<rect depth="1" pos="153,-115" name="ingredients" width="447" height="264">
 				
-				<grid rows="6" width="447" height="266" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical"><!-- height="266" -->
+				<grid rows="8" width="447" height="266" cell_height="33" cell_width="447" controller="IngredientList" arrangement="vertical"><!-- height="266" -->
 					<ingredient_header/>
 					<ingredient_row name="0"/>
 					<ingredient_row name="1"/>
 					<ingredient_row name="2"/>
 					<ingredient_row name="3"/>
 					<ingredient_row name="4"/>
-                    <!--<ingredient_row name="5"/>
-                    <ingredient_row name="6"/>-->
+                    <ingredient_row name="5"/>
+                    <ingredient_row name="6"/>
                 </grid>
 			</rect>
 		
