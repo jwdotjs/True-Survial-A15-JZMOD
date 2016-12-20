@@ -1,0 +1,263 @@
+True Survival A15 Change Log-
+
+9/28/2016-
+-Did a pass on the skill descriptions and fixes still more to do
+-Fixed a UI bug
+-Added new Item Sharpening Stone
+-Sharpening Stones will be what repairs all bladed weapons
+-Hunting Knife now is a special knife unlocked through the hunting skill that will harvest more and better animal parts
+-Field Knife now is a special knife unlocked through the hunting skill that will harvest the most and best animal parts
+-Re organized what seeds players can make and what seeds only farmers can make
+-Fixed a tree with low hp
+-Lowered atone axes starting dps on blocks
+-Increased feather drops in nest
+-Slowed a few zombies that were moving too fast in the day time (once SDX is out they will go just a bit slower and run in the dark)
+-Fixed fat zombie attacks. They were using the Cops instead of their own. Less player damage on explosion and shorter range on spit with longer delay.
+-Lowered the XP you get from killing zombies to 10% what it was. We will try this if it’s still too much we will drop it completely
+-Non aggressive animals do not give xp when killed
+-Increased UMA zombies hit points to in line with the Mod
+-Continued to clean up the recipe list in the players backpack. I am moving everything not necessary to early game crafting to workstations to help with lag in player crafting screen.
+
+9/28/2016-
+-Added all the walk variants to the Frozen Zombie
+-Added Over Stuffed buff that will slow you if you eat too much food and drink that contains wellness over too short a time. Please give feed back
+-Made starter quest be all given at once and each gives Player XP and some give 1 Skill Points
+-Made all Profession Quest be given at once and each gives 1 Skill Point
+-Adjusted zombie speed down some more on the faster ones 
+-Adjusted Fatty Moe Zombies Spit range to shorter and explosion to do more damage to blocks
+-Changed Fast Travel Buff so it doesn’t flicker on and off with a timer
+
+9/29/2016-
+-Updated to A15b94
+-Changed Soda Vending Machines to not be a "vending machine". You no longer buy drinks from it. Now you break it and it has chance to drop all the different drinks and electric/mechanical parts, also if you use a tool to disassemble it you get a better chance at more drinks and parts.
+-Did work on Skill pages. More to do.
+-Fixed some recipes
+-Moved more recipes off player crafting and to other workstations
+-Added recipe for Duct Tape
+
+9/30/2016-
+-Added new dump on head use to all drinks
+-Added Cooling Buff to all drinks when dumped on your head
+-Increased Profession Page drop rate
+-Increased XP from all Archery, Bladed and Blunt Weapons
+-Made Metal Tables scrap
+-Made Coal craftable in the Burn Barrel with wood
+-Finished polishing the Skill/Perk Pages
+-Professions are now in the Perk/Skill Screen and you can see what each Profession learns
+-They are organized and with descriptions
+-Perk recipes that are crafted on workstations now say what workstation they are crafted on in the Perk description
+
+10/9/2016 –
+-Added Icon for Stir-fry
+-Adjusted Yucca Fruit drop/harvest from all Cactuses
+-Changed recipe ingredients to 6 instead of 7.  Temp fixes for the offset of windows for now
+-Added SDX Icons that were missing
+-Fixed some clothing and the nail gun that was dropping to high a quality in loot.
+-Lowered Complete Nail gun drop rate
+-Removed the requirement for the Hunters Knife Perk. Using this knife to butcher animals will increase Hunting Skill 
+-Lowered Feather drops
+-Fixed Skill Info Window size
+-Changed Grub recipe to require Dirt Fragments
+-Changed Soldiers Profession quest to require Dirt Fragments
+-Increased early crafting XP on items that give Weapon Crafting
+-Removed the Fast Travel Notification Buff. You still get the speed increase just not the buff icon showing, I think this buff was causing some lag when you opened the Player Gear Screen. (Temp Fix)
+
+11/26/2016-
+-Fixed text window sizes
+-Fixed quest description and information not showing
+-Added new Head Shot only system that does not affect player’s only zombies
+-Lowered stick amount from trees
+-Increased wood from trees
+-Lowered speed on some zombies that were moving too fast
+
+11/28/2016-
+-Removed the ability for Zombies to infect you on hit with the Z-Virus
+-Removed the Hygiene Buff System
+-Removed the Scratch Buff System
+-Added new item Suter Kit made with Sewing Needle and Suters from animals
+-Added New Wound Buff System-
+-Anything that can attack you has a chance to hurt you. Get hurt too much and you will be wounded. To heal the wound you will have to treat it and maintain it until it heals. This wound system has 5 stages. 
+-The first is Bruised and needs no tending to or maintaining it will heal on its own as long as you are not hurt more.
+-The Second is a Small Wound. When you receive enough damage to get a Small Wound you will also get a Pain Buff that can be cured with a Pain Killer. To Heal the Small Wound you need to use a Bandage on it. After some time the bandage will get dirty and need reapplied. Do all of this successfully and your small wound will heal into Bruised. Fail to keep the wound clean or receive to much more damage from attackers and it will progress to a Wound.
+-The Third is a Wound. When you receive enough damage to get a Wound you will also get a Sprained Leg Buff that can be cured with a Splint. To Heal the Wound you need to use a First Aid Bandage on it. After some time the First Aid Bandage will get dirty and need reapplied. Do all of this successfully and your Wound will heal into Small Wound. Fail to keep the wound clean or receive to much more damage from attackers and it will progress to a Sever Wound.
+-The Forth is a Sever Wound. When you receive enough damage to get a Sever Wound you will also get a Gash Buff that can be cured with a Suter Kit. To Heal the Sever Wound you need to use a Sanitized Bandage on it. After some time the Sanitized Bandage will get dirty and need reapplied. Do all of this successfully and your Sever Wound will heal into a Wound. Fail to keep the wound clean or receive to much more damage from attackers and it will progress to an Infected Wound.
+-The Last stage is an Infected Wound. When you receive enough damage to get an Infected Wound you will also get an Infection (not the Z Virus) To Heal the Infected Wound you need to use a Sanitized Bandage on it. After some time the Sanitized Bandage will get dirty and need reapplied. Do all of this successfully and your Infected Wound will heal into a Sever Wound. Fail to keep the wound clean and you will die.
+-New Bite System- 
+-Getting bitten and not caring for it is the only way to get the Z Virus. Infected can only Bite you if they Grab (stun) you. Once you receive a Bite you will also get a Bleed that can be healed as normal. To remove the Bite you must cook a Metal/Steel Pipe in the Campfire/Burn Barrel and Cauterize the Bite with it. You have 24 game hours to do this before you catch the Z Virus. After you Cauterize the Bite you will have a Bite Wound that you will need to treat with a Bandage. After some time the bandage will get dirty and need reapplying. Do all this successfully and you will receive a Wound, fail to do any of these steps and you will be infected with the Z Virus.
+-Fixed a lot of Quest bugs
+-Fixed a lot of recipe Bugs
+-Added new Install Instruction File with the Mod
+-Increased greatly the speed that Over Stuff buff fades. Please give feed back
+-Changed it so Melee weapons have a lower damage bonus for zombie head shots on each hit instead of the higher damage one that was a chance on hit. Also Bladed weapons have a higher damage bonus for Zombie heads than Blunt Melee. I hope this makes Melee feel better. Please give feedback.
+-Added the ability for new custom Buff Icons. A few are in but many more to come. (Could use help with this)
+-Increased Dog health slightly
+
+11/30/2016-
+-Added +5 hydration to all drinks
+-Added Duct Tape Book that teaches Duct Tape Recipe
+-Increased the speed of snow melting
+-Increased Wild Corn harvest amount to (1-3)
+-Added Wild Wheat to the Plains Biome where the corn spawns
+-Redid Engineer Profession Quest #2. Still needs description/name fixed
+-Added Recipes for Suters, Bone Meal, Nitroglycerin, Bow String, Fishing Line, Sharpening Stone, Lashing
+-Fixed a lot more recipes or updated the ingredients
+-Lowered Bone Shiv durability
+-Fixed some skill bugs
+-Added Magolis POI Combo Pack-
+-I have not sorted through them yet to take out the loot stuffed and huge/immersion breaking POI’s. If you see one that’s out of place, to secure or full of too much loot please either let me know the name of it of take some good screenshots of it and post them and I will remove it.
+
+12/2/2016-
+-Added instructions on how to craft anti-venom to venom buff description
+-Lowered zombie head shot bonus on melee
+-Fixed errors in Engineers quest chain
+-Fixed all foods to use the healing food buff instead of instant health when eaten.
+-Improved drinks description to explain how to dump drink on your head
+-Lowered Rockets drop rate in loot
+-Fixed Brain Matter and Fat description to say they smell
+-Tweaked Wound Systems stats
+-Changed the Wound and the Bite Systems so that the sanitizing bandage does all, the healing bandage does small wound/wound/bite and the normal bandage does small wound/bite. Also Both First Aid Kits do all wounds.
+
+12/4/2016-
+-Adjusted Melee Ranges –
+    Spear 3.5
+    Sledge, sword 3.2
+    Clubs, Tools Pickaxe, Fire axe 3
+    Shovels, hoe, Machete 2.8
+    Stone/taza axe 2.7
+    Hand, Flashlight, Bone 2.5
+    Bone shiv, Hunting Knife, wrench 2.2
+    Claw hammer 2.1
+-Added Mini Bike back in
+-Added Bike in a box back in
+-Added Icons to Skill/Perk Screen
+-Finished descriptions in Skill/Perk screen
+-Adjusted animal spawns
+-Removed POI’s with too much loot
+-Removed huge out of place POI’s
+-Removed Crossroad Hub that is always underwater
+-Fixed Iron Armor Crafting
+-Made Turbines and Stem Generators craftable in player backpack
+
+12/6/2016-
+-Icon Fixes
+-Fixed Farming
+-All (but apple and corn) farmable plants yield 1 food item and 1 food item will produce 2 seeds (Fertilizer will increase plant production)
+-Apples Trees produce 1-6 apples and 1 seed per apple and Corn Stalks produces 3 Corn and 1 seed per Corn (Fertilizer will increase plant production)
+-Fixed Carrots would not grow
+-We will be keeping the traders. But money has no value in True Survival. The only thing of value in True Survival is something that will keep you alive. Bullets! Or Bullet Casings to be exact. I chose this because no player starts with the recipe and no player can craft it in their back pack. And it is the most complex part of modern ammunitions. So pick up your casings.
+-Did a pass on Trader items and removed somethings. I will get into this more soon and start setting prices. Suggestions welcome
+
+12/7/2016-
+-Added smells to new food items that contain meat
+-Updated mod to 15.1
+-Added StompyNZ’s Bandits from Bad Company Mod
+-Added Val’s Unlabeled Can to loot table. It has a chance to give food, hydration or food poisoning
+-Changed Wilderness Poi paths to be asphalt and increased their size by 2
+-Added Bad Company’s Bandits-
+-For now Bandits will spawn in 4 wildernesses POI’s. They are armed with guns and will shoot on sight. If you approach a wilderness POI in early game and someone cusses at you and starts shooting. Run away run away run away! You’ve been warned!
+-Added new Zombie the Brute. The Brute is a large mean zombie with more hp than a Feral. He has a Charge as a special move and wounds with every hit. He deals a ton of block damage and walks slow. He has a chance to spawn anywhere a Cop would spawn and he will be invited over on horde nights.
+
+12/8/2016-
+-Fixed Mini Bike Chasee Recipe
+-Fixed Stone Working Magazines
+-Added Zombie Baby!
+-Added new Charred Zombie I’ll let you learn his new move?
+-Added 9 Walking Dead Followers from Bad Company. For now they have a chance to spawn anywhere. If you hit a Follower it will follow you for a short time about 30 seconds then stop. Followers will only attack zombies not Players or Bandit. Only doctors can heal Followers with their Pain Killer Shots.
+-Adjusted leveling speed some
+-Lowered XP per player level from 8000 to 5000
+-Lowered XP per skill level from 500 to 375
+-Changed Wood, Stone, Iron and Steel Working Skills to start at 120XP per level and increase by 2.2% per level
+
+12/10/2016-
+-Fixed Fat Zombies special moves
+-Lowered Follower Spawn
+-Increased Stone Shovels stamina use
+-Fixed Icons and Descriptions for Bite wound stages
+-All cars now have a chance to set off car alarms when opened. Car alarm will make noise and attract zombies.
+
+12/11/2016-
+-Important bug fixes
+-Fixed Wood Working Bench recipe
+-Followers should target all zombies now. They still have a problem when something is at their feet.
+-Decreased Stone Axe damage on terrain
+
+12/13/2016-
+-Added Springs to Leather Couch Disassemble
+-Increased XP for items that give Medicine skill
+-Added Flour to Stew recipes
+-Fixed Wheat growth stages
+-Added Denim Shorts recipe on the Armor Table
+-Fixed Followers that would shoot at player and not move
+-Player can now craft Animal Guts with 2 Raw Meats and 2 Brain Matter.
+-Animal Guts can be applied to Followers and makes them have an Extra Large Smell. Can be used as a distraction.
+-Changed Hunting Knifes recipe to be made in a Forge
+-Changed Car Alarm to chime faster 
+
+12/14/2016-
+-Increased harvest speed on toilets
+-Changed Lucille’s recipe
+-Added new Perk for working lights
+-Added new perk for Chemistry Station
+-Changed Chemistry stations recipe
+-Moved all safes to the metal work bench
+-Added perk for Garage door
+-Added perk for Drawl Bridge
+-Added Arrow Slit blocks to appropriate perks and skill books
+-Fixed labeled storage boxes
+-Increased stack size of cigarettes
+-Changed Coddle stone frames to increase Wood Working Skill and unlock at Wood Working lv 20
+-Changed Asphalt to require lv50 Stone Working
+-Increased Max alive Zombies on all stages from 8 to 10
+-Fixed Workstations names. You can still see them all if you search “work”
+-Moved Mining Helmet crafting to Metal Working Bench 
+
+12/16/2016-
+-Fixed full size block upgrade and downgrade paths(Keep what you make). They are
+-Cobblestone>Brick>Concrete>Reinforced Concrete>Steel>Stainless Steel
+-Log Cabin>Wood (3 stages)>Scrap Iron (3 stages)>Steel>Stainless Steel
+-Increased dismantle speed on Vending Machines, Cash Registers and Toilets
+-Fixed the player crafted Secure Wooden Chest to have the proper inventory spaces (will have to recraft)
+-Adjusted Spears properties
+-Increased Planks stack limit to 5000
+-Changed Wood Log Spikes to give Wood Working XP
+-Increased the stamina gain on smoking slightly
+-Fixed Cozy Bed Buff
+-Fixed Stew and Boiled Meat to return Jar
+ 
+12/18/2016-
+-Added Bone Meal Icon
+-Added Suter Kit Icon
+-Added Nitroglycerin Icon
+-Set Overalls quality drop in loot
+-Increased starting degradation amount on the Iron Spear
+-Added Venison Tenderloin Icon
+-Added Earth Worm Icon
+-Added Bow String Icon
+-Bow String repairs Compound Bow now
+-Increased Stick stack size to 5000
+-Increased Moral and Pestle ingredient amounts
+-Added Sharpening Stone Icon
+-Fixed Veggie Salad recipe
+-Decreased the speed that the Wooden Spike traps break when walked on
+-Added a hunger suppressant to the Stim and Addiction Buffs
+-Fixed Stim buff icon
+-Increased Yucca Fruit Stack to 100
+-Increased the Raw Meat drop on all animals
+-Changed a lot of medical items to give Medical XP when crafted
+-Lowered Hornets HP by 40%
+-Changed the follower with a Crossbow to use a Shotgun
+-Increased the amount of ammo dropped at a time
+-Increased the apply speed of the Zombie Head Shot buff. Less delay between hit and death
+-Added chance to find a Turd in Birdsnest
+-Rethink on Gun Smithing-
+-A15 gave us the Combine Feature that took the place of your Gun Part Upgrade System. This changes how our Gun Smithing works greatly. Where before we found crap parts and improved them to level Gun Smithing now we will need to find better parts and repair (lower the quality) to level Gun Smithing. So I have increased the quality range on all Gun Part drops from (1-50) to (1-350). With perks that make the highest quality drop possible a quality 500. So the player will need to use the Combine to get quality 600 parts/guns.
+-Did a pass through what the Traders can sell. I think we will use the Trades like the place you can go if you are having ???? luck on a drop you need. It will be expensive but if you can’t find it anywhere you should be able to get it at a trader. I will need help setting prices so and suggestions on item prices are welcome. 
+
+12/18/2016-
+-Changed Turd name
+-Fixed Steel Arrow not hitting anything
+-Removed Claw Hammer and Circular Saw from recipe
+-Added Bow String to Crossbow recipe
+-Increased stamina use and delay on Spear
+-Increased recipe ingredient list and max ingredients in a recipe to 7
+-Lowered crafting XP on Log Spikes 

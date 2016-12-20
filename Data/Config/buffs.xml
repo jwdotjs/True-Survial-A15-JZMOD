@@ -547,7 +547,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="stuffed16" duration="1" actions="increment(stuffed, 16, 0, 0, 1)" />
     <buff id="stuffed18" duration="1" actions="increment(stuffed, 18, 0, 0, 1)" />
     <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" />	
-    <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 80" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="stuffed">
+    <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 79" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="stuffed">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff> 
 	<!--JZMOD HYGIEN BUFF

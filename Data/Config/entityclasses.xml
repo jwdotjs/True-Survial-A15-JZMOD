@@ -740,7 +740,7 @@
 		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
 		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="5" />
         <drop event="Harvest" name="Sinew" tool_category="Hunter" count="1" prob=".4" />
-        <drop event="Harvest" name="Hooves" tool_category="Hunter" count="2" prob=".4" />
+        <drop event="Harvest" name="Hoof" tool_category="Hunter" count="2" prob=".4" />
         <drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
         <drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
         <!--JZMOD Butcher-->   
@@ -758,8 +758,8 @@
 	    <drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".2" />
         <drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
-        <drop event="Harvest" name="Hooves" tool_category="Butcher" count="2" prob=".4" />
-        <drop event="Harvest" name="Hooves" tool_category="Butcher" count="2" prob=".4" />
+        <drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
+        <drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
 		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="9" />
         <drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" />
         <drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
@@ -1048,7 +1048,7 @@
 		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
 		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="10" />
         <drop event="Harvest" name="Sinew" tool_category="Hunter" count="1" prob=".4" />
-        <drop event="Harvest" name="Hooves" tool_category="Hunter" count="2" prob=".4" />
+        <drop event="Harvest" name="Hoof" tool_category="Hunter" count="2" prob=".4" />
         <drop event="Harvest" name="PorkBelly" tool_category="Hunter" count="1" prob=".2" />
         <drop event="Harvest" name="PorkBelly" tool_category="Hunter" count="1" prob=".2" />
         <!--JZMOD Butcher-->   
@@ -1064,8 +1064,8 @@
 	    <drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".2" />
         <drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
 		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
-        <drop event="Harvest" name="Hooves" tool_category="Butcher" count="2" prob=".4" />
-        <drop event="Harvest" name="Hooves" tool_category="Butcher" count="2" prob=".4" />
+        <drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
+        <drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
 		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="10" />
         <drop event="Harvest" name="PorkBelly" tool_category="Butcher" count="2" />
         <!--JZMOD Destroy-->
