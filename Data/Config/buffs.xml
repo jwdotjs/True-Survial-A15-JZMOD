@@ -753,7 +753,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="cc" duration="7200t" name="Antibiotic 3" requires="bb" actions="debuff(bb);debuff(infection);debuff(infection2);debuff(infection3)" onexpired="bb" />
 	<buff id="immunity" duration="16800t" name_key="Antibiotic Overuse" requires="cc" actions="debuff(cc)" description_key="You have used too many Antibiotics and have developed a resistant’s to them for 7 Days." icon="ui_game_symbol_skull" />
 	<buff id="Antibiotic" duration="1" name="Antibiotic Start" actions="buff(immunity);buff(cc);buff(bb);buff(aa)" />
-	<buff id="alarm" castsound="UseActions/open_shopping_cart" onexpiredsound="trunkbreak" duration="2" name_key="Alarm!" tooltip_key="You’ve tripped an alarm!" description_key="You’ve tripped an alarm!" />
 	<buff id="bearTrap" castsound="Buffs/critical_blunt" actions="buff(bleeding);debuff(firstAid);debuff(splint);debuff(sprainedLeg);debuff(brokenLeg)" name_key="Bear Trap" type="bleeding" ondebuff="brokenLeg" onexpired="brokenLeg" tooltip_key="You were caught in a Bear Trap. Free your self." description_key="You were caught in a Bear Trap and are bleeding badly." icon="ui_game_symbol_knife">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 		<modify id="1" stat="health" amount="-1" rate="1" />
@@ -825,14 +824,23 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="1" stat="health" amount="-15" rate="1" />
 	</buff>
     <!-- JZMOD Zombie Head Shot -->
-    <buff id="headshotMelee" mutex="isPlayer" hitmask="head" duration="1" stack="extend"  >
-        <modify id="0" stat="health" amount="-200" rate="0.6"/>
+    <buff id="headshotMelee1" mutex="isPlayer" hitmask="head" duration="0.7" stack="extend"  >
+        <modify id="0" stat="health" amount="-100" rate="0.5"/>
     </buff>
-    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="1" stack="extend"  >
-        <modify id="0" stat="health" amount="-400" rate="0.6"/>
+    <buff id="headshotMelee2" mutex="isPlayer" hitmask="head" duration="0.7" stack="extend"  >
+        <modify id="0" stat="health" amount="-200" rate="0.5"/>
     </buff>
-    <buff id="headshot" mutex="isPlayer" hitmask="head" duration="1" stack="extend"  >
-        <modify id="0" stat="health" amount="-1000" rate="0.6"/>
+    <buff id="headshotMelee3" mutex="isPlayer" hitmask="head" duration="0.7" stack="extend"  >
+        <modify id="0" stat="health" amount="-300" rate="0.5"/>
+    </buff>
+    <buff id="headshotMelee4" mutex="isPlayer" hitmask="head" duration="0.7" stack="extend"  >
+        <modify id="0" stat="health" amount="-400" rate="0.5"/>
+    </buff>
+    <buff id="headshotMelee5" mutex="isPlayer" hitmask="head" duration="0.7" stack="extend"  >
+        <modify id="0" stat="health" amount="-500" rate="0.5"/>
+    </buff>
+    <buff id="headshot" mutex="isPlayer" hitmask="head" duration="0.7" stack="extend"  >
+        <modify id="0" stat="health" amount="-1000" rate="0.5"/>
     </buff>
     <!-- JZMOD Bandit Zombie Bonus -->
     <buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend"  >
@@ -864,7 +872,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
         <modify id="0" stat="speedmodifier" modifyMaxValue="2" />
 		<modify id="1" stat="speedmodifier" modifyValue="1.5" />
     </buff>
-    <!--JZMOD Car LARM-->
+    <!--JZMOD Car Alarm-->
     <buff id="carAlarm" duration="2.5" smell="exLargeSmell" onexpired="carAlarm1" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
     <buff id="carAlarm1" duration="2.5" smell="exLargeSmell" onexpired="carAlarm2" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
     <buff id="carAlarm2" duration="2.5" smell="exLargeSmell" onexpired="carAlarm3" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>

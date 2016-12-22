@@ -261,3 +261,35 @@ True Survival A15 Change Log-
 -Increased stamina use and delay on Spear
 -Increased recipe ingredient list and max ingredients in a recipe to 7
 -Lowered crafting XP on Log Spikes 
+
+12/21/2016-
+-Slightly increased enemy’s chance to inflict wounds
+-Clarified Miner 69’er description
+-Increased Rabbit Trap stack size
+-Increased the time it takes a Rabbit Trap to catch a rabbit
+-Rabbit Traps cannot be placed close to each other any more
+-Locked the Cobblestone Frames that were not locked
+-Fixed all Arrows not applying bonus head damage to zombies
+-Lowered nearly all melee weapons range by -0.1
+-Diversified bonus zombie head damage on melee weapons
+-Wood Club does an extra -100hp/Iron Club does an extra -200hp/Spiked does an extra -300hp/Steel Spiked does an extra -400hp
+-The same kind of progression for bonus zombie head damage was done to bladed weapons
+-The same kind of progression for bonus zombie head damage was done to Arrows and Cross bolts
+-Changed the Power Swing (Alt Attack) on melee weapon to do stronger bonus zombie head damage than the normal swing so if normal swing does -100hp Power Swing does -200hp. If normal swing does -200hp then Power Swing does -300hp
+-Also changed Tools to have a low bonus zombie head damage on normal swing but much higher bonus head damage on Power Swing
+-Removed Weapon Smithing. It still will show in the skill screen, it can't be deleted without breaking saves. I will delete it when saves have to be broken
+-All items that leveled Weapon Smithing have been placed under their Tech Material Skill. Wood Working, Stone Working, Iron Working and Steel Working.
+-Had a choice between our Farming/Harvesting System and the fertilizer system. I chose the Fertilizer System. So the Harvesting Skill will be dropped. Plants will not need to be collected with hands. You will be able to pick them with “E” like vanilla. Most seeds will be able to be planted on normal ground without hoeing and produce 1 crop. Hoeing the ground will produce 2 crops. Fertilizing the ground will produce 4 crops.
+-Reduced Seed crafting times by half
+-Decreased Follower Spawn
+-Increased Dismemberment chance
+-Added Concrete Block Shape recipes
+-Added Green Metal Block Shape recipes
+-Added Pipe Shape recipes
+-Lowered Mini Bike Wheels Trader Value
+-Changed Tech Material Progression
+-Wood Working lv55 to get to Cobblestone
+-Stone Working lv55 to get Scrap Iron Building
+-Stone Working lv65 to get Rebar Frames and Iron Crafting
+-Iron Working lv75 to get Steel
+

@@ -139,7 +139,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="surface_category" value="earth" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="leaves" />
-		<property name="fertile_level" value="2" />
+		<property name="fertile_level" value="5" />
 		<property name="stability_glue" value="20" />
 		<property name="Mass" type="int" value="10" />
 		<property name="MaxDamage" value="250" />
@@ -269,7 +269,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="metal" />
 		<property name="stability_glue" value="400" />
-		<property name="Mass" type="int" value="12" />
+		<property name="fertile_level" value="1" />
+        <property name="Mass" type="int" value="12" />
 		<property name="MaxDamage" value="12500" />
 	</material>
 	<material id="Mbridge_concrete">
@@ -279,7 +280,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="240" />
-		<property name="Mass" type="int" value="12" />
+		<property name="fertile_level" value="1" />
+        <property name="Mass" type="int" value="12" />
 		<property name="MaxDamage" value="10000" />
 	</material>
 	<material id="Mbridge_wood">
@@ -288,7 +290,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="wood" />
 		<property name="stability_glue" value="160" />
-		<property name="Mass" type="int" value="6" />
+		<property name="fertile_level" value="1" />
+        <property name="Mass" type="int" value="6" />
 		<property name="MaxDamage" value="10000" />
 	</material>
 	<material id="Mgravel">
@@ -320,7 +323,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="72" />
-		<property name="Mass" type="int" value="12" />
+		<property name="fertile_level" value="1" />
+        <property name="Mass" type="int" value="12" />
 		<property name="MaxDamage" value="5000" />
 	</material>
 	<!-- cobblestone and concrete -->
@@ -332,7 +336,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="90" />
 		<property name="Mass" type="int" value="15" />
-		<property name="explosionresistance" value=".20" />
+		<property name="fertile_level" value="1" />
+        <property name="explosionresistance" value=".20" />
 		<property name="MaxDamage" value="30000" />
 	</material>
 	<!-- has more explosion resistance -->
@@ -344,7 +349,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="110" />
 		<property name="Mass" type="int" value="15" />
-		<property name="explosionresistance" value=".25" />
+		<property name="fertile_level" value="1" />
+        <property name="explosionresistance" value=".25" />
 		<property name="MaxDamage" value="60000" />
 	</material>
 	<material id="Mbedrock">
@@ -354,7 +360,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="110" />
 		<property name="Mass" type="int" value="15" />
-		<property name="MaxDamage" value="500000" />
+		<property name="fertile_level" value="1" />
+        <property name="MaxDamage" value="500000" />
 	</material>
 	<material id="coal">
 		<property name="damage_category" value="stone" />
@@ -363,7 +370,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="16" />
 		<property name="Mass" type="int" value="8" />
-		<property name="MaxDamage" value="1000" />
+		<property name="fertile_level" value="1" />
+        <property name="MaxDamage" value="1000" />
 	</material>
 	<material id="Mbrick">
 		<property name="damage_category" value="stone" />
@@ -373,7 +381,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="65" />
 		<property name="Mass" type="int" value="13" />
-		<property name="MaxDamage" value="12000" />
+		<property name="fertile_level" value="1" />
+        <property name="MaxDamage" value="12000" />
 	</material>
 	<material id="Mmetal_weak">
 		<property name="damage_category" value="metal" />
@@ -383,7 +392,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="metal" />
 		<property name="stability_glue" value="25" />
 		<property name="Mass" type="int" value="5" />
-		<property name="MaxDamage" value="1000" />
+		<property name="fertile_level" value="1" />
+        <property name="MaxDamage" value="1000" />
 	</material>
 	<material id="Mmetal_thin">
 		<property name="damage_category" value="metal" />
@@ -481,7 +491,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="sand" />
 		<property name="stability_glue" value="24" />
 		<property name="Mass" type="int" value="8" />
-		<property name="MaxDamage" value="50" />
+		<property name="fertile_level" value="1" />
+        <property name="MaxDamage" value="50" />
 	</material>
 	<!-- *** All other materials -->
 	<material id="hay">
@@ -910,6 +921,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="90" />
 		<property name="movement_factor" value="1.4" />
+        <property name="fertile_level" value="1" />
 		<property name="Mass" type="int" value="15" />
 		<property name="explosionresistance" value=".25" />
 		<property name="MaxDamage" value="30000" />

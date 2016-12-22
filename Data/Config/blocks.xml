@@ -100,7 +100,7 @@ then add recipes for those white/red/green metals
         <property name="EconomicValue" value="5" />
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
-</block>
+    </block>
 	<block id="3" name="dirt">
 		<property name="Material" value="dirt" />
 		<property name="Shape" value="Terrain" />
@@ -126,7 +126,6 @@ then add recipes for those white/red/green metals
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
     </block>
-		
 	<block id="4" name="plainsGround">
 		<property name="Extends" value="dirt" />
 		<property name="Material" value="MforestGround" />
@@ -191,7 +190,6 @@ then add recipes for those white/red/green metals
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
     </block>
-
 	<block id="9" name="snow">
 		<property name="Material" value="snow" />
 		<property name="Shape" value="Terrain" />
@@ -287,8 +285,7 @@ then add recipes for those white/red/green metals
 		<property name="Texture" value="10" />
 		<property name="DropScale" value="2" />
 		<property name="Map.Color" value="204,177,131" />
-        
-		<property class="RepairItems"><property name="concreteMix" value="5" /></property>
+      	<property class="RepairItems"><property name="concreteMix" value="5" /></property>
         <property name="Group" value="Building" />
         <drop event="Harvest" name="rockSmall" count="13" />
         <drop event="Destroy" name="rockSmall" count="12" />
@@ -298,7 +295,6 @@ then add recipes for those white/red/green metals
         <property name="EconomicValue" value="45" />
         <property name="EconomicBundleSize" value="20" />
 	</block>
-		
 	<block id="16" name="gravel">
 		<property name="Material" value="Mgravel" />
 		<property name="Shape" value="Terrain" />
@@ -332,8 +328,7 @@ then add recipes for those white/red/green metals
         <property name="UpgradeRated.ToBlock" value="fertileGrass" />
         <property name="UpgradeRated.Rate" value="3" /> <!-- The coder told me that "63 or maybe more" is max for this timer. -->
     </block>
-    
-	<block id="20" name="fertileGrass">
+    <block id="20" name="fertileGrass">
         <property name="Extends" value="grass" />
         <property name="CustomIcon" value="grass" />
         <property name="IsDeveloper" value="true" />
@@ -366,7 +361,6 @@ then add recipes for those white/red/green metals
         <drop event="Fall" name="fertileDirt" count="1" prob="0.25" stick_chance="1" />
         <drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0" />
     </block>
-
     <block id="23" name="silverOre">
         <property name="Material" value="Mmetal_medium" />
         <property name="Shape" value="Terrain" />
@@ -385,7 +379,7 @@ then add recipes for those white/red/green metals
         <property name="DropScale" value="2" />
         <property name="LPHardnessScale" value="2" />
         <property name="Map.Color" value="55,55,50" />
-        <property name="PlaceAltBlockValue" value="burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundWGrass1" />
+        <property name="PlaceAltBlockValue" value="burntForestGroundFromDirt,burntForestGroundWGrass1" />
         <property class="RepairItems"> <property name="dirtFragment" value="10" /> </property>
         <property class="UpgradeBlock">
             <property name="ToBlock" value="fertileFarmland" />
@@ -404,7 +398,6 @@ then add recipes for those white/red/green metals
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
     </block>
-		
 	<block id="25" name="forestGround">
 		<property name="Material" value="MforestGround" />
 		<property name="Shape" value="Terrain" />
@@ -433,8 +426,7 @@ then add recipes for those white/red/green metals
         <property name="EconomicBundleSize" value="1" />
         <property name="SellableToTrader" value="false" />
     </block>
-
-	<block id="26" name="destroyedStone">
+    <block id="26" name="destroyedStone">
 		<property name="Material" value="rubble" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
@@ -545,199 +537,184 @@ then add recipes for those white/red/green metals
 		<drop event="Fall" name="oilShale" count="100" prob="0.5" stick_chance="0" />
 		<property name="CanMobsSpawnOn" value="true" />
 	</block>
-<block id="34" name="diamondOre">
-	<property name="Extends" value="silverOre" />
-	<property name="CustomIcon" value="silverOre" />
-	<drop event="Destroy" name="rawDiamond" count="1,3" />
-	<drop event="Fall" name="diamondOre" stick_chance="1" />
-</block>
+    <block id="34" name="diamondOre">
+        <property name="Extends" value="silverOre" />
+        <property name="CustomIcon" value="silverOre" />
+        <drop event="Destroy" name="rawDiamond" count="1,3" />
+        <drop event="Fall" name="diamondOre" stick_chance="1" />
+    </block>
+    <block id="35" name="fertilizedFarmland">
+        <property name="CustomIcon" value="fertileFarmland" />
+        <property name="Material" value="MfertilizedFarmland" />
+        <property name="Shape" value="Terrain" />
+        <property name="Mesh" value="terrain" />
+        <property name="Texture" value="291" /> 
+        <property name="CanMobsSpawnOn" value="false" />
+        <property name="DropScale" value="2" />
+        <property class="RepairItems"> <property name="dirtFragment" value="10" /> </property>
+        <drop event="Harvest" name="dirtFragment" count="7" />
+        <drop event="Destroy" name="dirtFragment" count="3" />
+        <drop event="Fall" name="fertileFarmland" count="1" prob="0.25" stick_chance="1" />
+        <drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0" />
+    </block>
+    <block id="37" name="grassFromDirt">
+        <property name="Extends" value="dirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="grass" />
+        <property name="UpgradeRated.Rate" value="3" />
+    </block>
+    <block id="38" name="plainsGroundFromDirt">
+        <property name="Extends" value="grassFromDirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="UpgradeRated.ToBlock" value="plainsGround" />
+    </block>
+    <block id="39" name="plainsGroundWGrass1">
+        <property name="Extends" value="fertileDirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="UpgradeRated.ToBlock" value="plainsGroundWGrass2" />
+    </block>
+    <block id="40" name="plainsGroundWGrass2">
+        <property name="Extends" value="fertileGrass" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="plainsGround" />
+        <property name="Texture" value="396" />
+        <property name="Map.Color" value="110,95,49" />
+        <property name="PlantGrowing.Next" value="plainsGround" />
+        <property name="PlantGrowing.GrowOnTop" value="treePlainsGrassDiagonal" />
+    </block>
+    <block id="41" name="burntForestGroundFromDirt">
+        <property name="Extends" value="grassFromDirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="UpgradeRated.ToBlock" value="burntForestGround" />
+    </block>
+    <block id="42" name="burntForestGroundWGrass1">
+        <property name="Extends" value="fertileDirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="UpgradeRated.ToBlock" value="burntForestGroundWGrass2" />
+    </block>
+    <block id="43" name="burntForestGroundWGrass2">
+        <property name="Extends" value="fertileGrass" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="burntForestGround" />
+        <property name="Texture" value="288" />
+        <property name="Map.Color" value="55,55,50" />
+        <property name="PlantGrowing.Next" value="burntForestGround" />
+        <property name="PlantGrowing.GrowOnTop" value="treeBrownGrassDiagonal" />
+    </block>
+    <block id="44" name="forestGroundFromDirt">
+        <property name="Extends" value="grassFromDirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="UpgradeRated.ToBlock" value="forestGround" />
+    </block>
+    <block id="45" name="forestGroundWGrass1">
+        <property name="Extends" value="fertileDirt" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="dirt" />
+        <property name="UpgradeRated.ToBlock" value="forestGroundWGrass2" />
+    </block>
+    <block id="46" name="forestGroundWGrass2">
+        <property name="Extends" value="fertileGrass" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="forestGround" />
+        <property name="Texture" value="195" />
+        <property name="Map.Color" value="35,80,45" />
+        <property name="PlantGrowing.Next" value="forestGround" />
+        <property name="PlantGrowing.GrowOnTop" value="treeTallGrassDiagonal" />
+    </block>
+    <block id="47" name="clayInSandstone">
+        <property name="Extends" value="clay" />
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="clay" />
+        <property name="CustomIconTint" value="00a0a0" />
+        <property name="Texture" value="301,184,184,184,184,184" />
+    </block>
+    <block id="48" name="lootStone">
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="stone" />
+        <property name="CustomIconTint" value="00a0a0" />
+        <property name="Material" value="stone" />
+        <property name="Shape" value="Ext3dModel" />
+        <property name="Mesh" value="models" />
+        <property name="Model" value="Rocks/Rock05" param1="main_mesh" />
+        <property name="IsTerrainDecoration" value="true" />
+    </block>
+        <!-- ****************************  Master Material Blocks  **************************** -->
+        <!-- Master blocks are material based because it means that the repair and upgrade resources -->
+        <!-- only need to be listed once. -->
+        <!-- Master blocks never list downgrade blocks but do list a dummy upgrade block to supply default resources for the upgrade. -->
+        <!-- "IsDeveloper" is not inherited on "Extends". This is intentional. -->
+        <!--<property name="DescriptionKey" value="scrapIronGroupDesc"/>group desc for stuff like metal siding -->
+    <block id="119" name="cropsGrowingMaster">
+        <property name="IsDeveloper" value="true" />
+        <property name="CustomIcon" value="blueberrySeed" />
+        <property name="Material" value="plants" />
+        <property name="StabilitySupport" value="false" />
+        <property name="Shape" value="BillboardPlant" />
+        <property name="Mesh" value="grass" />
+        <property name="Texture" value="293" />
+        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="Collide" value="melee" />
+        <property name="IsTerrainDecoration" value="true" />
+        <property name="CanDecorateOnSlopes" value="true" />
+        <property name="RotationAllowed" value="pivotOnFloor" />
+        <property name="Class" value="PlantGrowing" />
+        <property name="PlantGrowing.Next" value="cropsHarvestableMaster" />
+        <property name="PlantGrowing.GrowthRate" value="300" />
+        <property name="PlantGrowing.FertileLevel" value="5" />
+        <property name="PlantGrowing.IsRandom" value="false" />
+        <drop event="Destroy" count="0" />
+        <property name="Group" value="Food/Cooking" />
+        <property name="EconomicValue" value="24" />
+        <property name="EconomicBundleSize" value="10" />
+    </block>
 
-<block id="35" name="fertilizedFarmland">
-	<property name="CustomIcon" value="fertileFarmland" />
-	<property name="Material" value="MfertilizedFarmland" />
-	<property name="Shape" value="Terrain" />
-	<property name="Mesh" value="terrain" />
-	<property name="Texture" value="291" /> 
-	<property name="CanMobsSpawnOn" value="false" />
-	<property name="DropScale" value="2" />
-	<property class="RepairItems"> <property name="dirtFragment" value="10" /> </property>
-	<drop event="Harvest" name="dirtFragment" count="7" />
-	<drop event="Destroy" name="dirtFragment" count="3" />
-	<drop event="Fall" name="fertileFarmland" count="1" prob="0.25" stick_chance="1" />
-	<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0" />
-</block>
+    <block id="120" name="cropsHarvestableMaster">
+        <property name="IsDeveloper" value="true" />
+        <property name="Material" value="plants" />
+        <property name="StabilitySupport" value="false" />
+        <property name="Shape" value="BillboardPlant" />
+        <property name="Mesh" value="grass" />
+        <property name="Texture" value="395" />
+        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="Collide" value="melee" />
+        <property name="IsTerrainDecoration" value="true" />
+        <property name="Class" value="CropsGrown" />
+        <property name="PlantGrowing.FertileLevel" value="5" />
+        <property name="CropsGrown.BonusHarvestDivisor" value="9" />
+        <drop event="Destroy" count="0" />
+    </block>
 
-<block id="37" name="grassFromDirt">
-	<property name="Extends" value="dirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="Class" value="UpgradeRated" />
-	<property name="UpgradeRated.ToBlock" value="grass" />
-	<property name="UpgradeRated.Rate" value="3" />
-</block>
+    <block id="121" name="stainlessSteelMaster">
+        <property name="Material" value="MstainlessSteel" />
+        <property name="Texture" value="355,355,267,267,267,267" />
+        <property name="IsDeveloper" value="true" />
+        <property class="RepairItems"> <property name="forgedSteel" value="15" /> </property>
+        <drop event="Destroy" name="scrapSteel" count="5,10" prob="1" />
+        <drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
+        <property name="EconomicValue" value="5" />
+        <property name="EconomicBundleSize" value="1" />
+        <property name="SellableToTrader" value="false" />
+    </block>
 
-<block id="38" name="plainsGroundFromDirt">
-	<property name="Extends" value="grassFromDirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="UpgradeRated.ToBlock" value="plainsGround" />
-</block>
-
-<block id="39" name="plainsGroundWGrass1">
-	<property name="Extends" value="fertileDirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="UpgradeRated.ToBlock" value="plainsGroundWGrass2" />
-</block>
-
-<block id="40" name="plainsGroundWGrass2">
-	<property name="Extends" value="fertileGrass" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="plainsGround" />
-	<property name="Texture" value="396" />
-	<property name="Map.Color" value="110,95,49" />
-	<property name="PlantGrowing.Next" value="plainsGround" />
-	<property name="PlantGrowing.GrowOnTop" value="treePlainsGrassDiagonal" />
-</block>
-
-<block id="41" name="burntForestGroundFromDirt">
-	<property name="Extends" value="grassFromDirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="UpgradeRated.ToBlock" value="burntForestGround" />
-</block>
-
-<block id="42" name="burntForestGroundWGrass1">
-	<property name="Extends" value="fertileDirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="UpgradeRated.ToBlock" value="burntForestGroundWGrass2" />
-</block>
-
-<block id="43" name="burntForestGroundWGrass2">
-	<property name="Extends" value="fertileGrass" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="burntForestGround" />
-	<property name="Texture" value="288" />
-	<property name="Map.Color" value="55,55,50" />
-	<property name="PlantGrowing.Next" value="burntForestGround" />
-	<property name="PlantGrowing.GrowOnTop" value="treeBrownGrassDiagonal" />
-</block>
-
-<block id="44" name="forestGroundFromDirt">
-	<property name="Extends" value="grassFromDirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="UpgradeRated.ToBlock" value="forestGround" />
-</block>
-
-<block id="45" name="forestGroundWGrass1">
-	<property name="Extends" value="fertileDirt" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="dirt" />
-	<property name="UpgradeRated.ToBlock" value="forestGroundWGrass2" />
-</block>
-
-<block id="46" name="forestGroundWGrass2">
-	<property name="Extends" value="fertileGrass" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="forestGround" />
-	<property name="Texture" value="195" />
-	<property name="Map.Color" value="35,80,45" />
-	<property name="PlantGrowing.Next" value="forestGround" />
-	<property name="PlantGrowing.GrowOnTop" value="treeTallGrassDiagonal" />
-</block>
-
-<block id="47" name="clayInSandstone">
-	<property name="Extends" value="clay" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="clay" />
-	<property name="CustomIconTint" value="00a0a0" />
-	<property name="Texture" value="301,184,184,184,184,184" />
-</block>
-
-<block id="48" name="lootStone">
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="stone" />
-	<property name="CustomIconTint" value="00a0a0" />
-	<property name="Material" value="stone" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="Rocks/Rock05" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-</block>
-
-
-	<!-- ****************************  Master Material Blocks  **************************** -->
-	<!-- Master blocks are material based because it means that the repair and upgrade resources -->
-	<!-- only need to be listed once. -->
-	<!-- Master blocks never list downgrade blocks but do list a dummy upgrade block to supply default resources for the upgrade. -->
-	<!-- "IsDeveloper" is not inherited on "Extends". This is intentional. -->
-	<!--<property name="DescriptionKey" value="scrapIronGroupDesc"/>group desc for stuff like metal siding -->
-<block id="119" name="cropsGrowingMaster">
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="blueberrySeed" />
-	<property name="Material" value="plants" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="BillboardPlant" />
-	<property name="Mesh" value="grass" />
-	<property name="Texture" value="293" />
-    <property name="MultiBlockDim" value="1,2,1"/>
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="CanDecorateOnSlopes" value="true" />
-	<property name="RotationAllowed" value="pivotOnFloor" />
-    <property name="CanPickup" value="false" />
-	<property name="Class" value="PlantGrowing" />
-	<property name="PlantGrowing.Next" value="cropsHarvestableMaster" />
-	<property name="PlantGrowing.GrowthRate" value="300" />
-	<property name="PlantGrowing.FertileLevel" value="5" />
-	<property name="PlantGrowing.IsRandom" value="false" />
-	<drop event="Destroy" count="0" />
-	<property name="Group" value="Food/Cooking" />
-	<property name="EconomicValue" value="24" />
-	<property name="EconomicBundleSize" value="10" />
-</block>
-
-<block id="120" name="cropsHarvestableMaster">
-	<property name="IsDeveloper" value="true" />
-	<property name="Material" value="plants" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="BillboardPlant" />
-	<property name="Mesh" value="grass" />
-	<property name="Texture" value="395" />
-    <property name="MultiBlockDim" value="1,2,1"/>
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    <property name="CanPickup" value="false" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="PlantGrowing.FertileLevel" value="1" />
-	<property name="CropsGrown.BonusHarvestDivisor" value="9" />
-	<drop event="Destroy" count="0" />
-</block>
-
-<block id="121" name="stainlessSteelMaster">
-	<property name="Material" value="MstainlessSteel" />
-    <property name="Texture" value="355,355,267,267,267,267" />
-	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="forgedSteel" value="15" /> </property>
-	<drop event="Destroy" name="scrapSteel" count="5,10" prob="1" />
-	<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-	<property name="EconomicValue" value="5" />
-	<property name="EconomicBundleSize" value="1" />
-	<property name="SellableToTrader" value="false" />
-</block>
-
-<block id="122" name="scrapIronNoUpgradeMaster">
-	<property name="Group" value="Building" />
-	<property name="Material" value="Mmetal_medium" />
-	<property name="Texture" value="307" />
-	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
-	<drop event="Harvest" name="scrapIron" count="10" />
-	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
-	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
-	<property name="EconomicValue" value="20" />
-</block>
+    <block id="122" name="scrapIronNoUpgradeMaster">
+        <property name="Group" value="Building" />
+        <property name="Material" value="Mmetal_medium" />
+        <property name="Texture" value="307" />
+        <property name="IsDeveloper" value="true" />
+        <property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
+        <drop event="Harvest" name="scrapIron" count="10" />
+        <drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
+        <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+        <property name="EconomicValue" value="20" />
+        <property name="CraftingSkillGroup" value="Iron Working" />
+    </block>
 	<block id="123" name="cobblestoneFrameMaster">
 		<property name="LightOpacity" value="0" />
 		<property name="Group" value="Building" />
@@ -864,6 +841,7 @@ then add recipes for those white/red/green metals
         <drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
         <drop event="Fall" name="scrapMetalPile" count="1" prob=".6" stick_chance="1" />
         <property name="EconomicValue" value="12" />
+        <property name="CraftingSkillGroup" value="Iron Working" />
     </block>
 	<block id="131" name="stoneToAdobeMaster">
 		<property name="Group" value="Building" />
@@ -1933,9 +1911,7 @@ then add recipes for those white/red/green metals
 	<block id="258" name="plantedBlueberry3Harvest">
 		<property name="Extends" value="cropsHarvestableMaster" />
         <property name="Texture" value="295" />
-    	<drop event="Harvest" name="blueberries" count="1" tool_category="Farm" />
-		<drop event="Harvest" name="blueberries" count="0" prob="1" />
-		<drop event="Destroy" name="blueberries" count="0" prob="1" />
+    	<drop event="Harvest" name="blueberries" count="1" />
 	</block>
 	<block id="259" name="plantedPotato1">
 		<property name="Extends" value="cropsGrowingMaster" />
@@ -1955,9 +1931,7 @@ then add recipes for those white/red/green metals
 	<block id="261" name="plantedPotato3Harvest">
 		<property name="Extends" value="cropsHarvestableMaster" />
         <property name="Texture" value="298" />
-		<drop event="Harvest" name="potato" count="1" tool_category="Farm" />
-		<drop event="Harvest" name="potato" count="0" prob="1" />
-		<drop event="Destroy" name="potato" count="0" />
+		<drop event="Harvest" name="potato" count="1" />
 	</block>
 	<block id="262" name="plantedBlueberry2">
         <property name="Extends" value="cropsGrowingMaster" />
@@ -3466,7 +3440,7 @@ then add recipes for those white/red/green metals
         <drop event="Destroy" name="barbedFence" count="1" tool_category="Disassemble" />
         <property name="CanPlayersSpawnOn" value="false" />
         <property name="Group" value="Tools/Traps" />
-        <property name="CraftingSkillGroup" value="Weapon Smithing" />
+        <property name="CraftingSkillGroup" value="Iron Working" />
         <property name="EconomicValue" value="11" />
     </block>
 	<block id="431" name="mineCandyTin">
@@ -4263,13 +4237,13 @@ kind of free
         <property name="Mesh" value="models" />
         <property name="Texture" value="241" />
         <property name="Model" value="OutdoorDecor/mushroom_sprout" param1="main_mesh" />
-        <property name="MultiBlockDim" value="1,2,1"/>
+        <property name="MultiBlockDim" value="1,2,1" />
         <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
         <property name="IsTerrainDecoration" value="true" />
         <property name="PlantGrowing.FertileLevel" value="1" />
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="plantedMushroom2" />
-        <property name="UpgradeRated.Rate" value="63" />
+        <property name="UpgradeRated.Rate" value="300" />
         <drop event="Destroy" count="0" />
         <property name="DescriptionKey" value="mushroomSeedDesc"/>
     </block>
@@ -4287,7 +4261,7 @@ kind of free
         <property name="Mesh" value="models" />
         <property name="Texture" value="241" />
         <property name="Model" value="OutdoorDecor/mushroom_harvest" param1="main_mesh" />
-        <property name="MultiBlockDim" value="1,2,1"/>
+        <property name="MultiBlockDim" value="1,2,1" />
         <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
         <property name="CanPickup" value="true" param1="mushrooms" />
         <property name="IsTerrainDecoration" value="true" />
@@ -5900,7 +5874,7 @@ kind of free
         <property name="MultiBlockDim" value="1,28,1" />
         <property name="BigDecorationRadius" value="4" />
         <property name="PlantGrowing.Next" value="treePlantedMountainPine19m" />
-        <property name="PlantGrowing.GrowthRate" value="1" />
+        <property name="PlantGrowing.GrowthRate" value="300" />
         <property name="PlantGrowing.FertileLevel" value="5" />
 		<drop event="Harvest" name="stick" count="75,150" />
 		<drop event="Destroy" name="wood" count="100,150" prob="1" />
@@ -5989,7 +5963,7 @@ kind of free
         <property name="BigDecorationRadius" value="6" />
         <property name="ParticleOnDeath" value="treeGib_birch" />
         <property name="PlantGrowing.Next" value="treePlantedMaple17mPlus" />
-        <property name="PlantGrowing.GrowthRate" value="1" />
+        <property name="PlantGrowing.GrowthRate" value="300" />
         <property name="PlantGrowing.FertileLevel" value="5" />
         <drop event="Harvest" name="stick" count="100,250" />
         <drop event="Destroy" name="wood" count="250,300" prob="1" />
@@ -6247,10 +6221,7 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
         <property name="CustomIcon" value="plantedCotton3Harvest" />
         <property name="Texture" value="363" />
-        <drop event="Harvest" name="cottonPlant" count="1" tool_category="Farm" />
-		<drop event="Harvest" name="cottonPlant" count="0" prob="1" />
-		<drop event="Destroy" name="cottonPlant" count="0" prob="1" />
-
+        <drop event="Harvest" name="cottonPlant" count="1"  />
         <property name="CropsGrown.BonusHarvestDivisor" value="8" />
     </block>
 		
@@ -7338,9 +7309,7 @@ kind of free
         <property name="MultiBlockDim" value="1,2,1" />
         <property name="Collide" value="melee,movement,rocket" />
 		<property name="CanPickup" value="false" />
-		<drop event="Harvest" name="foodYuccaFruit" count="1" tool_category="Farm" />
-		<drop event="Harvest" name="foodYuccaFruit" count="0" prob="1" />
-		<drop event="Destroy" name="foodYuccaFruit" count="0" prob="1" />
+		<drop event="Harvest" name="foodYuccaFruit" count="1"  />
 	</block>
 
 	<block id="854" name="plantedAloe3Harvest">
@@ -7774,10 +7743,8 @@ kind of free
         <property name="Collide" value="melee" />
         <property name="Texture" value="529" />
         <property name="CanPickup" value="false" />
-		<drop event="Destroy" name="corn" count="0" prob="1" />
-		<drop event="Harvest" name="corn" count="3" tool_category="Farm" />
-		<drop event="Harvest" name="corn" count="0" />
-        <property name="CropsGrown.BonusHarvestDivisor" value="99999" />
+		<drop event="Harvest" name="corn" count="2" />
+        <property name="CropsGrown.BonusHarvestDivisor" value="8" />
     </block>
 
 	<block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
@@ -11116,7 +11083,7 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Texture" value="241" />
-<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="Model" value="OutdoorDecor/mushroom01" param1="main_mesh" />
 		<property name="CanPickup" value="true" param1="mushrooms" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -12703,7 +12670,7 @@ kind of free
         <property name="MultiBlockDim" value="1,28,1" />
         <property name="BigDecorationRadius" value="2" />
         <property name="PlantGrowing.Next" value="treePlantedWinterPine19mPlus" />
-        <property name="PlantGrowing.GrowthRate" value="1" />
+        <property name="PlantGrowing.GrowthRate" value="300" />
         <property name="PlantGrowing.FertileLevel" value="5" />
         <drop event="Harvest" name="stick" count="150,250" />
         <drop event="Destroy" name="wood" count="250,300" prob="1" />
@@ -13772,10 +13739,11 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="HousingDecor/mailbox" param1="main_mesh" />
 		<property name="Group" value="Tools/Traps" />
+        <property name="Tag" value="TreeTrunk" />
 		<property name="IsPlant" value="true" />
 		<property name="CanPickup" value="false" />
 		<property name="PlantGrowing.Next" value="rabbitTrapCaught" />
-		<property name="PlantGrowing.GrowthRate" value="90" />
+		<property name="PlantGrowing.GrowthRate" value="160" />
 		<property name="PlantGrowing.FertileLevel" value="0" />
 		<property name="PlantGrowing.IsRandom" value="false" />
 		<drop event="Destroy" name="rabbitTrap" count="1" prob=".75" />
@@ -14710,11 +14678,11 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="116" />
 		<property name="Tag" value="TreeTrunk" />
-		<property name="BigDecorationRadius" value="1" />
-        <property name="Model" value="Entities/Trees/Maple20Prefab" />
-		<!--<property name="Model" value="#AppleTree1?AppleTree1Prefab" />-->
-		<property name="ParticleOnDeath" value="treeGib_burnt" />
-		<property name="UpwardsCount" value="6" />
+		<property name="Model" value="Entities/Trees/Maple20Prefab" />
+		<property name="ModelOffset" value="0,-0.3,0" />
+        <property name="MultiBlockDim" value="1,5,1" />
+		<property name="BigDecorationRadius" value="2" />
+		<property name="ParticleOnDeath" value="treeGib_birch_small" />
 		<property name="IsPlant" value="true" />
 		<property name="FallOver" value="true" />
 		<property name="LootList" value="110" />
@@ -14722,84 +14690,43 @@ kind of free
 		<drop event="Destroy" name="wood" count="42,52" prob="1" />
 	</block>
 	<block id="1978" name="plantedApple6m">
-		<property name="Class" value="ModelTree" />
+		<property name="Extends" value="treeMasterGrowing" />
 		<property name="Material" value="treeWoodMedium" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Texture" value="116" />
-		<property name="Tag" value="TreeTrunk" />
-		<property name="BigDecorationRadius" value="2" />
 		<property name="Model" value="Entities/Trees/White_Oak22Prefab" />
-		<property name="UpwardsCount" value="4" />
-		<property name="IsPlant" value="true" />
-		<property name="ParticleOnDeath" value="treeGib_burnt" />
-		<property class="PlantGrowing">
-			<property name="Next" value="appleTree" />
-			<property name="GrowthRate" value="600" />
-			<property name="FertileLevel" value="1" />
-			<property name="IsRandom" value="false" />
-		</property>
-		<property name="ModelOffset" value="0,-0.6,0" />
-		<property name="Collide" value="movement,rocket,melee" />
-		<!-- uses dummy texture id from opaque atlas -->
-		<drop event="Harvest" name="stick" count="15,20" />
+		<property name="ModelOffset" value="0,-0.3,0" />
+        <property name="MultiBlockDim" value="1,4,1" />
+		<property name="BigDecorationRadius" value="2" />
+        <property name="PlantGrowing.Next" value="appleTree" />
+        <drop event="Harvest" name="stick" count="15,20" />
 		<drop event="Destroy" name="wood" count="42,52" prob="1" />
 	</block>
 	<block id="1979" name="plantedApple1m">
-		<property name="Class" value="ModelTree" />
+        <property name="Extends" value="treeMasterGrowing" />
 		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Texture" value="116" />
-		<property name="Tag" value="TreeTrunk" />
-		<property name="Collide" value="melee,bullet,rocket" />
-		<property name="BigDecorationRadius" value="1" />
 		<property name="Model" value="Entities/Trees/Prefabs/MountainPine1mPrefab" />
-		<property name="UpwardsCount" value="0" />
-		<property name="IsPlant" value="true" />
-		<property name="ParticleOnDeath" value="treeGib_burnt" />
-		<property class="PlantGrowing">
-			<property name="Next" value="plantedApple6m" />
-			<property name="GrowthRate" value="300" />
-			<property name="FertileLevel" value="5" />
-			<property name="IsRandom" value="false" />
-		</property>
-		<drop event="Destroy" name="stick" count="2" prob="1" />
+		<property name="BigDecorationRadius" value="1" />
+        <property name="PlantGrowing.Next" value="plantedApple6m" />
+        <drop event="Destroy" name="stick" count="2" prob="1" />
 	</block>
 	<block id="1980" name="carrotPlant">
-		<property name="Material" value="plants" />
-		<property name="Shape" value="BillboardPlant" />
-		<property name="Mesh" value="grass" />
-		<property name="Texture" value="298" />
-		<property name="Collide" value="melee,bullet,rocket" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="CanPickup" value="false" />
-		<drop event="Destroy" name="Carrot" count="0" prob="1" />
-		<drop event="Harvest" name="Carrot" count="1" tool_category="Farm" />
-		<drop event="Harvest" name="Carrot" count="0" />
-	</block>
-	<block id="1981" name="CarrotYoung">
+        <property name="Extends" value="cropsHarvestableMaster" />
+        <property name="Texture" value="298" />
+        <drop event="Harvest" name="Carrot" count="1" />
+    </block>
+   <block id="1981" name="CarrotYoung">
         <property name="Extends" value="cropsGrowingMaster" />
-		<property name="Shape" value="BillboardPlant" />
+        <property name="Shape" value="BillboardPlant" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="297" />
-        <property class="PlantGrowing">
-			<property name="Next" value="carrotPlant" />
-			<property name="GrowthRate" value="300" />
-			<property name="FertileLevel" value="5" />
-			<property name="IsRandom" value="false" />
-		</property>
-	</block>
+        <property name="PlantGrowing.Next" value="carrotPlant" />
+    </block>
 	<block id="1982" name="carrotSprout">
-		<property name="Extends" value="cropsGrowingMaster" />
-		<property name="Shape" value="BillboardPlant" />
+    	<property name="Extends" value="cropsGrowingMaster" />
+        <property name="Shape" value="BillboardPlant" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="296" />
-        <property class="PlantGrowing">
-			<property name="Next" value="CarrotYoung" />
-			<property name="GrowthRate" value="300" />
-			<property name="FertileLevel" value="5" />
-			<property name="IsRandom" value="false" />
-		</property>
-	</block>
+        <property name="PlantGrowing.Next" value="CarrotYoung" />
+    </block>
 	<block id="1983" name="YuccaCactus03">
 		<property name="Class" value="Cactus" />
 		<property name="Material" value="Mcactus" />
@@ -14850,19 +14777,10 @@ kind of free
 		</property>
 	</block>
 	<block id="1986" name="Wheat">
-		<property name="Material" value="Mtallgrass" />
-		<property name="Shape" value="Grass" />
-		<property name="Mesh" value="grass" />
-		<property name="Texture" value="201,306,371,201,306,371" />
-		<property name="Collide" value="melee,bullet,rocket" />
-		<property name="FuelValue" value="1" />
-		<property name="CanDecorateOnSlopes" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="CanPickup" value="false" />
-		<drop event="Destroy" name="Wheat" count="0" prob="1" />
-		<drop event="Harvest" name="Wheat" count="1" tool_category="Farm" />
-		<drop event="Destroy" count="0" />
-	</block>
+        <property name="Extends" value="cropsHarvestableMaster" />
+        <property name="Texture" value="201,306,371,201,306,371" />
+        <drop event="Harvest" name="Wheat" count="1" />
+    </block>
 	<block id="1987" name="youngWheat2">
         <property name="Extends" value="cropsGrowingMaster" />
 		<property name="Shape" value="Grass" />

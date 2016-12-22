@@ -1053,6 +1053,47 @@
 		<entity name="zombieMarlene" prob="0.3"/>
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieSteveCrawler" prob="0.3"/>
+        <entity name="spiderzombie" prob="0.3"/>
+		<entity name="spider1" prob="0.3"/>
+        <entity name="spider2" prob="0.3"/>
+        <entity name="spider3" prob="0.3"/>
+        <entity name="spiderCrawler" prob="0.3"/>
+        <entity name="spider5" prob="0.3"/>
+        <entity name="Boe8" prob="0.3"/>
+        <entity name="Moe8" prob="0.3"/>
+        <entity name="Arlene8" prob="0.3"/>
+        <entity name="Darlene8" prob="0.3"/>
+        <entity name="CrawlerMarlene" prob="0.3"/>
+        <entity name="Marlene6" prob="0.3"/>
+        <entity name="Marlene7" prob="0.3"/>
+        <entity name="Marlene8" prob="0.3"/>
+        <entity name="Yo1" prob="0.3"/>
+        <entity name="Yo2" prob="0.3"/>
+        <entity name="Yo3" prob="0.3"/>
+        <entity name="CrawlerYo" prob="0.3"/>
+        <entity name="Yo6" prob="0.3"/>
+        <entity name="Yo7" prob="0.3"/>
+        <entity name="Yo8" prob="0.3"/>
+        <entity name="Nurse1" prob="0.3"/>
+        <entity name="Nurse2" prob="0.3"/>
+        <entity name="Nurse3" prob="0.3"/>
+        <entity name="CrawlerNurse" prob="0.3"/>
+        <entity name="Nurse5" prob="0.3"/>
+        <entity name="Nurse6" prob="0.3"/>
+        <entity name="Nurse8" prob="0.3"/>
+        <entity name="Steve1" prob="0.3"/>
+        <entity name="Steve2" prob="0.3"/>
+        <entity name="Steve3" prob="0.3"/>
+        <entity name="Steve5" prob="0.3"/>
+        <entity name="Steve7" prob="0.3"/>
+        <entity name="Steve8" prob="0.3"/>
+        <entity name="Joe1" prob="0.3"/>
+        <entity name="Joe2" prob="0.3"/>
+        <entity name="Joe3" prob="0.3"/>
+        <entity name="CrawlerJoe" prob="0.3"/>
+        <entity name="Joe6" prob="0.3"/>
+        <entity name="Joe7" prob="0.3"/>
+        <entity name="Joe8" prob="0.3"/>
         <entity name="spider6" prob="0.3"/>
         <entity name="spider7" prob="0.3"/>
         <entity name="Boe1" prob="0.3"/>

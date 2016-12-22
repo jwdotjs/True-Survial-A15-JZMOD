@@ -637,7 +637,6 @@
 		<item name="Holy Schnit thats good!" prob="0.7" />
 		<item name="Wielder Book" prob="0.7" />
 		<item name="Trussing Book" prob="0.7" />
-		<item name="Weapon Smithing Monthly" prob="0.4" />
 		<item name="Wood Working Monthly" prob="0.4" />
         <item name="Iron Working Monthly" prob="0.4" />
         <item name="Stone Working Monthly" prob="0.4" />
@@ -698,8 +697,7 @@
         <item name="Steel Working Weekly" prob="0.4" />
         <item name="Hunting Weekly" prob="0.4" />
         <item name="Harvesting Weekly" prob="0.4" />
-       	<item name="Weapon Smithing Weekly" prob="0.4" />
-	</lootgroup>
+    </lootgroup>
 	<lootgroup name="TierOneBooks" count="1">
 		<item name="Red Wood Book" prob="0.7" />
 		<item name="sawedoffPumpShotgunSchematic" prob="0.5" />
@@ -1479,7 +1477,7 @@
 		<item name="cookingPot" count="1,2" prob="0.5" />
 		<item name="FryingPan" count="1,2" prob="0.4" />
 		<item name="scrapIron" count="1,2" prob=".7" />
-		<item name="cookingGrill" prob="0.06" />
+		<item name="cookingGrill" count="1,2" prob="0.3" />
 		<item name="emptyJar" count="1,2" prob="0.3" />
 		<item name="canEmpty" count="1,2" prob="0.3" />
 		<item group="rottenFood" prob="0.6" />

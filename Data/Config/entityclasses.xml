@@ -132,19 +132,19 @@
 		<property name="HasDeathAnim" value="true" />
         <property name="HeadDismemberBaseChance" value="0"/>
         <property name="HeadDismemberBonusChance" value="0.08"/>
-        <property name="HeadDismemberThreshold" value="0.8"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
-        <property name="LowerLegDismemberThreshold" value="0.5"/>
+        <property name="HeadDismemberThreshold" value="0.5"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
+        <property name="LowerLegDismemberThreshold" value="0.475"/>
         <property name="LowerLegDismemberBaseChance" value="0"/>
-        <property name="LowerLegDismemberBonusChance" value="0.09"/>
+        <property name="LowerLegDismemberBonusChance" value="0.9"/>
         <property name="UpperLegDismemberThreshold" value="0.175"/>
         <property name="UpperLegDismemberBaseChance" value="0"/>
-        <property name="UpperLegDismemberBonusChance" value="0.09"/>
+        <property name="UpperLegDismemberBonusChance" value="0.9"/>
         <property name="LowerArmDismemberThreshold" value="0.175"/>
         <property name="LowerArmDismemberBaseChance" value="0"/>
-        <property name="LowerArmDismemberBonusChance" value="0.09"/>
+        <property name="LowerArmDismemberBonusChance" value="0.9"/>
         <property name="UpperArmDismemberThreshold" value="0.175"/>
         <property name="UpperArmDismemberBaseChance" value="0"/>
-        <property name="UpperArmDismemberBonusChance" value="0.09"/>
+        <property name="UpperArmDismemberBonusChance" value="0.9"/>
         <property name="LegCrawlerThreshold" value="0"/>
         <property name="LegCrippleThreshold" value="0.01"/>
         <property name="KnockdownProneDamageThreshold" value="0.5"/>
@@ -402,10 +402,11 @@
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" param1="10" />
-		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="50" />
-		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-        <property name="AITask-6" value="ApproachSpot" />
-        <property name="AITask-7" value="Wander" />
+        <property name="AITask-4" value="RangedAttackTarget" param1="1" param2="1" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="50" />
+		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityNPC"/>
+        <property name="AITask-7" value="ApproachSpot" />
+        <property name="AITask-8" value="Wander" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
         <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
         <property name="AITarget-3" value="BlockingTargetTask" />

@@ -204,7 +204,7 @@
 		<perk name="Steel Spiked Club" icon="clubSteelSpiked" description_key="Learn to upgrade your spiked club to the strongest melee club" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="65" />
-			<requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="50" />
+			<requirement perk_level="1" required_skill_name="Steel Working" required_skill_level="2" />
 			<recipe name="clubSteelSpiked" unlock_level="1" />
 		</perk>
 		<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000">
@@ -432,13 +432,13 @@
 		</action_skill>
 		<perk name="Throwing Spear" icon="IronSpears" description_key="Learn to craft a basic Spear and throwable Atlatls" title_key="Throwing Spear" max_level="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-			<recipe name="IronSpear" unlock_level="1" />
+			<requirement perk_level="1" required_player_level="5" />
+            <recipe name="IronSpear" unlock_level="1" />
 			<recipe name="Atlatls" unlock_level="1" />
 		</perk>
 		<perk name="Crossbow" icon="crossbow" description_key="Learn to craft a Crossbow" title_key="Crossbow" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
-			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="10" />
-			<requirement perk_level="1" required_player_level="5" />
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
+            <requirement perk_level="1" required_player_level="5" />
 			<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20" />
 			<recipe name="Crossbow_Limb" unlock_level="1" />
 			<recipe name="Crossbow_Stock" unlock_level="1" />
@@ -546,12 +546,12 @@
 		</perk>
         <perk name="Forged Iron" icon="forgedIron" description_key="Learn to craft Forged Iron in a forge" title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="20" />
-            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="75" />
+            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="65" />
             <recipe name="forgedIron" unlock_level="1" />
 		</perk>
         <perk name="Short Metal Pipe" icon="shortMetalPipe" description_key="Learn to craft Short Metal Pipes" title_key="Short Metal Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="20" />
-            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="75" />
+            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="65" />
             <recipe name="shortMetalPipe" unlock_level="1" />
 		</perk>
         <perk name="Blast Furnace" icon="BlastFurnace" description_key="Learn to craft a Blast Furnace on the metal work bench. use it to smelt brass and steel" title_key="Blast Furnace" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
@@ -560,12 +560,12 @@
 		</perk>
         <perk name="Forged Steel" icon="forgedSteel" description_key="Learn to craft Forged Steel in the blast Furnace" title_key="Forged Steel" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="65" />
-            <requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="80" />
+            <requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="75" />
             <recipe name="forgedSteel" unlock_level="1" />
 		</perk>
         <perk name="Short Steel Pipe" icon="shortSteelPipe" description_key="Learn to craft Short Steel Pipe" title_key="Short Steel Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="65" />
-            <requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="80" />
+            <requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="75" />
            	<recipe name="shortSteelPipe" unlock_level="1" />
 		</perk>
         <perk name="Steel Tools" icon="pickaxeSteel" description_key="Learn to craft Steel tools on the metal work bench. these are the best tools you can make" title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
@@ -619,7 +619,7 @@
 		</perk>
         <perk name="Cobblestones" icon="cobblestones" description_key="Learn to craft cobblestones" title_key="Cobblestones" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
-            <requirement perk_level="1" required_skill_name="Wood Working" required_skill_level="75" />
+            <requirement perk_level="1" required_skill_name="Wood Working" required_skill_level="55" />
             <recipe name="cobblestones" unlock_level="1" />
 		</perk>
         <perk name="Refinery" icon="OilRefinery" description_key="Learn to craft a refinery" title_key="Refinery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
@@ -1230,7 +1230,15 @@
 			<recipe name="cobblestoneFrameRamp" unlock_level="1" />
 			<recipe name="cobblestoneStairs25" unlock_level="1" />
             <recipe name="cobblestoneArrowSlitHalf" unlock_level="1" />
-		</perk>
+            <recipe name="cobblestoneFrameWedge" unlock_level="1" />
+            <recipe name="cobblestoneFrameWedgeTip" unlock_level="1" />
+            <recipe name="cobblestoneFramePlate" unlock_level="1" />
+            <recipe name="cobblestoneFrameCNRFull" unlock_level="1" />
+            <recipe name="cobblestoneFrameCNRInside" unlock_level="1" />
+            <recipe name="cobblestoneFramePillar100" unlock_level="1" />
+            <recipe name="cobblestoneFramePillar50" unlock_level="1" />
+            <recipe name="cobblestoneFramePole" unlock_level="1" />
+        </perk>
         <crafting_skill name="Iron Working" icon="IronFragment" exp_to_level="120" experience_multiplier="1.022" description_key="Crafting iron items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Iron Working" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
@@ -1298,7 +1306,7 @@
 		</perk>
         <perk name="Scrap Iron Building" icon="scrapIronBlock" description_key="Learn to craft Scrap Iron Blocks on the metal work bench" title_key="Scrap Iron Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="75" />
+            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="55" />
 			<recipe name="scrapIronFrameBlock" unlock_level="1" />
 			<recipe name="scrapIronFrameCNRFull" unlock_level="1" />
 			<recipe name="scrapIronFrameCNRInside" unlock_level="1" />
@@ -1344,6 +1352,7 @@
         
         <perk name="Concrete Building" icon="ConcreteReinforced" description_key="Learn to craft rebar frames in the forge to build Concrete Blocks" title_key="Concrete Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="65" />
             <requirement perk_level="1" required_player_level="20" />
 			<recipe name="rebarFrameBlock" unlock_level="1" />
 			<recipe name="rebarFrameCNRInside" unlock_level="1" />
@@ -1664,32 +1673,29 @@
             <recipe name="grainAlcohol" unlock_level="1" />
 		</perk>
 		<perk name="Iron Arrows" icon="ironArrow" description_key="Learn to craft Iron Arrows and crossbow bolts" title_key="Iron Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
-			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="20" />
-			<recipe name="ironArrowHead" unlock_level="1" />
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
+            <recipe name="ironArrowHead" unlock_level="1" />
 			<recipe name="ironArrow" unlock_level="1" />
 			<recipe name="ironCrossbowBolt" unlock_level="1" />
 		</perk>
         <perk name="Steel Arrows" icon="steelArrow" description_key="Learn to craft Steel Arrows and crossbow bolts on the metal work bench" title_key="Steel Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
-			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="50" />
-			<recipe name="steelArrowHead" unlock_level="1" />
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="25" />
+            <recipe name="steelArrowHead" unlock_level="1" />
 			<recipe name="steelArrow" unlock_level="1" />
 			<recipe name="steelCrossbowBolt" unlock_level="1" />
 		</perk>
         <perk name="Carbon Arrow" icon="CarbonArrow" description_key="Learn to craft strong powerful Carbon Arrow on the metal work bench" title_key="Carbon Arrow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="weapons">
-			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="75" />
-			<recipe name="CarbonArrow" unlock_level="1" />
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="30" />
+            <requirement perk_level="1" required_skill_name="Steel Working" required_skill_level="5" />
+            <recipe name="CarbonArrow" unlock_level="1" />
 		</perk>
         <perk name="Flaming Arrows" icon="flamingArrow" description_key="Learn to craft Flaming Arrows at the wood work bench" title_key="Flaming Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
-			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="25" />
-			<recipe name="flamingArrow" unlock_level="1" />
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
+            <recipe name="flamingArrow" unlock_level="1" />
 		</perk>
         <perk name="Exploding Crossbow Bolts" icon="explodingCrossbowBolt" description_key="Learn to craft powerful Exploding Crossbow Bolts at the wood work bench" title_key="Exploding Crossbow Bolts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
-			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
-            <requirement perk_level="1" required_skill_name="Weapon Smithing" required_skill_level="75" />
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="30" />
+            <requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
 			<recipe name="explodingCrossbowBolt" unlock_level="1" />
 		</perk>
 		<perk name="Weapon Repair" icon="repairKit" description_key="Learn to craft weapon repair kits" title_key="Weapon Repair" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">

@@ -43,12 +43,12 @@ Mesh files no longer used:
 		<property class="Action0">	<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.33" />
-			<property name="Range" value="3" />
+			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.2" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="6" />
-            <property name="Buff" value="criticalBlunt,headshotMelee" />
-			<property name="Buff_chance" value=".1,1" />
+            <property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value=".1" />
 			<property name="DamageBonus.head" value="4" />
 			<!-- these are multipliers -->
 			<property name="DamageBonus.glass" value="0.01" />
@@ -63,12 +63,12 @@ Mesh files no longer used:
 		<property class="Action1">	<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="2" />
-			<property name="Range" value="3" />
+			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.2" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="10" />
-            <property name="Buff" value="criticalBlunt,headshotMelee" />
-			<property name="Buff_chance" value=".2,1" />
+            <property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value=".2" />
 			<property name="DamageBonus.head" value="6" />
 			<!-- these are multipliers -->
 			<property name="DamageBonus.glass" value="0.01" />
@@ -90,12 +90,20 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="clubWoodDesc" />
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Wood Working" />
         <property name="RepairExpMultiplier" value="2.2"/> <!-- 54 = about 250 points of crafting skill XP. This does not base off the crafting XP auto-calculation. It has a base value of 5 or so. -->
     </item>
 	<item id="6" name="clubWood">
 		<property name="Extends" value="clubMaster" />
         <property name="RepairTools" value="stick" />
+        <property class="Action0">	
+            <property name="Buff" value="criticalBlunt,headshotMelee1" />
+			<property name="Buff_chance" value=".1,1" />
+        </property>
+        <property class="Action1">	
+            <property name="Buff" value="criticalBlunt,headshotMelee2" />
+			<property name="Buff_chance" value=".2,1" />
+        </property>
         <property name="Group" value="Ammo/Weapons,Basics" />
     </item>
 	<item id="7" name="clubIron">
@@ -106,7 +114,7 @@ Mesh files no longer used:
 	    <property name="RepairTools" value="scrapIron" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="8" />
-			<property name="Buff" value="criticalBlunt,headshotMelee" />
+			<property name="Buff" value="criticalBlunt,headshotMelee2" />
 			<property name="Buff_chance" value=".2,1" />
 			<property name="DamageBonus.stone" value="0.5" />
 			<property name="DamageBonus.metal" value="5" />
@@ -115,7 +123,7 @@ Mesh files no longer used:
         </property>
 		<property class="Action1">
 			<property name="Stamina_usage" value="12" />
-			<property name="Buff" value="criticalBlunt,headshotMelee" />
+			<property name="Buff" value="criticalBlunt,headshotMelee3" />
 			<property name="Buff_chance" value=".3,1" />
 			<property name="DamageBonus.wood" value="15" />
 			<property name="DamageBonus.metal" value="8" />
@@ -154,9 +162,9 @@ Mesh files no longer used:
 		<property name="Extends" value="clubIron" />
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab" />
 		<property name="RepairTools" value="nail" />
-        <property name="EconomicValue" value="300" />
+        <property name="EconomicValue" value="500" />
 		<property class="Action0">			<!-- AttackAction -->
-			<property name="Buff" value="bleeding,criticalBlunt,headshotMelee2" />
+			<property name="Buff" value="bleeding,criticalBlunt,headshotMelee3" />
 			<property name="Buff_chance" value=".5,.4,1" />
 			<property name="DamageBonus.wood" value="18" />
             <property name="DamageBonus.stone" value="0.7" />
@@ -165,7 +173,7 @@ Mesh files no longer used:
         </property>
 		<property class="Action1">			<!-- AttackAction -->
 			<property name="Stamina_usage" value="13" />
-			<property name="Buff" value="bleeding,criticalBlunt,headshotMelee2" />
+			<property name="Buff" value="bleeding,criticalBlunt,headshotMelee4" />
 			<property name="Buff_chance" value=".6,.5,1" />
 			<property name="DamageBonus.wood" value="19" />
 			<property name="DamageBonus.stone" value="0.8" />
@@ -192,12 +200,12 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.8" />
-			<property name="Range" value="3.2" />
+			<property name="Range" value="3.1" />
 			<property name="Sphere" value="0.2" />
 			<property name="Block_range" value="4" />
 			<property name="Sound_start" value="SlowSwoosh" />
 			<property name="Stamina_usage" value="15" />
-			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,headshotMelee2" />
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,headshotMelee4" />
 			<property name="Buff_chance" value=".5,.1,.3,1" />
 			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.stone" value="10" />
@@ -212,12 +220,12 @@ Mesh files no longer used:
 		<property class="Action1">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="2.2" />
-			<property name="Range" value="3.2" />
+			<property name="Range" value="3.1" />
 			<property name="Sphere" value="0.2" />
 			<property name="Block_range" value="4" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="20" />
-			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,headshotMelee2" />
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,headshotMelee5" />
 			<property name="Buff_chance" value=".6,.15,.4,1" />
 			<property name="DamageBonus.wood" value="8" />
 			<property name="DamageBonus.stone" value="13" />
@@ -288,13 +296,13 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.1" />
-			<property name="Range" value="2.5" />
+			<property name="Range" value="2.4" />
 			<property name="Sphere" value="0.1" />
 			<property name="DamageEntity" value="6" />
 			<property name="DamageBlock" value=".7" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="7" />
-            <property name="Buff" value="headshotMelee" />
+            <property name="Buff" value="headshotMelee1" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="2" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -321,12 +329,12 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.33" />
-			<property name="Range" value="2.5" />
+			<property name="Range" value="2.4" />
 			<property name="DamageEntity" value="7" />
 			<property name="DamageBlock" value="5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="4" />
-            <property name="Buff" value="headshotMelee" />
+            <property name="Buff" value="headshotMelee1" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="2" />
 			<property name="DamageBonus.stone" value=".01" />
@@ -350,11 +358,11 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.2" />
+			<property name="Range" value="2.1" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="4" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee3" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="7" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -379,7 +387,7 @@ Mesh files no longer used:
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Wood Working" />
 	</item>
 	<item id="21" name="huntingKnife">
 		<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab" />
@@ -393,11 +401,11 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.2" />
+			<property name="Range" value="2.1" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee5" />
 			<property name="DamageBonus.head" value="10" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.stone" value="10" />
@@ -421,7 +429,7 @@ Mesh files no longer used:
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Hunting" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
         <property name="RepairExpMultiplier" value="2.2"/>
     </item>
 	<item id="22" name="machete">
@@ -437,11 +445,11 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.8" />
+			<property name="Range" value="2.7" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="7" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshot" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.head" value="5" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -463,7 +471,7 @@ Mesh files no longer used:
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
         <property name="RepairExpMultiplier" value="2.2"/>
     </item>
 	<!-- 40* * * * * * * * * * firearms * * * * * * * * * * -->
@@ -1067,7 +1075,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.5,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -1081,7 +1089,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Delay" value="2.0" />
 			<property name="Buff" value="sprainedLeg,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.2,0.4,0.1,0.08" />
+			<property name="Buff_chance" value="0.2,0.5,0.1,0.08" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -1097,7 +1105,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.4,0.1,0.3" />
+			<property name="Buff_chance" value="0.5,0.5,0.1,0.3" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -1113,7 +1121,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="250" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.2,0.5,0.3,0.4" />
+			<property name="Buff_chance" value="0.2,0.6,0.3,0.4" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -1194,7 +1202,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="18" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.3,0.7,0.3,0.4" />
+			<property name="Buff_chance" value="0.3,0.8,0.3,0.4" />
 			<property name="DamageBonus.earth" value="40" />
 			<property name="DamageBonus.wood" value="40" />
 			<property name="DamageBonus.stone" value="10" />
@@ -1225,7 +1233,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="30" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
-			<property name="Buff_chance" value="0.2,0.3,0.7" />
+			<property name="Buff_chance" value="0.2,0.3,0.8" />
 			<property name="DamageBonus.earth" value="40" />
 			<property name="DamageBonus.wood" value="40" />
 			<property name="DamageBonus.stone" value="10" />
@@ -1241,7 +1249,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="50" />
 			<property name="DamageBlock" value="100" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.3,0.8,0.4,0.4" />
+			<property name="Buff_chance" value="0.3,0.9,0.4,0.4" />
 			<property name="DamageBonus.earth" value="40" />
 			<property name="DamageBonus.wood" value="40" />
 			<property name="DamageBonus.stone" value="10" />
@@ -1255,7 +1263,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="24" />
 	<property class="Action0">
 		<property name="Buff" value="bleeding,scratch,bite,stunned" />
-        <property name="Buff_chance" value="0.04,0.5,0.2,0.1" />
+        <property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
 	</property>
 </item>
 
@@ -1266,7 +1274,7 @@ Mesh files no longer used:
 	<property class="Action0">
 		<property name="DamageBlock" value="150" />
         <property name="Buff" value="bleeding,scratch,bite,stunned" />
-		<property name="Buff_chance" value="0.04,0.5,0.2,0.1" />
+		<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
 	</property>
 </item>
 
@@ -1276,7 +1284,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="24" />
 	<property class="Action0">
 		<property name="Buff" value="bleeding,scratch,bite,stunned" />
-		<property name="Buff_chance" value="0.04,0.5,0.2,0.1" />
+		<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
 	</property>
 </item>
 
@@ -1286,7 +1294,7 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="DamageEntity" value="8" />
 		<property name="Buff" value="bleeding,scratch,bite,stunned" />
-		<property name="Buff_chance" value="0.04,0.5,0.2,0.1" />
+		<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
 	</property>
 </item>
 	<!-- * * * * * * * * * * tools for mining / farming, manual or motorised * * * * * * * * * * -->
@@ -1308,6 +1316,8 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="3" />
+            <property name="Buff" value="headshotMelee1" />
+			<property name="Buff_chance" value="1" />
             <property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="25" />
@@ -1320,12 +1330,14 @@ Mesh files no longer used:
 		</property>
 		<property class="Action1">		<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1" />
+			<property name="Delay" value="1.1" />
 			<property name="Range" value="2.7" />
 			<property name="Block_range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="6" />
+            <property name="Buff" value="headshotMelee2" />
+			<property name="Buff_chance" value="1" />
             <property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="28" />
@@ -1367,7 +1379,7 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="3" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee4" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="5" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -1388,7 +1400,7 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="6" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee5" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -1449,7 +1461,7 @@ Mesh files no longer used:
 			<property name="Block_range" value="4" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="10" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee4" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.wood" value="38" />
 			<property name="DamageBonus.head" value="5" />
@@ -1498,7 +1510,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Delay" value="1.5" />
 			<property name="Stamina_usage" value="14" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee5" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.wood" value="48" />
 			<property name="DamageBonus.head" value="5" />
@@ -1556,7 +1568,7 @@ Mesh files no longer used:
 			<property name="Block_range" value="4" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee4" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.stone" value="13" />
 			<property name="DamageBonus.head" value="6" />
@@ -1591,6 +1603,8 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Delay" value="1.5" />
 			<property name="Stamina_usage" value="5" />
+            <property name="Buff" value="headshotMelee2" />
+			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.metal" value="20" />
 			<property name="DamageBonus.stone" value="20" />
 			<property name="DamageBonus.glass" value="70" />
@@ -1600,6 +1614,8 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Delay" value="1.9" />
 			<property name="Stamina_usage" value="10" />
+            <property name="Buff" value="headshotMelee5" />
+			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.metal" value="25" />
 			<property name="DamageBonus.stone" value="23" />
 			<property name="DamageBonus.glass" value="80" />
@@ -1842,12 +1858,12 @@ Mesh files no longer used:
 		<property class="Action0">			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="0.8" />
-			<property name="Range" value="2.1" />
+			<property name="Range" value="2.2" />
             <property name="Block_range" value="4" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="4" />
-            <property name="Buff" value="headshotMelee" />
+            <property name="Buff" value="headshotMelee1" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="5" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -1975,7 +1991,7 @@ which does not exist, yet. -->
 			<property name="Horde_meter_rate" value=".275" />
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
-			<property name="Buff" value="headshotMelee2" />
+			<property name="Buff" value="headshotMelee5" />
 			<property name="Buff_chance" value="1" />
             <property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.wood" value="140" />
@@ -2029,7 +2045,7 @@ which does not exist, yet. -->
 			<property name="Horde_meter_rate" value=".275" />
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
-			<property name="Buff" value="headshotMelee2" />
+			<property name="Buff" value="headshotMelee5" />
 			<property name="Buff_chance" value="1" />
             <property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.stone" value="15" />
@@ -2110,7 +2126,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="DescriptionKey" value="woodenBowDesc" />
 		<property name="ActionSkillGroup" value="Archery" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Wood Working" />
         <property name="RepairExpMultiplier" value="5.5"/>
         <property name="PickupJournalEntry" value="alternateAmmoTip" />
 	</item>
@@ -2155,7 +2171,7 @@ which does not exist, yet. -->
 		</property>
        	<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Archery" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Wood Working" />
         <property name="RepairExpMultiplier" value="5.5"/>
         <property name="PickupJournalEntry" value="alternateAmmoTip" />
     </item>
@@ -2283,7 +2299,7 @@ which does not exist, yet. -->
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="128" />		<!-- STK ammo -->
 		<property name="DropScale" value="4" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Ammo/Weapons" />
         <property name="EconomicValue" value="6" />
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
@@ -2321,8 +2337,8 @@ which does not exist, yet. -->
 			<property name="FlyTime" value="0" />
             <property name="Gravity" value="-4" />
 			<property name="LifeTime" value="12" />
-			<property name="Buff" value="arrowCriticalBleedout,headshot" />
-			<property name="Buff_chance" value="0.5,0.4" />
+			<property name="Buff" value="arrowCriticalBleedout,headshotMelee2" />
+			<property name="Buff_chance" value="0.5,1" />
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.wood" value="0.1" />
@@ -2339,7 +2355,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="1,5" />
 		</property>
 		<property name="DescriptionKey" value="arrowDesc" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Stone Working" />
 	</item>
 	<item id="165" name="ironArrow">
         <property name="Extends" value="arrow" />
@@ -2347,8 +2363,8 @@ which does not exist, yet. -->
 		<property name="Stacknumber" value="250" /><!-- STK ammo -->
        	<property class="Action1">
 			<property name="Velocity" value="65" />
-			<property name="Buff" value="arrowCriticalBleedout,headshot" />
-			<property name="Buff_chance" value="0.25,0.5" />
+			<property name="Buff" value="arrowCriticalBleedout,headshotMelee4" />
+			<property name="Buff_chance" value="0.25,1" />
 			<property name="ActionExp" value="30" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
@@ -2357,6 +2373,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="22,45" />
 			<property name="BlockDamage" value="5,10" />
 		</property>
+        <property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="166" name="steelArrow">
         <property name="Extends" value="arrow" />
@@ -2366,8 +2383,8 @@ which does not exist, yet. -->
 		<property class="Action1">
 			<property name="Velocity" value="75" />
 			<property name="FlyTime" value="0.15" />
-			<property name="Buff" value="arrowCriticalBleedout,headshot" />
-			<property name="Buff_chance" value="0.35,.6" />
+			<property name="Buff" value="arrowCriticalBleedout,headshotMelee5" />
+			<property name="Buff_chance" value="0.35,1" />
 			<property name="ActionExp" value="40" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
@@ -2376,6 +2393,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="22,55" />
 			<property name="BlockDamage" value="6,11" />
 		</property>
+        <property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<item id="167" name="flamingArrow">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab" />
@@ -2411,7 +2429,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="6,11" />
 			<property name="ApplyBuff" value="1, 1" param1="burning" />
 		</property>
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="170" name="crossbowBolt">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
@@ -2424,8 +2442,8 @@ which does not exist, yet. -->
         <property name="CustomIcon" value="ironCrossbowBolt" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
-			<property name="Buff" value="arrowCriticalBleedout,headshot" />
-			<property name="Buff_chance" value="0.5,0.4" />
+			<property name="Buff" value="arrowCriticalBleedout,headshotMelee3" />
+			<property name="Buff_chance" value="0.5,1" />
 			<property name="Explosion.ParticleIndex" value="0" />
 			<property name="Velocity" value="75" />
 			<property name="FlyTime" value=".25" />
@@ -2443,7 +2461,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="25,45" />
 			<property name="BlockDamage" value="1,5" />
 		</property>
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Stone Working" />
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
 	<item id="171" name="ironCrossbowBolt">
@@ -2458,8 +2476,8 @@ which does not exist, yet. -->
         <property name="EconomicBundleSize" value="5" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
-			<property name="Buff" value="arrowCriticalBleedout,headshot" />
-			<property name="Buff_chance" value="0.5,0.5" />
+			<property name="Buff" value="arrowCriticalBleedout,headshotMelee4" />
+			<property name="Buff_chance" value="0.5,1" />
 			<property name="Explosion.ParticleIndex" value="0" /><!-- no expl. -->
 			<property name="Velocity" value="80" />
 			<property name="FlyTime" value="0"/>
@@ -2480,7 +2498,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="6,10" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="172" name="steelCrossbowBolt">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab" />
@@ -2495,8 +2513,8 @@ which does not exist, yet. -->
         <property name="EconomicBundleSize" value="5" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
-			<property name="Buff" value="arrowCriticalBleedout,headshot" />
-			<property name="Buff_chance" value="0.5,0.6" />
+			<property name="Buff" value="arrowCriticalBleedout,headshotMelee5" />
+			<property name="Buff_chance" value="0.5,1" />
 			<property name="Explosion.ParticleIndex" value="0" />
 			<!-- no expl. -->
 			<property name="Velocity" value="85" />
@@ -2518,7 +2536,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="6,11" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<item id="173" name="explodingCrossbowBolt">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltExplosivePrefab" />
@@ -2558,7 +2576,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="6,11" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
 	<item id="180" name="pipeBomb">
@@ -3238,7 +3256,7 @@ which does not exist, yet. -->
 		<property name="RepairTools" value="ScavengedParts" />
 		<property name="HoldType" value="45" />
 		<property name="Group" value="Resources" />
-        <property name="EconomicValue" value="500" />
+        <property name="EconomicValue" value="20" />
 		<property class="Attributes">
 			<property name="VehicleTraction" value="0.1,1" />
 			<property name="VehicleDrag" value="0.02,0.01" />
@@ -7183,7 +7201,7 @@ which does not exist, yet. -->
         <property name="EconomicValue" value="500" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="sledgehammer" />
-			<property name="Skills_to_gain" value="Weapon Smithing" />
+			<property name="Skills_to_gain" value="Iron Working" />
 		</property>
 	</item>
     <!--JZMOD REMOVED
@@ -7299,21 +7317,19 @@ which does not exist, yet. -->
         <property name="EconomicValue" value="500" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="flamingArrow" />
-			<property name="Skills_to_gain" value="Weapon Smithing" />
+			<property name="Skills_to_gain" value="Iron Working" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-        <property name="CraftingSkillGroup" value="Weapon Smithing" />
-	</item>
+    </item>
 	<item id="946" name="explodingCrossbowBoltSchematic"> <!-- ammo crafting -->
 		<property name="Extends" value="schematicMaster" />
         <property name="EconomicValue" value="500" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="explodingCrossbowBolt" />
-			<property name="Skills_to_gain" value="Weapon Smithing" />
+			<property name="Skills_to_gain" value="Steel Working" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-        <property name="CraftingSkillGroup" value="Weapon Smithing" />
-	</item>
+    </item>
 	<!--JZMOD REMOVED
   
     <item id="950" name="ammunitionNationBook"> NO LONGER USED
@@ -8243,7 +8259,7 @@ which does not exist, yet. -->
 		<property name="EconomicValue" value="12" />
         <property name="EconomicBundleSize" value="5" />
         <property name="Group" value="Resources,Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1342" name="steelArrowHead">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -8254,7 +8270,7 @@ which does not exist, yet. -->
         <property name="EconomicValue" value="38" />
         <property name="EconomicBundleSize" value="5" />
         <property name="Group" value="Resources,Ammo/Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<item id="1345" name="coal">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -9482,7 +9498,7 @@ which does not exist, yet. -->
 		<property class="Attributes">
 			<property name="DegradationMax" value="30,600" />
 		</property>
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1527" name="Crossbow_Stock">
 		<property name="Extends" value="partsMaster" />
@@ -9494,7 +9510,7 @@ which does not exist, yet. -->
 			<property name="DegradationRate" value="3,1" />
 			<property name="DegradationMax" value="30,600" />
 		</property>
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1528" name="Crossbow_Barrel">
 		<property name="Extends" value="partsMaster" />
@@ -9504,7 +9520,7 @@ which does not exist, yet. -->
 		<property class="Attributes">
 			<property name="DegradationMax" value="30,600" />
 		</property>
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1529" name="BoltCylinder">
 		<property name="Extends" value="partsMaster" />
@@ -9515,12 +9531,12 @@ which does not exist, yet. -->
 		<property class="Attributes">
 			<property name="DegradationMax" value="30,600" />
 		</property>
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1530" name="CrossbowStockScope">
 		<property name="Extends" value="Crossbow_Stock" />
 		<property name="DescriptionKey" value="CrossbowStockScopeDesc" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1531" name="CompoundBow">
 		<property name="Extends" value="woodenBow" />
@@ -9541,7 +9557,7 @@ which does not exist, yet. -->
 			<property name="DegradationMax" value="100,1000" />
 		</property>
 		<property name="ActionSkillGroup" value="Archery" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<item id="1532" name="BlunderbussDouble">
 		<property name="Extends" value="blunderbuss" />
@@ -11765,7 +11781,7 @@ which does not exist, yet. -->
             <property name="ApplyBuff" value="1,1" param1="headshot" />
 		</property>
 		<property name="ActionSkillGroup" value="Archery" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<!--JZMOD MELEE WEAPONS -->
 	<item id="1649" name="clubSteelSpiked">
@@ -11777,6 +11793,8 @@ which does not exist, yet. -->
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property class="Action0">
 			<property name="Stamina_usage" value="10" />
+            <property name="Buff" value="bleeding,criticalBlunt,headshotMelee5" />
+			<property name="Buff_chance" value=".6,.5,1" />
 			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.glass" value="10" />
 			<property name="ActionExp" value="20" />
@@ -11784,8 +11802,8 @@ which does not exist, yet. -->
 		</property>
 		<property class="Action1">
 			<property name="Stamina_usage" value="13" />
-			<property name="Buff" value="bleeding,criticalBlunt,headshot" />
-			<property name="Buff_chance" value=".6,.5,.8" />
+			<property name="Buff" value="bleeding,criticalBlunt,headshotMelee5" />
+			<property name="Buff_chance" value=".6,.5,1" />
 			<property name="DamageBonus.glass" value="12" />
 			<property name="DamageBonus.metal" value="12" />
 			<property name="ActionExp" value="25" />
@@ -11796,7 +11814,7 @@ which does not exist, yet. -->
 			<property name="DegradationMax" value="100,600" />
 		</property>
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Steel Working" />
 	</item>
 	<item id="1650" name="NightStick">
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Refined" />
@@ -11812,13 +11830,13 @@ which does not exist, yet. -->
         <property class="Action0"><!-- AttackAction -->
             <property name="Class" value="Melee" />
             <property name="Delay" value="1.33" />
-            <property name="Range" value="3" />
+            <property name="Range" value="2.9" />
             <property name="Sphere" value="0.3" />
             <property name="DamageEntity" value="15" />
             <property name="DamageBlock" value="0.9" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="8" />
-            <property name="Buff" value="criticalBlunt,brokenLeg,headshotMelee2" />
+            <property name="Buff" value="criticalBlunt,brokenLeg,headshotMelee4" />
             <property name="Buff_chance" value=".4,1,1" />
             <property name="DamageBonus.head" value="6" />
             <property name="DamageBonus.glass" value="0.01" />
@@ -11833,13 +11851,13 @@ which does not exist, yet. -->
         <property class="Action1"><!-- AttackAction -->
             <property name="Class" value="Melee" />
             <property name="Delay" value="2" />
-            <property name="Range" value="3" />
+            <property name="Range" value="2.9" />
             <property name="Sphere" value="0.3" />
             <property name="DamageEntity" value="15" />
             <property name="DamageBlock" value="0.9" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="13" />
-            <property name="Buff" value="criticalBlunt,brokenLeg,headshotMelee2" />
+            <property name="Buff" value="criticalBlunt,brokenLeg,headshotMelee5" />
             <property name="Buff_chance" value=".5,1,1" />
             <property name="DamageBonus.head" value="85" />
             <property name="DamageBonus.glass" value="0.01" />
@@ -11859,7 +11877,7 @@ which does not exist, yet. -->
         <property name="Group" value="Ammo/Weapons" />
         <property name="DescriptionKey" value="NightStickDesc" />
         <property name="ActionSkillGroup" value="Blunt Weapons" />
-        <property name="CraftingSkillGroup" value="Weapon Smithing" />
+        <property name="CraftingSkillGroup" value="Iron Working" />
         </item>
 	<item id="1651" name="ShockStick">
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Barbed" />
@@ -11876,13 +11894,13 @@ which does not exist, yet. -->
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.33" />
-			<property name="Range" value="3" />
+			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.3" />
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="0.9" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
-			<property name="Buff" value="criticalBlunt,shocked,headshotMelee2" />
+			<property name="Buff" value="criticalBlunt,shocked,headshotMelee4" />
 			<property name="Buff_chance" value="0.4,0.5,1" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -11898,13 +11916,13 @@ which does not exist, yet. -->
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="2" />
-			<property name="Range" value="3" />
+			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.3" />
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="0.9" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="13" />
-			<property name="Buff" value="criticalBlunt,shocked,headshotMelee2" />
+			<property name="Buff" value="criticalBlunt,shocked,headshotMelee5" />
 			<property name="Buff_chance" value="0.5,0.7,1" />
 			<property name="DamageBonus.head" value="85" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -11924,7 +11942,7 @@ which does not exist, yet. -->
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="DescriptionKey" value="ShockStickDesc" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1652" name="IronSpear">
 		<property name="Meshfile" value="Items/Tools/stone_shovel" />
@@ -11935,7 +11953,7 @@ which does not exist, yet. -->
 		<property name="Degradation" value="80" param1="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="24" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property class="Action0">
 			<property name="Class" value="Catapult" />
 			<property name="Delay" value="1" />
@@ -11968,7 +11986,7 @@ which does not exist, yet. -->
 			<property name="Block_range" value="3" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="9" />
-            <property name="Buff" value="headshotMelee2" />
+            <property name="Buff" value="headshotMelee3" />
 			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.glass" value="0.01" />
 			<property name="DamageBonus.head" value="6" />
@@ -11987,7 +12005,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="IronSpearDesc" />
         <property name="CustomIcon" value="ui_game_symbol_IronSpears" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1653" name="Atlatls">
 		<property name="Meshfile" value="Items/Tools/stone_shovel" />
@@ -11995,7 +12013,7 @@ which does not exist, yet. -->
 		<property name="HoldType" value="18" />
 		<property name="Stacknumber" value="250" />
 		<property name="FuelValue" value="8" />
-		<property name="Weight" value="2" />
+		<property name="Weight" value="1" />
 		<property name="CustomIcon" value="ui_game_symbol_IronSpears" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -12005,7 +12023,7 @@ which does not exist, yet. -->
 			<property name="Velocity" value="30" />
 			<property name="FlyTime" value="0.2" />
 			<property name="LifeTime" value="12" />
-			<property name="Buff" value="bleeding,headshotMelee2" />
+			<property name="Buff" value="bleeding,headshotMelee5" />
 			<property name="Buff_chance" value="0.3,1" />
 			<property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.glass" value="0.01" />
@@ -12025,7 +12043,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="AtlatlsDesc" />
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Archery" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1654" name="SteakKnife">
 		<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knife" />
@@ -12041,13 +12059,13 @@ which does not exist, yet. -->
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.2" />
+			<property name="Range" value="2.1" />
 			<property name="Sphere" value="0.1" />
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="0.4" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
-            <property name="Buff" value="bleeding,headshotMelee2" />
+            <property name="Buff" value="bleeding,headshotMelee5" />
 			<property name="Buff_chance" value="0.1,1" />
 			<property name="DamageBonus.head" value="7" />
 			<property name="DamageBonus.stone" value="10" />
@@ -12070,7 +12088,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="SteakKnifeDesc" />
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
     <item id="1655" name="katanamichonne">
         <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
@@ -12126,7 +12144,7 @@ which does not exist, yet. -->
 		<property name="FuelValue" value="30" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
-			<property name="Range" value="3" />
+			<property name="Range" value="2.9" />
 			<property name="Block_range" value="3" />
 			<property name="Sound_start" value="lucille_swing" />
 			<property name="Stamina_usage" value="9" />
@@ -12134,7 +12152,7 @@ which does not exist, yet. -->
 			<property name="Buff_chance" value="1,.3,.35,.4" />
 		</property>
 		<property class="Action1">
-			<property name="Range" value="3" />
+			<property name="Range" value="2.9" />
 			<property name="Block_range" value="3" />
 			<property name="Sound_start" value="lucille_swing" />
 			<property name="Stamina_usage" value="12" />
@@ -12186,7 +12204,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1658" name="axe03">
         <property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
@@ -12222,7 +12240,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1659" name="axe04">
         <property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
@@ -12258,7 +12276,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1660" name="axe05">
         <property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
@@ -12294,7 +12312,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1661" name="axe06">
         <property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
@@ -12330,7 +12348,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1662" name="sword2">
         <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
@@ -12365,7 +12383,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1663" name="sword3">
         <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
@@ -12400,7 +12418,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1664" name="saber">
         <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
@@ -12435,7 +12453,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	
 	<item id="1665" name="2HandedSword1">
@@ -12471,7 +12489,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1666" name="Knife">
         <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
@@ -12507,7 +12525,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1667" name="mace">
         <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
@@ -12542,7 +12560,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1668" name="mace1">
         <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
@@ -12577,7 +12595,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1669" name="maceChain">
         <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
@@ -12612,7 +12630,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
 	<item id="1670" name="hammer1">
         <property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
@@ -12658,7 +12676,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 		<property class="Preview">
 			<property name="Zoom" value="-2" />
 			<property name="Pos" value="0,-0.4" />
@@ -13635,7 +13653,7 @@ which does not exist, yet. -->
 		</property>
 	</item>
     <!--JZMOD Skill Magazines-->
-	<item id="1741" name="Weapon Smithing Weekly">
+	<item id="1741" name="Weapon Smithing Weekly"><!--JZMOD REMOVE-->
 		<property name="Meshfile" value="Items/Misc/Book" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
@@ -13646,7 +13664,7 @@ which does not exist, yet. -->
 		<property name="CustomIcon" value="theEnforcerMagazine" />
 		<property name="DescriptionKey" value="SkillMagazineReadDesc" />
 	</item>
-	<item id="1742" name="Weapon Smithing Monthly">
+	<item id="1742" name="Weapon Smithing Monthly"><!--JZMOD REMOVE-->
 		<property name="Meshfile" value="Items/Misc/Book" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="21" />
@@ -13965,7 +13983,7 @@ which does not exist, yet. -->
 		<property name="CustomIcon" value="theEnforcerMagazine" />
 		<property name="DescriptionKey" value="SkillMagazineReadDesc" />
 	</item>
-	<item id="1761" name="WeaponSmithing1">
+	<item id="1761" name="WeaponSmithing1"><!--JZMOD REMOVE-->
 		<property name="Meshfile" value="Items/Misc/Book" />
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
@@ -13976,7 +13994,7 @@ which does not exist, yet. -->
 		<property name="CustomIcon" value="theEnforcerMagazine" />
 		<property name="DescriptionKey" value="SkillMagazineDesc" />
 	</item>
-	<item id="1762" name="WeaponSmithing2">
+	<item id="1762" name="WeaponSmithing2"><!--JZMOD REMOVE-->
 		<property name="Meshfile" value="Items/Misc/Book" />
 		<property name="Material" value="paper" />
 		<property name="HoldType" value="21" />
@@ -15704,7 +15722,7 @@ which does not exist, yet. -->
 			<property name="DamageBlock" value="0.5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
-			<property name="Buff_chance" value="0.01,0.02,0.2" />
+			<property name="Buff_chance" value="0.01,0.02,0.3" />
 			<property name="DamageBonus.earth" value="5" />
 			<property name="DamageBonus.wood" value="1" />
 		</property>
@@ -15720,7 +15738,7 @@ which does not exist, yet. -->
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.1,0.5,0.3,0.4" />
+			<property name="Buff_chance" value="0.1,0.6,0.3,0.4" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -15885,7 +15903,7 @@ which does not exist, yet. -->
 		<property name="Material" value="wood" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Stacknumber" value="6" />
+		<property name="Stacknumber" value="12" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="DescriptionKey" value="rabbitTrapDesc" />
         <property name="CustomIcon" value="ui_game_symbol_rabbitTrap" />
@@ -16947,7 +16965,7 @@ which does not exist, yet. -->
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.2" />
-			<property name="Range" value="2.2" />
+			<property name="Range" value="2.1" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
@@ -16976,7 +16994,7 @@ which does not exist, yet. -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Hunting" />
-		<property name="CraftingSkillGroup" value="Weapon Smithing" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
 	</item>
     <item id="1966" name="DoctorBook">
         <property name="Extends" value="schematicMaster" />
@@ -17903,6 +17921,7 @@ which does not exist, yet. -->
       <property name="Magazine_item_ray_counts" value="1"/>
       <property name="Magazine_item_ray_spreads" value="0"/>
       <property name="Reload_time" value="2"/>
+      <property name="Infinite_ammo" value="true" />
       <property name="Bullet_icon" value="pistol"/>
       <property name="Sound_start" value="Weapons/Ranged/Pistol/pistol_fire"/>
       <property name="Sound_repeat" value=""/>
@@ -18445,7 +18464,7 @@ which does not exist, yet. -->
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.4,0.1,0.3" />
+			<property name="Buff_chance" value="0.5,0.5,0.1,0.3" />
 			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -18570,7 +18589,6 @@ which does not exist, yet. -->
         </property>
         <property name="Group" value="Ammo/Weapons" />
         <property name="ActionSkillGroup" value="Shotguns"/>
-        <property name="CraftingSkillGroup" value="Weapon Smithing"/> <!-- 15.0 workaround. Should be Gun Smithing -->
         <property name="RepairExpMultiplier" value="10.8"/>
     </item>
 
@@ -18626,7 +18644,6 @@ which does not exist, yet. -->
         </property>
         <property name="DescriptionKey" value="woodenBowDesc"/>
         <property name="ActionSkillGroup" value="Archery"/>
-        <property name="CraftingSkillGroup" value="Weapon Smithing"/>
         <property name="RepairExpMultiplier" value="5.5"/>
         <property name="PickupJournalEntry" value="alternateAmmoTip" />
     </item>
