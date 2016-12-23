@@ -293,3 +293,26 @@ True Survival A15 Change Log-
 -Stone Working lv65 to get Rebar Frames and Iron Crafting
 -Iron Working lv75 to get Steel
 
+12/23/2016-
+-Decreased base amount of raw meat harvested from chickens
+-Lowered Candle and Trophy scrap amounts
+-Fixed Coffee Bean description
+-Fixed Boiled Meat Sandwich to return Jar and other to not.
+-Fixed All Sandwiches to smell
+-Fixed Steel Arrow Head to scrapFixed Hoof Icon
+-Fixed Bear Trap not de buffing
+-Fixed Carbon Arrows bonus to Zombie heads
+-Fixed Secure Storage Crates Icon
+-Fixed only Glazed Meats with Honey to return Jars
+-Fixed Trader price on Compound Bow
+-Fixed Engineer Stone Shovel to give Stone Working XP when crafted
+-Fixed Hunting Knifes crafting XP
+-New Perk for Metal Trussing
+-Put Workstation contribution to the Zombie Heat Map back to Vanilla (we were slightly lower)
+-Fixed some recipes that still called for scrap Copper
+-Added new Tool the Hand Dolly
+-Hand Dolly’s can be made on the Metal Working Bench and are used to move any Workstation. To use a Hand Dolly place it in your hand and click on the Workstation you want to move and it will be moved to your backpack. Once you place the Workstation back down you will get the Hand Dolly back to be used again. !!WARNING DO NOT USE ON ANYTHING ELSE OR IT WILL BE LOST!!
+-Changed all workstation to be destroyed when broken
+-Changed Workstations with rare parts in its recipe to drop them when disassembled with a Wrench. Ex Small Engines, Bellows
+
+
