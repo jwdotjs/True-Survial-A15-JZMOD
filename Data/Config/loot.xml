@@ -1068,7 +1068,7 @@
 		<item name="partsAuger_blade" />
 		<item name="partsChainsaw_blade" />
 		<item group="BikeLoot" prob="0.5" />
-		<item name="AugerEngine" />
+		<item name="HandDolly" prob="0.05"/>
 		<item name="Wielder" prob="0.5" />
 		<item name="calipers" prob="0.05" />
 		<item name="toolAndDieSet" prob="0.05" />

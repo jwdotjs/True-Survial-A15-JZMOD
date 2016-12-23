@@ -266,13 +266,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_workAdvancedSeedNursery" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList" />
-			<window name="craftingInfoPanel" />
-			<window name="windowCraftingQueue" />
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
 		<window_group name="workstation_wallTorch" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />

@@ -1000,7 +1000,7 @@
 		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="100" />
 		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="3" />
+		<drop event="Harvest" name="rawMeat" count="2" />
         <drop event="Harvest" name="feather" count="5" />
         <!--JZMOD Hunter-->
         <drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" />

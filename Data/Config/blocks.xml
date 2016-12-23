@@ -2260,7 +2260,7 @@ then add recipes for those white/red/green metals
 		<property name="ParticleName" value="campfire" />
 		<property name="ParticleOffset" value="0.5,0,0.5" />
 		<property name="Stacknumber" value="1" />
-        <property name="HeatMapStrength" value="1" />
+        <property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger" />
@@ -2271,9 +2271,9 @@ then add recipes for those white/red/green metals
 		</property>
 		<property name="CustomIcon" value="campfire" />
         <property class="RepairItems"> <property name="rockSmall" value="8" /> </property>
-        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="campfire" count="1" tool_category="Dolly" />
         <drop event="Destroy" count="0" />
-        <drop event="Destroy" name="workcampfire" count="1" tool_category="Disassemble" />
         <property name="Group" value="Food/Cooking" />
         <property name="DescriptionKey" value="campfireDesc"/>
         <property name="EconomicValue" value="5" />
@@ -3345,7 +3345,7 @@ then add recipes for those white/red/green metals
     
 	<block id="422" name="workchemistryStation">
         <property name="Class" value="Campfire" />
-        <property name="Material" value="metal" />
+        <property name="Material" value="MMWorkStation" />
         <property name="CustomIcon" value="chemistryStation" />
         <property name="StabilitySupport" value="false" />
         <property name="Shape" value="ModelEntity" />
@@ -3367,8 +3367,9 @@ then add recipes for those white/red/green metals
         <property name="Collide" value="melee,bullet,arrow,rocket" />
         </property>
         <property class="RepairItems"> <property name="forgedIron" value="8" /> </property>
-        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-        <drop event="Destroy" name="workchemistryStation" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="chemistryStation" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
         <property name="Group" value="Food/Cooking,Building" />
         <property name="EconomicValue" value="5" />
         <property name="EconomicBundleSize" value="1" />
@@ -4524,7 +4525,7 @@ kind of free
 		<property name="ParticleName" value="forge" />
 		<property name="ParticleOffset" value="0.5,0,0.5" />
 		<property name="Stacknumber" value="1" />
-        <property name="HeatMapStrength" value="1" />
+        <property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="BuffsWhenWalkedOn" value="burningSmall" />
@@ -4540,8 +4541,10 @@ kind of free
 			<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay" />
 		</property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="forge" count="1" tool_category="Dolly" />
         <drop event="Destroy" count="0" />
-        <drop event="Destroy" name="forge" count="1" tool_category="Disassemble" />
         <property name="Group" value="Building" />
         <property name="DescriptionKey" value="forgeDesc"/>
         <property name="EconomicValue" value="214" />
@@ -12531,7 +12534,10 @@ kind of free
         </property>
         <property class="RepairItems"> <property name="forgedIron" value="50" /> </property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-        <drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="smallEngine" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="cementMixer" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
         <property name="Group" value="Building" />
         <property name="CustomIcon" value="ui_game_symbol_cementMixer" />
         <property name="DescriptionKey" value="cementMixerDesc"/>
@@ -12583,8 +12589,10 @@ kind of free
         </property>
         <property class="RepairItems"> <property name="forgedIron" value="35" /> <property name="wood" value="50" /> </property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="carBattery" count="1,4" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="woodWorkBench" count="1" tool_category="Dolly" />
         <drop event="Destroy" count="0" />
-        <drop event="Destroy" name="workworkbench" count="1" tool_category="Disassemble" />
         <property name="Group" value="Building" />
         <property name="DescriptionKey" value="workbenchDesc"/>
         <property name="EconomicValue" value="776" />
@@ -13269,7 +13277,11 @@ kind of free
 			<property name="Modules" value="fuel,output" />
 		</property>
 		<property name="CustomIcon" value="burningBarrel" />
-		<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="2" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="BurnBarrel" count="1" tool_category="Dolly" />
+        <drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
 	</block>
 
     <block id="1776" name="stainlessSteelBlock">
@@ -13705,7 +13717,7 @@ kind of free
 		<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="LootList" value="10" />
-		<property name="CustomIcon" value="cntStorageChest" />
+		<property name="CustomIcon" value="ui_game_symbol_SecureStorageChest" />
 		<property class="RepairItems">
 			<property name="Plank" value="10" />
 		</property>
@@ -14899,14 +14911,16 @@ kind of free
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
-		<property class="RepairItems">
-			<property name="forgedIron" value="50" />
-		</property>
-		<drop event="Destroy" name="[recipe]" count="1" />
+		<property class="RepairItems"> <property name="forgedIron" value="50" /> </property>
 		<property name="Group" value="Building" />
 		<property class="Workstation">
 			<property name="Modules" value="tools,output,fuel" />
 		</property>
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="workSteamGenerator" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="MetalWorkBench" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
 		<property name="CustomIcon" value="workbench" />
 		<property name="DescriptionKey" value="MetalWorkBenchDesc" />
 		<property name="CraftingSkillGroup" value="Science" />
@@ -14918,7 +14932,7 @@ kind of free
 		<property name="Model" value="Appliances/ac_unit" param1="main_mesh" />
 		<property name="ParticleName" value="forge" />
 		<property name="ParticleOffset" value="0.5,0,0.5" />
-		<property name="HeatMapStrength" value="1" />
+		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
@@ -14926,13 +14940,15 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,fuel,tools" />
 		</property>
-		<property class="RepairItems">
-			<property name="scrapCopper" value="25" />
-		</property>
+		<property class="RepairItems"> <property name="scrapBrass" value="25" /> </property>
 		<property name="CustomIcon" value="ui_game_symbol_SteamGenerator" />
 		<property name="Group" value="Resources,Tools/Traps" />
 		<property name="DescriptionKey" value="SteamGeneratorDesc" />
-		<drop event="Destroy" name="scrapCopper" count="1" />
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="Alternator" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="SteamGenerator" count="1" tool_category="Dolly" />
+        <drop event="Destroy" name="scrapBrass" count="2,8" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="CraftingSkillGroup" value="Science" />
 	</block>
@@ -14947,11 +14963,11 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<property class="RepairItems">
-			<property name="Plank" value="10" />
-		</property>
+		<property class="RepairItems"> <property name="Plank" value="10" /> </property>
 		<property name="DescriptionKey" value="ResearchDeskDesc" />
-		<drop event="Destroy" name="woodDebris" count="3" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="ResearchDesk" count="1" tool_category="Dolly" />
+       	<drop event="Destroy" name="woodDebris" count="3" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Building" />
 		<property name="CraftingSkillGroup" value="Science" />
@@ -14986,12 +15002,12 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,tools" />
 		</property>
-		<property class="RepairItems">
-			<property name="Plank" value="10" />
-		</property>
+		<property class="RepairItems"> <property name="Plank" value="10" /> </property>
 		<property name="CustomIcon" value="ArmorTable" />
 		<property name="DescriptionKey" value="ArmorTableDesc" />
-		<drop event="Destroy" name="woodDebris" count="1" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="ArmorTable" count="1" tool_category="Dolly" />
+        <drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Wood Working" />
@@ -15005,7 +15021,11 @@ kind of free
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_SeedNursery" />
 		<property name="DescriptionKey" value="SeedNurseryDesc" />
-		<drop event="Destroy" name="woodDebris" count="1" />
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="fertilizer" count="3,15" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="SeedNursery" count="1" tool_category="Dolly" />
+        <drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Science" />
@@ -15019,15 +15039,17 @@ kind of free
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="ParticleName" value="forge" />
 		<property name="ParticleOffset" value="0.5,0,0.8" />
-		<property name="HeatMapStrength" value="1" />
+		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="BuffsWhenWalkedOn" value="burningSmall" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
-		<property class="RepairItems">
-			<property name="electronicParts" value="10" />
-		</property>
-		<drop event="Destroy" name="[recipe]" count="1" />
+		<property class="RepairItems"> <property name="electronicParts" value="10" /> </property>
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="smallEngine" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="BlastFurnace" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="workBlastFurnace" />
@@ -15046,7 +15068,7 @@ kind of free
 		<property name="Texture" value="352" />
 		<property name="ParticleName" value="campfire" />
 		<property name="ParticleOffset" value="0.53,1.04,0.45" />
-		<property name="HeatMapStrength" value="1" />
+		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="15" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
@@ -15054,13 +15076,14 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,fuel" />
 		</property>
-		<property class="RepairItems">
-			<property name="forgedIron" value="20" />
-		</property>
+		<property class="RepairItems"> <property name="forgedIron" value="20" /> </property>
 		<property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
 		<property name="DescriptionKey" value="OilRefineryDesc" />
-		<drop event="Destroy" name="woodDebris" count="1" />
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="OilRefinery" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Science" />
 	</block>
@@ -15076,7 +15099,7 @@ kind of free
 		-->
         <property name="ParticleName" value="campfire" />
 		<property name="ParticleOffset" value="0.53,1.04,0.45" />
-		<property name="HeatMapStrength" value="1" />
+		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="15" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
@@ -15084,13 +15107,12 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,fuel" />
 		</property>
-		<property class="RepairItems">
-			<property name="forgedIron" value="20" />
-		</property>
+		<property class="RepairItems"> <property name="forgedIron" value="20" /> </property>
 		<property name="CustomIcon" value="ui_game_symbol_Still" />
 		<property name="DescriptionKey" value="workStillDesc" />
-		<drop event="Destroy" name="woodDebris" count="1" />
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="Still" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Science" />
 	</block>
@@ -15124,12 +15146,12 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<property class="RepairItems">
-			<property name="stick" value="50" />
-		</property>
+		<property class="RepairItems"> <property name="stick" value="50" /> </property>
 		<property name="CustomIcon" value="DryingRack" />
 		<property name="DescriptionKey" value="DryingRackDesc" />
-		<drop event="Destroy" name="woodDebris" count="1" />
+        <drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="DryingRack" count="1" tool_category="Dolly" />
+        <drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Wood Working" />
@@ -15144,10 +15166,11 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,tools" />
 		</property>
-		<property class="RepairItems">
-			<property name="stick" value="20" />
-		</property>
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<property class="RepairItems"> <property name="stick" value="20" />	</property>
+		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
+        <drop event="Destroy" name="ChickenCoop" count="1" tool_category="Dolly" />
+        <drop event="Destroy" count="0" />
+        <drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="CustomIcon" value="Hen" />
 		<property name="DescriptionKey" value="ChickenCoopDesc" />
 		<drop event="Destroy" name="workChickenCoop" count="1" />
@@ -15162,7 +15185,7 @@ kind of free
         <property name="Model" value="LootContainers/chest01" param1="main_mesh" />
         <!--JZMOD NEEDS NEW MESH-->
         <property name="Place" value="TowardsPlacer" />
-        <property name="HeatMapStrength" value="1"/>
+        <property name="HeatMapStrength" value="2"/>
         <property name="HeatMapTime" value="1200"/>
         <property name="HeatMapFrequency" value="15"/>
         <property name="Group" value="Clothing" />

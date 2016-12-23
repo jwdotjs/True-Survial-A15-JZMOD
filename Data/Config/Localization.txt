@@ -1934,7 +1934,7 @@ chrysanthemumPlant,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Chrysanthe
 chrysanthemumSeed,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Chrysanthemum Seed,,,,
 chrysanthemumSeedDesc,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Plant chrysanthemum seeds in fertile dirt to grow chrysanthemum plants.,,,,
 coffeeBeans,items,Farming,KgNone,Coffee Beans,Grains de café,Kaffeebohnen,,Granos de café
-coffeeBeansDesc,items,Farming,KgNone,Brew coffee at a campfire or plant the beans in fertile dirt to grow coffee plants.,Préparez du café sur un feu de camp ou plantez les grains dans la terre fertile pour faire pousser des plants de café.,"Braue Kaffee am Lagerfeuer oder pflanze Kaffeebohnen in fruchtbare Erde, um Kaffeepflanzen zu züchten.",,Prepara café en una fogata o planta los granos en terreno fértil para cultivar plantas de café.
+coffeeBeansDesc,items,Farming,KgNone,Brew coffee at a campfire or craft seeds and plant to grow coffee plants.,Préparez du café sur un feu de camp ou plantez les grains dans la terre fertile pour faire pousser des plants de café.,"Braue Kaffee am Lagerfeuer oder pflanze Kaffeebohnen in fruchtbare Erde, um Kaffeepflanzen zu züchten.",,Prepara café en una fogata o planta los granos en terreno fértil para cultivar plantas de café.
 corn,items,Farming,KgNone,Ear of Corn,Épi de maïs,Maiskolben,,Mazorca de maíz
 cornDesc,items,Farming,KgNone,"An ear of corn can be eaten or used to make corn seed, corn meal, corn on the cob, stews and more.","Un épi de maïs peut être consommé ou utilisé pour obtenir des graines de maïs, faire de la farine de maïs, un épi de maïs doux, des ragoûts et bien plus.","Maiskolben können gegessen werden. Durch sie kann man auch Maissamen, Maismehl, gekochte Maiskolben und Eintöpfe erhalten.",,"La mazorca de maíz se puede comer o usarse para obtener semillas de maíz, hacer harina, obtener mazorcas, estofarlo, etc."
 cornSeed,items,Farming,KgNone,Corn Seed,Graine de maïs,Maissamen,,Semilla de maíz
@@ -4712,3 +4712,6 @@ DuctTapeBookDesc,items,Item,,"This book will teach you the ancient art of making
 scrapCable,items,Item,,"Electric wire",,
 canUnlabeled,items,Food,KgNone,Unlabeled Can,,,
 canUnlabeledDesc,items,Food,KgNone,"This can of food has long since lost its label, leaving the contents of the can a mystery. It could fill you up or it could make you sick. Are you hungry enough to chance it?",,,
+AnimalGutsDesc,items,Item,,"Rub this on a follower to make them smell and use them as bait for the zobmbies",,
+HandDollyDesc,items,Item,,"Warning!!  Only used to move workstations!!   Place in hand and click on Workstation to be moved.",,
+

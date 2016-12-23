@@ -1804,8 +1804,7 @@ Mesh files no longer used:
 		<property name="DegradationBreaksAfter" value="true" />
         <property name="EconomicValue" value="240" />
 		<property name="SoundDestroy" value="metaldestroy1" />
-        <property name="EconomicValue" value="240" />
-		<property class="Action0">	<!-- AttackAction -->
+        <property class="Action0">	<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.1" />
 			<property name="Range" value="2.2" />
@@ -5803,7 +5802,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
+			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -5813,7 +5812,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
+			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property name="Group" value="Medicine" />
 		<property name="DescriptionKey" value="bandageDesc" />
@@ -5826,11 +5825,11 @@ which does not exist, yet. -->
 		<property name="Extends" value="bandage" />
         <property name="EconomicValue" value="15" />
 		<property class="Action0">
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property class="Action1">
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property name="DescriptionKey" value="firstAidBandageDesc" />
@@ -5844,13 +5843,13 @@ which does not exist, yet. -->
 		<property class="Action0">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
-		    <property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
+		    <property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property class="Action1">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
-			<property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
+			<property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 			<property name="Create_item" value="DeadBattery" />
 		</property>
@@ -8221,7 +8220,7 @@ which does not exist, yet. -->
     <item id="1337" name="snowberryPlant">
         <property name="Extends" value="blueberries" />
         <property name="CustomIcon" value="blueberries" />
-            <property name="CustomIconTint" value="ffffaf" />
+        <property name="CustomIconTint" value="ffffaf" />
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
         <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="organic" />
@@ -8254,6 +8253,7 @@ which does not exist, yet. -->
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="metal" />
+        <property name="Weight" value="1" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="500" />	<!-- STK resource -->
 		<property name="EconomicValue" value="12" />
@@ -8266,6 +8266,7 @@ which does not exist, yet. -->
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="Msteel" />
 		<property name="HoldType" value="45" />
+        <property name="Weight" value="1" />
 		<property name="Stacknumber" value="500" /> <!-- STK resource -->
         <property name="EconomicValue" value="38" />
         <property name="EconomicBundleSize" value="5" />
@@ -8628,7 +8629,7 @@ which does not exist, yet. -->
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="250" />	<!-- STK loot -->
-        <property name="Weight" value="60" />
+        <property name="Weight" value="5" />
         <property name="EconomicValue" value="120" />
 		<property name="Group" value="Resources" />
 	</item>
@@ -8663,7 +8664,7 @@ which does not exist, yet. -->
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="250" />	<!-- STK loot -->
-		<property name="Weight" value="20" />
+		<property name="Weight" value="10" />
         <property name="EconomicValue" value="40" />
 		<property name="Group" value="Resources" />
 	</item>
@@ -8683,7 +8684,7 @@ which does not exist, yet. -->
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="250" />	<!-- STK loot -->
-		<property name="Weight" value="5" />
+		<property name="Weight" value="10" />
         <property name="EconomicValue" value="5" />
 		<property name="Group" value="Resources" />
 	</item>
@@ -8943,7 +8944,7 @@ which does not exist, yet. -->
         <property name="Group" value="Basics,Decor/Miscellaneous" />	
         <property name="CraftingSkillGroup" value="Engineering" />
 	</item>
-	<item id="1431" name="AugerEngine">
+	<item id="1431" name="AugerEngine"><!--JZMOD REMOVE-->
 		<property name="PartType" value="Receiver" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -9544,6 +9545,8 @@ which does not exist, yet. -->
 		<property name="Weight" value="20" />
 		<property name="RepairTools" value="BowString" />
 		<property name="DescriptionKey" value="CompoundBowDesc" />
+        <property name="EconomicValue" value="5000" />
+        <property name="EconomicBundleSize" value="1" />
 		<property class="Action0">
 			<property name="Delay" value="0.5" />
 			<property name="Range" value="400" />
@@ -11750,7 +11753,6 @@ which does not exist, yet. -->
 	</item>
 	<item id="1648" name="CarbonArrow">
 		<property name="Extends" value="steelArrow" />
-		<property name="Material" value="Msteel" />
 		<property name="Stacknumber" value="250" />
 		<property name="Weight" value="10" />
         <property name="CustomIcon" value="ui_game_symbol_CarbonArrow" />
@@ -11763,8 +11765,8 @@ which does not exist, yet. -->
 			<property name="Velocity" value="150" />
 			<property name="FlyTime" value="0.40" />
 			<property name="LifeTime" value="20" />
-			<property name="Buff" value="arrowCriticalBleedout" />
-			<property name="Buff_chance" value="0.45" />
+			<property name="Buff" value="arrowCriticalBleedout,headshot" />
+			<property name="Buff_chance" value="0.45,1" />
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.wood" value="0.1" />
 			<property name="DamageBonus.earth" value="0.1" />
@@ -11950,7 +11952,6 @@ which does not exist, yet. -->
 		<property name="HoldType" value="18" />
 		<property name="Stacknumber" value="1" />
 		<property name="RepairTools" value="scrapIron" />
-		<property name="Degradation" value="80" param1="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="24" />
 		<property name="Weight" value="1" />
@@ -12051,8 +12052,6 @@ which does not exist, yet. -->
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="350" param1="true" />
-		<property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="15" />
 		<property class="Action0">
@@ -12061,8 +12060,6 @@ which does not exist, yet. -->
 			<property name="Delay" value="1.2" />
 			<property name="Range" value="2.1" />
 			<property name="Sphere" value="0.1" />
-			<property name="DamageEntity" value="15" />
-			<property name="DamageBlock" value="0.4" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="8" />
             <property name="Buff" value="bleeding,headshotMelee5" />
@@ -12836,6 +12833,8 @@ which does not exist, yet. -->
 		<property class="Attributes">
 			<property name="DegradationMax" value="60,300" />
 		</property>
+        <property name="ActionSkillGroup" value="Athletics" />
+		<property name="CraftingSkillGroup" value="Stone Working" />
 	</item>
 	<item id="1676" name="StoneHoe">
 		<property name="Extends" value="hoeIron" />
@@ -14517,7 +14516,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
+			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Create_item" value="emptyjar" />
 		</property>
 		<property name="DescriptionKey" value="SanitizingBandageDesc" />
@@ -14828,7 +14827,7 @@ which does not exist, yet. -->
 			<property name="Gain_water" value="0" />
 			<property name="Create_item" value="DeadBattery" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
-		    <property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
+		    <property name="Debuff" value="burning,bearTrap,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge,splint" />
 		</property>
 		<property class="Preview">
@@ -17311,7 +17310,8 @@ which does not exist, yet. -->
     <item id="1995" name="CharredSandwich">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="ShamSandwich" />
-		<property class="Action1">
+		<property name="Smell" value="largeSmell" />
+        <property class="Action1">
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="16" />
 			<property name="Gain_water" value="-7" />
@@ -17323,6 +17323,7 @@ which does not exist, yet. -->
     <item id="1996" name="GrilledSandwich">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="ShamSandwich" />
+        <property name="Smell" value="mediumSmell" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="18" />
@@ -17335,14 +17336,15 @@ which does not exist, yet. -->
     <item id="1997" name="BoiledSandwich">
         <property name="Extends" value="FoodMaster" />
         <property name="CustomIcon" value="ShamSandwich" />
+        <property name="Smell" value="smallSmell" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="20" />
 			<property name="Gain_water" value="4" />
 			<property name="Gain_stamina" value="-3" />
             <property name="Create_item" value="emptyJar" />
-			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="stuffed1,eatFood_12_Trigger" />
+			<property name="Gain_wellness" value="0.8" />
+			<property name="Buff" value="stuffed8,eatFood_12_Trigger" />
         </property>
 	</item>
     <item id="1998" name="StirFry Po/Co">
@@ -17479,8 +17481,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="12" />
 			<property name="Gain_stamina" value="7" />
-            <property name="Create_item" value="emptyJar" />
-			<property name="Gain_wellness" value="0" />
+            <property name="Gain_wellness" value="0" />
 			<property name="Buff" value="stuffed1,eatFood_15_Trigger" />
         </property>
         <property name="Smell" value="mediumSmell" />
@@ -17600,8 +17601,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="15" />
 			<property name="Gain_water" value="8" />
 			<property name="Gain_stamina" value="3" />
-            <property name="Create_item" value="emptyJar" />
-			<property name="Gain_wellness" value="0.8" />
+            <property name="Gain_wellness" value="0.8" />
 			<property name="Buff" value="stuffed8,eatFood_8_Trigger" />
         </property>
         <property name="Smell" value="mediumSmell" />
@@ -18816,5 +18816,154 @@ which does not exist, yet. -->
 		<property name="Group" value="Medicine" />
 		<property name="DescriptionKey" value="AnimalGutsDesc" />
    </item>
-
+    <item id="2172" name="HandDolly">
+		<property name="Meshfile" value="Items/Tools/wrenchPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="29" />
+        <property name="Stacknumber" value="1" />
+        <property name="Degradation" value="1" param1="true" />
+		<property name="DegradationBreaksAfter" value="true" />
+        <property name="EconomicValue" value="5000" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+       	<property class="Action0">	<!-- AttackAction -->
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="2.2" />
+            <property name="Block_range" value="4" />
+            <property name="DamageEntity" value="7" />
+			<property name="DamageBlock" value="5" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="50" />
+			<property name="DamageBonus.head" value="0" />
+			<property name="DamageBonus.glass" value="0" />
+			<property name="DamageBonus.stone" value="0" />
+			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.cloth" value="0" />
+            <property name="DamageBonus.workstation" value="9999" />
+			<property name="ToolCategory.Dolly" value="1" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
+		<property name="CraftingSkillGroup" value="Iron Working" />
+        <property name="DescriptionKey" value="HandDollyDesc" />
+    </item>
+    <item id="2173" name="forge">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="45" />
+        <property name="Stacknumber" value="1" />
+        <property name="EconomicValue" value="1" />
+        <property class="Action1"> 
+			<property name="Class" value="PlaceAsBlock" />
+			<property name="Delay" value="0.5" />
+			<property name="Blockname" value="workforge" />
+			<property name="Change_item_to" value="HandDolly" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+		</property>
+	</item>
+    <item id="2174" name="campfire">
+        <property name="Extends" value="forge" />
+        <property class="Action1"> 
+			<property name="Blockname" value="workcampfire" />
+		</property>
+	</item>
+    <item id="2175" name="BurnBarrel">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="burningBarrel" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workBurnBarrel" />
+		</property>
+	</item>
+    <item id="2176" name="MetalWorkBench">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="workbench" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workMetalWorkBench" />
+		</property>
+	</item>
+    <item id="2177" name="SteamGenerator">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ui_game_symbol_SteamGenerator" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workSteamGenerator" />
+		</property>
+	</item>
+    <item id="2178" name="ResearchDesk">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="cntDesk01" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workResearchDesk" />
+		</property>
+	</item>
+    <item id="2179" name="ArmorTable">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ArmorTable" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workArmorTable" />
+		</property>
+	</item>
+    <item id="2180" name="SeedNursery">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ui_game_symbol_SeedNursery" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workSeedNursery" />
+		</property>
+	</item>
+    <item id="2181" name="BlastFurnace">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ui_game_symbol_BlastFurnace" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workBlastFurnace" />
+		</property>
+	</item>
+    <item id="2182" name="OilRefinery">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
+		<property class="Action1">
+			<property name="Blockname" value="workOilRefinery" />
+		</property>
+	</item>
+    <item id="2183" name="Still">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ui_game_symbol_Still" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workStill" />
+		</property>
+	</item>
+    <item id="2184" name="DryingRack">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="DryingRack" />
+		<property class="Action1">
+			<property name="Blockname" value="workDryingRack" />
+		</property>
+	</item>
+    <item id="2185" name="ChickenCoop">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="Hen" />
+		<property class="Action1">
+			<property name="Blockname" value="workChickenCoop" />
+		</property>
+	</item>
+    <item id="2186" name="cementMixer">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="ui_game_symbol_cementMixer" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workcementMixer" />
+		</property>
+	</item>
+    <item id="2187" name="woodWorkBench">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="workbench" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workworkbench" />
+		</property>
+	</item>
+    <item id="2188" name="chemistryStation">
+        <property name="Extends" value="forge" />
+        <property name="CustomIcon" value="chemistryStation" />
+		<property class="Action1"> 
+			<property name="Blockname" value="workchemistryStation" />
+		</property>
+	</item>
 </items>

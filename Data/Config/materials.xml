@@ -882,7 +882,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="StabilitySupport" value="false" />
 	</material>
 	<material id="MSWorkStation">
-		<property name="damage_category" value="stone" />
+		<property name="damage_category" value="workstation" />
 		<property name="surface_category" value="stone" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="metal" />
@@ -893,7 +893,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="StabilitySupport" value="false" />
 	</material>
 	<material id="MMWorkStation">
-		<property name="damage_category" value="metal" />
+		<property name="damage_category" value="workstation" />
 		<property name="surface_category" value="metal" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="metal" />
@@ -904,7 +904,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="StabilitySupport" value="false" />
 	</material>
 	<material id="MWWorkStation">
-		<property name="damage_category" value="wood" />
+		<property name="damage_category" value="workstation" />
 		<property name="surface_category" value="wood" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="metal" />

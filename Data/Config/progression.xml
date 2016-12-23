@@ -1360,6 +1360,13 @@
 			<recipe name="rebarFrameRamp" unlock_level="1" />
 		</perk>
         
+        <perk name="Iron Trussing" icon="MetalTrussing" description_key="Learn to craft Iron Trussing in the Forge" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Iron Working" required_skill_level="20" />
+            <requirement perk_level="1" required_skill_name="Stone Working" required_skill_level="65" />
+			<recipe name="metalTrussingBlock" unlock_level="1" />
+            <recipe name="metalTrussingRamp" unlock_level="1" />
+		</perk>
+        
         <crafting_skill name="Steel Working" icon="forgedSteel" exp_to_level="120" experience_multiplier="1.022" description_key="weaponSmithingDesc" title_key="Steel Working" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
