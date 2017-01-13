@@ -8281,6 +8281,7 @@ which does not exist, yet. -->
 		<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 		<property name="FuelValue" value="20" />
 		<property name="DropScale" value="8" />
+        <property name="Weight" value="5" />
         <property name="MeltTimePerUnit" value="0.5" />
         <property name="EconomicValue" value="10" />
         <property name="EconomicBundleSize" value="10" />
