@@ -546,21 +546,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="stuffed12" duration="1" actions="increment(stuffed, 12, 0, 0, 1)" />
     <buff id="stuffed16" duration="1" actions="increment(stuffed, 16, 0, 0, 1)" />
     <buff id="stuffed18" duration="1" actions="increment(stuffed, 18, 0, 0, 1)" />
-    <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 100t, 0, 0);min(stuffed, 0)" />	
+    <buff id="stuffedFade" buffif="stuffed greater 0" debuffif="stuffed less 1" actions="increment(stuffed, -2, 150, 0, 0);min(stuffed, 0)" />	
     <buff id="overStuffed" name_key="OverStuffed" buffif="stuffed gequal 80" debuffif="stuffed lequal 79" type="speedmodifier" description_key="You have gorged yourself to the point you can barely move" tooltip_key="Your stuffed" icon="stuffed">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff> 
-	<!--JZMOD HYGIEN BUFF
-	<buff id="Hygiene" buffif="coretemp lequal 300" actions="increment(hygiene, 1, 100t, 0, 0)" />
-	<buff id="dirty" name_key="Dirty" buffif="hygiene gequal 96" debuffif="hygiene lequal 95" mutex="grimy,filthy" smell="smallSmell" description_key="You are starting to smell a little you might want to use a piece of cloth and rinse off" tooltip_key="Getting a little dirty" icon="dirty" />
-	<buff id="grimy" name_key="Grimy" buffif="hygiene gequal 168" debuffif="hygiene lequal 167" mutex="filthy" smell="mediumSmell" actions="debuff(dirty)" description_key="You’re really starting to smell. Might want to take a bath with soap soon." tooltip_key="You are grimy and smelly" icon="dirty" />
-	<buff id="filthy" name_key="Filthy" buffif="hygiene gequal 288" debuffif="hygiene lequal 287" smell="largeSmell" actions="debuff(dirty);debuff(grimy)" description_key="Wow you really need a soapy bath. The dead will smell you coming a block away. If you get too filthy your cuts can get infected" tooltip_key="You’re filthy and you really stink" icon="dirty" />
-	<buff id="rinsingoff" requires="hygiene gequal 1" duration="10" />
-	<buff id="bathing" name_key="Bird Bath" duration="5" requires="rinsingoff" buffif="+water &gt; 6" actions="debuff(rinsingoff);increment(hygiene, -72, 0, 0, 1);min(hygiene, 24);debuff(dirty);debuff(grimy);debuff(filthy)" description_key="Small Bird baths will keep your stench down but won’t help clean your wounds" tooltip_key="Rinsing off" icon="Soap" />
-	<buff id="soapy" duration="10" name_key="Nice and Soapy" actions="debuff(rinsingoff)" description_key="Find some water and wash your self before the soap drys" tooltip_key="All lathered up" icon="ui_game_symbol_water" />
-	<buff id="soapyBath" name_key="Soapy Bath" duration="5" requires="soapy" buffif="+water &gt; 5" actions="debuff(soapy);increment(hygiene, -144, 0, 0, 1);min(hygiene, 0);debuff(rinsingoff)" description_key="Occasionally taking a Soapy bath will help keep your cuts clean and stave off infection" tooltip_key="ahhh Feels good to get clean" icon="Soap" />
-	-->
-    <!--JZMOD LIMP-->
+	<!--JZMOD LIMP-->
 	<buff id="limp" name_key="Limp" buffif="health less .1" mutex="limp,stimulant,Drunk,limp1,limp2" duration="1" onexpired="limp1" type="speedmodifier" tooltip_key="You are injured and limping" icon="ui_game_symbol_run">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff>
