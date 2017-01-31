@@ -2085,7 +2085,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="animalFat" count="2"/>
 </recipe>
 
-<recipe name="tallow" count="1" craft_area="workchemistryStation" craft_tool="cookingPot" craft_time="10" craft_exp_gain="5">
+<recipe name="tallow" count="1" craft_area="workchemistryStation" craft_tool="beaker" craft_time="10" craft_exp_gain="5">
 	<ingredient name="animalFat" count="2"/>
 </recipe>
 
